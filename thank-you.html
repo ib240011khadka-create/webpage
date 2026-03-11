@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>送信ありがとうございました | 赤塚学園 日本語学校</title>
+  <meta name="description" content="お問い合わせ・資料請求の送信が完了しました。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="送信ありがとうございました | 赤塚学園 日本語学校" />
+  <meta property="og:description" content="送信が完了しました。担当者よりご連絡いたします。" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fef7f3;
+      --card: #fffdfb;
+      --text: #2f1f28;
+      --muted: #5a5f73;
+      --accent: #cb3e7f;
+      --accent-strong: #ab2f67;
+      --line: #f0d7e4;
+      --ring: #f8c9de;
+      --ok: #0f766e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: "Zen Kaku Gothic New", "M PLUS Rounded 1c", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 16%, #ffdbe9 0%, transparent 35%),
+        radial-gradient(circle at 88% 12%, #ffe8cb 0%, transparent 30%),
+        linear-gradient(180deg, #fffaf7 0%, var(--bg) 100%);
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      width: 240px;
+      height: 240px;
+      border-radius: 999px;
+      z-index: -1;
+      filter: blur(20px);
+      opacity: 0.52;
+      pointer-events: none;
+      animation: float 12s ease-in-out infinite;
+    }
+
+    body::before {
+      left: -70px;
+      bottom: 30px;
+      background: #ffc7dd;
+    }
+
+    body::after {
+      right: -80px;
+      top: 50px;
+      background: #ffdca6;
+      animation-delay: 1.6s;
+    }
+
+    .card {
+      width: min(680px, 100%);
+      background: linear-gradient(165deg, #fffefe 0%, var(--card) 100%);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 18px 36px rgba(154, 62, 107, 0.14);
+      padding: 30px;
+      animation: rise 0.5s ease both;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      margin-bottom: 12px;
+      border-radius: 999px;
+      border: 1px solid #d9eedf;
+      background: #f4fdf8;
+      color: var(--ok);
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      font-size: clamp(1.55rem, 1.2rem + 1.25vw, 2.2rem);
+      color: #91235a;
+      letter-spacing: 0.01em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      line-height: 1.7;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding: 11px 12px;
+      border-radius: 10px;
+      background: #fff6fa;
+      border: 1px solid #f6deea;
+    }
+
+    .actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      color: #ffffff;
+      box-shadow: 0 10px 20px rgba(187, 56, 114, 0.25);
+    }
+
+    .btn.secondary {
+      background: #ffffff;
+      color: #8f2f63;
+      border-color: #e6bfd5;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--ring);
+      outline-offset: 2px;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    @media (max-width: 680px) {
+      .card {
+        padding: 24px 18px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="chip">送信ステータス: 完了</div>
+    <h1>送信ありがとうございました</h1>
+    <p>フォームの送信が完了しました。内容を確認のうえ、担当者よりご連絡いたします。</p>
+    <p class="hint">返信まで少しお時間をいただく場合があります。お急ぎの場合はお電話ください: 099-250-1313</p>
+    <div class="actions">
+      <a class="btn primary" href="copy.html">学校トップへ戻る</a>
+      <a class="btn secondary" href="new.html">学費と入学ページへ</a>
+    </div>
+  </main>
+</body>
+</html>

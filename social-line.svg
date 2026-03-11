@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+  <title id="t">LINE Card Visual</title>
+  <desc id="d">Stylized chat app illustration with speech bubbles for LINE card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9ff3bd"/>
+      <stop offset="55%" stop-color="#44d970"/>
+      <stop offset="100%" stop-color="#00b84d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="100" y="115" width="1000" height="445" rx="36" fill="#ffffff" opacity="0.2"/>
+  <rect x="180" y="180" width="520" height="330" rx="24" fill="#ffffff"/>
+  <rect x="230" y="240" width="300" height="54" rx="22" fill="#d8f9e2"/>
+  <rect x="230" y="320" width="400" height="54" rx="22" fill="#eafcef"/>
+  <rect x="230" y="400" width="240" height="54" rx="22" fill="#d8f9e2"/>
+  <circle cx="905" cy="320" r="145" fill="#ffffff"/>
+  <text x="795" y="340" fill="#00b84d" font-family="Arial, sans-serif" font-size="84" font-weight="700">LINE</text>
+  <text x="175" y="605" fill="#ffffff" font-family="Arial, sans-serif" font-size="44" font-weight="700">1:1 チャット相談・予約サポート</text>
+</svg>
