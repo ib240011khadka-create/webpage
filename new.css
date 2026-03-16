@@ -204,9 +204,9 @@ h3 {
 }
 
 table {
-  width: max-content;
+  width: 100%;
   border-collapse: collapse;
-  min-width: 760px;
+  table-layout: fixed;
 }
 
 .table-swipe-hint {
@@ -223,6 +223,7 @@ td {
   padding: 10px;
   text-align: center;
   font-size: 0.95rem;
+  overflow-wrap: anywhere;
 }
 
 th {
@@ -659,11 +660,6 @@ th {
     overflow-x: scroll;
     max-width: 100%;
     margin-inline: 0;
-  }
-
-  .table-wrap > table {
-    min-width: 760px;
-    width: 760px;
   }
 }
 
