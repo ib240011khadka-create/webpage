@@ -198,6 +198,25 @@
     });
   }
 
+  function initTableSwipeHints() {
+    const tables = document.querySelectorAll("table");
+    if (!tables.length) return;
+
+    tables.forEach((table) => {
+      const host = table.closest(".table-wrap") || table;
+      if (host.dataset.swipeHint === "1") return;
+
+      const hint = document.createElement("p");
+      hint.className = "table-swipe-hint";
+      hint.textContent = "\u2190 Swipe table \u2192";
+
+      if (host.parentNode) {
+        host.parentNode.insertBefore(hint, host);
+        host.dataset.swipeHint = "1";
+      }
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
   // --- Welcome Splash ---
   const splash = document.getElementById("welcomeSplash");
@@ -228,5 +247,6 @@
     applySavedLanguage();
     initKagoshimaSlideshow();
     initContactForm();
+    initTableSwipeHints();
   });
 })();

@@ -209,6 +209,14 @@ table {
   min-width: 760px;
 }
 
+.table-swipe-hint {
+  display: none;
+  margin: 8px 0 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
 th,
 td {
   border: 1px solid #ecd9e5;
@@ -590,6 +598,10 @@ th {
 }
 
 @media (max-width: 700px) {
+  .table-swipe-hint {
+    display: block;
+  }
+
   .hero {
     padding-top: 34px;
   }

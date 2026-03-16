@@ -480,6 +480,14 @@ table {
   background: #ffffff;
 }
 
+.table-swipe-hint {
+  display: none;
+  margin: 8px 0 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
 th,
 td {
   border: 1px solid #ebdbe5;
@@ -848,6 +856,10 @@ button[disabled] {
 }
 
 @media (max-width: 768px) {
+  .table-swipe-hint {
+    display: block;
+  }
+
   .top-banner {
     height: 76px;
   }
