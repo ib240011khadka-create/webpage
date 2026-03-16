@@ -213,7 +213,7 @@
 
       const hint = document.createElement("p");
       hint.className = "table-swipe-hint";
-      hint.textContent = "\u2190 Swipe table \u2192";
+      hint.textContent = "\u2190 横にスワイプできます \u2192";
 
       if (host.parentNode) {
         host.parentNode.insertBefore(hint, host);
