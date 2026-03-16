@@ -48,10 +48,14 @@
     const heroImage = document.querySelector(".kagoshima-hero-image");
     if (!heroImage) return;
 
-    const slides = (heroImage.dataset.slides || "")
-      .split(",")
-      .map((item) => item.trim())
-      .filter(Boolean);
+    const slides = Array.from(
+      new Set(
+        (heroImage.dataset.slides || "")
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean)
+      )
+    );
 
     if (slides.length < 2) return;
 
