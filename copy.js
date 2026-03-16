@@ -58,7 +58,7 @@
     let index = slides.indexOf(heroImage.getAttribute("src") || "");
     if (index < 0) index = 0;
 
-    setInterval(() => {
+    const rotate = () => {
       index = (index + 1) % slides.length;
       heroImage.classList.add("is-swapping");
 
@@ -66,7 +66,11 @@
         heroImage.src = slides[index];
         heroImage.classList.remove("is-swapping");
       }, 260);
-    }, 10000);
+    };
+
+    // Kick off sooner so users can confirm it's working, then keep rotating.
+    setTimeout(rotate, 3000);
+    setInterval(rotate, 10000);
   }
 
   function initContactForm() {
@@ -226,20 +230,28 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-  // --- Welcome Splash ---
-  const splash = document.getElementById("welcomeSplash");
-  if (splash) {
-    const dismiss = () => splash.classList.add("splash-hidden");
-    splash.addEventListener("click", dismiss);
-    setTimeout(dismiss, 3000);
-  }
+    // Initialize slideshow first so it is not blocked by optional features.
+    initKagoshimaSlideshow();
+
+    // --- Welcome Splash ---
+    const splash = document.getElementById("welcomeSplash");
+    if (splash) {
+      const dismiss = () => splash.classList.add("splash-hidden");
+      splash.addEventListener("click", dismiss);
+      setTimeout(dismiss, 3000);
+    }
+
     loadGoogleTranslateScript();
 
     const langSelect = document.getElementById("langSelect");
     if (langSelect) {
       langSelect.addEventListener("change", () => {
         const lang = langSelect.value;
-        localStorage.setItem("site_lang", lang);
+        try {
+          localStorage.setItem("site_lang", lang);
+        } catch (_error) {
+          // Ignore storage failures and continue core page behavior.
+        }
 
         const combo = document.querySelector(".goog-te-combo");
         if (combo) {
@@ -248,12 +260,20 @@
         }
       });
 
-      const saved = localStorage.getItem("site_lang");
+      let saved = null;
+      try {
+        saved = localStorage.getItem("site_lang");
+      } catch (_error) {
+        saved = null;
+      }
       if (saved) langSelect.value = saved;
     }
 
-    applySavedLanguage();
-    initKagoshimaSlideshow();
+    try {
+      applySavedLanguage();
+    } catch (_error) {
+      // Translation restore is optional.
+    }
     initContactForm();
     initTableSwipeHints();
   });
