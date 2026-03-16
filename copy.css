@@ -120,6 +120,8 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  max-width: 100%;
+  overscroll-behavior-x: none;
 }
 
 body {
@@ -127,6 +129,8 @@ body {
   color: var(--text);
   line-height: 1.7;
   overflow-x: hidden;
+  max-width: 100%;
+  overscroll-behavior-x: none;
   background:
     radial-gradient(circle at 15% 0%, #fff0f7 0%, transparent 40%),
     radial-gradient(circle at 85% 8%, #ffeef7 0%, transparent 35%),
@@ -820,6 +824,33 @@ button[disabled] {
 }
 
 @media (max-width: 980px) {
+  .container,
+  section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    padding-inline: 12px;
+  }
+
+  section,
+  .about-story,
+  .teacher-card,
+  .social-card,
+  .contact-meta > div {
+    min-width: 0;
+  }
+
+  .about-highlights li,
+  .kagoshima-overlay p,
+  .social-card p,
+  .contact-meta,
+  .fact-label,
+  .fact-value {
+    overflow-wrap: anywhere;
+  }
+
   .social-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -860,6 +891,16 @@ button[disabled] {
     display: block;
   }
 
+  .container,
+  section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    padding-inline: 10px;
+  }
+
   .top-banner {
     height: 76px;
   }
@@ -877,6 +918,7 @@ button[disabled] {
   }
 
   section {
+    margin: 12px auto;
     padding: 16px;
     border-radius: 14px;
   }

@@ -567,6 +567,32 @@ th {
 }
 
 @media (max-width: 900px) {
+  .hero-inner,
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 12px;
+  }
+
+  .card,
+  .step-box,
+  .field,
+  .option-item,
+  .privacy-check {
+    min-width: 0;
+  }
+
+  .docs-grid ul,
+  .step-box ul,
+  .note-list,
+  .timeline li,
+  .field label,
+  .field legend,
+  .field-note,
+  .request-lead {
+    overflow-wrap: anywhere;
+  }
+
   .steps-grid,
   .docs-grid,
   .request-grid {
@@ -601,21 +627,25 @@ th {
   .table-swipe-hint {
     display: block;
   }
-
 }
 
 @media (max-width: 700px) {
 
   .hero {
     padding-top: 34px;
+    border-bottom-width: 2px;
   }
 
   .hero-inner,
   main {
-    width: min(1100px, 94%);
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 10px;
   }
 
   .card {
+    width: 100%;
+    max-width: 100%;
     padding: 16px;
     border-radius: 10px;
   }
@@ -627,6 +657,7 @@ th {
 
   .table-wrap {
     overflow-x: scroll;
+    max-width: 100%;
     margin-inline: 0;
   }
 
@@ -637,6 +668,14 @@ th {
 }
 
 @media (max-width: 520px) {
+  .hero {
+    padding: 28px 0 24px;
+  }
+
+  .hero h1 {
+    line-height: 1.25;
+  }
+
   .access-contact-item {
     font-size: 1.05rem;
     gap: 8px;
