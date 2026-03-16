@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace with your final Netlify/custom domain before production
+Sitemap: https://example.netlify.app/sitemap.xml

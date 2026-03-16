@@ -119,16 +119,23 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Zen Kaku Gothic New", "M PLUS Rounded 1c", sans-serif;
   color: var(--text);
   line-height: 1.7;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at 15% 0%, #fff0f7 0%, transparent 40%),
     radial-gradient(circle at 85% 8%, #ffeef7 0%, transparent 35%),
     var(--bg);
+}
+
+img,
+iframe {
+  max-width: 100%;
 }
 
 .container {
@@ -275,6 +282,14 @@ p {
 .section-lead {
   color: var(--muted);
   font-size: 1.03rem;
+}
+
+.teacher-lead {
+  color: #e75480;
+}
+
+.mission-lead {
+  color: #000000;
 }
 
 hr {
@@ -882,7 +897,11 @@ button[disabled] {
   table {
     display: block;
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
   }
 
   iframe {
@@ -896,6 +915,22 @@ button[disabled] {
 }
 
 @media (max-width: 520px) {
+  .access-contact-item {
+    font-size: 1.05rem;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .contact-tag {
+    min-width: 72px;
+    font-size: 0.92rem;
+    padding: 2px 8px;
+  }
+
+  .kagoshima-hero-image {
+    height: 360px;
+  }
+
   .social-grid {
     grid-template-columns: 1fr;
   }
