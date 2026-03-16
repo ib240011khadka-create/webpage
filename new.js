@@ -202,6 +202,14 @@
     tables.forEach(function (table) {
       const host = table.closest(".table-wrap") || table;
       if (host.dataset.swipeHint === "1") return;
+      if (
+        host.previousElementSibling &&
+        host.previousElementSibling.classList &&
+        host.previousElementSibling.classList.contains("table-swipe-hint")
+      ) {
+        host.dataset.swipeHint = "1";
+        return;
+      }
 
       const hint = document.createElement("p");
       hint.className = "table-swipe-hint";

@@ -597,10 +597,14 @@ th {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .table-swipe-hint {
     display: block;
   }
+
+}
+
+@media (max-width: 700px) {
 
   .hero {
     padding-top: 34px;
