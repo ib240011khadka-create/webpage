@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Marugoto A2-1 cover</title>
+  <desc id="desc">Placeholder cover image for Marugoto A2-1 textbook.</desc>
+  <rect width="200" height="280" fill="#fff3ea"/>
+  <rect x="12" y="12" width="176" height="256" rx="10" fill="#ffffff" stroke="#efcfb8"/>
+  <circle cx="78" cy="104" r="44" fill="#f38f42" opacity="0.9"/>
+  <circle cx="128" cy="130" r="40" fill="#ffd46a" opacity="0.85"/>
+  <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#2f2f2f">A2-1</text>
+  <text x="100" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4d4d4d">MARUGOTO</text>
+</svg>
