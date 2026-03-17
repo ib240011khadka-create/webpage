@@ -789,6 +789,66 @@ button[disabled] {
   text-decoration: underline;
 }
 
+#site-directory {
+  background: #d9d9db;
+  border: 1px solid #d0d0d2;
+  box-shadow: none;
+}
+
+#site-directory h2 {
+  margin-bottom: 14px;
+  color: #2f2f33;
+}
+
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 28px;
+}
+
+.directory-group {
+  min-width: 0;
+}
+
+.directory-group-title {
+  margin: 0 0 10px;
+  color: #3a3d45;
+  font-size: 1.02rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.directory-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.directory-list li {
+  margin-bottom: 8px;
+}
+
+.directory-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #22252b;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.directory-list a::before {
+  content: "\203A";
+  color: #9ea2a8;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.directory-list a:hover {
+  color: #d44a99;
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;
@@ -860,6 +920,11 @@ button[disabled] {
   .official-links {
     gap: 8px 12px;
     font-size: 0.9rem;
+  }
+
+  .directory-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
 
