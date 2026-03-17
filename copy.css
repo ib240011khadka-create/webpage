@@ -932,7 +932,7 @@ button[disabled] {
     white-space: nowrap;
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
   }
 
   iframe {
