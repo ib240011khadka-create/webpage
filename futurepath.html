@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>進路 | 赤塚学園 日本語学校</title>
+    <meta name="description" content="赤塚学園 日本語学校の進学・就職情報。専門学校、大学への進学コースと就労ビザによる就職の流れを1ページで確認できます。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="進路 | 赤塚学園 日本語学校" />
+    <meta property="og:description" content="進学・就職の流れを1ページで確認できます。" />
+    <meta property="og:image" content="https://akatuka.ac.jp/wp-content/themes/akatuka/src/akatuka-map.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://akatuka.ac.jp/wp-content/themes/akatuka/src/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="new.css" />
+    <script defer src="new.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-inner">
+            <img src="./akatuka-logo.svg" alt="学校法人赤塚学園ロゴ" class="hero-logo" />
+            <p class="eyebrow">学校法人赤塚学園 日本語学校</p>
+            <h1>🎓 進路</h1>
+            <p>進学・就職の流れを1ページで確認できます。</p>
+            <div class="lang-toolbar">
+                <label for="langSelect">🌐 Language</label>
+                <select id="langSelect">
+                    <option value="ja">💰日本語</option>
+                    <option value="en">💵English</option>
+                    <option value="ne">💴नेपाली</option>
+                    <option value="hi">💶हिन्दी</option>
+                    <option value="vi">💷Tiếng Việt</option>
+                </select>
+                <div id="google_translate_element"></div>
+            </div>
+            <div class="hero-actions">
+                <a class="btn primary" href="index.html">学校トップへ戻る</a>
+                <a class="btn ghost" href="new.html">💰学費と入学</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== INTRO ===== -->
+        <section class="card" aria-labelledby="intro-title">
+            <h2 id="intro-title">📌 進路サポートについて</h2>
+            <hr />
+            <p>赤塚学園日本語学校では、卒業後の進路に向けて在学中から丁寧なサポートを行っています。<br />
+            進学・就職のどちらを目指す場合も、担任教師と進路担当スタッフが個別に相談に対応します。</p>
+            <div class="steps-grid">
+                <div class="step-box">
+                    <h3>🏫 進学サポート</h3>
+                    <ul>
+                        <li>志望校選びの個別相談</li>
+                        <li>出願書類の作成指導</li>
+                        <li>入試対策（筆記・面接）</li>
+                        <li>奨学金申請サポート</li>
+                        <li>合格後の手続きサポート</li>
+                    </ul>
+                </div>
+                <div class="step-box">
+                    <h3>💼 就職サポート</h3>
+                    <ul>
+                        <li>履歴書・職務経歴書の作成支援</li>
+                        <li>面接練習・ビジネスマナー指導</li>
+                        <li>就労ビザ申請のアドバイス</li>
+                        <li>企業説明会・合同就活イベント案内</li>
+                        <li>卒業後のアフターフォロー</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 進学 ===== -->
+        <section class="card" aria-labelledby="university-title">
+            <h2 id="university-title">🎓 進学</h2>
+            <hr />
+            <p>卒業生は全国の専門学校・大学へ進学しています。日本語能力を活かして幅広い分野の学校を選ぶことができます。</p>
+            <div class="steps-grid">
+                <div class="step-box">
+                    <h3>🏫 専門学校（2年）</h3>
+                    <ul>
+                        <li>ビジネス・経営</li>
+                        <li>ホテル・ブライダル</li>
+                        <li>旅行・観光</li>
+                        <li>自動車整備</li>
+                        <li>IT・情報処理</li>
+                        <li>介護・福祉</li>
+                        <li>美容・ファッション</li>
+                        <li>デザイン・アート</li>
+                    </ul>
+                </div>
+                <div class="step-box">
+                    <h3>🏛️ 大学（4年）</h3>
+                    <ul>
+                        <li>経済学部</li>
+                        <li>工学部</li>
+                        <li>観光学部</li>
+                        <li>法学部・文学部</li>
+                        <li>教育学部</li>
+                        <li>国際学部</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 進学の流れ ===== -->
+        <section class="card" aria-labelledby="flow-study-title">
+            <h2 id="flow-study-title">🗓️ 進学までの流れ</h2>
+            <hr />
+            <ol class="timeline">
+                <li><strong>入学直後（4月）:</strong> 担任と進路面談。目標校・学部の方向性を確認する</li>
+                <li><strong>1年次前期（4月〜9月）:</strong> 日本語能力の向上、JLPT（CEFR目安 A2-B2）受験準備</li>
+                <li><strong>1年次後期（10月〜3月）:</strong> オープンキャンパス参加、志望校を絞り込む</li>
+                <li><strong>2年次前期（4月〜8月）:</strong> 出願書類の準備・志望理由書の作成</li>
+                <li><strong>2年次夏〜秋（8月〜11月）:</strong> 各校の入学試験・面接を受験</li>
+                <li><strong>2年次冬（12月〜2月）:</strong> 合格発表・入学手続き・奨学金申請</li>
+                <li><strong>卒業（3月）:</strong> 卒業式・進学先への入学準備</li>
+            </ol>
+        </section>
+
+        <!-- ===== 就職 ===== -->
+        <section class="card" aria-labelledby="work-title">
+            <h2 id="work-title">💼 就職</h2>
+            <hr />
+            <p>就職は可能ですが、在留資格の条件を満たす必要があります。<br />
+            日本語学校の卒業だけでは、一般的な就労ビザ（技術・人文知識・国際業務）に直結しないケースが多いため、進学や資格取得を含めた計画が重要です。</p>
+            <div class="steps-grid">
+                <div class="step-box">
+                    <h3>🗂️ 主な職種</h3>
+                    <ul>
+                        <li>営業・販売</li>
+                        <li>ホテル・宿泊業務</li>
+                        <li>翻訳・通訳</li>
+                        <li>サービス業務</li>
+                        <li>教育関連の仕事</li>
+                        <li>IT・エンジニア系</li>
+                        <li>観光・旅行業</li>
+                    </ul>
+                </div>
+                <div class="step-box">
+                    <h3>📋 就労ビザの条件（目安）</h3>
+                    <ul>
+                        <li>大学または専門学校を卒業していること</li>
+                        <li>業務内容が専攻・学習内容に関連していること</li>
+                        <li>JLPT N2以上（CEFR目安 B2）の日本語能力が望ましい</li>
+                        <li>雇用契約書（フルタイム）があること</li>
+                        <li>企業が在留資格の申請をサポートすること</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 卒業後の在留資格（重要） ===== -->
+        <section class="card" aria-labelledby="visa-reality-title">
+            <h2 id="visa-reality-title">⚠️ 卒業後の就職ビザについて（重要）</h2>
+            <hr />
+            <p>ここに書いてある内容は、出入国在留管理庁（ISA）と Study in Japan（JASSO）の公式情報をもとにした目安です。<br />
+            さいごにOKかどうかを決めるのは、入管の審査です。</p>
+            <div class="steps-grid">
+                <div class="step-box">
+                    <h3>1) 技術・人文知識・国際業務（技人国）</h3>
+                    <ul>
+                        <li>ふつうは、仕事に関係する大学・専門学校の学歴、または実務経験が必要です。</li>
+                        <li>「学校で学んだこと」と「会社で行う仕事」がつながっているかを見られます。</li>
+                        <li>そのため、日本語学校を卒業しただけでは、条件を満たせないことが多いです。</li>
+                    </ul>
+                </div>
+                <div class="step-box">
+                    <h3>2) 特定技能（SSW）という別ルート</h3>
+                    <ul>
+                        <li>特定技能は、分野ごとの技能試験と日本語試験に合格することが基本です。</li>
+                        <li>学位よりも、「その分野で働ける力があるか」が大切です。</li>
+                        <li>働ける分野は決まっているので、自分の希望の仕事が対象か確認しましょう。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="steps-grid" style="margin-top:12px;">
+                <div class="step-box">
+                    <h3>3) 現実的な進路プラン</h3>
+                    <ul>
+                        <li>日本語学校 → 専門学校/大学へ進学 → 卒業後に就職ビザ申請</li>
+                        <li>日本語学校にいる間に特定技能試験の準備をして、対象分野で就職</li>
+                        <li>卒業までに内定がないときは、条件を満たせば「特定活動」で就活を続ける</li>
+                    </ul>
+                </div>
+                <div class="step-box">
+                    <h3>4) 申請時のチェックポイント</h3>
+                    <ul>
+                        <li>雇用契約（仕事内容・給料・期間）がはっきりしていること</li>
+                        <li>給料が日本人と同じか、それ以上の水準であること</li>
+                        <li>会社の書類と本人の学歴・職歴の書類がそろっていること</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 style="margin-top:14px;">参考（公式情報）</h3>
+            <ul>
+                <li><a href="https://www.moj.go.jp/isa/applications/status/gijinkoku.html" target="_blank" rel="noopener noreferrer">在留資格「技術・人文知識・国際業務」（出入国在留管理庁）</a></li>
+                <li><a href="https://www.moj.go.jp/isa/applications/status/specifiedskilledworker.html" target="_blank" rel="noopener noreferrer">在留資格「特定技能」（出入国在留管理庁）</a></li>
+                <li><a href="https://www.studyinjapan.go.jp/en/work-in-japan/employment/status.html" target="_blank" rel="noopener noreferrer">Status of Residence（Study in Japan / JASSO）</a></li>
+                <li><a href="https://www.studyinjapan.go.jp/en/work-in-japan/immigration-procedures/" target="_blank" rel="noopener noreferrer">Changing Status of Residence（Study in Japan / JASSO）</a></li>
+            </ul>
+        </section>
+
+        <!-- ===== 就職の流れ ===== -->
+        <section class="card" aria-labelledby="flow-work-title">
+            <h2 id="flow-work-title">🗓️ 就職活動の流れ</h2>
+            <hr />
+            <ol class="timeline">
+                <li><strong>1年次（4月〜）:</strong> ビジネス日本語・マナー研修スタート</li>
+                <li><strong>1年次後期（10月〜）:</strong> 職種・業界の研究、インターンシップ参加</li>
+                <li><strong>2年次前期（4月〜6月）:</strong> 履歴書作成・企業へのエントリー開始</li>
+                <li><strong>2年次（7月〜11月）:</strong> 面接練習・企業見学・内定獲得</li>
+                <li><strong>2年次冬（12月〜2月）:</strong> 就労ビザ申請・採用手続き</li>
+                <li><strong>卒業（3月）:</strong> 卒業式・就職先での勤務開始準備</li>
+            </ol>
+        </section>
+
+        <!-- ===== JLPT・CEFR目標 ===== -->
+        <section class="card" aria-labelledby="jlpt-title">
+            <h2 id="jlpt-title">📝 JLPT・CEFR 目標レベルと進路</h2>
+            <hr />
+            <p>日本語能力試験（JLPT）のレベルは、進路選択に大きく影響します。CEFRは実際の運用力を見る指標です。<br />
+            下の対応は一般的な目安であり、公式の1対1換算ではありません。</p>
+            <div class="table-wrap">
+                <table>
+                    <caption>JLPT・CEFR目安と進路</caption>
+                    <thead>
+                        <tr>
+                            <th>JLPT</th>
+                            <th>CEFR目安</th>
+                            <th>目安となる進路</th>
+                            <th>備考</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>N5 / N4</strong></td>
+                            <td><strong>A1 / A2</strong></td>
+                            <td>日本語学習継続・入学時の目安</td>
+                            <td>入学条件の最低ライン</td>
+                        </tr>
+                        <tr>
+                            <td><strong>N3</strong></td>
+                            <td><strong>B1</strong></td>
+                            <td>専門学校への進学</td>
+                            <td>進学準備を本格化する段階</td>
+                        </tr>
+                        <tr>
+                            <td><strong>N2</strong></td>
+                            <td><strong>B2</strong></td>
+                            <td>大学・専門学校進学、就職活動</td>
+                            <td>就労ビザ申請で評価されやすい</td>
+                        </tr>
+                        <tr>
+                            <td><strong>N1</strong></td>
+                            <td><strong>C1（上位はC2相当）</strong></td>
+                            <td>難関大学・大学院、専門職就職</td>
+                            <td>高い日本語運用力として評価されやすい</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ===== 相談 ===== -->
+        <section class="card" aria-labelledby="consult-title">
+            <h2 id="consult-title">🤝 進路相談のご案内</h2>
+            <hr />
+            <p>進路についてご不明な点やご相談がある方は、お気軽に本校までお問い合わせください。</p>
+            <div class="steps-grid">
+                <div class="step-box">
+                    <h3>📞 お電話でのご相談</h3>
+                    <ul>
+                        <li>電話番号: <a href="tel:0992501313" style="color:inherit">099-250-1313</a></li>
+                        <li>受付時間: 平日 9:00〜17:00</li>
+                    </ul>
+                </div>
+                <div class="step-box">
+                    <h3>📧 オンラインでのご相談</h3>
+                    <ul>
+                        <li><a href="index.html#contact" style="color:inherit">お問い合わせフォームへ</a></li>
+                        <li><a href="new.html#request-form" style="color:inherit">資料請求フォームへ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="official-access" class="card" aria-labelledby="official-access-title">
+            <div class="access-wrap">
+                <div class="access-info">
+                    <h2 id="official-access-title" class="access-logo-title">
+                        <img src="akatuka-logo.svg" alt="赤塚学園ロゴ" class="access-logo" />
+                    </h2>
+                    <p class="access-address">〒890-0055 鹿児島県鹿児島市上荒田町6-1</p>
+
+                    <div class="access-contact-item">
+                        <span class="contact-tag">TEL</span>
+                        <a href="tel:0992501313">099-250-1313</a>
+                    </div>
+
+                    <div class="access-contact-item">
+                        <span class="contact-tag">FAX</span>
+                        <span>099-250-1276</span>
+                    </div>
+                </div>
+
+                <div class="access-map">
+                    <img src="https://akatuka.ac.jp/wp-content/themes/akatuka/src/akatuka-map.webp" alt="赤塚学園アクセスマップ" loading="lazy" />
+                </div>
+            </div>
+
+            <div class="official-links" aria-label="フッターリンク">
+                <a href="https://akatuka.ac.jp/" target="_blank" rel="noopener noreferrer">ホーム</a>
+                <a href="https://akatuka.ac.jp/request/" target="_blank" rel="noopener noreferrer">資料請求</a>
+                <a href="https://akatuka.ac.jp/contact/" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+                <a href="https://akatuka.ac.jp/privacy-policy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
