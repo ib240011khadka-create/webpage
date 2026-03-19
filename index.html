@@ -22,7 +22,7 @@
   <!-- ===== WELCOME SPLASH ===== -->
   <div id="welcomeSplash" role="dialog" aria-modal="true" aria-label="ようこそ">
     <div class="splash-inner">
-      <img src="akatuka-logo.svg" alt="赤塚学園ロゴ" class="splash-logo" />
+      <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="splash-logo" />
       <h1 class="splash-title">学校法人赤塚学園</h1>
       <div class="splash-courses">
         <span>日本語学科</span>
@@ -31,7 +31,7 @@
   </div>
 
   <header>
-    <img src="akatuka-logo.svg" alt="学校法人赤塚学園ロゴ" class="top-banner" />
+    <img src="logo/akatuka-logo.svg" alt="学校法人赤塚学園ロゴ" class="top-banner" />
     <nav>
       <strong class="site-title">日本語学校</strong>
 
@@ -54,6 +54,7 @@
           <li><a href="#teacher-introduction">👩‍🏫教師紹介</a></li>
           <li><a href="#student-support">⭐学生サポート</a></li>
           <li><a href="new.html">💰学費と入学</a></li>
+          <li><a href="futurepath.html">🎯進路</a></li>
           <li><a href="#college-location">📍学校の場所</a></li>
           <li><a href="#social-media">📱ソーシャルメディア</a></li>
           <li><a href="#kagoshima">🌸鹿児島</a></li>
@@ -71,7 +72,7 @@
         <hr />
         <p class="section-lead mission-lead"><em>理念：世界中の学習者が安心して日本語を学べる環境を提供します</em></p>
 
-        <div class="about-grid">
+        <div class="about-layout">
           <article class="about-story">
             <p>
               <strong>赤塚学園について</strong><br />
@@ -87,27 +88,32 @@
             </ul>
           </article>
 
-          <aside class="about-facts" aria-label="学校の基本データ">
-            <div class="fact-card">
-              <span class="fact-icon">📚</span>
-              <span class="fact-label">日本語科</span>
-              <span class="fact-label">主な学科について</span>
-              <span class="fact-label"><a href="https://akatuka.ac.jp/" aria-label="赤塚学園公式サイトを見る">こちらへご覧ください</a></span>
-            </div>
-            <div class="fact-card">
-              <span class="fact-icon">☎️</span>
-              <span class="fact-label">TEL</span>
-              <a href="tel:0992501313" class="fact-value">099-250-1313</a>
-            </div>
-            <div class="fact-card">
-              <span class="fact-icon">✉️</span>
-              <span class="fact-label">お問い合わせフォーム</span>
-              <span class="fact-value">24時間受付</span>
-            </div>
-            <div class="fact-card">
-              <span class="fact-icon">📍</span>
-              <span class="fact-value">〒890-0055</span>
-              <span class="fact-label">鹿児島市上荒田町6-1</span>
+          <aside class="about-facts" aria-label="学科写真">
+            <div class="fact-photo-grid">
+              <div class="fact-photo-slot">
+                <img src="departments/nursing1.jpg" alt="看護学科" />
+                <span class="fact-photo-label">看護学科</span>
+              </div>
+              <div class="fact-photo-slot">
+                <img src="departments/medicaloffice.jpg" alt="医療事務科" />
+                <span class="fact-photo-label">医療事務科</span>
+              </div>
+              <div class="fact-photo-slot">
+                <img src="departments/beauty3.jpg" alt="美容科" />
+                <span class="fact-photo-label">美容科</span>
+              </div>
+              <div class="fact-photo-slot">
+                <img src="departments/design4.jpg" alt="デザイン科" />
+                <span class="fact-photo-label">デザイン科</span>
+              </div>
+              <div class="fact-photo-slot">
+                <img src="departments/globalbusiness5.jpg" alt="グローバルビジネス" />
+                <span class="fact-photo-label">グローバルビジネス</span>
+              </div>
+              <div class="fact-photo-slot">
+                <img src="departments/japaneselanguage.png" alt="日本語科" />
+                <span class="fact-photo-label">日本語科</span>
+              </div>
             </div>
           </aside>
         </div>
@@ -120,60 +126,123 @@
         <hr />
         <p>
           <strong>コースについて</strong><br />
-          赤塚学園では新しく日本語学科を開設予定です。日本語力の向上だけでなく、日本での進学・就職・生活に必要な実践力を身につけることを目指します。
+          赤塚学園では新しく日本語学科を開設予定です。日本語力の向上だけでなく、日本での進学を中心に、就職・生活に必要な実践力を身につけることを目指します。
         </p>
-
-        <h3>🎯 学科の目的</h3>
-        <ul>
-          <li>日本語4技能（読む・書く・聞く・話す）を総合的に伸ばす</li>
-          <li>日本文化・マナー・生活習慣への理解を深める</li>
-          <li>進学・就職に向けた日本語運用力を身につける</li>
-        </ul>
 
         <h3>👩‍🎓 対象</h3>
         <ul>
-          <li>日本語を初めて学ぶ方</li>
-          <li>JLPT N3〜N1を目指す方</li>
-          <li>日本での進学・就職を検討している方</li>
+          <li>非漢字圏を中心とした留学生</li>
+          <li>日本の大学・専門学校への進学を目指す方</li>
+          <li>日本語を基礎から体系的に学びたい方</li>
         </ul>
 
-        <h3>📘 開講予定コース</h3>
-        <p>
-          最新情報はお問い合わせフォームよりご確認ください。<br />
-          <a href="#contact">お問い合わせはこちら</a>
-        </p>
-      </div>
-    </section>
+        <div class="edu-policy">
+          <h3>📘 教育理念</h3>
+          <ul>
+            <li>日本語教育を通じて、言語や文化の相互理解・相互尊重の精神を育みます。</li>
+            <li>留学生が自らの進路を実現できるよう支援します。</li>
+            <li>生涯にわたり自律的に学ぶ力を養います。</li>
+          </ul>
 
-    <section id="teacher-introduction">
-      <div class="container">
-        <h2 class="section-title">👩‍🏫教師紹介</h2>
-        <p class="section-lead teacher-lead">経験豊富な教師陣が、基礎から実践まで丁寧にサポートします。</p>
-        <hr/>
+          <h3>🎯 教育目的</h3>
+          <ul>
+            <li>非漢字圏の留学生を主な学習対象者とし、日本の大学や専門学校への進学を支援します。</li>
+            <li>学校の仲間や教員、地域の人々と関わりながら、「日本に留学しているからこそ」得られる新鮮な学習体験を提供し、新たな学びの喜びとともに、多様性の尊重と異文化理解の深化を促します。</li>
+            <li>言語・文化を広く多角的に捉え、社会の一員として、日本またはその他の国や地域で主体的に生きる資質・能力を育みます。</li>
+          </ul>
 
-        <div class="teacher-grid">
-          <article class="teacher-card">
-            <img src="IMG_9454.jpeg" alt="Aashish先生" class="teacher-photo" />
-            <h3>Aashish先生</h3>
-            <p>日本語学習の基礎をわかりやすく指導し、学生が安心して質問できる授業づくりを大切にしています。</p>
-          </article>
-
-          <article class="teacher-card">
-            <img src="IMG_9455.jpeg" alt="深堀先生" class="teacher-photo" />
-            <h3>深堀先生</h3>
-            <p>日本語教育と日本文化の指導経験が豊富で、学習者一人ひとりに寄り添う丁寧なサポートに定評があります。</p>
-          </article>
-
-          <article class="teacher-card">
-            <img src="IMG_9459.jpeg" alt="鈴木先生" class="teacher-photo" />
-            <h3>鈴木先生</h3>
-            <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
-          </article>
+          <h3>🏁 教育目標</h3>
+          <ul>
+            <li>日本の大学や専門学校で学ぶために必要な5技能（聞く・読む・書く・話す〔発表・やりとり〕）を習得します。</li>
+            <li>学校生活を通して多様な言葉や表現に触れ、複合的な文化や社会の未来について考える力を培います。</li>
+            <li>学習者一人ひとりの能力を尊重し、それぞれが主体的に学べるよう支援します。</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="student-support">
+    <section id="teacher-introduction" class="scroll-animate">
+      <div class="container">
+        <h2 class="section-title">👩‍🏫教師紹介</h2>
+        <p class="section-lead teacher-lead">経験豊富な教師陣が、基礎から実践まで丁寧にサポートします。</p>
+        <div class="teacher-sections">
+          <div class="teacher-section">
+            <h3 class="teacher-group-title">校長</h3>
+            <div class="teacher-grid">
+              <article class="teacher-card">
+                <img src="teachers/principle.png" alt="校長先生" class="teacher-photo" />
+                <span class="teacher-name-badge">校長先生</span>
+                <p>日本語学習の基礎をわかりやすく指導し、学生が安心して質問できる授業づくりを大切にしています。</p>
+              </article>
+            </div>
+          </div>
+          <hr>
+          <div class="teacher-section">
+            <h3 class="teacher-group-title">教師</h3>
+            <div class="teacher-grid">
+              <article class="teacher-card">
+                <img src="teachers/hayasi.jpg" alt="林先生" class="teacher-photo" />
+                <span class="teacher-name-badge">林先生</span>
+                <p>日本語教育と日本文化の指導経験が豊富で、学習者一人ひとりに寄り添う丁寧なサポートに定評があります。</p>
+              </article>
+
+              <article class="teacher-card">
+                <img src="teachers/muramuta.jpg" alt="村牟田先生" class="teacher-photo" />
+                <span class="teacher-name-badge">村牟田先生</span>
+                <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
+              </article>
+              <article class="teacher-card">
+                <img src="teachers/sensei.jpg" alt="先生" class="teacher-photo" />
+                <span class="teacher-name-badge">先生</span>
+                <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
+              </article>
+
+              <article class="teacher-card">
+                <img src="teachers/fujino.jpg" alt="藤野先生" class="teacher-photo" />
+                <span class="teacher-name-badge">藤野先生</span>
+                <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
+              </article>
+            </div>
+            <hr>
+              <div class="teacher-section">
+                <h3 class="teacher-group-title">事務・生活サポートスタッフ</h3>
+                <div class="teacher-grid">
+                <article class="teacher-card">
+                <img src="teachers/nipur.jpg" alt="ヌプール先生" class="teacher-photo" />
+                <span class="teacher-name-badge">ヌプール先生</span>
+                <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
+              </article>
+              <article class="teacher-card">
+                <img src="teachers/enn.jpg" alt="エン先生" class="teacher-photo" />
+                <span class="teacher-name-badge">エン先生</span>
+                <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
+              </article>
+
+              
+              <article class="teacher-card">
+                <img src="teachers/maissam.jpg" alt="マイサム先生" class="teacher-photo" />
+                <span class="teacher-name-badge">マイサム先生</span>
+                <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
+              </article>
+
+              <article class="teacher-card">
+                <img src="teachers/aashish.jpg" alt="アシス先生" class="teacher-photo" />
+                <span class="teacher-name-badge">アシス先生</span>
+                <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
+              </article>
+
+              <article class="teacher-card">
+                <img src="teachers/picture18.jpg" alt="先生" class="teacher-photo" />
+                <span class="teacher-name-badge">先生</span>
+                <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="student-support" class="scroll-animate">
       <div class="container">
         <h2>⭐学生サポート</h2>
         <ul>
@@ -237,7 +306,7 @@
       </div>
     </section>
 
-    <section id="timetable">
+    <section id="timetable" class="scroll-animate">
       <div class="container">
         <h2>📅時間割</h2>
         <table>
@@ -278,23 +347,188 @@
             <td>11:25 - 12:10</td>
           </tr>
         </table>
+
+        <p class="timetable-intro">学習レベルごとの到達目標、教材、学習内容を以下の表で確認できます。</p>
+
+        <h3 class="timetable-subtitle">1年次コースフレームワーク</h3>
+        <div class="table-wrapper">
+        <table class="framework-table">
+          <tr>
+            <th rowspan="2" class="side-head">学期<br />（クラス名）</th>
+            <th colspan="2">前期（初級クラス）</th>
+            <th colspan="2">後期（初中級クラス）</th>
+          </tr>
+          <tr>
+            <th class="col-a">4月 - 5月（2か月）</th>
+            <th class="col-b">6月 - 9月（4か月）</th>
+            <th class="col-c">10月 - 12月（3か月）</th>
+            <th class="col-d">1月 - 3月（2か月）</th>
+          </tr>
+          <tr>
+            <th class="side-head">学習段階</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th class="side-head">CEFR</th>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A2</td>
+            <td>A2/B1</td>
+          </tr>
+          <tr>
+            <th class="side-head">JLPT</th>
+            <td>N5</td>
+            <td>N4</td>
+            <td>N4</td>
+            <td>N4/N3</td>
+          </tr>
+          <tr>
+            <th class="side-head">主教材</th>
+            <td>
+              <img src="books/Picture1.png" alt="まるごと A1 教材" class="framework-book" loading="lazy" />
+            </td>
+            <td>
+              <img src="books/Picture2.png" alt="まるごと A2-1 教材" class="framework-book" loading="lazy" />
+              <img src="books/Picture3.png" alt="まるごと A1 教材" class="framework-book" loading="lazy" />
+            </td>
+            <td>
+              <img src="books/Picture4.png" alt="まるごと A2-2 教材" class="framework-book" loading="lazy" />
+              <img src="books/Picture5.png" alt="まるごと A1 教材" class="framework-book" loading="lazy" />
+            </td>
+            <td>
+              <img src="books/Picture6.png" alt="まるごと B1-1 教材" class="framework-book" loading="lazy" />
+            </td>
+          </tr>
+          <tr>
+            <th class="side-head">科目</th>
+            <td>
+              1) 総合日本語<br />
+              2) 漢字<br />
+              3) 日本事情・異文化理解<br />
+              4) 振り返り・学習計画
+            </td>
+            <td>
+              1) 総合日本語<br />
+              2) 漢字<br />
+              3) 日本事情・異文化理解<br />
+              4) 振り返り・学習計画
+            </td>
+            <td>
+              1) 総合日本語<br />
+              2) 漢字<br />
+              3) 日本事情・異文化理解<br />
+              4) 振り返り・学習計画
+            </td>
+            <td>
+              1) 総合日本語<br />
+              2) 漢字<br />
+              3) 日本事情・異文化理解<br />
+              4) 振り返り・学習計画
+            </td>
+          </tr>
+        </table>
+        </div>
+
+        <h3 class="timetable-subtitle">2年次コースフレームワーク</h3>
+        <div class="table-wrapper">
+        <table class="framework-table">
+          <tr>
+            <th rowspan="2" class="side-head">学期<br />（クラス名）</th>
+            <th colspan="2">前期（準中級クラス）</th>
+            <th colspan="2">後期（中級クラス）</th>
+          </tr>
+          <tr>
+            <th class="col-a">4月 - 6月（3か月）</th>
+            <th class="col-b">7月 - 9月（3か月）</th>
+            <th class="col-c">10月 - 12月（3か月）</th>
+            <th class="col-d">1月 - 3月（3か月）</th>
+          </tr>
+          <tr>
+            <th class="side-head">学習段階</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th class="side-head">CEFR</th>
+            <td>B1</td>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B2/B2</td>
+          </tr>
+          <tr>
+            <th class="side-head">JLPT</th>
+            <td>N3</td>
+            <td>N3/N2</td>
+            <td>N2</td>
+            <td>N2</td>
+          </tr>
+          <tr>
+            <th class="side-head">主教材</th>
+            <td>
+              <img src="books/Picture7.png" alt="できる日本語" class="framework-book" loading="lazy" />
+            </td>
+            <td>
+              <img src="books/Picture8.png" alt="できる日本語" class="framework-book" loading="lazy" />
+            </td>
+            <td>
+              <img src="books/Picture9.png" alt="できる日本語" class="framework-book" loading="lazy" />
+            </td>
+            <td>
+              <img src="books/Picture10.png" alt="クローズアップ日本事情" class="framework-book" loading="lazy" />
+            </td>
+          </tr>
+          <tr>
+            <th class="side-head">科目</th>
+            <td>
+              1) 総合日本語<br />
+              2) 日本事情・異文化理解<br />
+              3) 振り返り・学習計画
+            </td>
+            <td>
+              1) 総合日本語<br />
+              2) 日本事情・異文化理解<br />
+              3) 振り返り・学習計画
+            </td>
+            <td>
+              1) 総合日本語<br />
+              2) 地域と言語と社会<br />
+              3) 振り返り・学習計画
+            </td>
+            <td>
+              1) 総合日本語<br />
+              2) 地域と言語と社会<br />
+              3) 振り返り・学習計画<br />
+              4) 卒業プロジェクト
+            </td>
+          </tr>
+        </table>
+        </div>
+
+        <p class="timetable-note">※コース内容・教材は変更になる場合があります。最新情報はお問い合わせフォームよりご確認ください。</p>
       </div>
     </section>
 
-    <section id="kagoshima">
+    <section id="kagoshima" class="scroll-animate">
       <div class="container">
         <h2 id="kagoshima-title">🌸鹿児島について</h2>
         <div class="kagoshima-hero">
-          <img src="kagoshima.jpg" alt="鹿児島の街並み" class="kagoshima-hero-image" data-slides="kagoshima1.jpg,kagoshima2.jpg,kagoshima3.jpg,kagoshima4.jpg,kagoshima5.jpg" />
+          <img src="gallery/kagoshima.jpg" alt="鹿児島の街並み" class="kagoshima-hero-image" data-slides="gallery/kagoshima1.jpg,gallery/kagoshima2.jpg,gallery/kagoshima3.jpg,gallery/kagoshima4.jpg,gallery/kagoshima5.jpg" />
           <div class="kagoshima-overlay">
             <div class="kagoshima-overlay-content">
               <p>
-                <a href="https://www.city.kagoshima.lg.jp/" target="_blank" rel="noopener noreferrer">鹿児島は</a>
-                日本の南に位置する温暖で暮らしやすい街で、自然・文化・生活のバランスが良い地域です。
+                鹿児島は日本の南に位置する温暖で暮らしやすい街で、自然・文化・生活のバランスが良い地域です。
                 桜島を望む雄大な景色、路面電車が走る便利な市街地、そして地元の人のあたたかさが魅力です。
                 学習と生活のどちらにも適した環境で、留学生にも人気があります。交通面では路面電車・バスが充実し、
                 気候は冬も比較的温暖で年間を通して過ごしやすく、生活面でも食料品や住居費の選択肢が多いため、
                 初めて日本で暮らす学生にも安心できる地域です。
+              </p>
+              <p class="kagoshima-source">
+                <a href="https://www.pref.kagoshima.jp/" target="_blank" rel="noopener noreferrer">鹿児島県公式サイトを見る</a>
               </p>
             </div>
           </div>
@@ -302,7 +536,7 @@
       </div>
     </section>
 
-    <section id="college-location">
+    <section id="college-location" class="scroll-animate">
       <div class="container">
         <h2>📍学校の場所</h2>
         <p><strong>Address:</strong> 鹿児島県鹿児島市上荒田町6-1</p>
@@ -320,7 +554,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="scroll-animate">
       <div class="container">
         <h2>お問い合わせ</h2>
         <div class="contact-layout">
@@ -350,48 +584,48 @@
             <input type="hidden" name="_subject" value="New Inquiry from Website" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
-            <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
-            <input type="hidden" id="contactFormStartedAt" value="" />
+            <input type="text" id="_honey" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <input type="hidden" id="contactFormStartedAt" name="contactFormStartedAt" value="" />
             <input type="hidden" name="_next" id="contactNext" value="" />
 
             <p id="contactFormStatus" class="form-status" aria-live="polite"></p>
 
-            <button type="submit">Send Inquiry</button>
+            <button type="submit" class="pulse-glow">Send Inquiry</button>
           </form>
         </div>
         <iframe name="contactFormSink" title="hidden contact submit target" style="display:none;" aria-hidden="true"></iframe>
       </div>
     </section>
 
-    <section id="social-media">
+    <section id="social-media" class="scroll-animate">
       <div class="container">
         <h2>📱ソーシャルメディア</h2>
         <p class="section-lead">公式サイト掲載のSNS・相談窓口です。最新情報やイベント情報をこちらで確認できます。</p>
 
         <div class="social-grid">
           <a class="social-card instagram" href="https://www.instagram.com/akbd_b/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <img src="social-instagram.svg" alt="Instagram紹介イメージ" class="social-thumb" loading="lazy" />
+            <img src="logo/social-instagram.svg" alt="Instagram紹介イメージ" class="social-thumb" loading="lazy" />
             <h3>Instagram</h3>
             <p>美容科・デザイン科の公式Instagram。授業風景や制作活動、イベント情報を発信しています。</p>
             <span>@akbd_b を見る</span>
           </a>
 
           <a class="social-card youtube" href="https://akatuka.ac.jp/open-campus" target="_blank" rel="noopener noreferrer" aria-label="Open Campus">
-            <img src="social-open-campus.svg" alt="オープンキャンパス紹介イメージ" class="social-thumb" loading="lazy" />
+            <img src="logo/social-open-campus.svg" alt="オープンキャンパス紹介イメージ" class="social-thumb" loading="lazy" />
             <h3>Open Campus</h3>
             <p>来校型オープンキャンパス情報。学科説明、体験授業、個別相談の案内を確認できます。</p>
             <span>開催日程をチェック</span>
           </a>
 
           <a class="social-card facebook" href="https://akatuka.ac.jp/online" target="_blank" rel="noopener noreferrer" aria-label="Online consultation">
-            <img src="social-online.svg" alt="オンライン相談会紹介イメージ" class="social-thumb" loading="lazy" />
+            <img src="logo/social-online.svg" alt="オンライン相談会紹介イメージ" class="social-thumb" loading="lazy" />
             <h3>オンライン相談会</h3>
             <p>遠方の方でも参加しやすいオンライン個別相談会。ZOOMで進学相談ができます。</p>
             <span>自宅から相談する</span>
           </a>
 
           <a class="social-card line" href="https://page.line.me/957oyipg?oat_content=url&openQrModal=true" target="_blank" rel="noopener noreferrer" aria-label="LINE">
-            <img src="social-line.svg" alt="LINE相談紹介イメージ" class="social-thumb" loading="lazy" />
+            <img src="logo/social-line.svg" alt="LINE相談紹介イメージ" class="social-thumb" loading="lazy" />
             <h3>LINE</h3>
             <p>看護学科・医療事務科のLINE公式アカウント。1:1トークで相談・予約が可能です。</p>
             <span>公式LINEで相談する</span>
@@ -406,7 +640,7 @@
       <div class="access-wrap">
         <div class="access-info">
           <h2 id="official-access-title" class="access-logo-title">
-            <img src="akatuka-logo.svg" alt="赤塚学園ロゴ" class="access-logo" />
+            <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="access-logo" />
           </h2>
           <p class="access-address">〒890-0055 鹿児島県鹿児島市上荒田町6-1</p>
 
@@ -449,6 +683,7 @@
               <li><a href="#college-location">学校の場所</a></li>
               <li><a href="#contact">お問い合わせ</a></li>
               <li><a href="new.html">学費と入学ページ</a></li>
+              <li><a href="futurepath.html">進路情報</a></li>
             </ul>
           </div>
 

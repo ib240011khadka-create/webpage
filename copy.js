@@ -283,3 +283,46 @@
     initTableSwipeHints();
   });
 })();
+
+// ===== SCROLL ANIMATIONS =====
+(function() {
+  // Find all elements with scroll-animate class
+  const animatedElements = document.querySelectorAll('.scroll-animate');
+  
+  if (animatedElements.length === 0) {
+    console.log('No animated elements found');
+    return;
+  }
+
+  // Intersection Observer for triggering animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+  });
+
+  // Observe all animated elements
+  animatedElements.forEach(el => {
+    observer.observe(el);
+  });
+})();
+
+// ===== NAVBAR SCROLL EFFECT =====
+(function() {
+  const nav = document.querySelector('nav');
+  if (!nav) return;
+  
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+})();

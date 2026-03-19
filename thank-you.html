@@ -29,6 +29,26 @@
       box-sizing: border-box;
     }
 
+    html {
+      zoom: 1.35;
+    }
+
+    @media screen and (max-width: 1600px) {
+      html { zoom: 1.15; }
+    }
+
+    @media screen and (max-width: 1400px) {
+      html { zoom: 0.9; }
+    }
+
+    @media screen and (max-width: 1200px) {
+      html { zoom: 0.75; }
+    }
+
+    @media screen and (max-width: 1024px) {
+      html { zoom: 0.6; }
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
@@ -176,6 +196,102 @@
       }
     }
 
+    /* Confetti Canvas */
+    #confetti {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    /* Success Icon Animation */
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+    }
+
+    .success-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .success-icon circle {
+      stroke-dasharray: 166;
+      stroke-dashoffset: 166;
+      animation: stroke-circle 0.6s ease forwards;
+    }
+
+    .success-icon path {
+      stroke-dasharray: 48;
+      stroke-dashoffset: 48;
+      animation: stroke-check 0.3s ease forwards 0.5s;
+    }
+
+    @keyframes stroke-circle {
+      to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes stroke-check {
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* Gradient Text */
+    .gradient-text {
+      background: linear-gradient(135deg, #e8107a, #ff6b9d, #e8107a);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradient-shift 3s ease infinite;
+    }
+
+    @keyframes gradient-shift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Pulse Glow */
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 10px 20px rgba(187, 56, 114, 0.25), 0 0 0 0 rgba(232, 16, 122, 0.4); }
+      50% { box-shadow: 0 10px 20px rgba(187, 56, 114, 0.25), 0 0 25px 8px rgba(232, 16, 122, 0.2); }
+    }
+
+    .pulse-glow {
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    /* Card enhancement */
+    .card {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .chip {
+      animation: rise 0.6s ease both 0.3s;
+    }
+
+    h1 {
+      animation: rise 0.6s ease both 0.4s;
+    }
+
+    p {
+      animation: rise 0.6s ease both 0.5s;
+    }
+
+    .hint {
+      animation: rise 0.6s ease both 0.6s;
+    }
+
+    .actions {
+      animation: rise 0.6s ease both 0.7s;
+    }
+
     @media (max-width: 680px) {
       .card {
         padding: 24px 18px;
@@ -189,15 +305,83 @@
   </style>
 </head>
 <body>
+  <!-- Confetti Canvas -->
+  <canvas id="confetti"></canvas>
+  
   <main class="card">
-    <div class="chip">送信ステータス: 完了</div>
-    <h1>送信ありがとうございました</h1>
+    <div class="success-icon">
+      <svg viewBox="0 0 52 52">
+        <circle cx="26" cy="26" r="25" fill="none" stroke="#4ade80" stroke-width="2"/>
+        <path fill="none" stroke="#4ade80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M14 27l7 7 16-16"/>
+      </svg>
+    </div>
+    <div class="chip">✓ 送信ステータス: 完了</div>
+    <h1 class="gradient-text">送信ありがとうございました</h1>
     <p>フォームの送信が完了しました。内容を確認のうえ、担当者よりご連絡いたします。</p>
-    <p class="hint">返信まで少しお時間をいただく場合があります。お急ぎの場合はお電話ください: 099-250-1313</p>
+    <p class="hint">💡 返信まで少しお時間をいただく場合があります。お急ぎの場合はお電話ください: <strong>099-250-1313</strong></p>
     <div class="actions">
-      <a class="btn primary" href="index.html">学校トップへ戻る</a>
-      <a class="btn secondary" href="new.html">学費と入学ページへ</a>
+      <a class="btn primary pulse-glow" href="index.html">🏫 学校トップへ戻る</a>
+      <a class="btn secondary" href="new.html">📄 学費と入学ページへ</a>
     </div>
   </main>
+
+  <script>
+    // Confetti Animation
+    const canvas = document.getElementById('confetti');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const confettiColors = ['#e8107a', '#ff6b9d', '#ffd700', '#4ade80', '#60a5fa', '#f472b6'];
+    const confettiPieces = [];
+
+    for (let i = 0; i < 150; i++) {
+      confettiPieces.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height - canvas.height,
+        size: Math.random() * 8 + 4,
+        color: confettiColors[Math.floor(Math.random() * confettiColors.length)],
+        speed: Math.random() * 3 + 2,
+        angle: Math.random() * Math.PI * 2,
+        spin: Math.random() * 0.2 - 0.1
+      });
+    }
+
+    function animateConfetti() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      confettiPieces.forEach(p => {
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle);
+        ctx.fillStyle = p.color;
+        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.6);
+        ctx.restore();
+
+        p.y += p.speed;
+        p.x += Math.sin(p.angle) * 0.5;
+        p.angle += p.spin;
+
+        if (p.y > canvas.height + 20) {
+          p.y = -20;
+          p.x = Math.random() * canvas.width;
+        }
+      });
+
+      requestAnimationFrame(animateConfetti);
+    }
+
+    animateConfetti();
+
+    // Stop confetti after 5 seconds
+    setTimeout(() => {
+      confettiPieces.length = 0;
+    }, 5000);
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
 </body>
 </html>

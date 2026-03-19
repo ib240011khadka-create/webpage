@@ -14,7 +14,7 @@
   justify-content: center;
   background:
     linear-gradient(145deg, rgba(240,240,245,0.55) 0%, rgba(200,200,210,0.65) 100%),
-    url("kagoshima.jpg") center / cover no-repeat;
+    url("gallery/kagoshima.jpg") center / cover no-repeat;
   transition: opacity 1.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -99,12 +99,39 @@ html {
   overflow-x: hidden;
   max-width: 100%;
   overscroll-behavior-x: none;
+  zoom: 1.35;
+}
+
+/* Responsive scaling for different display settings */
+@media screen and (max-width: 1600px) {
+  html {
+    zoom: 1.15;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    zoom: 0.9;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    zoom: 0.75;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    zoom: 0.6;
+  }
 }
 
 body {
   font-family: "Zen Kaku Gothic New", "M PLUS Rounded 1c", sans-serif;
   color: var(--text);
   line-height: 1.7;
+  font-size: 18px;
   overflow-x: hidden;
   max-width: 100%;
   overscroll-behavior-x: none;
@@ -120,7 +147,7 @@ iframe {
 }
 
 .container {
-  width: min(1100px, 92%);
+  width: min(1300px, 94%);
   margin: 0 auto;
 }
 
@@ -135,9 +162,19 @@ iframe {
 
 nav {
   background: linear-gradient(120deg, var(--nav-start), var(--nav-end));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 16px 0 18px;
   border-bottom: 4px solid var(--accent);
   box-shadow: var(--shadow-soft);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+nav.scrolled {
+  box-shadow: 0 4px 20px rgba(232, 16, 122, 0.4);
 }
 
 .site-title {
@@ -309,6 +346,32 @@ ul {
   border: 1px solid #f0d8e6;
 }
 
+.about-layout {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.about-layout .about-story {
+  flex: 0 0 45%;
+  min-width: 0;
+}
+
+.about-layout .about-facts {
+  flex: 0 0 52%;
+  min-width: 0;
+  background: linear-gradient(160deg, #fce4ec, #f8bbd9);
+  border: 1px solid #f0d8e6;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-layout .about-facts .fact-photo-grid {
+  flex: 1;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.25fr 1fr;
@@ -320,7 +383,67 @@ ul {
   background: #ffffff;
   border: 1px solid #f0d8e6;
   border-radius: 14px;
-  padding: 16px;
+  padding: 20px;
+  min-height: 480px;
+}
+
+.about-facts-inline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.fact-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.fact-photo-slot {
+  background: linear-gradient(160deg, #6e4855, #f10573);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  min-height: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.fact-photo-slot:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(241, 5, 115, 0.4);
+  z-index: 10;
+}
+
+.fact-photo-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.fact-photo-slot:hover img {
+  transform: scale(1.1);
+}
+
+.fact-photo-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(110, 72, 85, 0.95), rgba(241, 5, 115, 0.8));
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 10px;
+  text-align: center;
 }
 
 .about-highlights {
@@ -391,26 +514,94 @@ a.fact-value:hover {
   border: 1px solid #efd8e6;
 }
 
+.teacher-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.teacher-sections hr {
+  border: none;
+  border-top: 2px solid #f0d8e8;
+  margin: 8px 0;
+}
+
+.teacher-section {
+  margin-bottom: 0;
+}
+
 .teacher-grid {
-  margin-top: 12px;
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.teacher-section > .teacher-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Principal section - single centered card */
+.teacher-section:first-child > .teacher-grid {
+  grid-template-columns: 1fr;
+  max-width: 220px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.teacher-group-title {
+  color: #973669;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f0d8e8;
 }
 
 .teacher-card {
-  background: #ffffff;
-  border: 1px solid #edd9e5;
-  border-radius: 12px;
-  padding: 12px;
-  box-shadow: 0 8px 16px rgba(180, 69, 135, 0.08);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .teacher-card .teacher-photo {
-  width: 100%;
+  width: 220px;
   height: 220px;
-  margin: 0 0 10px;
-  border-radius: 10px;
+  margin: 0 auto 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 10%;
+  border: 4px solid #e8107a;
+  box-shadow: 0 8px 24px rgba(232, 16, 122, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  filter: contrast(1.02);
+}
+
+.teacher-card .teacher-photo:hover {
+  transform: scale(1.15) translateZ(0);
+  box-shadow: 0 12px 32px rgba(232, 16, 122, 0.4);
+}
+
+.teacher-name-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #e8107a 0%, #a8366e 100%);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-top: -18px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(168, 54, 110, 0.3);
 }
 
 .teacher-card h3 {
@@ -419,7 +610,52 @@ a.fact-value:hover {
 }
 
 .teacher-card p {
-  margin-bottom: 0;
+  margin: 12px 0 0;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 200px;
+}
+
+@media (max-width: 900px) {
+  .about-layout {
+    flex-direction: column;
+  }
+  .about-layout .about-story,
+  .about-layout .about-facts {
+    flex: 1 1 100%;
+  }
+  .teacher-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .fact-photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .fact-photo-slot img {
+    height: 100px;
+  }
+  .about-facts-inline {
+    grid-template-columns: 1fr;
+  }
+  .teacher-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .teacher-card .teacher-photo {
+    width: 140px;
+    height: 140px;
+  }
+  .teacher-card .teacher-photo:hover {
+    width: 160px;
+    height: 160px;
+  }
+  .teacher-name-badge {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
 }
 
 #kagoshima {
@@ -439,7 +675,11 @@ a.fact-value:hover {
   height: 620px;
   object-fit: cover;
   display: block;
-  transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease, transform 0.5s ease;
+}
+
+.kagoshima-hero:hover .kagoshima-hero-image {
+  transform: scale(1.05);
 }
 
 .kagoshima-hero-image.is-swapping {
@@ -543,6 +783,17 @@ th {
   border-collapse: collapse;
   margin-top: 0;
   background: #efede5;
+  table-layout: fixed;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
 }
 
 .timetable-intro {
@@ -572,6 +823,8 @@ th {
   font-size: 0.95rem;
   line-height: 1.25;
   color: #151515;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .framework-table .side-head {
@@ -602,7 +855,7 @@ th {
 }
 
 .framework-table td {
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .framework-book {
@@ -1180,4 +1433,116 @@ button[disabled] {
   .about-facts {
     grid-template-columns: 1fr;
   }
+}
+/* ===== SCROLL ANIMATIONS ===== */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(100px) scale(0.95);
+  transition: all 1.2s ease-out;
+  filter: blur(5px);
+}
+
+.scroll-animate.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* Fade from left */
+.scroll-animate-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-animate-left.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade from right */
+.scroll-animate-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-animate-right.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale up */
+.scroll-animate-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-animate-scale.animate-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered children animation */
+.scroll-animate-stagger > * {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-animate-stagger.animate-in > *:nth-child(1) { transition-delay: 0.05s; }
+.scroll-animate-stagger.animate-in > *:nth-child(2) { transition-delay: 0.1s; }
+.scroll-animate-stagger.animate-in > *:nth-child(3) { transition-delay: 0.15s; }
+.scroll-animate-stagger.animate-in > *:nth-child(4) { transition-delay: 0.2s; }
+.scroll-animate-stagger.animate-in > *:nth-child(5) { transition-delay: 0.25s; }
+.scroll-animate-stagger.animate-in > *:nth-child(6) { transition-delay: 0.3s; }
+.scroll-animate-stagger.animate-in > *:nth-child(7) { transition-delay: 0.35s; }
+.scroll-animate-stagger.animate-in > *:nth-child(8) { transition-delay: 0.4s; }
+.scroll-animate-stagger.animate-in > *:nth-child(9) { transition-delay: 0.45s; }
+.scroll-animate-stagger.animate-in > *:nth-child(10) { transition-delay: 0.5s; }
+
+.scroll-animate-stagger.animate-in > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Pulse glow for CTAs */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 16, 122, 0.4); }
+  50% { box-shadow: 0 0 20px 10px rgba(232, 16, 122, 0.2); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Gradient text animation */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-text-animate {
+  background: linear-gradient(90deg, #e8107a, #ff6b9d, #e8107a);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease infinite;
 }
