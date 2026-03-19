@@ -326,3 +326,33 @@
     }
   });
 })();
+
+// ===== ACTIVE SECTION HIGHLIGHT =====
+(function() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.menu a[href^="#"]');
+  
+  if (!sections.length || !navLinks.length) return;
+  
+  function highlightActiveSection() {
+    const scrollY = window.scrollY;
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute('id');
+      
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + sectionId) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', highlightActiveSection);
+  highlightActiveSection(); // Run on page load
+})();
