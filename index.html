@@ -23,10 +23,18 @@
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "学校法人赤塚学園 日本語学校",
-    "alternateName": "Akatsuka Gakuen Japanese Language School",
+    "alternateName": ["Akatsuka Gakuen Japanese Language School", "赤塚学園日本語科", "Akatsuka Japanese School"],
     "url": "https://akatuka.ac.jp/japanese/",
-    "logo": "https://akatuka.ac.jp/wp-content/themes/akatuka/src/favicon.ico",
-    "description": "赤塚学園 日本語学校の学校情報、コース、学生サポート、アクセス、問い合わせフォームを掲載しています。",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://akatuka.ac.jp/wp-content/themes/akatuka/src/favicon.ico",
+      "width": 512,
+      "height": 512
+    },
+    "image": "https://akatuka.ac.jp/wp-content/themes/akatuka/src/akatuka-map.webp",
+    "description": "鹿児島県鹿児島市にある日本語学校。進学2年コースで大学・専門学校への進学をサポート。JLPT対策、奨学金制度、生活サポート完備。",
+    "slogan": "世界中の学習者が安心して日本語を学べる環境を提供します",
+    "foundingDate": "1976",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "上荒田町6-1",
@@ -35,21 +43,134 @@
       "postalCode": "890-0055",
       "addressCountry": "JP"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.577525,
+      "longitude": 130.541351
+    },
     "telephone": "+81-99-250-1313",
     "faxNumber": "+81-99-250-1276",
+    "email": "info@akatuka.ac.jp",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
     "sameAs": [
       "https://www.instagram.com/akbd_b/",
-      "https://akatuka.ac.jp/"
+      "https://akatuka.ac.jp/",
+      "https://page.line.me/957oyipg"
     ],
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.577525,
+        "longitude": 130.541351
+      },
+      "geoRadius": "50000"
+    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "日本語科コース",
-      "itemListElement": [{
-        "@type": "Course",
-        "name": "進学2年コース",
-        "description": "日本の大学や専門学校への進学を目指すコース"
-      }]
+      "itemListElement": [
+        {
+          "@type": "Course",
+          "name": "進学2年コース",
+          "description": "日本の大学や専門学校への進学を目指す2年間の日本語コース。JLPT N2〜N1レベルを目標とします。",
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "学校法人赤塚学園"
+          },
+          "timeRequired": "P2Y",
+          "educationalLevel": "Beginner to Advanced",
+          "teaches": ["日本語", "JLPT対策", "進学準備", "日本文化"],
+          "coursePrerequisites": "高校卒業以上、12年以上の学校教育修了者",
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "onsite",
+            "courseWorkload": "PT20H/Week",
+            "instructor": {
+              "@type": "Person",
+              "name": "経験豊富な日本語教師陣"
+            }
+          }
+        }
+      ]
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "JLPT N1",
+        "description": "日本語能力試験N1取得サポート"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "JLPT N2",
+        "description": "日本語能力試験N2取得サポート"
+      }
+    ],
+    "knowsLanguage": ["ja", "en", "ne", "hi", "vi"],
+    "parentOrganization": {
+      "@type": "EducationalOrganization",
+      "name": "学校法人赤塚学園",
+      "url": "https://akatuka.ac.jp/"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "入学条件は何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "高校卒業以上（12年以上の学校教育修了者）で、日本語学習に意欲のある方が対象です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "奨学金制度はありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。JLPT N1保持者は年間授業料の60%、N2保持者は35%、N3保持者は15%の奨学金制度があります。出席率95%以上が条件です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "どのような進路がありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "日本の大学、専門学校への進学、または日本での就職をサポートしています。"
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "赤塚学園トップ",
+        "item": "https://akatuka.ac.jp/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "日本語学校",
+        "item": "https://akatuka.ac.jp/japanese/"
+      }
+    ]
   }
   </script>
 </head>
@@ -266,12 +387,6 @@
               <article class="teacher-card">
                 <img src="teachers/aashish.jpg" alt="アシス先生" class="teacher-photo" />
                 <span class="teacher-name-badge">アシス先生</span>
-                <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
-              </article>
-
-              <article class="teacher-card">
-                <img src="teachers/picture18.jpg" alt="先生" class="teacher-photo" />
-                <span class="teacher-name-badge">先生</span>
                 <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
               </article>
             </div>
