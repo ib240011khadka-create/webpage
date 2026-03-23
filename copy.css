@@ -1574,22 +1574,39 @@ button[disabled] {
     font-size: 0.7rem;
   }
 
+  .table-wrapper {
+    width: calc(100% + 8px);
+    margin-left: -4px;
+    margin-right: -4px;
+    padding: 0;
+    overflow-x: auto;
+  }
+
   .framework-table {
     width: 100%;
     table-layout: fixed;
+    margin: 0;
   }
 
   .framework-table th,
   .framework-table td {
     border: none;
-    padding: 4px 3px;
-    font-size: 0.65rem;
+    padding: 4px 2px;
+    font-size: 0.6rem;
     word-wrap: break-word;
   }
 
   .framework-table img.framework-book {
-    width: 40px;
+    width: 35px;
     height: auto;
+  }
+
+  #timetable .container {
+    padding-inline: 0;
+  }
+
+  #timetable table {
+    width: 100%;
   }
 
   iframe {
