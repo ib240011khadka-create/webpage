@@ -1521,7 +1521,7 @@ button[disabled] {
   }
 
   .kagoshima-hero-image {
-    height: clamp(280px, 45vw, 500px);
+    height: clamp(320px, 55vw, 550px);
   }
 
   .kagoshima-overlay {
@@ -1700,7 +1700,7 @@ button[disabled] {
   }
 
   .kagoshima-hero-image {
-    height: clamp(200px, 60vw, 300px);
+    height: clamp(280px, 70vw, 400px);
   }
 
   .social-grid {
