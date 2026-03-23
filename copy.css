@@ -1485,7 +1485,11 @@ button[disabled] {
   }
 
   .container {
-    padding-inline: 10px;
+    padding-inline: 4px;
+  }
+
+  section {
+    padding: 16px 0;
   }
 
   .top-banner {
@@ -1535,21 +1539,20 @@ button[disabled] {
 
 
   table {
-    display: block;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    overscroll-behavior-x: contain;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x pan-y;
+    display: table;
+    width: 100%;
+    table-layout: auto;
+    white-space: normal;
     border: none;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
   table th,
   table td {
     border: none;
-    padding: 8px 10px;
+    padding: 6px 4px;
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   table tbody tr:nth-child(odd) {
@@ -1568,13 +1571,25 @@ button[disabled] {
   table thead th {
     border: none;
     color: #fff;
+    font-size: 0.7rem;
+  }
+
+  .framework-table {
+    width: 100%;
+    table-layout: fixed;
   }
 
   .framework-table th,
   .framework-table td {
     border: none;
-    padding: 6px 8px;
-    font-size: 0.8rem;
+    padding: 4px 3px;
+    font-size: 0.65rem;
+    word-wrap: break-word;
+  }
+
+  .framework-table img.framework-book {
+    width: 40px;
+    height: auto;
   }
 
   iframe {
