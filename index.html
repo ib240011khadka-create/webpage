@@ -553,7 +553,7 @@
             <td>B1</td>
             <td>B1</td>
             <td>B2</td>
-            <td>B2/B2</td>
+            <td>B2</td>
           </tr>
           <tr>
             <th class="side-head">JLPT</th>
@@ -777,22 +777,22 @@
             </p>
           </div>
 
-          <form id="contactForm" action="https://formsubmit.co/khadkasaimal1@gmail.com" method="POST" target="contactFormSink">
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" target="contactFormSink" aria-describedby="contactFormStatus">
+            <input type="hidden" name="access_key" value="663e2463-e67c-4d6a-975f-3784be3b8502" />
+            <input type="hidden" name="subject" value="New Inquiry from Website" />
+            <input type="hidden" name="redirect" id="contactNext" value="" />
+            <input type="checkbox" name="botcheck" class="hp-field" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" minlength="2" required />
+            <input type="text" id="name" name="name" autocomplete="name" minlength="2" required aria-describedby="contactFormStatus" />
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required />
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="contactFormStatus" />
 
             <label for="message">Inquiry</label>
-            <textarea id="message" name="message" rows="3" minlength="10" required></textarea>
+            <textarea id="message" name="message" rows="3" minlength="10" required aria-describedby="contactFormStatus"></textarea>
 
-            <input type="hidden" id="_subject" name="_subject" value="New Inquiry from Website" />
-            <input type="hidden" id="_captcha" name="_captcha" value="false" />
-            <input type="hidden" id="_template" name="_template" value="table" />
-            <input type="text" id="_honey" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <input type="hidden" id="contactFormStartedAt" name="contactFormStartedAt" value="" />
-            <input type="hidden" name="_next" id="contactNext" value="" />
 
             <p id="contactFormStatus" class="form-status" aria-live="polite"></p>
 

@@ -11,6 +11,7 @@
     <meta property="og:image" content="https://akatuka.ac.jp/wp-content/themes/akatuka/src/akatuka-map.webp" />
     <meta property="og:url" content="https://akatuka.ac.jp/request/" />
     <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://akatuka.ac.jp/japanese/new.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -18,6 +19,51 @@
     <link rel="preload" as="image" href="./logo/akatuka-logo.svg" />
     <link rel="stylesheet" href="new.css" />
     <script defer src="new.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "赤塚学園トップ",
+          "item": "https://akatuka.ac.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "日本語学校",
+          "item": "https://akatuka.ac.jp/japanese/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "学費と入学",
+          "item": "https://akatuka.ac.jp/japanese/new.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "学費と入学 | 赤塚学園 日本語学校",
+      "description": "赤塚学園 日本語学校の学費、奨学金、入学条件、出願から入学までの流れを掲載しています。",
+      "url": "https://akatuka.ac.jp/japanese/new.html",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "学校法人赤塚学園 日本語学校",
+        "url": "https://akatuka.ac.jp/japanese/"
+      },
+      "about": {
+        "@type": "EducationalOrganization",
+        "name": "学校法人赤塚学園"
+      }
+    }
+    </script>
 </head>
 <body>
     <header class="hero">
@@ -29,11 +75,11 @@
             <div class="lang-toolbar">
                 <label for="langSelect">🌐 Language</label>
                 <select id="langSelect" name="langSelect">
-                    <option value="ja">💰日本語</option>
-                    <option value="en">💵English</option>
-                    <option value="ne">💴नेपाली</option>
-                    <option value="hi">💶हिन्दी</option>
-                    <option value="vi">💷Tiếng Việt</option>
+                    <option value="ja">🇯🇵 日本語</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="ne">🇳🇵 नेपाली</option>
+                    <option value="hi">🇮🇳 हिन्दी</option>
+                    <option value="vi">🇻🇳 Tiếng Việt</option>
                 </select>
                 <div id="google_translate_element"></div>
             </div>
@@ -45,6 +91,15 @@
             </div>
         </div>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol>
+            <li><a href="https://akatuka.ac.jp/">赤塚学園トップ</a></li>
+            <li><a href="index.html">日本語学校</a></li>
+            <li aria-current="page">学費と入学</li>
+        </ol>
+    </nav>
 
     <main>
         <section class="card" aria-labelledby="fee-title">
@@ -192,7 +247,7 @@
         </section>
 
         <section id="request-form" class="card scroll-animate" aria-labelledby="request-title">
-            <h2 id="request-title">� 出席・成績証明書の請求</h2>
+            <h2 id="request-title">📄 出席・成績証明書の請求</h2>
             <div class="request-header">
                 <p class="request-lead">出席証明書や成績証明書が必要な学生は、以下のフォームからお申し込みください。</p>
                 <p class="request-lead">発行には通常3〜5営業日かかります。</p>
@@ -200,20 +255,24 @@
                 <p class="required-note">「必須」項目は入力が必要です。</p>
             </div>
 
-            <form id="requestForm" class="request-grid" action="https://formsubmit.co/khadkasaimal1@gmail.com" method="POST" target="requestFormSink">
+            <form id="requestForm" class="request-grid" action="https://api.web3forms.com/submit" method="POST" target="requestFormSink" aria-describedby="requestFormStatus">
+                <input type="hidden" name="access_key" value="663e2463-e67c-4d6a-975f-3784be3b8502" />
+                <input type="hidden" name="subject" value="出席・成績証明書請求フォームから新しい送信" />
+                <input type="hidden" name="redirect" id="requestFormNext" value="" />
+                <input type="checkbox" name="botcheck" class="hp-field" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <div class="field">
                     <label for="req-name">氏名 <span>必須</span></label>
-                    <input type="text" id="req-name" name="student_name" autocomplete="name" required placeholder="例: 山田 太郎" />
+                    <input type="text" id="req-name" name="student_name" autocomplete="name" required placeholder="例: 山田 太郎" aria-describedby="requestFormStatus" />
                 </div>
 
                 <div class="field">
                     <label for="req-student-id">学生番号 <span>必須</span></label>
-                    <input type="text" id="req-student-id" name="student_id" required placeholder="例: 2024-001" />
+                    <input type="text" id="req-student-id" name="student_id" required placeholder="例: 2024-001" aria-describedby="requestFormStatus" />
                 </div>
 
                 <div class="field">
                     <label for="req-email">メールアドレス <span>必須</span></label>
-                    <input type="email" id="req-email" name="email" autocomplete="email" required placeholder="例: example@email.com" />
+                    <input type="email" id="req-email" name="email" autocomplete="email" required placeholder="例: example@email.com" aria-describedby="requestFormStatus" />
                 </div>
 
                 <div class="field">
@@ -252,12 +311,7 @@
                     <span><a href="https://akatuka.ac.jp/privacy-policy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>を確認し、内容に同意します（必須）</span>
                 </label>
 
-                <input type="hidden" id="_subject" name="_subject" value="出席・成績証明書請求フォームから新しい送信" />
-                <input type="hidden" id="_captcha" name="_captcha" value="false" />
-                <input type="hidden" id="_template" name="_template" value="table" />
-                <input type="text" id="_honey" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <input type="hidden" id="requestFormStartedAt" name="requestFormStartedAt" value="" />
-                <input type="hidden" id="requestFormNext" name="_next" value="" />
 
                 <p id="requestFormStatus" class="form-status full" aria-live="polite"></p>
 

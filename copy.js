@@ -185,19 +185,24 @@
       setStatus("Submitting your inquiry...", "");
 
       try {
-        await fetch(form.action, {
+        const response = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
           body: new FormData(form),
-          mode: "no-cors",
         });
 
-        localStorage.removeItem(draftKey);
-        form.reset();
-        if (startedAt) startedAt.value = String(Date.now());
-        setStatus("Inquiry sent successfully. Thank you.", "is-success");
-        window.setTimeout(() => {
-          window.location.href = "thank-you.html?from=contact";
-        }, 900);
+        const data = await response.json();
+
+        if (data.success) {
+          localStorage.removeItem(draftKey);
+          form.reset();
+          if (startedAt) startedAt.value = String(Date.now());
+          setStatus("Inquiry sent successfully. Thank you.", "is-success");
+          window.setTimeout(() => {
+            window.location.href = "thank-you.html?from=contact";
+          }, 900);
+        } else {
+          setStatus(data.message || "Could not send inquiry. Please try again.", "is-error");
+        }
       } catch (_error) {
         setStatus("Could not send inquiry. Please try again.", "is-error");
       } finally {

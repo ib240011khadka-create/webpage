@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
 
+# Block thank-you page from indexing (contains no useful content for search)
+Disallow: /thank-you.html
+
+# Block 404 page from indexing
+Disallow: /404.html
+
 # Replace with your final Netlify/custom domain before production
-Sitemap: https://example.netlify.app/sitemap.xml
+Sitemap: https://akatuka.ac.jp/japanese/sitemap.xml

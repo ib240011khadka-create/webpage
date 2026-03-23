@@ -54,3 +54,38 @@ window.addEventListener('resize', () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
+
+// ===== AUTO-REDIRECT WITH COUNTDOWN =====
+(function() {
+  const redirectNotice = document.getElementById('redirect-notice');
+  if (!redirectNotice) return;
+
+  const redirectUrl = 'index.html';
+  let countdown = 15; // seconds
+
+  function updateCountdown() {
+    if (countdown > 0) {
+      redirectNotice.textContent = `${countdown}秒後に学校トップページへ自動的に移動します...`;
+      countdown--;
+      setTimeout(updateCountdown, 1000);
+    } else {
+      redirectNotice.textContent = '移動しています...';
+      window.location.href = redirectUrl;
+    }
+  }
+
+  // Start countdown after a brief delay to let user see the success message
+  setTimeout(updateCountdown, 2000);
+
+  // Cancel redirect if user interacts with the page
+  const cancelRedirect = () => {
+    countdown = -1;
+    redirectNotice.textContent = '';
+    document.removeEventListener('click', cancelRedirect);
+  };
+
+  // Only cancel on button/link clicks
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('click', cancelRedirect);
+  });
+})();

@@ -1146,3 +1146,148 @@ a:focus-visible {
     padding: 12px;
   }
 }
+
+/* ===== BREADCRUMB NAVIGATION ===== */
+.breadcrumb {
+  background: linear-gradient(135deg, #fff8fb, #fff0f5);
+  padding: 12px 5%;
+  border-bottom: 1px solid #f0d8e6;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "›";
+  color: var(--brand);
+  font-size: 1.1rem;
+}
+
+.breadcrumb a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--brand);
+  text-decoration: underline;
+}
+
+.breadcrumb li[aria-current="page"] {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt !important;
+  }
+
+  .hero {
+    background: #f5f5f5 !important;
+    color: #000 !important;
+    padding: 20px !important;
+  }
+
+  .hero h1 {
+    color: #000 !important;
+  }
+
+  .hero p,
+  .eyebrow {
+    color: #333 !important;
+  }
+
+  .hero-logo {
+    filter: grayscale(100%) !important;
+  }
+
+  .lang-toolbar,
+  .hero-actions,
+  .back-to-top,
+  .breadcrumb,
+  #mega-footer,
+  iframe {
+    display: none !important;
+  }
+
+  .card {
+    background: #fff !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+
+  .btn {
+    background: #f5f5f5 !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    border: 1px solid #999 !important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+  }
+
+  th,
+  td {
+    border: 1px solid #000 !important;
+    padding: 8px !important;
+  }
+
+  th {
+    background: #f0f0f0 !important;
+    color: #000 !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")" !important;
+    font-size: 0.8em !important;
+    color: #666 !important;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript"]::after {
+    content: "" !important;
+  }
+
+  .scroll-animate {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .reference-box {
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+
+  .reference-links a::after {
+    content: "" !important;
+  }
+}

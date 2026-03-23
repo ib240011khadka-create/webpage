@@ -173,24 +173,29 @@
       setStatus("送信しています...", "");
 
       try {
-        await fetch(form.action, {
+        const response = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
           body: new FormData(form),
-          mode: "no-cors",
         });
 
-        localStorage.removeItem(draftKey);
-        form.reset();
-        if (startedAt) startedAt.value = String(Date.now());
-        setStatus("送信が完了しました。ありがとうございます。", "is-success");
-        window.setTimeout(function () {
-          window.location.href = "thank-you.html?from=request";
-        }, 900);
+        const data = await response.json();
+
+        if (data.success) {
+          localStorage.removeItem(draftKey);
+          form.reset();
+          if (startedAt) startedAt.value = String(Date.now());
+          setStatus("送信が完了しました。ありがとうございます。", "is-success");
+          window.setTimeout(function () {
+            window.location.href = "thank-you.html?from=request";
+          }, 900);
+        } else {
+          setStatus(data.message || "送信に失敗しました。時間をおいて再度お試しください。", "is-error");
+        }
       } catch (_error) {
         setStatus("送信に失敗しました。時間をおいて再度お試しください。", "is-error");
       } finally {
         submitButton.disabled = false;
-        submitButton.textContent = "上記の内容で送信する";
+        submitButton.textContent = "📨 請求を送信する";
       }
     });
   }

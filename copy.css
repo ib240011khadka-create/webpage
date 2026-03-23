@@ -2014,3 +2014,180 @@ button[disabled] {
   border: 1px solid #d1d5db;
   border-radius: 8px;
 }
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  /* Reset backgrounds and colors for printing */
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Hide non-essential elements */
+  nav,
+  .top-banner,
+  .back-to-top,
+  #mega-footer,
+  .footer-hero-split,
+  .footer-nav-grid,
+  .footer-bottom,
+  #welcomeSplash,
+  .social-section,
+  iframe,
+  .contact-badge,
+  .menu,
+  .toolbar,
+  .google-translate-container,
+  .table-swipe-hint {
+    display: none !important;
+  }
+
+  /* Remove animations and transitions */
+  * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .scroll-animate,
+  .scroll-animate-left,
+  .scroll-animate-right,
+  .scroll-animate-scale,
+  .scroll-animate-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  /* Remove decorative elements */
+  *::before,
+  *::after {
+    background: transparent !important;
+  }
+
+  /* Section styling for print */
+  section {
+    padding: 15pt 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    page-break-inside: avoid;
+  }
+
+  /* Cards and content blocks */
+  .teacher-card,
+  .social-card,
+  .about-facts,
+  .contact-layout {
+    box-shadow: none !important;
+    border: 1px solid #cccccc !important;
+    page-break-inside: avoid;
+  }
+
+  /* Typography for print */
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+    page-break-after: avoid;
+  }
+
+  h1 { font-size: 18pt !important; }
+  h2 { font-size: 16pt !important; }
+  h3 { font-size: 14pt !important; }
+
+  /* Links - show URL */
+  a {
+    color: #000000 !important;
+    text-decoration: underline !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666666;
+  }
+
+  a[href^="mailto"]:after,
+  a[href^="tel"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666666;
+  }
+
+  /* Tables */
+  table {
+    display: table !important;
+    width: 100% !important;
+    border-collapse: collapse !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  th, td {
+    border: 1px solid #000000 !important;
+    padding: 8pt !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  th {
+    background: #f0f0f0 !important;
+    font-weight: bold !important;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  .teacher-photo,
+  .kagoshima-photo,
+  .about-story-img {
+    max-width: 150pt !important;
+    height: auto !important;
+  }
+
+  /* Grid layouts - linearize for print */
+  .teacher-grid,
+  .social-grid,
+  .about-grid,
+  .footer-nav-grid {
+    display: block !important;
+  }
+
+  .teacher-grid > *,
+  .social-grid > *,
+  .about-grid > * {
+    margin-bottom: 15pt !important;
+  }
+
+  /* Contact info */
+  .contact-layout {
+    display: block !important;
+  }
+
+  .access-contact-item {
+    margin-bottom: 8pt !important;
+  }
+
+  /* Page breaks */
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+  /* Footer for print - simple copyright */
+  .footer-copyright {
+    display: block !important;
+    text-align: center;
+    padding: 10pt 0;
+    border-top: 1px solid #cccccc;
+    margin-top: 20pt;
+  }
+}
