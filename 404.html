@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - ページが見つかりません | 赤塚学園 日本語学校</title>
+    <meta name="description" content="お探しのページは見つかりませんでした。" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --bg: #fef7f3;
+            --card: #fffdfb;
+            --text: #2f1f28;
+            --muted: #5a5f73;
+            --accent: #cb3e7f;
+            --accent-strong: #ab2f67;
+            --line: #f0d7e4;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            zoom: 1.35;
+        }
+
+        @media screen and (max-width: 1600px) {
+            html { zoom: 1.15; }
+        }
+
+        @media screen and (max-width: 1400px) {
+            html { zoom: 1; }
+        }
+
+        @media screen and (max-width: 1200px) {
+            html { zoom: 0.9; }
+        }
+
+        @media screen and (max-width: 1024px) {
+            html { zoom: 0.75; }
+        }
+
+        @media screen and (max-width: 768px) {
+            html { zoom: 0.65; }
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: "Zen Kaku Gothic New", "M PLUS Rounded 1c", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 12% 16%, #ffdbe9 0%, transparent 35%),
+                radial-gradient(circle at 88% 12%, #ffe8cb 0%, transparent 30%),
+                linear-gradient(180deg, #fffaf7 0%, var(--bg) 100%);
+            padding: 20px;
+        }
+
+        main {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 48px 56px;
+            max-width: 560px;
+            text-align: center;
+            box-shadow:
+                0 8px 40px rgba(203, 62, 127, 0.1),
+                0 2px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--line);
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            font-family: "M PLUS Rounded 1c", sans-serif;
+            background: linear-gradient(135deg, #d44a99, #e91e8c, #ff6b9d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+            margin: 0 0 16px;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-family: "M PLUS Rounded 1c", sans-serif;
+            margin: 0 0 16px;
+            color: var(--text);
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin: 0 0 24px;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn.primary {
+            background: linear-gradient(135deg, #d44a99, #e91e8c);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(212, 74, 153, 0.4);
+        }
+
+        .btn.primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 74, 153, 0.5);
+        }
+
+        .btn.secondary {
+            background: #ffffff;
+            color: var(--accent);
+            border: 2px solid var(--line);
+        }
+
+        .btn.secondary:hover {
+            background: #fff0f7;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .suggestions {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid var(--line);
+            text-align: left;
+        }
+
+        .suggestions h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0 0 12px;
+            color: var(--text);
+        }
+
+        .suggestions ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px;
+        }
+
+        .suggestions a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            background: #fff8fb;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text);
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .suggestions a:hover {
+            background: #fff0f7;
+            transform: translateX(4px);
+        }
+
+        .suggestions a::before {
+            content: "→";
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p class="error-code">404</p>
+        <h1>ページが見つかりません</h1>
+        <p>お探しのページは移動、削除、または存在しない可能性があります。<br />URLをご確認の上、再度お試しください。</p>
+        
+        <div class="actions">
+            <a class="btn primary" href="index.html">🏫 学校トップへ</a>
+            <a class="btn secondary" href="javascript:history.back()">← 前のページへ</a>
+        </div>
+
+        <div class="suggestions">
+            <h2>📌 お探しのページはこちらですか？</h2>
+            <ul>
+                <li><a href="index.html">学校トップページ</a></li>
+                <li><a href="new.html">学費と入学</a></li>
+                <li><a href="futurepath.html">進路情報</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

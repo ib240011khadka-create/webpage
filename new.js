@@ -248,3 +248,79 @@
     }
   });
 })();
+
+// ===== BACK TO TOP BUTTON =====
+(function() {
+  // Create button dynamically
+  const btn = document.createElement('button');
+  btn.className = 'back-to-top';
+  btn.innerHTML = '↑';
+  btn.setAttribute('aria-label', 'ページトップへ戻る');
+  btn.setAttribute('title', 'ページトップへ戻る');
+  document.body.appendChild(btn);
+
+  // Show/hide based on scroll position
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  });
+
+  // Scroll to top on click
+  btn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+})();
+
+// ===== ENHANCED FORM VALIDATION =====
+(function() {
+  const forms = document.querySelectorAll('form');
+  
+  forms.forEach(function(form) {
+    const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+    if (!submitBtn) return;
+
+    // Add loading class handling
+    form.addEventListener('submit', function() {
+      if (form.checkValidity()) {
+        submitBtn.classList.add('loading');
+      }
+    });
+
+    // Real-time validation feedback
+    const inputs = form.querySelectorAll('input, select, textarea');
+    inputs.forEach(function(input) {
+      input.addEventListener('blur', function() {
+        if (input.validity.valid) {
+          input.style.borderColor = '#6ee7b7';
+        } else if (input.value) {
+          input.style.borderColor = '#fca5a5';
+        }
+      });
+
+      input.addEventListener('input', function() {
+        if (input.validity.valid) {
+          input.style.borderColor = '#6ee7b7';
+        } else {
+          input.style.borderColor = '';
+        }
+      });
+    });
+  });
+})();
+
+// ===== LAZY LOAD IMAGES =====
+(function() {
+  // Add lazy loading to images that don't have it
+  const images = document.querySelectorAll('img:not([loading])');
+  images.forEach(function(img) {
+    // Don't lazy load hero/above-fold images
+    if (img.closest('.hero') || img.closest('nav')) return;
+    img.setAttribute('loading', 'lazy');
+  });
+})();

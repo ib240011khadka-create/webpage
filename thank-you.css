@@ -1,0 +1,372 @@
+:root {
+  --bg: #fef7f3;
+  --card: #fffdfb;
+  --text: #2f1f28;
+  --muted: #5a5f73;
+  --accent: #cb3e7f;
+  --accent-strong: #ab2f67;
+  --line: #f0d7e4;
+  --ring: #f8c9de;
+  --ok: #0f766e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  zoom: 1.35;
+}
+
+@media screen and (max-width: 1600px) {
+  html { zoom: 1.15; }
+}
+
+@media screen and (max-width: 1400px) {
+  html { zoom: 0.9; }
+}
+
+@media screen and (max-width: 1200px) {
+  html { zoom: 0.75; }
+}
+
+@media screen and (max-width: 1024px) {
+  html { zoom: 0.6; }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Zen Kaku Gothic New", "M PLUS Rounded 1c", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 16%, #ffdbe9 0%, transparent 35%),
+    radial-gradient(circle at 88% 12%, #ffe8cb 0%, transparent 30%),
+    linear-gradient(180deg, #fffaf7 0%, var(--bg) 100%);
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.52;
+  pointer-events: none;
+  animation: float 12s ease-in-out infinite;
+}
+
+body::before {
+  left: -70px;
+  bottom: 30px;
+  background: #ffc7dd;
+}
+
+body::after {
+  right: -80px;
+  top: 50px;
+  background: #ffdca6;
+  animation-delay: 1.6s;
+}
+
+.card {
+  width: min(680px, 100%);
+  background: linear-gradient(165deg, #fffefe 0%, var(--card) 100%);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 18px 36px rgba(154, 62, 107, 0.14);
+  padding: 30px;
+  animation: rise 0.5s ease both;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  border: 1px solid #d9eedf;
+  background: #f4fdf8;
+  color: var(--ok);
+  font-size: 0.86rem;
+  font-weight: 700;
+  animation: rise 0.6s ease both 0.3s;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: clamp(1.55rem, 1.2rem + 1.25vw, 2.2rem);
+  color: #91235a;
+  letter-spacing: 0.01em;
+  animation: rise 0.6s ease both 0.4s;
+}
+
+p {
+  margin: 0 0 14px;
+  line-height: 1.7;
+  animation: rise 0.6s ease both 0.5s;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding: 11px 12px;
+  border-radius: 10px;
+  background: #fff6fa;
+  border: 1px solid #f6deea;
+  animation: rise 0.6s ease both 0.6s;
+}
+
+.actions {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  animation: rise 0.6s ease both 0.7s;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(187, 56, 114, 0.25);
+}
+
+.btn.secondary {
+  background: #ffffff;
+  color: #8f2f63;
+  border-color: #e6bfd5;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* Confetti Canvas */
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Success Icon Animation */
+.success-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+
+.success-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.success-icon circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  animation: stroke-circle 0.6s ease forwards;
+}
+
+.success-icon path {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke-check 0.3s ease forwards 0.5s;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #e8107a, #ff6b9d, #e8107a);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Pulse Glow */
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes stroke-circle {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes stroke-check {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 10px 20px rgba(187, 56, 114, 0.25), 0 0 0 0 rgba(232, 16, 122, 0.4); }
+  50% { box-shadow: 0 10px 20px rgba(187, 56, 114, 0.25), 0 0 25px 8px rgba(232, 16, 122, 0.2); }
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Tablets and small laptops */
+@media (max-width: 768px) {
+  .card {
+    padding: 26px 20px;
+  }
+
+  h1 {
+    font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem);
+  }
+
+  .success-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btn {
+    min-height: 44px;
+    padding: 12px 18px;
+  }
+}
+
+/* Large phones */
+@media (max-width: 680px) {
+  .card {
+    padding: 24px 18px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Medium phones */
+@media (max-width: 520px) {
+  body {
+    padding: 16px;
+  }
+
+  .card {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .hint {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+
+  .chip {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  body {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 18px 14px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .hint {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .btn {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .success-icon {
+    width: 50px;
+    height: 50px;
+  }
+}

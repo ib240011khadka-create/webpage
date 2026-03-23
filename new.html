@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>学費と入学 | 赤塚学園 日本語学校</title>
-    <meta name="description" content="赤塚学園 日本語学校の学費、奨学金、入学条件、出願から入学までの流れ、資料請求フォームを掲載しています。" />
+    <meta name="description" content="赤塚学園 日本語学校の学費、奨学金、入学条件、出願から入学までの流れ、出席・成績証明書請求フォームを掲載しています。" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="学費と入学 | 赤塚学園 日本語学校" />
-    <meta property="og:description" content="学費、奨学金、入学条件、出願の流れ、資料請求フォームを1ページで確認できます。" />
+    <meta property="og:description" content="学費、奨学金、入学条件、出願の流れ、出席・成績証明書請求フォームを1ページで確認できます。" />
     <meta property="og:image" content="https://akatuka.ac.jp/wp-content/themes/akatuka/src/akatuka-map.webp" />
     <meta property="og:url" content="https://akatuka.ac.jp/request/" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -40,7 +40,7 @@
                 <a class="btn primary" href="index.html">🏫 学校トップへ戻る</a>
                 <a class="btn ghost" href="futurepath.html">🎯 進路情報</a>
                 <a class="btn ghost" href="#admission-flow">📋 入学までの流れ</a>
-                <a class="btn ghost" href="#request-form">📄 資料請求フォーム</a>
+                <a class="btn ghost" href="#request-form">📄 出席・成績証明書請求</a>
             </div>
         </div>
     </header>
@@ -191,97 +191,59 @@
         </section>
 
         <section id="request-form" class="card scroll-animate" aria-labelledby="request-title">
-            <h2 id="request-title">📝 資料請求フォーム</h2>
+            <h2 id="request-title">� 出席・成績証明書の請求</h2>
             <div class="request-header">
-                <p class="request-lead">本学園への資料請求は、お電話または下記フォームから受け付けています。</p>
-                <p class="request-lead">資料が3部以上必要な場合は、お手数ですがお電話でご連絡ください。</p>
+                <p class="request-lead">出席証明書や成績証明書が必要な学生は、以下のフォームからお申し込みください。</p>
+                <p class="request-lead">発行には通常3〜5営業日かかります。</p>
                 <p class="request-tel"><strong>電話番号:</strong> <a href="tel:0992501313">099-250-1313</a></p>
                 <p class="required-note">「必須」項目は入力が必要です。</p>
             </div>
 
             <form id="requestForm" class="request-grid" action="https://formsubmit.co/khadkasaimal1@gmail.com" method="POST" target="requestFormSink">
                 <div class="field">
-                    <label for="req-name">お名前 <span>必須</span></label>
-                    <input type="text" id="req-name" name="name" autocomplete="name" required />
+                    <label for="req-name">氏名 <span>必須</span></label>
+                    <input type="text" id="req-name" name="student_name" autocomplete="name" required placeholder="例: 山田 太郎" />
                 </div>
 
                 <div class="field">
-                    <label for="req-furigana">ふりがな <span>必須</span></label>
-                    <input type="text" id="req-furigana" name="furigana" required />
+                    <label for="req-student-id">学生番号 <span>必須</span></label>
+                    <input type="text" id="req-student-id" name="student_id" required placeholder="例: 2024-001" />
                 </div>
 
-                <fieldset class="field radio-group">
-                    <legend>性別 <span>任意</span></legend>
-                    <div class="option-list gender-options">
-                        <label class="option-item"><input type="radio" name="gender" value="男" /> 男</label>
-                        <label class="option-item"><input type="radio" name="gender" value="女" /> 女</label>
-                        <label class="option-item"><input type="radio" name="gender" value="回答しない" /> 回答しない</label>
+                <div class="field">
+                    <label for="req-email">メールアドレス <span>必須</span></label>
+                    <input type="email" id="req-email" name="email" autocomplete="email" required placeholder="例: example@email.com" />
+                </div>
+
+                <div class="field">
+                    <label for="req-phone">電話番号 <span>任意</span></label>
+                    <input type="tel" id="req-phone" name="phone" autocomplete="tel" placeholder="例: 090-1234-5678" />
+                </div>
+
+                <fieldset class="field full checkbox-group">
+                    <legend>請求する書類 <span>必須</span></legend>
+                    <div class="option-list course-options">
+                        <label class="option-item"><input type="checkbox" name="documents[]" value="出席証明書" /> 出席証明書</label>
+                        <label class="option-item"><input type="checkbox" name="documents[]" value="成績証明書" /> 成績証明書</label>
+                        <label class="option-item"><input type="checkbox" name="documents[]" value="在籍証明書" /> 在籍証明書</label>
+                        <label class="option-item"><input type="checkbox" name="documents[]" value="修了見込証明書" /> 修了見込証明書</label>
                     </div>
                 </fieldset>
 
-                <div class="field">
-                    <label for="req-school">高校・学科 <span>任意</span></label>
-                    <input type="text" id="req-school" name="school_department" />
-                </div>
-
-                <div class="field">
-                    <label for="req-grade">学年（既卒の方は年齢） <span>任意</span></label>
-                    <input type="text" id="req-grade" name="grade_or_age" />
-                </div>
-
-                <div class="field">
-                    <label for="req-phone">電話番号 <span>必須</span></label>
-                    <input type="tel" id="req-phone" name="phone" autocomplete="tel" required />
-                </div>
-
                 <div class="field full">
-                    <label for="req-post">住所 <span>必須</span></label>
-                    <input type="text" id="req-post" name="postal_address" placeholder="〒890-0055 鹿児島県鹿児島市上荒田町6-1" required />
-                </div>
-
-                <div class="field full">
-                    <label for="req-email">メールアドレス <span>必須</span></label>
-                    <input type="email" id="req-email" name="email" autocomplete="email" required />
-                </div>
-
-                <div class="field full">
-                    <label for="req-type">区分 <span>必須</span></label>
-                    <select id="req-type" name="category" required>
+                    <label for="req-purpose">使用目的 <span>任意</span></label>
+                    <select id="req-purpose" name="purpose">
                         <option value="">選択してください</option>
-                        <option value="高校生">高校生</option>
-                        <option value="保護者">保護者</option>
-                        <option value="社会人">社会人</option>
-                        <option value="学校関係者">学校関係者</option>
+                        <option value="進学">進学先への提出</option>
+                        <option value="就職">就職先への提出</option>
+                        <option value="ビザ">ビザ申請</option>
                         <option value="その他">その他</option>
                     </select>
                 </div>
 
-                <fieldset class="field full checkbox-group">
-                    <legend>希望科 <span>必須</span></legend>
-                    <div class="option-list course-options">
-                        <label class="option-item"><input type="checkbox" name="course[]" value="日本語科" /> 日本語科</label>
-                        <label class="option-item"><input type="checkbox" name="course[]" value="看護" /> 看護</label>
-                        <label class="option-item"><input type="checkbox" name="course[]" value="医療事務" /> 医療事務</label>
-                        <label class="option-item"><input type="checkbox" name="course[]" value="美容" /> 美容</label>
-                        <label class="option-item"><input type="checkbox" name="course[]" value="デザイン" /> デザイン</label>
-                        <label class="option-item"><input type="checkbox" name="course[]" value="聴講生受講要項" /> 聴講生受講要項</label>
-                        <label class="option-item"><input type="checkbox" name="course[]" value="グローバルビジネス科" /> グローバルビジネス科</label>
-                    </div>
-                </fieldset>
-
-                <div class="field">
-                    <label for="req-copies">部数 <span>必須</span></label>
-                    <select id="req-copies" name="copies" required>
-                        <option value="">選択してください</option>
-                        <option value="1部">1部</option>
-                        <option value="2部">2部</option>
-                    </select>
-                    <p class="field-note">3部以上はお電話でご相談ください。</p>
-                </div>
-
                 <div class="field full">
-                    <label for="req-note">補足（お急ぎの場合はその旨をご記入ください） <span>任意</span></label>
-                    <textarea id="req-note" name="note" rows="5"></textarea>
+                    <label for="req-note">備考・その他ご要望 <span>任意</span></label>
+                    <textarea id="req-note" name="notes" rows="3" placeholder="例: 英語版が必要、急ぎで発行希望など"></textarea>
                 </div>
 
                 <label class="privacy-check full">
@@ -289,7 +251,7 @@
                     <span><a href="https://akatuka.ac.jp/privacy-policy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>を確認し、内容に同意します（必須）</span>
                 </label>
 
-                <input type="hidden" name="_subject" value="資料請求フォームから新しい送信" />
+                <input type="hidden" name="_subject" value="出席・成績証明書請求フォームから新しい送信" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
                 <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
@@ -298,9 +260,10 @@
 
                 <p id="requestFormStatus" class="form-status full" aria-live="polite"></p>
 
-                <button class="submit-btn full" type="submit">上記の内容で送信する</button>
+                <button class="submit-btn full" type="submit">📨 請求を送信する</button>
             </form>
-            <iframe name="requestFormSink" title="hidden request submit target" style="display:none;" aria-hidden="true"></iframe>
+            <p class="field-note mt-sm">※ 発行には手数料がかかる場合があります。詳細は事務局にお問い合わせください。</p>
+            <iframe name="requestFormSink" title="hidden request submit target" class="hidden" aria-hidden="true"></iframe>
         </section>
 
         <footer id="mega-footer" aria-labelledby="footer-title">
