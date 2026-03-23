@@ -27,7 +27,7 @@
             <p>費用、奨学金、出願条件、出願から入学までの流れを1ページで確認できます。</p>
             <div class="lang-toolbar">
                 <label for="langSelect">🌐 Language</label>
-                <select id="langSelect">
+                <select id="langSelect" name="langSelect">
                     <option value="ja">💰日本語</option>
                     <option value="en">💵English</option>
                     <option value="ne">💴नेपाली</option>
@@ -223,10 +223,10 @@
                 <fieldset class="field full checkbox-group">
                     <legend>請求する書類 <span>必須</span></legend>
                     <div class="option-list course-options">
-                        <label class="option-item"><input type="checkbox" name="documents[]" value="出席証明書" /> 出席証明書</label>
-                        <label class="option-item"><input type="checkbox" name="documents[]" value="成績証明書" /> 成績証明書</label>
-                        <label class="option-item"><input type="checkbox" name="documents[]" value="在籍証明書" /> 在籍証明書</label>
-                        <label class="option-item"><input type="checkbox" name="documents[]" value="修了見込証明書" /> 修了見込証明書</label>
+                        <label class="option-item"><input type="checkbox" id="doc-attendance" name="documents[]" value="出席証明書" /> 出席証明書</label>
+                        <label class="option-item"><input type="checkbox" id="doc-grades" name="documents[]" value="成績証明書" /> 成績証明書</label>
+                        <label class="option-item"><input type="checkbox" id="doc-enrollment" name="documents[]" value="在籍証明書" /> 在籍証明書</label>
+                        <label class="option-item"><input type="checkbox" id="doc-completion" name="documents[]" value="修了見込証明書" /> 修了見込証明書</label>
                     </div>
                 </fieldset>
 
@@ -247,7 +247,7 @@
                 </div>
 
                 <label class="privacy-check full">
-                    <input type="checkbox" name="privacy_agree" required />
+                    <input type="checkbox" id="privacy-agree" name="privacy_agree" required />
                     <span><a href="https://akatuka.ac.jp/privacy-policy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>を確認し、内容に同意します（必須）</span>
                 </label>
 
@@ -255,7 +255,7 @@
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
                 <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
-                <input type="hidden" id="requestFormStartedAt" value="" />
+                <input type="hidden" id="requestFormStartedAt" name="requestFormStartedAt" value="" />
                 <input type="hidden" id="requestFormNext" name="_next" value="" />
 
                 <p id="requestFormStatus" class="form-status full" aria-live="polite"></p>
