@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="shortcut icon" href="https://akatuka.ac.jp/wp-content/themes/akatuka/src/favicon.ico" type="image/x-icon" />
+  <link rel="preload" as="image" href="logo/akatuka-logo.svg" />
   <link rel="stylesheet" href="copy.css" />
   <script defer src="copy.js"></script>
   <script type="application/ld+json">
@@ -180,7 +181,7 @@
   <!-- ===== WELCOME SPLASH ===== -->
   <div id="welcomeSplash" role="dialog" aria-modal="true" aria-label="ようこそ">
     <div class="splash-inner">
-      <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="splash-logo" />
+      <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="splash-logo" fetchpriority="high" decoding="async" />
       <h1 class="splash-title">学校法人赤塚学園</h1>
       <div class="splash-courses">
         <span>日本語科</span>
@@ -189,7 +190,7 @@
   </div>
 
   <header>
-    <img src="logo/akatuka-logo.svg" alt="学校法人赤塚学園ロゴ" class="top-banner" />
+    <img src="logo/akatuka-logo.svg" alt="学校法人赤塚学園ロゴ" class="top-banner" fetchpriority="high" decoding="async" />
     <nav role="navigation" aria-label="メインナビゲーション">
       <strong class="site-title">日本語学校</strong>
 
@@ -250,27 +251,27 @@
           <aside class="about-facts" aria-label="学科写真">
             <div class="fact-photo-grid">
               <div class="fact-photo-slot">
-                <img src="departments/nursing1.jpg" alt="看護学科" />
+                <img src="departments/nursing1.jpg" alt="看護学科" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">看護学科</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/medicaloffice.jpg" alt="医療事務科" />
+                <img src="departments/medicaloffice.jpg" alt="医療事務科" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">医療事務科</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/beauty3.jpg" alt="美容科" />
+                <img src="departments/beauty3.jpg" alt="美容科" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">美容科</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/design4.jpg" alt="デザイン科" />
+                <img src="departments/design4.jpg" alt="デザイン科" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">デザイン科</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/globalbusiness5.jpg" alt="グローバルビジネス" />
+                <img src="departments/globalbusiness5.jpg" alt="グローバルビジネス" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">グローバルビジネス</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/japaneselanguage.png" alt="日本語科" />
+                <img src="departments/japaneselanguage.jpg" alt="日本語科" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">日本語科</span>
               </div>
             </div>
@@ -330,7 +331,7 @@
             <h3 class="teacher-group-title">校長</h3>
             <div class="teacher-grid">
               <article class="teacher-card">
-                <img src="teachers/principle.png" alt="校長先生" class="teacher-photo" />
+                <img src="teachers/principle.jpg" alt="校長先生" class="teacher-photo" loading="lazy" decoding="async" />
                 <span class="teacher-name-badge">校長先生</span>
                 <p>日本語学習の基礎をわかりやすく指導し、学生が安心して質問できる授業づくりを大切にしています。</p>
               </article>
@@ -341,24 +342,24 @@
             <h3 class="teacher-group-title">教師</h3>
             <div class="teacher-grid">
               <article class="teacher-card">
-                <img src="teachers/hayasi.jpg" alt="林先生" class="teacher-photo" />
+                <img src="teachers/hayasi.jpg" alt="林先生" class="teacher-photo" loading="lazy" decoding="async" />
                 <span class="teacher-name-badge">林先生</span>
                 <p>日本語教育と日本文化の指導経験が豊富で、学習者一人ひとりに寄り添う丁寧なサポートに定評があります。</p>
               </article>
 
               <article class="teacher-card">
-                <img src="teachers/muramuta.jpg" alt="村牟田先生" class="teacher-photo" />
+                <img src="teachers/muramuta.jpg" alt="村牟田先生" class="teacher-photo" loading="lazy" decoding="async" />
                 <span class="teacher-name-badge">村牟田先生</span>
                 <p>初心者から上級者まで対応できる幅広い指導力を持ち、実践的な日本語運用力の向上を支えています。</p>
               </article>
               <article class="teacher-card">
-                <img src="teachers/sensei.jpg" alt="先生" class="teacher-photo" />
+                <img src="teachers/sensei.jpg" alt="先生" class="teacher-photo" loading="lazy" decoding="async" />
                 <span class="teacher-name-badge">先生</span>
                 <p>文法の分かりやすい解説と対話練習を重視した授業で、学生のコミュニケーション能力向上をサポートしています。</p>
               </article>
 
               <article class="teacher-card">
-                <img src="teachers/fujino.jpg" alt="藤野先生" class="teacher-photo" />
+                <img src="teachers/fujino.jpg" alt="藤野先生" class="teacher-photo" loading="lazy" decoding="async" />
                 <span class="teacher-name-badge">藤野先生</span>
                 <p>読解と聴解の指導を得意とし、JLPT対策や大学進学準備に強い指導を行っています。</p>
               </article>
@@ -368,25 +369,25 @@
                 <h3 class="teacher-group-title">事務・生活サポートスタッフ</h3>
                 <div class="teacher-grid">
                 <article class="teacher-card">
-                <img src="teachers/nipur.jpg" alt="ヌプール先生" class="teacher-photo" />
+                <img src="teachers/nipur.jpg" alt="ヌプール先生" class="teacher-photo" loading="lazy" decoding="async" />
                 <span class="teacher-name-badge">ヌプール先生</span>
                 <p>ネパール語での対応が可能で、留学生のビザ手続きや生活相談をサポートしています。</p>
               </article>
               <article class="teacher-card">
-                <img src="teachers/enn.jpg" alt="エン先生" class="teacher-photo" />
+                <img src="teachers/enn.jpg" alt="エン先生" class="teacher-photo" loading="lazy" decoding="async" />
                 <span class="teacher-name-badge">エン先生</span>
                 <p>中国語対応が可能で、入学手続きや学校生活の全般的なサポートを担当しています。</p>
               </article>
 
               
               <article class="teacher-card">
-                <img src="teachers/maissam.jpg" alt="マイサム先生" class="teacher-photo" />
+                <img src="teachers/maissam.jpg" alt="マイサム先生" class="teacher-photo" loading="lazy" decoding="async" />
                 <span class="teacher-name-badge">マイサム先生</span>
                 <p>アラビア語対応が可能で、留学生の住居・アルバイト探しなど生活面をサポートしています。</p>
               </article>
 
               <article class="teacher-card">
-                <img src="teachers/aashish.jpg" alt="アシス先生" class="teacher-photo" />
+                <img src="teachers/aashish.jpg" alt="アシス先生" class="teacher-photo" loading="lazy" decoding="async" />
                 <span class="teacher-name-badge">アシス先生</span>
                 <p>英語・ネパール語対応が可能で、ITサポートや学校ウェブサイトの管理を担当しています。</p>
               </article>
