@@ -835,6 +835,21 @@ th {
   font-weight: 700;
 }
 
+#timetable table {
+  border: 2px solid #1a1a1a;
+  border-collapse: collapse;
+}
+
+#timetable th,
+#timetable td {
+  border: 1px solid #1a1a1a;
+}
+
+#timetable thead th {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
 .course-framework {
   margin-top: 18px;
   background: #d8d6cd;
