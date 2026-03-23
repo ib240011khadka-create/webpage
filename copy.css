@@ -706,10 +706,19 @@ ul {
 
 @media (max-width: 600px) {
   .fact-photo-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .fact-photo-slot {
+    min-height: 140px;
   }
   .fact-photo-slot img {
-    height: 100px;
+    height: 140px;
+    min-height: 140px;
+  }
+  .fact-photo-label {
+    font-size: 0.75rem;
+    padding: 6px 8px;
   }
   .about-facts-inline {
     grid-template-columns: 1fr;
