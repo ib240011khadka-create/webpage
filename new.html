@@ -252,10 +252,10 @@
                     <span><a href="https://akatuka.ac.jp/privacy-policy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>を確認し、内容に同意します（必須）</span>
                 </label>
 
-                <input type="hidden" name="_subject" value="出席・成績証明書請求フォームから新しい送信" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <input type="hidden" id="_subject" name="_subject" value="出席・成績証明書請求フォームから新しい送信" />
+                <input type="hidden" id="_captcha" name="_captcha" value="false" />
+                <input type="hidden" id="_template" name="_template" value="table" />
+                <input type="text" id="_honey" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <input type="hidden" id="requestFormStartedAt" name="requestFormStartedAt" value="" />
                 <input type="hidden" id="requestFormNext" name="_next" value="" />
 
@@ -264,7 +264,7 @@
                 <button class="submit-btn full" type="submit">📨 請求を送信する</button>
             </form>
             <p class="field-note mt-sm">※ 発行には手数料がかかる場合があります。詳細は事務局にお問い合わせください。</p>
-            <iframe name="requestFormSink" title="hidden request submit target" class="hidden" aria-hidden="true"></iframe>
+            <iframe name="requestFormSink" title="hidden request submit target" class="hidden" aria-hidden="true" srcdoc="<!DOCTYPE html>"></iframe>
         </section>
 
         <footer id="mega-footer" aria-labelledby="footer-title">

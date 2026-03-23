@@ -787,9 +787,9 @@
             <label for="message">Inquiry</label>
             <textarea id="message" name="message" rows="3" minlength="10" required></textarea>
 
-            <input type="hidden" name="_subject" value="New Inquiry from Website" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" id="_subject" name="_subject" value="New Inquiry from Website" />
+            <input type="hidden" id="_captcha" name="_captcha" value="false" />
+            <input type="hidden" id="_template" name="_template" value="table" />
             <input type="text" id="_honey" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <input type="hidden" id="contactFormStartedAt" name="contactFormStartedAt" value="" />
             <input type="hidden" name="_next" id="contactNext" value="" />
@@ -799,7 +799,7 @@
             <button type="submit" class="pulse-glow">Send Inquiry</button>
           </form>
         </div>
-        <iframe name="contactFormSink" title="hidden contact submit target" class="hidden" aria-hidden="true"></iframe>
+        <iframe name="contactFormSink" title="hidden contact submit target" class="hidden" aria-hidden="true" srcdoc="<!DOCTYPE html>"></iframe>
       </div>
     </section>
 
