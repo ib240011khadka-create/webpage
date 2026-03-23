@@ -1542,6 +1542,39 @@ button[disabled] {
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x pan-y;
+    border: none;
+    font-size: 0.85rem;
+  }
+
+  table th,
+  table td {
+    border: none;
+    padding: 8px 10px;
+  }
+
+  table tbody tr:nth-child(odd) {
+    background: #fff0f7;
+  }
+
+  table tbody tr:nth-child(even) {
+    background: #ffffff;
+  }
+
+  table thead tr {
+    background: linear-gradient(135deg, #e8107a, #d44a99);
+    color: #fff;
+  }
+
+  table thead th {
+    border: none;
+    color: #fff;
+  }
+
+  .framework-table th,
+  .framework-table td {
+    border: none;
+    padding: 6px 8px;
+    font-size: 0.8rem;
   }
 
   iframe {
