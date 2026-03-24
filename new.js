@@ -55,11 +55,10 @@
 
     const status = document.getElementById("requestFormStatus");
     const startedAt = document.getElementById("requestFormStartedAt");
-    const nextInput = document.getElementById("requestFormNext");
-    const honeyInput = form.querySelector('input[name="_honey"]');
+    const honeyInput = form.querySelector('input[name="botcheck"]');
     const submitButton = form.querySelector('button[type="submit"]');
     const emailInput = form.querySelector('#req-email');
-    const courseInputs = Array.from(form.querySelectorAll('input[name="course[]"]'));
+    const courseInputs = Array.from(form.querySelectorAll('input[name="documents[]"]'));
 
     if (!status || !submitButton) return;
 
@@ -115,10 +114,6 @@
 
     if (startedAt) startedAt.value = String(Date.now());
 
-    if (nextInput) {
-      nextInput.value = "thank-you.html?from=request";
-    }
-
     const params = new URLSearchParams(window.location.search);
     if (params.get("sent") === "1") {
       localStorage.removeItem(draftKey);
@@ -152,7 +147,7 @@
 
       if (courseInputs.length > 0 && !courseInputs.some(function (input) { return input.checked; })) {
         event.preventDefault();
-        setStatus("希望科を1つ以上選択してください。", "is-error");
+        setStatus("請求する書類を1つ以上選択してください。", "is-error");
         return;
       }
 
@@ -238,20 +233,6 @@
   });
 
   animatedElements.forEach(el => observer.observe(el));
-})();
-
-// ===== NAVBAR SCROLL EFFECT =====
-(function() {
-  const nav = document.querySelector('nav');
-  if (!nav) return;
-  
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 50) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  });
 })();
 
 // ===== BACK TO TOP BUTTON =====

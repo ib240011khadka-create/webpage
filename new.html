@@ -9,7 +9,7 @@
     <meta property="og:title" content="学費と入学 | 赤塚学園 日本語学校" />
     <meta property="og:description" content="学費、奨学金、入学条件、出願の流れ、出席・成績証明書請求フォームを1ページで確認できます。" />
     <meta property="og:image" content="https://akatuka.ac.jp/wp-content/themes/akatuka/src/akatuka-map.webp" />
-    <meta property="og:url" content="https://akatuka.ac.jp/request/" />
+    <meta property="og:url" content="https://akatuka.ac.jp/japanese/new.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://akatuka.ac.jp/japanese/new.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -124,13 +124,13 @@
                     <tbody>
                         <tr>
                             <td>進学2年コース</td>
-                            <td>&yen;20,000</td>
-                            <td>&yen;50,000</td>
-                            <td>&yen;275,000</td>
-                            <td>&yen;275,000</td>
-                            <td>&yen;50,000</td>
-                            <td>&yen;70,000</td>
-                            <td class="total">&yen;740,000</td>
+                            <td>2万</td>
+                            <td>5万</td>
+                            <td>27.5万</td>
+                            <td>27.5万</td>
+                            <td>5万</td>
+                            <td>7万</td>
+                            <td class="total">74万</td>
                         </tr>
                     </tbody>
                 </table>
@@ -240,7 +240,7 @@
                 <li><strong>10月下旬:</strong> 現地募集、面接、試験</li>
                 <li><strong>11月下旬:</strong> 出入国在留管理庁へ申請</li>
                 <li><strong>翌年1月-2月:</strong> 在留資格認定証明書交付の可否発表</li>
-                <li><strong>2月-3月:</strong> 学納金前納後、学校よりCOE郵送</li>
+                <li><strong>2月-3月:</strong> 学納金前納.後納、学校よりCOE郵送</li>
                 <li><strong>3月:</strong> 日本国大使館/総領事館で査証申請・取得し来日</li>
                 <li><strong>4月:</strong> オリエンテーション、入学</li>
             </ol>
@@ -255,10 +255,9 @@
                 <p class="required-note">「必須」項目は入力が必要です。</p>
             </div>
 
-            <form id="requestForm" class="request-grid" action="https://api.web3forms.com/submit" method="POST" target="requestFormSink" aria-describedby="requestFormStatus">
+            <form id="requestForm" class="request-grid" action="https://api.web3forms.com/submit" method="POST" aria-describedby="requestFormStatus">
                 <input type="hidden" name="access_key" value="663e2463-e67c-4d6a-975f-3784be3b8502" />
                 <input type="hidden" name="subject" value="出席・成績証明書請求フォームから新しい送信" />
-                <input type="hidden" name="redirect" id="requestFormNext" value="" />
                 <input type="checkbox" name="botcheck" class="hp-field" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <div class="field">
                     <label for="req-name">氏名 <span>必須</span></label>
@@ -318,7 +317,6 @@
                 <button class="submit-btn full" type="submit">📨 請求を送信する</button>
             </form>
             <p class="field-note mt-sm">※ 発行には手数料がかかる場合があります。詳細は事務局にお問い合わせください。</p>
-            <iframe name="requestFormSink" title="hidden request submit target" class="hidden" aria-hidden="true" srcdoc="<!DOCTYPE html>"></iframe>
         </section>
 
         <footer id="mega-footer" aria-labelledby="footer-title">
