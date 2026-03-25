@@ -438,6 +438,78 @@ p {
   margin: 6px 0 8px;
 }
 
+/* Course Section - Background Image Layout */
+/* Edu Policy Container with Floated Images */
+.edu-policy {
+  background: rgba(255,255,255,0.95);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* ===== 認定日本語教育機関マーク - ガイドライン準拠デザイン ===== */
+/* ルール: 変形禁止、色変更禁止、影・立体化禁止、保護領域確保 */
+
+/* 外側ショーケース - マークを引き立てるフレーム */
+.mark-showcase {
+  float: right;
+  width: 320px;
+  margin: 0 0 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 外側フレーム（保護領域の外側なので装飾OK） */
+.mark-frame {
+  background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+  padding: 8px;
+  border-radius: 16px;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.08),
+    0 2px 10px rgba(0, 0, 0, 0.04);
+  /* ホバー用トランジション - 外側フレームのみ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* ホバー効果 - 外側フレームのみ（マーク本体は変化なし = ガイドライン準拠） */
+.mark-frame:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 15px 50px rgba(0, 0, 0, 0.12),
+    0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 保護領域（クリアスペース）- 白背景・余白確保・装飾なし */
+.mark-protection-zone {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* マーク本体 - 一切の装飾禁止 */
+.certification-mark {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  /* 禁止: box-shadow, border, filter, transform など */
+}
+
+/* キャプション（保護領域外に配置） */
+.mark-caption {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #495057;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 hr {
   border: none;
   border-top: 1px solid var(--line);
@@ -1505,6 +1577,30 @@ button[disabled] {
 
   section {
     padding: 16px 0;
+  }
+
+  /* 認定マーク - モバイル対応 */
+  .mark-showcase {
+    float: none;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 20px;
+  }
+
+  .mark-frame {
+    padding: 6px;
+  }
+
+  .mark-protection-zone {
+    padding: 18px;
+  }
+
+  .certification-mark {
+    max-width: 200px;
+  }
+
+  .edu-policy {
+    padding: 16px;
   }
 
   .top-banner {

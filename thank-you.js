@@ -1,10 +1,17 @@
 // Confetti Animation
-const canvas = document.getElementById('confetti');
-const ctx = canvas.getContext('2d');
+const canvas = document.getElementById("confetti");
+const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const confettiColors = ['#e8107a', '#ff6b9d', '#ffd700', '#4ade80', '#60a5fa', '#f472b6'];
+const confettiColors = [
+  "#e8107a",
+  "#ff6b9d",
+  "#ffd700",
+  "#4ade80",
+  "#60a5fa",
+  "#f472b6",
+];
 const confettiPieces = [];
 
 for (let i = 0; i < 150; i++) {
@@ -15,14 +22,14 @@ for (let i = 0; i < 150; i++) {
     color: confettiColors[Math.floor(Math.random() * confettiColors.length)],
     speed: Math.random() * 3 + 2,
     angle: Math.random() * Math.PI * 2,
-    spin: Math.random() * 0.2 - 0.1
+    spin: Math.random() * 0.2 - 0.1,
   });
 }
 
 function animateConfetti() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  
-  confettiPieces.forEach(p => {
+
+  confettiPieces.forEach((p) => {
     ctx.save();
     ctx.translate(p.x, p.y);
     ctx.rotate(p.angle);
@@ -50,17 +57,17 @@ setTimeout(() => {
   confettiPieces.length = 0;
 }, 5000);
 
-window.addEventListener('resize', () => {
+window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
 
 // ===== AUTO-REDIRECT WITH COUNTDOWN =====
-(function() {
-  const redirectNotice = document.getElementById('redirect-notice');
+(function () {
+  const redirectNotice = document.getElementById("redirect-notice");
   if (!redirectNotice) return;
 
-  const redirectUrl = 'index.html';
+  const redirectUrl = "index.html";
   let countdown = 15; // seconds
 
   function updateCountdown() {
@@ -69,7 +76,7 @@ window.addEventListener('resize', () => {
       countdown--;
       setTimeout(updateCountdown, 1000);
     } else {
-      redirectNotice.textContent = '移動しています...';
+      redirectNotice.textContent = "移動しています...";
       window.location.href = redirectUrl;
     }
   }
@@ -80,12 +87,12 @@ window.addEventListener('resize', () => {
   // Cancel redirect if user interacts with the page
   const cancelRedirect = () => {
     countdown = -1;
-    redirectNotice.textContent = '';
-    document.removeEventListener('click', cancelRedirect);
+    redirectNotice.textContent = "";
+    document.removeEventListener("click", cancelRedirect);
   };
 
   // Only cancel on button/link clicks
-  document.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('click', cancelRedirect);
+  document.querySelectorAll("a, button").forEach((el) => {
+    el.addEventListener("click", cancelRedirect);
   });
 })();

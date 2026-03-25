@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle - pink/rose color -->
+  <circle cx="100" cy="100" r="100" fill="#f8bbd9"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="70" r="35" fill="#e91e63"/>
+  
+  <!-- Hair (longer for female) -->
+  <ellipse cx="100" cy="55" rx="38" ry="30" fill="#5d4037"/>
+  <ellipse cx="65" cy="80" rx="12" ry="35" fill="#5d4037"/>
+  <ellipse cx="135" cy="80" rx="12" ry="35" fill="#5d4037"/>
+  
+  <!-- Face -->
+  <circle cx="100" cy="75" r="28" fill="#ffccbc"/>
+  
+  <!-- Body/shoulders -->
+  <ellipse cx="100" cy="175" rx="55" ry="45" fill="#e91e63"/>
+  
+  <!-- Neck -->
+  <rect x="88" y="100" width="24" height="25" fill="#ffccbc"/>
+</svg>
