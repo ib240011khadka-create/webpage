@@ -237,6 +237,9 @@
 
 // ===== BACK TO TOP BUTTON =====
 (function() {
+  // Skip if copy.js already created one
+  if (document.querySelector('.back-to-top')) return;
+
   // Create button dynamically
   const btn = document.createElement('button');
   btn.className = 'back-to-top';
@@ -246,12 +249,18 @@
   document.body.appendChild(btn);
 
   // Show/hide based on scroll position
+  let newTopTicking = false;
   window.addEventListener('scroll', function() {
-    if (window.scrollY > 300) {
-      btn.classList.add('visible');
-    } else {
-      btn.classList.remove('visible');
-    }
+    if (newTopTicking) return;
+    newTopTicking = true;
+    requestAnimationFrame(function() {
+      if (window.scrollY > 300) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+      newTopTicking = false;
+    });
   });
 
   // Scroll to top on click

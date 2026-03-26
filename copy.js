@@ -1,4 +1,48 @@
 (function () {
+  var translationsCache = null;
+
+  function resolveKey(obj, key) {
+    var parts = key.split(".");
+    var current = obj;
+    for (var i = 0; i < parts.length; i++) {
+      if (current == null || typeof current !== "object") return undefined;
+      current = current[parts[i]];
+    }
+    return current;
+  }
+
+  function fetchTranslations() {
+    if (translationsCache) return Promise.resolve(translationsCache);
+    return fetch("data/translations.json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        translationsCache = data;
+        return data;
+      })
+      .catch(function () { return null; });
+  }
+
+  function applyTranslations(lang) {
+    if (!lang || lang === "ja") return; // Japanese is the page default
+    fetchTranslations().then(function (t) {
+      if (!t) return;
+
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var entry = resolveKey(t, el.getAttribute("data-i18n"));
+        if (entry && entry[lang]) {
+          el.textContent = entry[lang];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+        var entry = resolveKey(t, el.getAttribute("data-i18n-placeholder"));
+        if (entry && entry[lang]) {
+          el.setAttribute("placeholder", entry[lang]);
+        }
+      });
+    });
+  }
+
   function loadGoogleTranslateScript() {
     if (document.getElementById("google-translate-script")) return;
 
@@ -239,9 +283,53 @@
     });
   }
 
+  function initHeroVideoTextToggle() {
+    var video = document.getElementById("heroVideo");
+    var overlay = document.getElementById("heroOverlay");
+    var scrollHint = document.querySelector(".hero-scroll-indicator");
+    if (!video || !overlay) return;
+
+    var SHOW_PERCENT = 20; // show text during first & last 20% of video
+    var isHidden = false;
+    var lastCheck = 0;
+
+    video.addEventListener("timeupdate", function () {
+      var now = Date.now();
+      if (now - lastCheck < 250) return; // throttle to ~4 checks/sec
+      lastCheck = now;
+
+      var t = video.currentTime;
+      var dur = video.duration;
+      if (!dur || !isFinite(dur) || dur < 1) return;
+
+      var pct = (t / dur) * 100;
+      var shouldShow = pct <= SHOW_PERCENT || pct >= (100 - SHOW_PERCENT);
+
+      if (!shouldShow && !isHidden) {
+        overlay.classList.add("text-hidden");
+        if (scrollHint) scrollHint.classList.add("text-hidden");
+        isHidden = true;
+      } else if (shouldShow && isHidden) {
+        overlay.classList.remove("text-hidden");
+        if (scrollHint) scrollHint.classList.remove("text-hidden");
+        isHidden = false;
+      }
+    });
+
+    // Loop manually so text resets at the start of each loop
+    video.addEventListener("ended", function () {
+      overlay.classList.remove("text-hidden");
+      if (scrollHint) scrollHint.classList.remove("text-hidden");
+      isHidden = false;
+      video.currentTime = 0;
+      video.play();
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     // Initialize slideshow first so it is not blocked by optional features.
     initKagoshimaSlideshow();
+    initHeroVideoTextToggle();
 
     // --- Welcome Splash ---
     const splash = document.getElementById("welcomeSplash");
@@ -263,6 +351,8 @@
           // Ignore storage failures and continue core page behavior.
         }
 
+        applyTranslations(lang);
+
         const combo = document.querySelector(".goog-te-combo");
         if (combo) {
           combo.value = lang;
@@ -277,6 +367,7 @@
         saved = null;
       }
       if (saved) langSelect.value = saved;
+      applyTranslations(saved);
     }
 
     try {
@@ -294,10 +385,7 @@
   // Find all elements with scroll-animate class
   const animatedElements = document.querySelectorAll('.scroll-animate');
   
-  if (animatedElements.length === 0) {
-    console.log('No animated elements found');
-    return;
-  }
+  if (animatedElements.length === 0) return;
 
   // Intersection Observer for triggering animations
   const observer = new IntersectionObserver((entries) => {
@@ -323,12 +411,18 @@
   const nav = document.querySelector('nav');
   if (!nav) return;
   
+  let ticking = false;
   window.addEventListener('scroll', function() {
-    if (window.scrollY > 50) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function() {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      ticking = false;
+    });
   });
 })();
 
@@ -338,6 +432,8 @@
   const navLinks = document.querySelectorAll('.menu a[href^="#"]');
   
   if (!sections.length || !navLinks.length) return;
+
+  let ticking = false;
   
   function highlightActiveSection() {
     const scrollY = window.scrollY;
@@ -358,7 +454,14 @@
     });
   }
   
-  window.addEventListener('scroll', highlightActiveSection);
+  window.addEventListener('scroll', function() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function() {
+      highlightActiveSection();
+      ticking = false;
+    });
+  });
   highlightActiveSection(); // Run on page load
 })();
 
@@ -373,12 +476,18 @@
   document.body.appendChild(btn);
 
   // Show/hide based on scroll position
+  let topTicking = false;
   window.addEventListener('scroll', function() {
-    if (window.scrollY > 300) {
-      btn.classList.add('visible');
-    } else {
-      btn.classList.remove('visible');
-    }
+    if (topTicking) return;
+    topTicking = true;
+    requestAnimationFrame(function() {
+      if (window.scrollY > 300) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+      topTicking = false;
+    });
   });
 
   // Scroll to top on click
@@ -435,5 +544,52 @@
     // Don't lazy load hero/above-fold images
     if (img.closest('.hero') || img.closest('nav')) return;
     img.setAttribute('loading', 'lazy');
+  });
+})();
+
+// ===== FAQ ACCORDION =====
+(function() {
+  const accordions = document.querySelectorAll('.accordion');
+  
+  accordions.forEach(function(accordion) {
+    const singleOpen = accordion.dataset.singleOpen === 'true';
+    const headers = accordion.querySelectorAll('.accordion-header');
+    
+    headers.forEach(function(header) {
+      header.addEventListener('click', function() {
+        const item = header.closest('.accordion-item');
+        const content = item.querySelector('.accordion-content');
+        const isExpanded = header.getAttribute('aria-expanded') === 'true';
+        
+        // If single-open mode, close all other items first
+        if (singleOpen && !isExpanded) {
+          accordion.querySelectorAll('.accordion-item').forEach(function(otherItem) {
+            if (otherItem !== item) {
+              const otherHeader = otherItem.querySelector('.accordion-header');
+              const otherContent = otherItem.querySelector('.accordion-content');
+              otherHeader.setAttribute('aria-expanded', 'false');
+              otherContent.style.maxHeight = null;
+            }
+          });
+        }
+        
+        // Toggle current item
+        if (isExpanded) {
+          header.setAttribute('aria-expanded', 'false');
+          content.style.maxHeight = null;
+        } else {
+          header.setAttribute('aria-expanded', 'true');
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+      
+      // Handle keyboard navigation
+      header.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          header.click();
+        }
+      });
+    });
   });
 })();

@@ -15,23 +15,15 @@
 }
 
 html {
-  zoom: 1.35;
-}
-
-@media screen and (max-width: 1600px) {
-  html { zoom: 1.15; }
-}
-
-@media screen and (max-width: 1400px) {
-  html { zoom: 0.9; }
-}
-
-@media screen and (max-width: 1200px) {
-  html { zoom: 0.75; }
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1024px) {
-  html { zoom: 0.6; }
+  html { font-size: 15px; }
+}
+
+@media screen and (max-width: 768px) {
+  html { font-size: 14px; }
 }
 
 body {
@@ -57,10 +49,10 @@ body::after {
   height: 240px;
   border-radius: 999px;
   z-index: -1;
-  filter: blur(20px);
-  opacity: 0.52;
+  opacity: 0.35;
   pointer-events: none;
   animation: float 12s ease-in-out infinite;
+  will-change: transform;
 }
 
 body::before {
@@ -192,6 +184,7 @@ p {
   height: 100%;
   pointer-events: none;
   z-index: 1000;
+  will-change: contents;
 }
 
 /* Success Icon Animation */
@@ -270,8 +263,8 @@ p {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 10px 20px rgba(187, 56, 114, 0.25), 0 0 0 0 rgba(232, 16, 122, 0.4); }
-  50% { box-shadow: 0 10px 20px rgba(187, 56, 114, 0.25), 0 0 25px 8px rgba(232, 16, 122, 0.2); }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
 }
 
 /* ===== RESPONSIVE BREAKPOINTS ===== */
@@ -427,5 +420,14 @@ p {
 
   .redirect-notice {
     display: none !important;
+  }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

@@ -13,12 +13,18 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://akatuka.ac.jp/japanese/" />
+  <!-- DNS Prefetch & Preconnect -->
+  <link rel="dns-prefetch" href="https://www.google.com" />
+  <link rel="dns-prefetch" href="https://maps.googleapis.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Preload critical assets -->
+  <link rel="preload" as="video" href="intro-video.mp4" type="video/mp4" />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="shortcut icon" href="https://akatuka.ac.jp/wp-content/themes/akatuka/src/favicon.ico" type="image/x-icon" />
   <link rel="preload" as="image" href="logo/akatuka-logo.svg" />
   <link rel="stylesheet" href="copy.css" />
+  <!-- Scripts -->
   <script defer src="copy.js"></script>
   <script type="application/ld+json">
   {
@@ -182,7 +188,7 @@
   <!-- ===== WELCOME SPLASH ===== -->
   <div id="welcomeSplash" role="dialog" aria-modal="true" aria-label="ようこそ">
     <div class="splash-inner">
-      <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="splash-logo" fetchpriority="high" decoding="async" />
+      <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="splash-logo" width="200" height="200" fetchpriority="high" decoding="async" />
       <h1 class="splash-title">学校法人赤塚学園</h1>
       <div class="splash-courses">
         <span>認定日本語教育機関</span>
@@ -191,7 +197,7 @@
   </div>
 
   <header>
-    <img src="logo/akatuka-logo.svg" alt="学校法人赤塚学園ロゴ" class="top-banner" fetchpriority="high" decoding="async" />
+    <img src="logo/akatuka-logo.svg" alt="学校法人赤塚学園ロゴ" class="top-banner" width="180" height="60" fetchpriority="high" decoding="async" />
     <nav role="navigation" aria-label="メインナビゲーション">
       <strong class="site-title">認定日本語教育機関</strong>
 
@@ -219,6 +225,7 @@
           <li><a href="#kagoshima">🌸鹿児島</a></li>
           <li><a href="#college-location">📍学校の場所</a></li>
           <li><a href="#social-media">📱ソーシャルメディア</a></li>
+          <li><a href="#faq">❓よくある質問</a></li>
           <li><a href="#contact">📧お問い合わせ</a></li>
         </ul>
       </div>
@@ -253,33 +260,48 @@
           <aside class="about-facts" aria-label="学科写真">
             <div class="fact-photo-grid">
               <div class="fact-photo-slot">
-                <img src="departments/nursing1.jpg" alt="看護学科" loading="lazy" decoding="async" />
+                <img src="departments/nursing1.jpg" alt="看護学科" width="300" height="200" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">看護学科</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/medicaloffice.jpg" alt="医療事務科" loading="lazy" decoding="async" />
+                <img src="departments/medicaloffice.jpg" alt="医療事務科" width="300" height="200" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">医療事務科</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/beauty3.jpg" alt="美容科" loading="lazy" decoding="async" />
+                <img src="departments/beauty3.jpg" alt="美容科" width="300" height="200" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">美容科</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/design4.jpg" alt="デザイン科" loading="lazy" decoding="async" />
+                <img src="departments/design4.jpg" alt="デザイン科" width="300" height="200" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">デザイン科</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/globalbusiness5.jpg" alt="グローバルビジネス" loading="lazy" decoding="async" />
+                <img src="departments/globalbusiness5.jpg" alt="グローバルビジネス" width="300" height="200" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">グローバルビジネス</span>
               </div>
               <div class="fact-photo-slot">
-                <img src="departments/japaneselanguage.jpg" alt="日本語科" loading="lazy" decoding="async" />
+                <img src="departments/japaneselanguage.jpg" alt="日本語科" width="300" height="200" loading="lazy" decoding="async" />
                 <span class="fact-photo-label">日本語科</span>
               </div>
             </div>
             <a href="https://akatuka.ac.jp" target="_blank" rel="noopener noreferrer" class="department-link">主な学科はこちらへ →</a>
           </aside>
         </div>
+      </div>
+    </section>
+
+    <!-- Hero Video Section -->
+    <section id="hero-video">
+      <video autoplay muted playsinline preload="metadata" class="hero-video-bg" id="heroVideo">
+        <source src="intro-video.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" id="heroOverlay">
+        <h1>日本語科紹介</h1>
+        <p class="hero-tagline">認定日本語教育機関</p>
+        <p class="hero-info">📍 鹿児島市上荒田町 | 🏫 創立1976年 | 👨‍🎓 少人数制クラス</p>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
       </div>
     </section>
 
@@ -295,7 +317,7 @@
             <div class="mark-frame">
               <!-- 保護領域（白背景・余白確保） -->
               <div class="mark-protection-zone">
-                <img src="logo/mark.jpg" alt="認定日本語教育機関マーク" class="certification-mark" loading="lazy" decoding="async" />
+                <img src="logo/mark.jpg" alt="認定日本語教育機関マーク" class="certification-mark" width="150" height="150" loading="lazy" decoding="async" />
               </div>
             </div>
             <!-- ラベル（保護領域の外側に配置） -->
@@ -335,7 +357,7 @@
             <h3 class="teacher-group-title">校長</h3>
             <div class="teacher-grid">
               <article class="teacher-card">
-                <img src="teachers/principle.jpg" alt="校長先生" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/principle.jpg" alt="校長先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
               
           </article>
             </div>
@@ -345,19 +367,19 @@
             <h3 class="teacher-group-title">教師</h3>
             <div class="teacher-grid">
               <article class="teacher-card">
-                <img src="teachers/muramuta.jpg" alt="村本先生" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/muramuta.jpg" alt="村本先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
               </article>
 
               <article class="teacher-card">
-                <img src="teachers/hayasi.jpg" alt="林先生" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/hayasi.jpg" alt="林先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
                 
               </article>
               <article class="teacher-card">
-                <img src="teachers/sensei.jpg" alt="西村先生" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/sensei.jpg" alt="西村先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
                 
               </article>
               <article class="teacher-card">
-                <img src="teachers/female-icon.svg" alt="女性教師" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/female-icon.svg" alt="女性教師" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
                 
               </article>
             </div>
@@ -366,24 +388,24 @@
                 <h3 class="teacher-group-title">事務・生活サポートスタッフ</h3>
                 <div class="teacher-grid">
                 <article class="teacher-card">
-                <img src="teachers/fujino.jpg" alt="藤野先生" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/fujino.jpg" alt="藤野先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
                 
               </article>
                 <article class="teacher-card">
-                <img src="teachers/nipur.jpg" alt="ヌプール先生" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/nipur.jpg" alt="ヌプール先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
                 
               </article>
               <article class="teacher-card">
-                <img src="teachers/enn.jpg" alt="イエン先生" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/enn.jpg" alt="イエン先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
               
               </article>
               <article class="teacher-card">
-                <img src="teachers/maissam.jpg" alt="マイサム先生" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/maissam.jpg" alt="マイサム先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
                 
               </article>
 
               <article class="teacher-card">
-                <img src="teachers/aashish.jpg" alt="アシス先生" class="teacher-photo" loading="lazy" decoding="async" />
+                <img src="teachers/aashish.jpg" alt="アシス先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
                 
               </article>
             </div>
@@ -418,39 +440,6 @@
           <li>住まい：学園の寮をご案内します</li>
           <li>入管・役所手続き：入管書類や保険・年金などの手続きは、事務スタッフが行います。</li>
         </ul>
-
-        <h3>🎓奨学金制度</h3>
-        <table>
-          <caption>学生サポート奨学金制度</caption>
-          <thead>
-          <tr>
-            <th scope="col">奨学金名</th>
-            <th scope="col">内容</th>
-            <th scope="col">条件</th>
-            <th scope="col">支給時期</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">JLPT N1保持者</th>
-            <td>年間授業料の60%支給</td>
-            <td>入学から卒業までの出席率95%以上</td>
-            <td>卒業年の2月末日</td>
-          </tr>
-          <tr>
-            <th scope="row">JLPT N2保持者</th>
-            <td>年間授業料の35%支給</td>
-            <td>入学から卒業までの出席率95%以上</td>
-            <td>卒業年の2月末日</td>
-          </tr>
-          <tr>
-            <th scope="row">JLPT N3保持者</th>
-            <td>年間授業料の15%支給</td>
-            <td>入学から卒業までの出席率95%以上</td>
-            <td>卒業年の2月末日</td>
-          </tr>
-          </tbody>
-        </table>
       </div>
     </section>
 
@@ -458,7 +447,7 @@
       <div class="container">
         <h2 id="kagoshima-title">🌸鹿児島について</h2>
         <div class="kagoshima-hero">
-          <img src="gallery/kagoshima.jpg" alt="鹿児島の街並み" class="kagoshima-hero-image" data-slides="gallery/kagoshima1.jpg,gallery/kagoshima2.jpg,gallery/kagoshima3.jpg,gallery/kagoshima4.jpg,gallery/kagoshima5.jpg" />
+          <img src="gallery/kagoshima.jpg" alt="鹿児島の街並み" class="kagoshima-hero-image" width="1200" height="600" loading="lazy" data-slides="gallery/kagoshima1.jpg,gallery/kagoshima2.jpg,gallery/kagoshima3.jpg,gallery/kagoshima4.jpg,gallery/kagoshima5.jpg" />
           <div class="kagoshima-overlay">
             <div class="kagoshima-overlay-content">
               <p>
@@ -502,21 +491,21 @@
 
         <div class="social-grid">
           <a class="social-card instagram" href="https://www.instagram.com/akbd_b/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <img src="logo/social-instagram.svg" alt="Instagram紹介イメージ" class="social-thumb" loading="lazy" />
+            <img src="logo/social-instagram.svg" alt="Instagram紹介イメージ" class="social-thumb" width="80" height="80" loading="lazy" />
             <h3>Instagram</h3>
             <p>美容科・デザイン科の公式Instagram。授業風景や制作活動、イベント情報を発信しています。</p>
             <span>@akbd_b を見る</span>
           </a>
 
           <a class="social-card facebook" href="https://akatuka.ac.jp/online" target="_blank" rel="noopener noreferrer" aria-label="Online consultation">
-            <img src="logo/social-online.svg" alt="オンライン相談会紹介イメージ" class="social-thumb" loading="lazy" />
+            <img src="logo/social-online.svg" alt="オンライン相談会紹介イメージ" class="social-thumb" width="80" height="80" loading="lazy" />
             <h3>オンライン相談会</h3>
             <p>遠方の方でも参加しやすいオンライン個別相談会。ZOOMで進学相談ができます。</p>
             <span>自宅から相談する</span>
           </a>
 
           <a class="social-card line" href="https://page.line.me/957oyipg?oat_content=url&openQrModal=true" target="_blank" rel="noopener noreferrer" aria-label="LINE">
-            <img src="logo/social-line.svg" alt="LINE相談紹介イメージ" class="social-thumb" loading="lazy" />
+            <img src="logo/social-line.svg" alt="LINE相談紹介イメージ" class="social-thumb" width="80" height="80" loading="lazy" />
             <h3>LINE</h3>
             <p>看護学科・医療事務科のLINE公式アカウント。1:1トークで相談・予約が可能です。</p>
             <span>公式LINEで相談する</span>
@@ -527,9 +516,245 @@
       </div>
     </section>
 
+    <!-- ===========================================
+         FUTURE SECTIONS - UNCOMMENT WHEN READY
+         =========================================== -->
+
+    <!-- TESTIMONIALS SECTION (Student Voices)
+    <section id="testimonials" class="scroll-animate">
+      <div class="container">
+        <h2>💬 学生の声</h2>
+        <p class="section-lead">赤塚学園で学んだ学生たちの感想をご紹介します。</p>
+        
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="teachers/female-icon.svg" alt="学生写真" class="testimonial-avatar" loading="lazy" />
+              <div class="testimonial-info">
+                <h4>プリヤンカさん</h4>
+                <p>ネパール出身 / 2年コース</p>
+              </div>
+            </div>
+            <p class="testimonial-content">
+              先生方がとても親切で、日本語だけでなく日本の文化も学べました。クラスメイトとの交流も楽しかったです。卒業後は鹿児島の専門学校に進学しました。
+            </p>
+            <div class="testimonial-footer">
+              <span class="testimonial-country">🇳🇵 ネパール</span>
+              <span class="testimonial-year">2024年卒業</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="teachers/female-icon.svg" alt="学生写真" class="testimonial-avatar" loading="lazy" />
+              <div class="testimonial-info">
+                <h4>グエンさん</h4>
+                <p>ベトナム出身 / 2年コース</p>
+              </div>
+            </div>
+            <p class="testimonial-content">
+              鹿児島は生活費が安く、自然も豊かで勉強に集中できる環境です。学校のサポートのおかげでアルバイトも見つかり、充実した留学生活を送れました。
+            </p>
+            <div class="testimonial-footer">
+              <span class="testimonial-country">🇻🇳 ベトナム</span>
+              <span class="testimonial-year">2024年卒業</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="teachers/female-icon.svg" alt="学生写真" class="testimonial-avatar" loading="lazy" />
+              <div class="testimonial-info">
+                <h4>ラジェシュさん</h4>
+                <p>インド出身 / 2年コース</p>
+              </div>
+            </div>
+            <p class="testimonial-content">
+              入学前はひらがなも読めませんでしたが、2年間でJLPT N2に合格できました。先生方の熱心な指導と、少人数クラスでの丁寧な授業のおかげです。
+            </p>
+            <div class="testimonial-footer">
+              <span class="testimonial-country">🇮🇳 インド</span>
+              <span class="testimonial-year">2023年卒業</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- SUCCESS STORIES SECTION
+    <section id="success-stories" class="scroll-animate">
+      <div class="container">
+        <h2>🌟 卒業生の活躍</h2>
+        <p class="section-lead">赤塚学園を卒業し、夢を実現した先輩たちをご紹介します。</p>
+        
+        <div class="success-stories-grid">
+          <div class="success-story-card">
+            <img src="gallery/success-student1.jpg" alt="卒業生の写真" class="success-story-image" loading="lazy" />
+            <div class="success-story-content">
+              <h3 class="success-story-name">アビシェクさん</h3>
+              <p class="success-story-origin">🇳🇵 ネパール出身</p>
+              <div class="success-story-journey">
+                <span>日本語科 2年</span>
+                <span class="journey-arrow">→</span>
+                <span>IT専門学校</span>
+                <span class="journey-arrow">→</span>
+                <span>東京のIT企業勤務</span>
+              </div>
+              <p class="success-story-quote">
+                赤塚学園で学んだ日本語と日本文化の知識が、今の仕事でとても役立っています。
+                留学生の皆さんも諦めずに頑張ってください！
+              </p>
+            </div>
+          </div>
+
+          <div class="success-story-card">
+            <img src="gallery/success-student2.jpg" alt="卒業生の写真" class="success-story-image" loading="lazy" />
+            <div class="success-story-content">
+              <h3 class="success-story-name">ミンさん</h3>
+              <p class="success-story-origin">🇻🇳 ベトナム出身</p>
+              <div class="success-story-journey">
+                <span>日本語科 2年</span>
+                <span class="journey-arrow">→</span>
+                <span>看護専門学校</span>
+                <span class="journey-arrow">→</span>
+                <span>鹿児島の病院勤務</span>
+              </div>
+              <p class="success-story-quote">
+                日本で看護師になる夢が叶いました。先生方のサポートがなければ実現できなかったと思います。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- EVENTS CALENDAR SECTION
+    <section id="events" class="scroll-animate">
+      <div class="container">
+        <h2>📅 イベントカレンダー</h2>
+        <p class="section-lead">学校行事や季節のイベントをご紹介します。</p>
+        
+        <div class="events-grid">
+          <div class="event-card">
+            <img src="gallery/event-entrance.jpg" alt="入学式" class="event-image" loading="lazy" />
+            <div class="event-content">
+              <span class="event-date">4月 / 10月</span>
+              <h3 class="event-title">入学式</h3>
+              <p class="event-description">新入生を迎える大切な式典。日本の伝統的な入学式を体験できます。</p>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="gallery/event-fieldtrip.jpg" alt="遠足" class="event-image" loading="lazy" />
+            <div class="event-content">
+              <span class="event-date">5月 / 11月</span>
+              <h3 class="event-title">校外学習・遠足</h3>
+              <p class="event-description">鹿児島の名所を訪れ、日本の文化や歴史を体験します。</p>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="gallery/event-speech.jpg" alt="スピーチコンテスト" class="event-image" loading="lazy" />
+            <div class="event-content">
+              <span class="event-date">12月</span>
+              <h3 class="event-title">スピーチコンテスト</h3>
+              <p class="event-description">学生が日本語でスピーチを発表。日頃の学習成果を披露します。</p>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="gallery/event-graduation.jpg" alt="卒業式" class="event-image" loading="lazy" />
+            <div class="event-content">
+              <span class="event-date">3月 / 9月</span>
+              <h3 class="event-title">卒業式</h3>
+              <p class="event-description">2年間の学びを終え、新たなステップへ旅立つ式典です。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- FAQ Section -->
+    <section id="faq" class="scroll-animate">
+      <div class="container">
+        <h2 data-i18n="faq.title">❓ よくある質問</h2>
+        
+        <div class="accordion" data-single-open="true">
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span data-i18n="faq.q1">入学に必要な書類は何ですか？</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-body" data-i18n="faq.a1">
+                入学願書、最終学歴の卒業証明書、日本語学習歴証明書（ある場合）、パスポートのコピー、証明写真が必要です。詳細は入学案内ページをご確認ください。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span data-i18n="faq.q2">学費の支払い方法は？</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-body" data-i18n="faq.a2">
+                銀行振込でのお支払いとなります。分割払いにも対応しておりますので、ご相談ください。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span data-i18n="faq.q3">アルバイトはできますか？</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-body" data-i18n="faq.a3">
+                留学ビザをお持ちの方は、資格外活動許可を取得すれば週28時間までアルバイトが可能です。学校でサポートいたします。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span data-i18n="faq.q4">寮はありますか？</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-body" data-i18n="faq.a4">
+                学校提携の寮やアパートをご紹介しています。入学前からお部屋探しをサポートいたします。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span data-i18n="faq.q5">日本語が全くわからなくても大丈夫ですか？</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-body" data-i18n="faq.a5">
+                はい、初心者クラスがありますので、ゼロから学べます。ひらがな・カタカナから丁寧に指導します。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span data-i18n="faq.q6">卒業後の進路サポートはありますか？</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-body" data-i18n="faq.a6">
+                はい、専門学校・大学への進学指導、就職サポートを行っています。個別相談も随時受け付けています。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="scroll-animate">
       <div class="container">
-        <h2>📧お問い合わせ</h2>
+        <h2 data-i18n="contact.title">📧お問い合わせ</h2>
         
         <div class="contact-layout">
           <div class="contact-meta">
@@ -549,20 +774,20 @@
             <input type="hidden" name="subject" value="New Inquiry from Website" />
             <input type="checkbox" name="botcheck" class="hp-field" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true" />
             
-            <label for="name">お名前</label>
-            <input type="text" id="name" name="name" autocomplete="name" minlength="2" required aria-describedby="contactFormStatus" placeholder="お名前を入力してください" />
+            <label for="name" data-i18n="contact.name">お名前</label>
+            <input type="text" id="name" name="name" autocomplete="name" minlength="2" required aria-describedby="contactFormStatus" placeholder="お名前を入力してください" data-i18n-placeholder="contact.namePlaceholder" />
 
-            <label for="email">メールアドレス</label>
-            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="contactFormStatus" placeholder="example@email.com" />
+            <label for="email" data-i18n="contact.email">メールアドレス</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="contactFormStatus" placeholder="example@email.com" data-i18n-placeholder="contact.emailPlaceholder" />
 
-            <label for="message">お問い合わせ内容</label>
-            <textarea id="message" name="message" rows="3" minlength="10" required aria-describedby="contactFormStatus" placeholder="ご質問やご相談内容をご記入ください"></textarea>
+            <label for="message" data-i18n="contact.message">お問い合わせ内容</label>
+            <textarea id="message" name="message" rows="3" minlength="10" required aria-describedby="contactFormStatus" placeholder="ご質問やご相談内容をご記入ください" data-i18n-placeholder="contact.messagePlaceholder"></textarea>
 
             <input type="hidden" id="contactFormStartedAt" name="contactFormStartedAt" value="" />
 
             <p id="contactFormStatus" class="form-status" aria-live="polite"></p>
 
-            <button type="submit" class="pulse-glow">送信する</button>
+            <button type="submit" class="pulse-glow" data-i18n="contact.submit">送信する</button>
           </form>
         </div>
 
@@ -572,7 +797,7 @@
     <footer id="mega-footer" aria-labelledby="footer-title">
       <div class="footer-hero-split">
         <div class="footer-info-side">
-          <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="footer-logo" />
+          <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="footer-logo" loading="lazy" width="256" height="48" />
           <p class="footer-address">〒890-0055 鹿児島県鹿児島市上荒田町6-1</p>
           <div class="footer-contact-badges">
             <a href="tel:0992501313" class="contact-badge tel">
@@ -586,7 +811,7 @@
           </div>
         </div>
         <div class="footer-map-side">
-          <img src="https://akatuka.ac.jp/wp-content/themes/akatuka/src/akatuka-map.webp" alt="赤塚学園アクセスマップ" loading="lazy" />
+          <img src="https://akatuka.ac.jp/wp-content/themes/akatuka/src/akatuka-map.webp" alt="赤塚学園アクセスマップ" loading="lazy" width="600" height="400" />
         </div>
       </div>
 
@@ -602,6 +827,7 @@
               <li><a href="schoollife.html">学校生活</a></li>
               <li><a href="#kagoshima">鹿児島について</a></li>
               <li><a href="#college-location">学校の場所</a></li>
+              <li><a href="#faq">よくある質問</a></li>
               <li><a href="#contact">お問い合わせ</a></li>
             </ul>
           </div>
@@ -612,6 +838,7 @@
               <li><a href="new.html">💰 入学案内</a></li>
               <li><a href="futurepath.html">🎯 進路情報</a></li>
               <li><a href="schoollife.html">🕒 学校生活</a></li>
+              <li><a href="faq.html">❓ よくある質問</a></li>
             </ul>
           </div>
 

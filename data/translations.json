@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "language": { "ja": "🌐 Language", "en": "🌐 Language", "ne": "🌐 भाषा", "hi": "🌐 भाषा", "vi": "🌐 Ngôn ngữ" },
+    "schoolInfo": { "ja": "🏫専門学校情報", "en": "🏫 School Information", "ne": "🏫 विद्यालय जानकारी", "hi": "🏫 विद्यालय जानकारी", "vi": "🏫 Thông tin trường" },
+    "japaneseCourse": { "ja": "🏫日本語科", "en": "🏫 Japanese Course", "ne": "🏫 जापानी भाषा विभाग", "hi": "🏫 जापानी भाषा विभाग", "vi": "🏫 Khoa tiếng Nhật" },
+    "teacherIntro": { "ja": "👩‍🏫教師紹介", "en": "👩‍🏫 Teachers", "ne": "👩‍🏫 शिक्षक परिचय", "hi": "👩‍🏫 शिक्षक परिचय", "vi": "👩‍🏫 Giới thiệu giáo viên" },
+    "schoolLife": { "ja": "🕒学校生活", "en": "🕒 School Life", "ne": "🕒 विद्यालय जीवन", "hi": "🕒 विद्यालय जीवन", "vi": "🕒 Đời sống học đường" },
+    "admission": { "ja": "💰入学案内", "en": "💰 Admission", "ne": "💰 भर्ना गाइड", "hi": "💰 प्रवेश गाइड", "vi": "💰 Hướng dẫn nhập học" },
+    "studentSupport": { "ja": "⭐学生サポート", "en": "⭐ Student Support", "ne": "⭐ विद्यार्थी सहयोग", "hi": "⭐ छात्र सहायता", "vi": "⭐ Hỗ trợ sinh viên" },
+    "careerPath": { "ja": "🎯進路", "en": "🎯 Career Path", "ne": "🎯 भविष्यको बाटो", "hi": "🎯 भविष्य का मार्ग", "vi": "🎯 Con đường tương lai" },
+    "kagoshima": { "ja": "🌸鹿児島", "en": "🌸 Kagoshima", "ne": "🌸 कागोशिमा", "hi": "🌸 कागोशिमा", "vi": "🌸 Kagoshima" },
+    "location": { "ja": "📍学校の場所", "en": "📍 Location", "ne": "📍 विद्यालयको स्थान", "hi": "📍 विद्यालय का स्थान", "vi": "📍 Vị trí trường" },
+    "socialMedia": { "ja": "📱ソーシャルメディア", "en": "📱 Social Media", "ne": "📱 सामाजिक सञ्जाल", "hi": "📱 सोशल मीडिया", "vi": "📱 Mạng xã hội" },
+    "faq": { "ja": "❓よくある質問", "en": "❓ FAQ", "ne": "❓ बारम्बार सोधिने प्रश्नहरू", "hi": "❓ अक्सर पूछे जाने वाले प्रश्न", "vi": "❓ Câu hỏi thường gặp" },
+    "contact": { "ja": "📧お問い合わせ", "en": "📧 Contact", "ne": "📧 सम्पर्क", "hi": "📧 संपर्क", "vi": "📧 Liên hệ" }
+  },
+
+  "common": {
+    "backToTop": { "ja": "🏫 学校トップへ戻る", "en": "🏫 Back to School Top", "ne": "🏫 विद्यालयको मुख्य पृष्ठमा फर्कनुहोस्", "hi": "🏫 मुख्य पृष्ठ पर लौटें", "vi": "🏫 Về trang chính" },
+    "admissionBtn": { "ja": "💰 入学案内", "en": "💰 Admission Guide", "ne": "💰 भर्ना गाइड", "hi": "💰 प्रवेश गाइड", "vi": "💰 Hướng dẫn nhập học" },
+    "schoolLifeBtn": { "ja": "🕒 学校生活", "en": "🕒 School Life", "ne": "🕒 विद्यालय जीवन", "hi": "🕒 विद्यालय जीवन", "vi": "🕒 Đời sống học đường" },
+    "careerBtn": { "ja": "🎯 進路情報", "en": "🎯 Career Info", "ne": "🎯 भविष्यको जानकारी", "hi": "🎯 भविष्य की जानकारी", "vi": "🎯 Thông tin hướng nghiệp" },
+    "contactBtn": { "ja": "📧 お問い合わせ", "en": "📧 Contact Us", "ne": "📧 सम्पर्क गर्नुहोस्", "hi": "📧 संपर्क करें", "vi": "📧 Liên hệ" },
+    "skipToMain": { "ja": "メインコンテンツへスキップ", "en": "Skip to Main Content", "ne": "मुख्य सामग्रीमा जानुहोस्", "hi": "मुख्य सामग्री पर जाएं", "vi": "Chuyển đến nội dung chính" }
+  },
+
+  "index": {
+    "splash": {
+      "title": { "ja": "学校法人赤塚学園", "en": "Akatsuka Gakuen Foundation", "ne": "अकात्सुका गाकुएन विद्यालय", "hi": "अकात्सुका गाकुएन विद्यालय", "vi": "Trường Akatsuka Gakuen" },
+      "subtitle": { "ja": "認定日本語教育機関", "en": "Certified Japanese Language Institution", "ne": "प्रमाणित जापानी भाषा शिक्षा संस्था", "hi": "प्रमाणित जापानी भाषा शिक्षा संस्थान", "vi": "Cơ sở giáo dục tiếng Nhật được chứng nhận" }
+    },
+    "aboutCollege": {
+      "title": { "ja": "🏫専門学校情報", "en": "🏫 School Information", "ne": "🏫 विद्यालय जानकारी", "hi": "🏫 विद्यालय जानकारी", "vi": "🏫 Thông tin trường" },
+      "mission": { "ja": "理念：ひとりひとりの色もかたちも異なる尊い\"個性\"を育む。", "en": "Philosophy: Nurturing the precious \"individuality\" of each person, unique in color and form.", "ne": "दर्शन: प्रत्येक व्यक्तिको अनमोल \"व्यक्तित्व\" को विकास गर्ने।", "hi": "दर्शन: प्रत्येक व्यक्ति की अनमोल \"व्यक्तित्व\" का विकास करना।", "vi": "Triết lý: Nuôi dưỡng \"cá tính\" quý giá của mỗi người." },
+      "aboutTitle": { "ja": "赤塚学園について", "en": "About Akatsuka Gakuen", "ne": "अकात्सुका गाकुएन बारेमा", "hi": "अकात्सुका गाकुएन के बारे में", "vi": "Về Akatsuka Gakuen" },
+      "aboutText": { "ja": "学校法人赤塚学園は、鹿児島市上荒田町にある専門学校です。医療・福祉・美容・デザイン・ビジネス分野で、実践力と就職力を育てる教育を行っています。", "en": "Akatsuka Gakuen is a vocational school in Kamiarata-cho, Kagoshima City. We provide education that develops practical skills and employability in medical, welfare, beauty, design, and business fields.", "ne": "अकात्सुका गाकुएन कागोशिमा शहरको कामिआराता-चोमा अवस्थित व्यावसायिक विद्यालय हो। हामी चिकित्सा, कल्याण, सौन्दर्य, डिजाइन र व्यापार क्षेत्रमा व्यावहारिक सीप विकास गर्ने शिक्षा प्रदान गर्दछौं।", "hi": "अकात्सुका गाकुएन कागोशिमा शहर के कामिआराता-चो में स्थित एक व्यावसायिक विद्यालय है। हम चिकित्सा, कल्याण, सौंदर्य, डिज़ाइन और व्यवसाय क्षेत्रों में व्यावहारिक कौशल विकसित करने वाली शिक्षा प्रदान करते हैं।", "vi": "Akatsuka Gakuen là trường dạy nghề tại Kamiarata-cho, thành phố Kagoshima. Chúng tôi cung cấp giáo dục phát triển kỹ năng thực hành trong các lĩnh vực y tế, phúc lợi, thẩm mỹ, thiết kế và kinh doanh." },
+      "departments": {
+        "nursing": { "ja": "看護学科", "en": "Nursing", "ne": "नर्सिङ विभाग", "hi": "नर्सिंग विभाग", "vi": "Khoa Điều dưỡng" },
+        "medicalAdmin": { "ja": "医療事務科", "en": "Medical Administration", "ne": "चिकित्सा प्रशासन", "hi": "चिकित्सा प्रशासन", "vi": "Khoa Hành chính y tế" },
+        "beauty": { "ja": "美容科", "en": "Beauty", "ne": "सौन्दर्य विभाग", "hi": "सौंदर्य विभाग", "vi": "Khoa Thẩm mỹ" },
+        "design": { "ja": "デザイン科", "en": "Design", "ne": "डिजाइन विभाग", "hi": "डिज़ाइन विभाग", "vi": "Khoa Thiết kế" },
+        "globalBusiness": { "ja": "グローバルビジネス", "en": "Global Business", "ne": "ग्लोबल व्यापार", "hi": "ग्लोबल बिजनेस", "vi": "Kinh doanh quốc tế" },
+        "japanese": { "ja": "日本語科", "en": "Japanese Language", "ne": "जापानी भाषा विभाग", "hi": "जापानी भाषा विभाग", "vi": "Khoa tiếng Nhật" }
+      },
+      "viewDepartments": { "ja": "主な学科はこちらへ →", "en": "View Main Departments →", "ne": "मुख्य विभागहरू हेर्नुहोस् →", "hi": "मुख्य विभाग देखें →", "vi": "Xem các khoa chính →" }
+    },
+    "japaneseCourse": {
+      "title": { "ja": "🗾 日本語科", "en": "🗾 Japanese Language Course", "ne": "🗾 जापानी भाषा विभाग", "hi": "🗾 जापानी भाषा विभाग", "vi": "🗾 Khoa tiếng Nhật" },
+      "certified": { "ja": "認定日本語教育機関", "en": "Certified Japanese Language Educational Institution", "ne": "प्रमाणित जापानी भाषा शिक्षा संस्था", "hi": "प्रमाणित जापानी भाषा शिक्षा संस्थान", "vi": "Cơ sở giáo dục tiếng Nhật được chứng nhận" },
+      "purposeTitle": { "ja": "🎯 設立の目的と経緯", "en": "🎯 Purpose and Background", "ne": "🎯 स्थापना उद्देश्य र पृष्ठभूमि", "hi": "🎯 स्थापना का उद्देश्य और पृष्ठभूमि", "vi": "🎯 Mục đích và lịch sử thành lập" },
+      "philosophyTitle": { "ja": "📘 教育理念", "en": "📘 Educational Philosophy", "ne": "📘 शैक्षिक दर्शन", "hi": "📘 शैक्षिक दर्शन", "vi": "📘 Triết lý giáo dục" },
+      "goalsTitle": { "ja": "🏁 教育課程の到達目標", "en": "🏁 Curriculum Goals", "ne": "🏁 पाठ्यक्रम लक्ष्यहरू", "hi": "🏁 पाठ्यक्रम लक्ष्य", "vi": "🏁 Mục tiêu chương trình" }
+    },
+    "teachers": {
+      "title": { "ja": "👩‍🏫教師紹介", "en": "👩‍🏫 Meet Our Teachers", "ne": "👩‍🏫 शिक्षक परिचय", "hi": "👩‍🏫 शिक्षक परिचय", "vi": "👩‍🏫 Giới thiệu giáo viên" },
+      "lead": { "ja": "経験豊富な教師陣が、基礎から実践まで丁寧にサポートします。", "en": "Our experienced teachers provide thorough support from basics to practice.", "ne": "अनुभवी शिक्षकहरूले आधारभूतदेखि अभ्यास सम्म सहयोग गर्छन्।", "hi": "अनुभवी शिक्षक मूल बातों से लेकर अभ्यास तक पूरी सहायता प्रदान करते हैं।", "vi": "Đội ngũ giáo viên giàu kinh nghiệm hỗ trợ tận tình từ cơ bản đến thực hành." },
+      "principal": { "ja": "校長", "en": "Principal", "ne": "प्रधानाध्यापक", "hi": "प्रधानाचार्य", "vi": "Hiệu trưởng" },
+      "teachers": { "ja": "教師", "en": "Teachers", "ne": "शिक्षकहरू", "hi": "शिक्षक", "vi": "Giáo viên" },
+      "staff": { "ja": "事務・生活サポートスタッフ", "en": "Office & Life Support Staff", "ne": "कार्यालय र जीवन सहयोग कर्मचारी", "hi": "कार्यालय और जीवन सहायता कर्मचारी", "vi": "Nhân viên văn phòng & hỗ trợ đời sống" }
+    },
+    "studentSupport": {
+      "title": { "ja": "🌟学生サポート", "en": "🌟 Student Support", "ne": "🌟 विद्यार्थी सहयोग", "hi": "🌟 छात्र सहायता", "vi": "🌟 Hỗ trợ sinh viên" },
+      "lead": { "ja": "留学生活を安心して過ごせるよう、学習・生活・メンタル面で総合的にサポートします。", "en": "We provide comprehensive support in academics, daily life, and mental health for a worry-free student experience.", "ne": "हामी अध्ययन, दैनिक जीवन र मानसिक स्वास्थ्यमा व्यापक सहयोग प्रदान गर्दछौं।", "hi": "हम पढ़ाई, दैनिक जीवन और मानसिक स्वास्थ्य में व्यापक सहायता प्रदान करते हैं।", "vi": "Chúng tôi hỗ trợ toàn diện về học tập, đời sống và sức khỏe tinh thần." },
+      "studySupport": { "ja": "📚学習・メンタルサポート", "en": "📚 Academic & Mental Support", "ne": "📚 अध्ययन र मानसिक सहयोग", "hi": "📚 अकादमिक और मानसिक सहायता", "vi": "📚 Hỗ trợ học tập & tinh thần" },
+      "languageSupport": { "ja": "🗣️言語サポート", "en": "🗣️ Language Support", "ne": "🗣️ भाषा सहयोग", "hi": "🗣️ भाषा सहायता", "vi": "🗣️ Hỗ trợ ngôn ngữ" },
+      "lifeSupport": { "ja": "🏠生活サポート", "en": "🏠 Life Support", "ne": "🏠 जीवन सहयोग", "hi": "🏠 जीवन सहायता", "vi": "🏠 Hỗ trợ đời sống" },
+      "scholarship": { "ja": "🎓奨学金制度", "en": "🎓 Scholarship Program", "ne": "🎓 छात्रवृत्ति कार्यक्रम", "hi": "🎓 छात्रवृत्ति कार्यक्रम", "vi": "🎓 Chương trình học bổng" }
+    },
+    "kagoshima": {
+      "title": { "ja": "🌸鹿児島について", "en": "🌸 About Kagoshima", "ne": "🌸 कागोशिमाको बारेमा", "hi": "🌸 कागोशिमा के बारे में", "vi": "🌸 Về Kagoshima" }
+    },
+    "location": {
+      "title": { "ja": "📍学校の場所", "en": "📍 School Location", "ne": "📍 विद्यालयको स्थान", "hi": "📍 विद्यालय का स्थान", "vi": "📍 Vị trí trường" },
+      "address": { "ja": "鹿児島県鹿児島市上荒田町6-1", "en": "6-1 Kamiarata-cho, Kagoshima City, Kagoshima 890-0055", "ne": "6-1 कामिआराता-चो, कागोशिमा शहर, कागोशिमा 890-0055", "hi": "6-1 कामिआराता-चो, कागोशिमा शहर, कागोशिमा 890-0055", "vi": "6-1 Kamiarata-cho, thành phố Kagoshima, Kagoshima 890-0055" },
+      "viewMap": { "ja": "Googleマップで見る", "en": "View on Google Maps", "ne": "Google नक्सामा हेर्नुहोस्", "hi": "Google मानचित्र पर देखें", "vi": "Xem trên Google Maps" }
+    },
+    "socialMedia": {
+      "title": { "ja": "📱ソーシャルメディア", "en": "📱 Social Media", "ne": "📱 सामाजिक सञ्जाल", "hi": "📱 सोशल मीडिया", "vi": "📱 Mạng xã hội" }
+    },
+    "contact": {
+      "title": { "ja": "📧お問い合わせ", "en": "📧 Contact Us", "ne": "📧 सम्पर्क गर्नुहोस्", "hi": "📧 संपर्क करें", "vi": "📧 Liên hệ với chúng tôi" },
+      "name": { "ja": "お名前", "en": "Your Name", "ne": "तपाईंको नाम", "hi": "आपका नाम", "vi": "Họ tên" },
+      "email": { "ja": "メールアドレス", "en": "Email Address", "ne": "इमेल ठेगाना", "hi": "ईमेल पता", "vi": "Địa chỉ email" },
+      "message": { "ja": "お問い合わせ内容", "en": "Your Message", "ne": "सन्देश", "hi": "संदेश", "vi": "Nội dung liên hệ" },
+      "submit": { "ja": "送信する", "en": "Submit", "ne": "पठाउनुहोस्", "hi": "भेजें", "vi": "Gửi" }
+    }
+  },
+
+  "schoollife": {
+    "title": { "ja": "🕒 学校生活", "en": "🕒 School Life", "ne": "🕒 विद्यालय जीवन", "hi": "🕒 विद्यालय जीवन", "vi": "🕒 Đời sống học đường" },
+    "subtitle": { "ja": "日本語科での学習スケジュールやカリキュラムについてご紹介します。", "en": "Learn about the study schedule and curriculum in our Japanese Language Course.", "ne": "जापानी भाषा विभागको अध्ययन तालिका र पाठ्यक्रमको बारेमा जान्नुहोस्।", "hi": "जापानी भाषा विभाग की अध्ययन अनुसूची और पाठ्यक्रम के बारे में जानें।", "vi": "Tìm hiểu về lịch học và chương trình giảng dạy của Khoa tiếng Nhật." },
+    "classroom": { "ja": "📚 私たちの教室", "en": "📚 Our Classroom", "ne": "📚 हाम्रो कक्षा", "hi": "📚 हमारी कक्षा", "vi": "📚 Lớp học của chúng tôi" },
+    "timetable": { "ja": "📅 時間割", "en": "📅 Class Schedule", "ne": "📅 समय तालिका", "hi": "📅 समय सारणी", "vi": "📅 Thời khóa biểu" },
+    "framework1": { "ja": "📘 1年次コースフレームワーク", "en": "📘 1st Year Course Framework", "ne": "📘 पहिलो वर्षको पाठ्यक्रम ढाँचा", "hi": "📘 प्रथम वर्ष पाठ्यक्रम ढांचा", "vi": "📘 Khung chương trình năm 1" },
+    "framework2": { "ja": "📗 2年次コースフレームワーク", "en": "📗 2nd Year Course Framework", "ne": "📗 दोस्रो वर्षको पाठ्यक्रम ढाँचा", "hi": "📗 द्वितीय वर्ष पाठ्यक्रम ढांचा", "vi": "📗 Khung chương trình năm 2" },
+    "events": { "ja": "📆 年間行事予定(令和8年度)", "en": "📆 Annual Events (FY2026)", "ne": "📆 वार्षिक कार्यक्रम (सन् २०२६)", "hi": "📆 वार्षिक कार्यक्रम (वर्ष 2026)", "vi": "📆 Lịch sự kiện hàng năm (2026)" },
+    "internal": { "ja": "🏫 学内", "en": "🏫 School Events", "ne": "🏫 विद्यालय भित्रका कार्यक्रम", "hi": "🏫 विद्यालय के कार्यक्रम", "vi": "🏫 Sự kiện trong trường" },
+    "external": { "ja": "🌍 学外", "en": "🌍 External Events", "ne": "🌍 विद्यालय बाहिरका कार्यक्रम", "hi": "🌍 बाहरी कार्यक्रम", "vi": "🌍 Sự kiện bên ngoài" },
+    "backToTop": { "ja": "← トップページに戻る", "en": "← Back to Top Page", "ne": "← मुख्य पृष्ठमा फर्कनुहोस्", "hi": "← मुख्य पृष्ठ पर लौटें", "vi": "← Về trang chính" },
+    "days": {
+      "monday": { "ja": "月曜日", "en": "Monday", "ne": "सोमबार", "hi": "सोमवार", "vi": "Thứ Hai" },
+      "tuesday": { "ja": "火曜日", "en": "Tuesday", "ne": "मंगलबार", "hi": "मंगलवार", "vi": "Thứ Ba" },
+      "wednesday": { "ja": "水曜日", "en": "Wednesday", "ne": "बुधबार", "hi": "बुधवार", "vi": "Thứ Tư" },
+      "thursday": { "ja": "木曜日", "en": "Thursday", "ne": "बिहीबार", "hi": "गुरुवार", "vi": "Thứ Năm" },
+      "friday": { "ja": "金曜日", "en": "Friday", "ne": "शुक्रबार", "hi": "शुक्रवार", "vi": "Thứ Sáu" }
+    },
+    "subjects": {
+      "comprehensiveJapanese": { "ja": "総合日本語", "en": "Comprehensive Japanese", "ne": "समग्र जापानी", "hi": "व्यापक जापानी", "vi": "Tiếng Nhật tổng hợp" },
+      "kanji": { "ja": "漢字", "en": "Kanji", "ne": "कान्जी", "hi": "कांजी", "vi": "Hán tự" },
+      "japaneseCulture": { "ja": "日本事情 / 異文化理解", "en": "Japanese Studies / Cross-cultural Understanding", "ne": "जापानी अध्ययन / अन्तर-सांस्कृतिक बुझाइ", "hi": "जापानी अध्ययन / अंतर-सांस्कृतिक समझ", "vi": "Văn hóa Nhật / Hiểu biết đa văn hóa" },
+      "studyPlan": { "ja": "学習計画 / 振り返り", "en": "Study Plan / Review", "ne": "अध्ययन योजना / समीक्षा", "hi": "अध्ययन योजना / समीक्षा", "vi": "Kế hoạch học tập / Ôn tập" }
+    }
+  },
+
+  "new": {
+    "title": { "ja": "💰 入学案内ガイド", "en": "💰 Admission Guide", "ne": "💰 भर्ना गाइड", "hi": "💰 प्रवेश गाइड", "vi": "💰 Hướng dẫn nhập học" },
+    "subtitle": { "ja": "費用、入学条件、出願から入学までの流れを1ページで確認できます。", "en": "View tuition, requirements, and the application process all on one page.", "ne": "शुल्क, आवश्यकताहरू र आवेदन प्रक्रिया एउटै पृष्ठमा हेर्नुहोस्।", "hi": "शुल्क, आवश्यकताएं और आवेदन प्रक्रिया एक पृष्ठ पर देखें।", "vi": "Xem học phí, điều kiện và quy trình nộp đơn trên một trang." },
+    "course": { "ja": "コース", "en": "Course", "ne": "पाठ्यक्रम", "hi": "पाठ्यक्रम", "vi": "Khóa học" },
+    "tuition": { "ja": "💴 学費（進学2年コース）", "en": "💴 Tuition (2-Year College Prep Course)", "ne": "💴 शुल्क (२ वर्षे प्रगति पाठ्यक्रम)", "hi": "💴 शुल्क (2 वर्षीय प्रगति पाठ्यक्रम)", "vi": "💴 Học phí (Khóa 2 năm)" },
+    "requirements": { "ja": "⛩️ 入学条件", "en": "⛩️ Admission Requirements", "ne": "⛩️ भर्ना आवश्यकताहरू", "hi": "⛩️ प्रवेश आवश्यकताएं", "vi": "⛩️ Điều kiện nhập học" },
+    "documents": { "ja": "📄 出願に必要な書類", "en": "📄 Required Documents", "ne": "📄 आवश्यक कागजातहरू", "hi": "📄 आवश्यक दस्तावेज़", "vi": "📄 Hồ sơ cần thiết" },
+    "applicationFlow": { "ja": "🛫 出願から入学までの流れ", "en": "🛫 Application to Enrollment Process", "ne": "🛫 आवेदनदेखि भर्ना सम्मको प्रक्रिया", "hi": "🛫 आवेदन से प्रवेश तक की प्रक्रिया", "vi": "🛫 Quy trình từ nộp đơn đến nhập học" },
+    "certificateRequest": { "ja": "📄 出席・成績証明書の請求", "en": "📄 Certificate Request", "ne": "📄 प्रमाणपत्र अनुरोध", "hi": "📄 प्रमाणपत्र अनुरोध", "vi": "📄 Yêu cầu chứng chỉ" }
+  },
+
+  "futurepath": {
+    "title": { "ja": "🎓 進路", "en": "🎓 Career Path", "ne": "🎓 भविष्यको बाटो", "hi": "🎓 भविष्य का मार्ग", "vi": "🎓 Con đường tương lai" },
+    "subtitle": { "ja": "専門学校・大学への進学の流れを1ページで確認できます。", "en": "View the path to vocational schools and universities on one page.", "ne": "व्यावसायिक विद्यालय र विश्वविद्यालय सम्मको बाटो एउटै पृष्ठमा हेर्नुहोस्।", "hi": "व्यावसायिक विद्यालय और विश्वविद्यालय तक का मार्ग एक पृष्ठ पर देखें।", "vi": "Xem lộ trình vào trường nghề và đại học trên một trang." },
+    "careerSupport": { "ja": "📌 進路サポートについて", "en": "📌 About Career Support", "ne": "📌 भविष्य सहयोगको बारेमा", "hi": "📌 भविष्य सहायता के बारे में", "vi": "📌 Về hỗ trợ hướng nghiệp" },
+    "recommendAkatsuka": { "ja": "⭐ 赤塚学園の専門学科へ進学（おすすめ）", "en": "⭐ Advance to Akatsuka Gakuen Departments (Recommended)", "ne": "⭐ अकात्सुका गाकुएन विभागमा भर्ना हुनुहोस् (सिफारिस)", "hi": "⭐ अकात्सुका गाकुएन विभाग में प्रवेश (अनुशंसित)", "vi": "⭐ Lên các khoa Akatsuka Gakuen (Khuyến nghị)" },
+    "advancement": { "ja": "🎓 進学", "en": "🎓 Advancement Options", "ne": "🎓 प्रगति विकल्पहरू", "hi": "🎓 प्रगति विकल्प", "vi": "🎓 Các lựa chọn học tiếp" },
+    "timeline": { "ja": "🗓️ 進学までの流れ", "en": "🗓️ Path to Advancement", "ne": "🗓️ प्रगतिको बाटो", "hi": "🗓️ प्रगति का मार्ग", "vi": "🗓️ Lộ trình học tiếp" },
+    "jlptCefr": { "ja": "📝 JLPT・CEFR 目標レベルと進路", "en": "📝 JLPT & CEFR Target Levels", "ne": "📝 JLPT र CEFR लक्ष्य स्तर", "hi": "📝 JLPT और CEFR लक्ष्य स्तर", "vi": "📝 Mục tiêu JLPT & CEFR" },
+    "consultation": { "ja": "🤝 進路相談のご案内", "en": "🤝 Career Consultation", "ne": "🤝 भविष्य परामर्श", "hi": "🤝 भविष्य परामर्श", "vi": "🤝 Tư vấn hướng nghiệp" }
+  },
+
+  "faq": {
+    "title": { "ja": "❓ よくある質問", "en": "❓ FAQ", "ne": "❓ बारम्बार सोधिने प्रश्नहरू", "hi": "❓ अक्सर पूछे जाने वाले प्रश्न", "vi": "❓ Câu hỏi thường gặp" },
+    "subtitle": { "ja": "入学や学校生活についてよくいただくご質問にお答えします。", "en": "Answers to frequently asked questions about admission and school life.", "ne": "भर्ना र विद्यालय जीवनका बारम्बार सोधिने प्रश्नहरूको जवाफ।", "hi": "प्रवेश और विद्यालय जीवन के बारे में अक्सर पूछे जाने वाले प्रश्नों के उत्तर।", "vi": "Giải đáp các câu hỏi thường gặp về nhập học và đời sống học đường." },
+    "aboutAdmission": { "ja": "📋 入学について", "en": "📋 About Admission", "ne": "📋 भर्नाको बारेमा", "hi": "📋 प्रवेश के बारे में", "vi": "📋 Về nhập học" },
+    "aboutTuition": { "ja": "💰 学費について", "en": "💰 About Tuition", "ne": "💰 शुल्कको बारेमा", "hi": "💰 शुल्क के बारे में", "vi": "💰 Về học phí" },
+    "aboutVisa": { "ja": "🛂 ビザについて", "en": "🛂 About Visas", "ne": "🛂 भिसाको बारेमा", "hi": "🛂 वीज़ा के बारे में", "vi": "🛂 Về thị thực" },
+    "aboutLiving": { "ja": "🏠 生活について", "en": "🏠 About Living", "ne": "🏠 जीवनको बारेमा", "hi": "🏠 जीवन के बारे में", "vi": "🏠 Về đời sống" },
+    "q1": { "ja": "入学に必要な書類は何ですか？", "en": "What documents are required for admission?", "ne": "भर्नाका लागि कुन कागजातहरू आवश्यक छन्？", "hi": "प्रवेश के लिए कौन से दस्तावेज़ आवश्यक हैं？", "vi": "Cần những giấy tờ gì để nhập học?" },
+    "a1": { "ja": "入学願書、最終学歴の卒業証明書、日本語学習歴証明書（ある場合）、パスポートのコピー、証明写真が必要です。詳細は入学案内ページをご確認ください。", "en": "You will need an application form, graduation certificate from your last school, Japanese study certificate (if any), passport copy, and ID photos. See the Admission page for details.", "ne": "तपाईंलाई आवेदन फारम, अन्तिम विद्यालयको स्नातक प्रमाणपत्र, जापानी अध्ययन प्रमाणपत्र (भएमा), राहदानीको प्रतिलिपि र फोटो चाहिन्छ। विवरणका लागि भर्ना पृष्ठ हेर्नुहोस्।", "hi": "आपको आवेदन पत्र, अंतिम विद्यालय का स्नातक प्रमाणपत्र, जापानी अध्ययन प्रमाणपत्र (यदि हो), पासपोर्ट की प्रति और फोटो चाहिए। विवरण के लिए प्रवेश पृष्ठ देखें।", "vi": "Bạn cần đơn xin nhập học, bằng tốt nghiệp trường cuối cùng, chứng chỉ học tiếng Nhật (nếu có), bản sao hộ chiếu và ảnh. Xem trang Nhập học để biết chi tiết." },
+    "q2": { "ja": "学費の支払い方法は？", "en": "How can I pay tuition?", "ne": "शुल्क कसरी तिर्ने？", "hi": "शुल्क का भुगतान कैसे करें？", "vi": "Cách thanh toán học phí?" },
+    "a2": { "ja": "銀行振込でのお支払いとなります。分割払いにも対応しておりますので、ご相談ください。", "en": "Payment is by bank transfer. Installment plans are available — please contact us.", "ne": "बैंक ट्रान्सफर मार्फत भुक्तानी गरिन्छ। किस्ता योजना उपलब्ध छ — कृपया सम्पर्क गर्नुहोस्।", "hi": "बैंक ट्रांसफर द्वारा भुगतान किया जाता है। किस्त योजना उपलब्ध है — कृपया संपर्क करें।", "vi": "Thanh toán bằng chuyển khoản ngân hàng. Có thể trả góp — vui lòng liên hệ." },
+    "q3": { "ja": "アルバイトはできますか？", "en": "Can I work part-time?", "ne": "पार्ट-टाइम काम गर्न सकिन्छ？", "hi": "क्या पार्ट-टाइम काम कर सकते हैं？", "vi": "Có thể làm thêm không?" },
+    "a3": { "ja": "留学ビザをお持ちの方は、資格外活動許可を取得すれば週28時間までアルバイトが可能です。学校でサポートいたします。", "en": "With a student visa and work permit, you can work up to 28 hours per week. The school will assist with the application.", "ne": "विद्यार्थी भिसा र कार्य अनुमतिसहित, तपाईं हप्तामा २८ घण्टासम्म काम गर्न सक्नुहुन्छ। विद्यालयले आवेदनमा सहयोग गर्नेछ।", "hi": "छात्र वीज़ा और कार्य अनुमति के साथ, आप सप्ताह में 28 घंटे तक काम कर सकते हैं। विद्यालय आवेदन में सहायता करेगा।", "vi": "Với visa du học và giấy phép làm việc, bạn có thể làm tối đa 28 giờ/tuần. Trường sẽ hỗ trợ xin giấy phép." },
+    "q4": { "ja": "寮はありますか？", "en": "Is there a dormitory?", "ne": "छात्रावास छ？", "hi": "क्या छात्रावास है？", "vi": "Có ký túc xá không?" },
+    "a4": { "ja": "学校提携の寮やアパートをご紹介しています。入学前からお部屋探しをサポートいたします。", "en": "We offer affiliated dormitories and apartments. We help you find a room before enrollment.", "ne": "हामी सम्बद्ध छात्रावास र अपार्टमेन्ट प्रदान गर्दछौं। भर्ना अघि कोठा खोज्न सहयोग गर्छौं।", "hi": "हम संबद्ध छात्रावास और अपार्टमेंट प्रदान करते हैं। प्रवेश से पहले कमरा खोजने में सहायता करते हैं।", "vi": "Chúng tôi cung cấp ký túc xá và căn hộ liên kết. Hỗ trợ tìm phòng trước khi nhập học." },
+    "q5": { "ja": "日本語が全くわからなくても大丈夫ですか？", "en": "Is it okay if I don't know any Japanese?", "ne": "जापानी भाषा नजानेको भए पनि हुन्छ？", "hi": "क्या जापानी भाषा न जानने पर भी ठीक है？", "vi": "Không biết tiếng Nhật có sao không?" },
+    "a5": { "ja": "はい、初心者クラスがありますので、ゼロから学べます。ひらがな・カタカナから丁寧に指導します。", "en": "Yes, we have beginner classes so you can learn from scratch. We teach carefully from Hiragana and Katakana.", "ne": "हो, हामीसँग शुरुवाती कक्षा छ त्यसैले तपाईं शून्यबाट सिक्न सक्नुहुन्छ। हामी हिरागाना र काताकानादेखि ध्यानपूर्वक सिकाउँछौं।", "hi": "हाँ, हमारे पास शुरुआती कक्षा है ताकि आप शून्य से सीख सकें। हम हिरागाना और काताकाना से ध्यानपूर्वक सिखाते हैं।", "vi": "Có, chúng tôi có lớp dành cho người mới bắt đầu. Dạy cẩn thận từ Hiragana và Katakana." },
+    "q6": { "ja": "卒業後の進路サポートはありますか？", "en": "Is there career support after graduation?", "ne": "स्नातक पछि भविष्य सहयोग छ？", "hi": "स्नातक के बाद भविष्य सहायता है？", "vi": "Có hỗ trợ hướng nghiệp sau tốt nghiệp không?" },
+    "a6": { "ja": "はい、専門学校・大学への進学指導、就職サポートを行っています。個別相談も随時受け付けています。", "en": "Yes, we provide guidance for vocational schools, universities, and employment. Individual consultations are available anytime.", "ne": "हो, हामी व्यावसायिक विद्यालय, विश्वविद्यालय र रोजगारीका लागि मार्गदर्शन प्रदान गर्दछौं। व्यक्तिगत परामर्श जुनसुकै बेला उपलब्ध छ।", "hi": "हाँ, हम व्यावसायिक विद्यालय, विश्वविद्यालय और रोजगार के लिए मार्गदर्शन प्रदान करते हैं। व्यक्तिगत परामर्श कभी भी उपलब्ध है।", "vi": "Có, chúng tôi hướng dẫn vào trường nghề, đại học và việc làm. Tư vấn cá nhân luôn sẵn sàng." }
+  },
+
+  "contact": {
+    "title": { "ja": "📧お問い合わせ", "en": "📧 Contact Us", "ne": "📧 सम्पर्क गर्नुहोस्", "hi": "📧 संपर्क करें", "vi": "📧 Liên hệ với chúng tôi" },
+    "name": { "ja": "お名前", "en": "Your Name", "ne": "तपाईंको नाम", "hi": "आपका नाम", "vi": "Họ tên" },
+    "email": { "ja": "メールアドレス", "en": "Email Address", "ne": "इमेल ठेगाना", "hi": "ईमेल पता", "vi": "Địa chỉ email" },
+    "message": { "ja": "お問い合わせ内容", "en": "Your Message", "ne": "सन्देश", "hi": "संदेश", "vi": "Nội dung liên hệ" },
+    "submit": { "ja": "送信する", "en": "Submit", "ne": "पठाउनुहोस्", "hi": "भेजें", "vi": "Gửi" },
+    "namePlaceholder": { "ja": "お名前を入力してください", "en": "Enter your name", "ne": "तपाईंको नाम लेख्नुहोस्", "hi": "अपना नाम दर्ज करें", "vi": "Nhập họ tên" },
+    "emailPlaceholder": { "ja": "example@email.com", "en": "example@email.com", "ne": "example@email.com", "hi": "example@email.com", "vi": "example@email.com" },
+    "messagePlaceholder": { "ja": "ご質問やご相談内容をご記入ください", "en": "Please enter your question or inquiry", "ne": "कृपया आफ्नो प्रश्न वा सोधपुछ लेख्नुहोस्", "hi": "कृपया अपना प्रश्न या पूछताछ दर्ज करें", "vi": "Vui lòng nhập câu hỏi hoặc yêu cầu của bạn" }
+  },
+
+  "thankYou": {
+    "status": { "ja": "送信ステータス: 完了", "en": "Submission Status: Complete", "ne": "पठाउने स्थिति: पूरा भयो", "hi": "भेजने की स्थिति: पूर्ण", "vi": "Trạng thái gửi: Hoàn tất" },
+    "title": { "ja": "送信ありがとうございました", "en": "Thank You for Your Submission", "ne": "पठाउनुभएकोमा धन्यवाद", "hi": "भेजने के लिए धन्यवाद", "vi": "Cảm ơn bạn đã gửi" },
+    "message": { "ja": "フォームの送信が完了しました。内容を確認のうえ、担当者よりご連絡いたします。", "en": "Your form has been submitted. We will review the content and contact you soon.", "ne": "तपाईंको फारम पठाइएको छ। हामी सामग्री समीक्षा गरी चाँडै सम्पर्क गर्नेछौं।", "hi": "आपका फॉर्म भेज दिया गया है। हम सामग्री की समीक्षा करके जल्द ही संपर्क करेंगे।", "vi": "Đơn của bạn đã được gửi. Chúng tôi sẽ xem xét và liên hệ lại sớm." }
+  },
+
+  "notFound": {
+    "title": { "ja": "ページが見つかりません", "en": "Page Not Found", "ne": "पृष्ठ भेटिएन", "hi": "पृष्ठ नहीं मिला", "vi": "Không tìm thấy trang" },
+    "message": { "ja": "お探しのページは移動、削除、または存在しない可能性があります。", "en": "The page you are looking for may have been moved, deleted, or does not exist.", "ne": "तपाईंले खोज्नुभएको पृष्ठ सारिएको, मेटिएको वा अवस्थित नहुन सक्छ।", "hi": "आप जो पृष्ठ खोज रहे हैं वह स्थानांतरित, हटाया गया या मौजूद नहीं हो सकता है।", "vi": "Trang bạn tìm kiếm có thể đã bị di chuyển, xóa hoặc không tồn tại." },
+    "backToSchool": { "ja": "🏫 学校トップへ", "en": "🏫 School Top", "ne": "🏫 विद्यालय मुख्य पृष्ठ", "hi": "🏫 विद्यालय मुख्य पृष्ठ", "vi": "🏫 Trang chính trường" },
+    "goBack": { "ja": "← 前のページへ", "en": "← Previous Page", "ne": "← अघिल्लो पृष्ठ", "hi": "← पिछला पृष्ठ", "vi": "← Trang trước" }
+  },
+
+  "footer": {
+    "siteNav": { "ja": "🗺️ サイトナビゲーション", "en": "🗺️ Site Navigation", "ne": "🗺️ साइट नेभिगेसन", "hi": "🗺️ साइट नेविगेशन", "vi": "🗺️ Điều hướng trang" },
+    "japanesePages": { "ja": "📚 日本語科ページ", "en": "📚 Japanese Course Pages", "ne": "📚 जापानी भाषा पृष्ठहरू", "hi": "📚 जापानी भाषा पृष्ठ", "vi": "📚 Trang Khoa tiếng Nhật" },
+    "relatedPages": { "ja": "📄 関連ページ", "en": "📄 Related Pages", "ne": "📄 सम्बन्धित पृष्ठहरू", "hi": "📄 संबंधित पृष्ठ", "vi": "📄 Trang liên quan" },
+    "collegeSite": { "ja": "🏫 専門学校サイト", "en": "🏫 College Website", "ne": "🏫 विद्यालय वेबसाइट", "hi": "🏫 विद्यालय वेबसाइट", "vi": "🏫 Trang web trường" },
+    "sns": { "ja": "💬 SNS・相談", "en": "💬 SNS & Consultation", "ne": "💬 सामाजिक सञ्जाल र परामर्श", "hi": "💬 सोशल मीडिया और परामर्श", "vi": "💬 MXH & Tư vấn" },
+    "home": { "ja": "ホーム", "en": "Home", "ne": "गृहपृष्ठ", "hi": "होम", "vi": "Trang chủ" },
+    "requestDocs": { "ja": "資料請求", "en": "Request Documents", "ne": "सामग्री अनुरोध", "hi": "सामग्री अनुरोध", "vi": "Yêu cầu tài liệu" },
+    "privacy": { "ja": "プライバシーポリシー", "en": "Privacy Policy", "ne": "गोपनीयता नीति", "hi": "गोपनीयता नीति", "vi": "Chính sách bảo mật" },
+    "copyright": { "ja": "© 2026 学校法人赤塚学園 All Rights Reserved.", "en": "© 2026 Akatsuka Gakuen Foundation. All Rights Reserved.", "ne": "© 2026 अकात्सुका गाकुएन। सर्वाधिकार सुरक्षित।", "hi": "© 2026 अकात्सुका गाकुएन। सर्वाधिकार सुरक्षित।", "vi": "© 2026 Akatsuka Gakuen. Mọi quyền được bảo lưu." }
+  }
+}
