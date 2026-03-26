@@ -1683,6 +1683,7 @@ button[disabled] {
 
   table thead th {
     border: none;
+    background: transparent;
     color: #fff;
     font-size: 0.7rem;
   }
