@@ -845,7 +845,7 @@
       "vi": "<li>Tháng 4: Lễ nhập học, định hướng, diễn tập sơ tán, khám sức khỏe, ngày thể thao</li><li>Tháng 7: Lễ Tanabata, ngoại khóa</li><li>Tháng 10: Halloween, thi hùng biện trong trường</li><li>Tháng 11: Lễ hội trường</li><li>Tháng 12: Giao lưu liên khoa</li><li>Tháng 1: Kakizome (thư pháp)</li><li>Tháng 2: Setsubun, ngoại khóa</li><li>Tháng 3: Thi cuối khóa</li>"
     },
     "eventsExternalHtml": {
-      "ja": "<li>7月: 日本語能力試験</li><li>9月: 地域交流会</li><li>10月: おはら祭り</li><li>12月: 日本語能力試験</li><li>1月: 県スピーチ大会</li>",
+      "ja": "<li>7月: 日本語能力試験</li><li>9月: 地域交流会</li><li>11月: おはら祭り</li><li>12月: 日本語能力試験</li><li>1月: 県スピーチ大会</li>",
       "en": "<li>July: JLPT (Japanese Language Proficiency Test)</li><li>September: Regional exchange event</li><li>October: Ohara Festival</li><li>December: JLPT</li><li>January: Prefectural speech contest</li>",
       "ne": "<li>जुलाई: JLPT (जापानी भाषा दक्षता परीक्षा)</li><li>सेप्टेम्बर: क्षेत्रीय आदानप्रदान</li><li>अक्टोबर: ओहारा उत्सव</li><li>डिसेम्बर: JLPT</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
       "hi": "<li>जुलाई: JLPT (जापानी भाषा दक्षता परीक्षा)</li><li>सितंबर: क्षेत्रीय आदान-प्रदान</li><li>अक्टूबर: ओहारा उत्सव</li><li>दिसंबर: JLPT</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
