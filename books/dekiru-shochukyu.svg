@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" role="img" aria-labelledby="t d">
+  <title id="t">できる日本語 初中級</title>
+  <desc id="d">Placeholder cover for Dekiru Nihongo Sho-Chukyu textbook</desc>
+  <rect width="200" height="280" rx="8" fill="#eff6ff"/>
+  <rect x="8" y="8" width="184" height="264" rx="6" fill="#fff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <rect x="8" y="8" width="184" height="80" rx="6" fill="#2563eb"/>
+  <rect x="8" y="82" width="184" height="6" fill="#2563eb"/>
+  <rect x="48" y="125" width="104" height="60" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="100" y="161" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#2563eb">初中級</text>
+  <text x="100" y="38" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16" font-weight="700" fill="#fff">できる日本語</text>
+  <text x="100" y="62" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#dbeafe">DEKIRU NIHONGO</text>
+  <text x="100" y="220" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#9ca3af">日本語教材</text>
+  <text x="100" y="240" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#d1d5db">Pre-Intermediate</text>
+</svg>

@@ -192,23 +192,6 @@ iframe {
   color: #1f2937;
 }
 
-/* Hide Google Translate UI */
-#google_translate_element .goog-te-gadget,
-#google_translate_element .goog-te-gadget-simple {
-  font-size: 0;
-}
-
-#google_translate_element .goog-logo-link,
-#google_translate_element .goog-te-gadget span,
-#google_translate_element .VIpgJd-ZVi9od-l4eHX-hSRGPd {
-  display: none !important;
-}
-
-body > .skiptranslate,
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-}
-
 .hero-actions {
   margin-top: 18px;
   display: flex;

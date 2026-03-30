@@ -188,23 +188,6 @@ iframe {
   color: #1f2937;
 }
 
-/* Keep translation functionality but hide Google gadget label/banner UI. */
-#google_translate_element .goog-te-gadget,
-#google_translate_element .goog-te-gadget-simple {
-  font-size: 0;
-}
-
-#google_translate_element .goog-logo-link,
-#google_translate_element .goog-te-gadget span,
-#google_translate_element .VIpgJd-ZVi9od-l4eHX-hSRGPd {
-  display: none !important;
-}
-
-body > .skiptranslate,
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-}
-
 body {
   top: 0 !important;
 }
@@ -400,197 +383,6 @@ th {
   border-radius: 6px;
 }
 
-#request-form {
-  background: #ffffff;
-}
-
-.request-header {
-  margin-bottom: 16px;
-}
-
-.request-lead {
-  color: var(--muted);
-  margin-bottom: 4px;
-}
-
-.request-tel {
-  margin: 8px 0;
-}
-
-.request-tel a {
-  color: var(--brand);
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.request-tel a:hover {
-  text-decoration: underline;
-}
-
-.required-note {
-  display: inline-block;
-  font-size: 0.86rem;
-  color: var(--brand-strong);
-  background: #fff0f7;
-  border: 1px solid #f0c7dc;
-  border-radius: 999px;
-  padding: 4px 10px;
-}
-
-.request-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.field {
-  display: grid;
-  gap: 6px;
-}
-
-.field label,
-.field legend,
-.privacy-check {
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.field span,
-.field legend span {
-  font-size: 0.8rem;
-  color: #ffffff;
-  background: var(--brand);
-  border-radius: 999px;
-  padding: 1px 8px;
-  margin-left: 4px;
-}
-
-.field input,
-.field select,
-.field textarea {
-  width: 100%;
-  border: 1px solid #e7ccda;
-  border-radius: 8px;
-  padding: 10px 12px;
-  font: inherit;
-  background: #ffffff;
-}
-
-.field input:focus,
-.field select:focus,
-.field textarea:focus {
-  outline: 2px solid rgba(207, 79, 139, 0.22);
-  border-color: #db7da9;
-}
-
-.radio-group,
-.checkbox-group {
-  border: 1px solid #ead2de;
-  border-radius: 8px;
-  padding: 12px;
-  gap: 8px;
-  background: #fffbfd;
-}
-
-.option-list {
-  display: grid;
-  gap: 8px;
-  margin-top: 2px;
-}
-
-.course-options {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.option-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 500;
-  padding: 8px 10px;
-  border: 1px solid #ead2de;
-  border-radius: 8px;
-  background: #ffffff;
-}
-
-.option-item input {
-  width: auto;
-  margin: 0;
-}
-
-.option-item:hover {
-  border-color: #dd9cbe;
-  background: #fff3f9;
-}
-
-.privacy-check {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  border: 1px solid #ead2de;
-  border-radius: 8px;
-  padding: 10px 12px;
-  background: #fff7fb;
-}
-
-.privacy-check a {
-  color: var(--brand);
-}
-
-.field-note {
-  margin-top: 2px;
-  font-size: 0.82rem;
-  color: var(--muted);
-}
-
-.submit-btn {
-  border: none;
-  border-radius: 999px;
-  padding: 12px 18px;
-  font: inherit;
-  font-weight: 800;
-  background: var(--brand);
-  color: #ffffff;
-  cursor: pointer;
-  transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.submit-btn:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.02);
-}
-
-.submit-btn[disabled] {
-  opacity: 0.75;
-  cursor: not-allowed;
-}
-
-.form-status {
-  min-height: 1.4em;
-  margin: 2px 0 4px;
-  font-size: 0.93rem;
-  color: #475569;
-}
-
-.form-status.is-error {
-  color: #b91c1c;
-}
-
-.form-status.is-success {
-  color: #047857;
-}
-
-.hp-field {
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.full {
-  grid-column: 1 / -1;
-}
-
 @media (max-width: 900px) {
   .hero-inner,
   main {
@@ -603,31 +395,19 @@ th {
   }
 
   .card,
-  .step-box,
-  .field,
-  .option-item,
-  .privacy-check {
+  .step-box {
     min-width: 0;
   }
 
   .docs-grid ul,
   .step-box ul,
   .note-list,
-  .timeline li,
-  .field label,
-  .field legend,
-  .field-note,
-  .request-lead {
+  .timeline li {
     overflow-wrap: anywhere;
   }
 
   .steps-grid,
-  .docs-grid,
-  .request-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .course-options {
+  .docs-grid {
     grid-template-columns: 1fr;
   }
 }

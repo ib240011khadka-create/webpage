@@ -20,6 +20,16 @@
 <body>
   <!-- Confetti Canvas -->
   <canvas id="confetti" aria-hidden="true"></canvas>
+  <div style="position:fixed;top:12px;right:12px;z-index:100;display:flex;align-items:center;gap:6px;background:#fff;padding:6px 10px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1)">
+    <label for="langSelect" style="font-size:.85rem">🌐</label>
+    <select id="langSelect" name="langSelect" translate="no" class="notranslate" style="font-size:.85rem;padding:4px 8px;border:1px solid #ddd;border-radius:6px;background:#fff">
+      <option value="ja" translate="no" class="notranslate">🇯🇵 日本語</option>
+      <option value="en" translate="no" class="notranslate">🇬🇧 English</option>
+      <option value="ne" translate="no" class="notranslate">🇳🇵 नेपाली</option>
+      <option value="hi" translate="no" class="notranslate">🇮🇳 हिन्दी</option>
+      <option value="vi" translate="no" class="notranslate">🇻🇳 Tiếng Việt</option>
+    </select>
+  </div>
   
   <main class="card">
     <div class="success-icon">
@@ -28,18 +38,20 @@
         <path fill="none" stroke="#4ade80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M14 27l7 7 16-16"/>
       </svg>
     </div>
-    <div class="chip">✓ 送信ステータス: 完了</div>
-    <h1 class="gradient-text">送信ありがとうございました</h1>
-    <p>フォームの送信が完了しました。内容を確認のうえ、担当者よりご連絡いたします。</p>
-    <p class="hint" role="note">💡 返信まで少しお時間をいただく場合があります。お急ぎの場合はお電話ください: <strong>099-250-1313</strong></p>
+    <div class="chip" data-i18n="thankYou.status">✓ 送信ステータス: 完了</div>
+    <h1 class="gradient-text" data-i18n="thankYou.title">送信ありがとうございました</h1>
+    <p data-i18n="thankYou.message">フォームの送信が完了しました。内容を確認のうえ、担当者よりご連絡いたします。</p>
+    <p class="hint" role="note" data-i18n="thankYou.hint">💡 返信まで少しお時間をいただく場合があります。お急ぎの場合はお電話ください:</p>
     <p id="redirect-notice" class="redirect-notice" aria-live="polite"></p>
     <div class="actions">
-      <a class="btn primary pulse-glow" href="index.html" aria-label="学校トップページへ戻る">🏫 学校トップへ戻る</a>
-      <a class="btn secondary" href="new.html" aria-label="入学案内ページへ">📄 入学案内</a>
-      <a class="btn secondary" href="futurepath.html" aria-label="進路情報ページへ">🎯 進路情報</a>
+      <a class="btn primary pulse-glow" href="index.html" aria-label="学校トップページへ戻る" data-i18n="thankYou.backToSchool">🏫 学校トップへ戻る</a>
+      <a class="btn secondary" href="new.html" aria-label="入学案内ページへ" data-i18n="thankYou.admissionBtn">📄 入学案内</a>
+      <a class="btn secondary" href="futurepath.html" aria-label="進路情報ページへ" data-i18n="thankYou.careerBtn">🎯 進路情報</a>
     </div>
   </main>
 
+  <script defer src="data/translations.js"></script>
+  <script defer src="copy.js"></script>
   <script defer src="thank-you.js"></script>
 </body>
 </html>

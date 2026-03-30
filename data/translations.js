@@ -1,4 +1,4 @@
-﻿{
+﻿var _TRANSLATIONS = {
   "nav": {
     "language": {
       "ja": "🌐 Language",
@@ -1006,7 +1006,7 @@
       "ne": "📋 भर्ना प्रक्रिया",
       "hi": "📋 प्रवेश प्रक्रिया",
       "vi": "📋 Quy trình nhập học"
-    }
+    },
   },
   "futurepath": {
     "title": {
@@ -1935,4 +1935,4 @@
       "vi": "6-1 Kamiarata-cho, Kagoshima-shi, Kagoshima 890-0055"
     }
   }
-}
+};

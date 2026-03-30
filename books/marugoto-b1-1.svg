@@ -1,10 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" role="img" aria-labelledby="title desc">
-  <title id="title">Marugoto B1-1 cover</title>
-  <desc id="desc">Placeholder cover image for Marugoto B1-1 textbook.</desc>
-  <rect width="200" height="280" fill="#eef6e4"/>
-  <rect x="12" y="12" width="176" height="256" rx="10" fill="#ffffff" stroke="#bad39a"/>
-  <circle cx="102" cy="110" r="48" fill="#8dbf59" opacity="0.88"/>
-  <circle cx="102" cy="110" r="30" fill="#eaf5d9" opacity="0.9"/>
-  <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#2f2f2f">B1-1</text>
-  <text x="100" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4d4d4d">MARUGOTO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" role="img" aria-labelledby="t d">
+  <title id="t">まるごと B1-1</title>
+  <desc id="d">Placeholder cover for Marugoto B1-1 textbook</desc>
+  <rect width="200" height="280" rx="8" fill="#fff1f2"/>
+  <rect x="8" y="8" width="184" height="264" rx="6" fill="#fff" stroke="#fecdd3" stroke-width="1.5"/>
+  <rect x="8" y="8" width="184" height="80" rx="6" fill="#e11d48"/>
+  <rect x="8" y="82" width="184" height="6" fill="#e11d48"/>
+  <circle cx="100" cy="158" r="38" fill="#ffe4e6" stroke="#e11d48" stroke-width="2"/>
+  <text x="100" y="168" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="24" font-weight="800" fill="#e11d48">B1-1</text>
+  <text x="100" y="42" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#fff">まるごと</text>
+  <text x="100" y="66" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ffe4e6">MARUGOTO</text>
+  <text x="100" y="232" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#9ca3af">日本語教材</text>
+  <text x="100" y="252" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#d1d5db">初中級 · B1-1</text>
 </svg>

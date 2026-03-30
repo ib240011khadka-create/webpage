@@ -15,11 +15,14 @@
   <link rel="canonical" href="https://akatuka.ac.jp/japanese/schoollife.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preload" href="data/translations.json" as="fetch" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="shortcut icon" href="https://akatuka.ac.jp/wp-content/themes/akatuka/src/favicon.ico" type="image/x-icon" />
   <link rel="preload" as="image" href="./logo/akatuka-logo.svg" />
   <link rel="stylesheet" href="copy.css" />
   <link rel="stylesheet" href="schoollife.css" />
+  <script defer src="data/translations.js"></script>
   <script defer src="copy.js"></script>
   <script type="application/ld+json">
   {
@@ -71,9 +74,9 @@
   <header class="hero">
     <div class="hero-inner">
       <img src="./logo/akatuka-logo.svg" alt="学校法人赤塚学園ロゴ" class="hero-logo" width="200" height="80" fetchpriority="high" decoding="async" />
-      <p class="eyebrow">学校法人赤塚学園 日本語学校</p>
-      <h1>🕒 学校生活</h1>
-      <p>日本語科での学習スケジュールやカリキュラムについてご紹介します。</p>
+      <p class="eyebrow" data-i18n="schoollife.eyebrow">学校法人赤塚学園 日本語学校</p>
+      <h1 data-i18n="schoollife.title">🕒 学校生活</h1>
+      <p data-i18n="schoollife.subtitle">日本語科での学習スケジュールやカリキュラムについてご紹介します。</p>
       <div class="lang-toolbar">
         <label for="langSelect">🌐 Language</label>
         <select id="langSelect" name="langSelect">
@@ -83,13 +86,12 @@
           <option value="hi">🇮🇳 हिन्दी</option>
           <option value="vi">🇻🇳 Tiếng Việt</option>
         </select>
-        <div id="google_translate_element"></div>
       </div>
       <div class="hero-actions">
-        <a class="btn primary" href="index.html">🏫 学校トップへ戻る</a>
-        <a class="btn ghost" href="new.html">💰 入学案内</a>
-        <a class="btn ghost" href="futurepath.html">🎯 進路情報</a>
-        <a class="btn ghost" href="index.html#contact">📧 お問い合わせ</a>
+        <a class="btn primary" href="index.html" data-i18n="common.backToTop">🏫 学校トップへ戻る</a>
+        <a class="btn ghost" href="new.html" data-i18n="common.admissionBtn">💰 入学案内</a>
+        <a class="btn ghost" href="futurepath.html" data-i18n="common.careerBtn">🎯 進路情報</a>
+        <a class="btn ghost" href="index.html#contact" data-i18n="common.contactBtn">📧 お問い合わせ</a>
       </div>
     </div>
   </header>
@@ -97,9 +99,9 @@
   <!-- Breadcrumb Navigation -->
   <nav class="breadcrumb" aria-label="パンくずリスト">
     <ol>
-      <li><a href="https://akatuka.ac.jp/">赤塚学園トップ</a></li>
-      <li><a href="index.html">日本語学校</a></li>
-      <li aria-current="page">学校生活</li>
+      <li><a href="https://akatuka.ac.jp/" data-i18n="common.akatsukiTop">赤塚学園トップ</a></li>
+      <li><a href="index.html" data-i18n="common.japaneseSchool">日本語学校</a></li>
+      <li aria-current="page" data-i18n="schoollife.breadcrumbTitle">学校生活</li>
     </ol>
   </nav>
 
@@ -110,37 +112,37 @@
           <div class="classroom-image-wrapper">
             <img src="gallery/Picture4.jpg" alt="日本語科の教室風景" class="classroom-image" width="800" height="500" loading="eager" />
             <div class="classroom-overlay">
-              <span class="classroom-badge">📚 私たちの教室</span>
+              <span class="classroom-badge" data-i18n="schoollife.classroom">📚 私たちの教室</span>
             </div>
           </div>
           <div class="classroom-caption">
-            <p>明るく清潔な教室で、世界各国からの留学生が日本語を学んでいます。</p>
+            <p data-i18n="schoollife.classroomCaption">明るく清潔な教室で、世界各国からの留学生が日本語を学んでいます。</p>
           </div>
         </div>
 
-        <h2>📅 時間割</h2>
+        <h2 data-i18n="schoollife.timetable">📅 時間割</h2>
         <table>
-          <caption>日本語科の時間割</caption>
+          <caption data-i18n="schoollife.tableCaption">日本語科の時間割</caption>
           <thead>
           <tr>
             <th scope="col"></th>
-            <th scope="col">時間</th>
-            <th scope="col">月曜日</th>
-            <th scope="col">火曜日</th>
-            <th scope="col">水曜日</th>
-            <th scope="col">木曜日</th>
-            <th scope="col">金曜日</th>
+            <th scope="col" data-i18n="schoollife.timeHeader">時間</th>
+            <th scope="col" data-i18n="schoollife.days.monday">月曜日</th>
+            <th scope="col" data-i18n="schoollife.days.tuesday">火曜日</th>
+            <th scope="col" data-i18n="schoollife.days.wednesday">水曜日</th>
+            <th scope="col" data-i18n="schoollife.days.thursday">木曜日</th>
+            <th scope="col" data-i18n="schoollife.days.friday">金曜日</th>
           </tr>
           </thead>
           <tbody>
           <tr>
             <th scope="row">1</th>
             <td>9:00 - 9:45</td>
-            <td rowspan="2">総合日本語</td>
-            <td rowspan="2">総合日本語</td>
-            <td rowspan="2">総合日本語</td>
-            <td rowspan="2">総合日本語</td>
-            <td rowspan="2">日本事情 / 異文化理解</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.comprehensiveJapanese">総合日本語</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.comprehensiveJapanese">総合日本語</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.comprehensiveJapanese">総合日本語</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.comprehensiveJapanese">総合日本語</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.japaneseCulture">日本事情 / 異文化理解</td>
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -149,11 +151,11 @@
           <tr>
             <th scope="row">3</th>
             <td>10:40 - 11:25</td>
-            <td rowspan="2">総合日本語</td>
-            <td rowspan="2">漢字</td>
-            <td rowspan="2">総合日本語</td>
-            <td rowspan="2">漢字</td>
-            <td rowspan="2">学習計画 / 振り返り</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.comprehensiveJapanese">総合日本語</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.kanji">漢字</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.comprehensiveJapanese">総合日本語</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.kanji">漢字</td>
+            <td rowspan="2" data-i18n="schoollife.subjects.studyPlan">学習計画 / 振り返り</td>
           </tr>
           <tr>
             <th scope="row">4</th>
@@ -162,9 +164,9 @@
           </tbody>
         </table>
 
-        <p class="timetable-intro">学習レベルごとの到達目標、教材、学習内容を以下の表で確認できます。</p>
+        <p class="timetable-intro" data-i18n="schoollife.timetableIntro">学習レベルごとの到達目標、教材、学習内容を以下の表で確認できます。</p>
 
-        <h2 class="timetable-subtitle">📘 1年次コースフレームワーク</h2>
+        <h2 class="timetable-subtitle" data-i18n="schoollife.framework1">📘 1年次コースフレームワーク</h2>
         <div class="table-wrapper">
         <table class="framework-table">
           <tr>
@@ -202,18 +204,18 @@
           <tr>
             <th class="side-head">主教材</th>
             <td>
-              <img src="books/Picture1.png" alt="まるごと A1 教材" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/marugoto-a1.svg" alt="まるごと A1 教材" class="framework-book" width="120" height="160" loading="lazy" />
             </td>
             <td>
-              <img src="books/Picture2.png" alt="まるごと A2-1 教材" class="framework-book" width="120" height="160" loading="lazy" />
-              <img src="books/Picture3.png" alt="まるごと A1 教材" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/marugoto-a2-1.svg" alt="まるごと A2-1 教材" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/marugoto-a1-k.svg" alt="まるごと A1 かつどう" class="framework-book" width="120" height="160" loading="lazy" />
             </td>
             <td>
-              <img src="books/Picture4.png" alt="まるごと A2-2 教材" class="framework-book" width="120" height="160" loading="lazy" />
-              <img src="books/Picture5.png" alt="まるごと A1 教材" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/marugoto-a2-2.svg" alt="まるごと A2-2 教材" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/marugoto-a1-r.svg" alt="まるごと A1 りかい" class="framework-book" width="120" height="160" loading="lazy" />
             </td>
             <td>
-              <img src="books/Picture6.png" alt="まるごと B1-1 教材" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/marugoto-b1-1.svg" alt="まるごと B1-1 教材" class="framework-book" width="120" height="160" loading="lazy" />
             </td>
           </tr>
           <tr>
@@ -246,7 +248,7 @@
         </table>
         </div>
 
-        <h2 class="timetable-subtitle">📗 2年次コースフレームワーク</h2>
+        <h2 class="timetable-subtitle" data-i18n="schoollife.framework2">📗 2年次コースフレームワーク</h2>
         <div class="table-wrapper">
         <table class="framework-table">
           <tr>
@@ -284,16 +286,16 @@
           <tr>
             <th class="side-head">主教材</th>
             <td>
-              <img src="books/Picture7.png" alt="できる日本語" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/dekiru-shokyu.svg" alt="できる日本語 初級" class="framework-book" width="120" height="160" loading="lazy" />
             </td>
             <td>
-              <img src="books/Picture8.png" alt="できる日本語" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/dekiru-shochukyu.svg" alt="できる日本語 初中級" class="framework-book" width="120" height="160" loading="lazy" />
             </td>
             <td>
-              <img src="books/Picture9.png" alt="できる日本語" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/dekiru-chukyu.svg" alt="できる日本語 中級" class="framework-book" width="120" height="160" loading="lazy" />
             </td>
             <td>
-              <img src="books/Picture10.png" alt="クローズアップ日本事情" class="framework-book" width="120" height="160" loading="lazy" />
+              <img src="books/closeup-nihon.svg" alt="クローズアップ日本事情" class="framework-book" width="120" height="160" loading="lazy" />
             </td>
           </tr>
           <tr>
@@ -323,14 +325,14 @@
         </table>
         </div>
 
-        <p class="timetable-note">※コース内容・教材は変更になる場合があります。最新情報はお問い合わせフォームよりご確認ください。</p>
+        <p class="timetable-note" data-i18n="schoollife.framework2Note">※コース内容・教材は変更になる場合があります。最新情報はお問い合わせフォームよりご確認ください。</p>
 
         <div class="annual-events-section">
-          <h2>📆 年間行事予定(令和8年度)</h2>
+          <h2 data-i18n="schoollife.events">📆 年間行事予定(令和8年度)</h2>
           <div class="events-grid">
             <div class="schedule-note-container school-internal">
-              <h3>🏫 学内</h3>
-              <ul>
+              <h3 data-i18n="schoollife.internal">🏫 学内</h3>
+              <ul data-i18n-html="schoollife.eventsInternalHtml">
                 <li><strong>4月:</strong> 入学式、オリエンテーション、避難訓練、健康診断、スポーツ大会</li>
                 <li><strong>7月:</strong> 七夕、校外学習</li>
                 <li><strong>10月:</strong> ハロウィン、校内スピーチ大会</li>
@@ -342,8 +344,8 @@
               </ul>
             </div>
             <div class="schedule-note-container school-external">
-              <h3>🌍 学外</h3>
-              <ul>
+              <h3 data-i18n="schoollife.external">🌍 学外</h3>
+              <ul data-i18n-html="schoollife.eventsExternalHtml">
                 <li><strong>7月:</strong> 日本語能力試験</li>
                 <li><strong>9月:</strong> 地域交流会</li>
                 <li><strong>10月:</strong> おはら祭り</li>
@@ -352,11 +354,11 @@
               </ul>
             </div>
           </div>
-          <strong class="schedule-note">※行事内容・日程は変更になる場合があります。最新情報はお問い合わせフォームよりご確認ください。</strong>
+          <strong class="schedule-note" data-i18n="schoollife.scheduleNote">※行事内容・日程は変更になる場合があります。最新情報はお問い合わせフォームよりご確認ください。</strong>
         </div>
 
         <div class="back-link-container">
-          <a href="index.html" class="back-link">← トップページに戻る</a>
+          <a href="index.html" class="back-link" data-i18n="schoollife.backToTop">← トップページに戻る</a>
         </div>
       </div>
     </section>
@@ -367,7 +369,7 @@
     <div class="footer-hero-split">
       <div class="footer-info-side">
         <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="footer-logo" width="150" height="50" loading="lazy" />
-        <p class="footer-address">〒890-0055 鹿児島県鹿児島市上荒田町6-1</p>
+        <p class="footer-address" data-i18n="footer.address">〒890-0055 鹿児島県鹿児島市上荒田町6-1</p>
         <div class="footer-contact-badges">
           <a href="tel:0992501313" class="contact-badge tel">
             <span class="badge-icon">📞</span>
@@ -385,42 +387,43 @@
     </div>
 
     <div class="footer-nav-wrap">
-      <h2 id="footer-title" class="footer-nav-title">🗺️ サイトナビゲーション</h2>
+      <h2 id="footer-title" class="footer-nav-title" data-i18n="footer.siteNav">🗺️ サイトナビゲーション</h2>
       <div class="footer-nav-grid">
         <div class="footer-nav-group">
-          <h3>📚 日本語科ページ</h3>
+          <h3 data-i18n="footer.japanesePages">📚 日本語科ページ</h3>
           <ul>
-            <li><a href="index.html">学校トップ</a></li>
-            <li><a href="index.html#about-language-course">日本語科について</a></li>
-            <li><a href="index.html#teacher-introduction">教師紹介</a></li>
-            <li><a href="index.html#student-support">学生サポート</a></li>
-            <li><a href="index.html#contact">お問い合わせ</a></li>
+            <li><a href="index.html" data-i18n="footer.schoolTop">学校トップ</a></li>
+            <li><a href="index.html#about-language-course" data-i18n="footer.aboutCourse">日本語科について</a></li>
+            <li><a href="index.html#teacher-introduction" data-i18n="footer.teacherIntro">教師紹介</a></li>
+            <li><a href="index.html#student-support" data-i18n="footer.studentSupportLink">学生サポート</a></li>
+            <li><a href="index.html#contact" data-i18n="footer.contactLink">お問い合わせ</a></li>
           </ul>
         </div>
 
         <div class="footer-nav-group">
-          <h3>📄 関連ページ</h3>
+          <h3 data-i18n="footer.relatedPages">📄 関連ページ</h3>
           <ul>
-            <li><a href="new.html">💰 入学案内</a></li>
-            <li><a href="futurepath.html">🎯 進路情報</a></li>
+            <li><a href="new.html" data-i18n="footer.admissionLink">💰 入学案内</a></li>
+            <li><a href="futurepath.html" data-i18n="footer.careerLink">🎯 進路情報</a></li>
+
           </ul>
         </div>
 
         <div class="footer-nav-group">
-          <h3>🏫 専門学校サイト</h3>
+          <h3 data-i18n="footer.collegeSite">🏫 専門学校サイト</h3>
           <ul>
-            <li><a href="https://akatuka.ac.jp/open-campus" target="_blank" rel="noopener noreferrer">オープンキャンパス</a></li>
-            <li><a href="https://akatuka.ac.jp/online" target="_blank" rel="noopener noreferrer">オンライン相談会</a></li>
-            <li><a href="https://akatuka.ac.jp/contact" target="_blank" rel="noopener noreferrer">公式お問い合わせ</a></li>
-            <li><a href="https://akatuka.ac.jp/request" target="_blank" rel="noopener noreferrer">公式資料請求</a></li>
+            <li><a href="https://akatuka.ac.jp/open-campus" target="_blank" rel="noopener noreferrer" data-i18n="footer.openCampus">オープンキャンパス</a></li>
+            <li><a href="https://akatuka.ac.jp/online" target="_blank" rel="noopener noreferrer" data-i18n="footer.onlineConsult">オンライン相談会</a></li>
+            <li><a href="https://akatuka.ac.jp/contact" target="_blank" rel="noopener noreferrer" data-i18n="footer.officialContact">公式お問い合わせ</a></li>
+            <li><a href="https://akatuka.ac.jp/request" target="_blank" rel="noopener noreferrer" data-i18n="footer.officialRequest">公式資料請求</a></li>
           </ul>
         </div>
 
         <div class="footer-nav-group">
-          <h3>💬 SNS・相談</h3>
+          <h3 data-i18n="footer.sns">💬 SNS・相談</h3>
           <ul>
-            <li><a href="https://page.line.me/957oyipg?oat_content=url&openQrModal=true" target="_blank" rel="noopener noreferrer">LINE相談</a></li>
-            <li><a href="https://www.instagram.com/akbd_b/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://page.line.me/957oyipg?oat_content=url&openQrModal=true" target="_blank" rel="noopener noreferrer" data-i18n="footer.lineConsult">LINE相談</a></li>
+            <li><a href="https://www.instagram.com/akbd_b/" target="_blank" rel="noopener noreferrer" data-i18n="footer.instagram">Instagram</a></li>
           </ul>
         </div>
       </div>
@@ -428,15 +431,15 @@
 
     <div class="footer-bottom">
       <div class="footer-bottom-links">
-        <a href="https://akatuka.ac.jp/" target="_blank" rel="noopener noreferrer">ホーム</a>
+        <a href="https://akatuka.ac.jp/" target="_blank" rel="noopener noreferrer" data-i18n="footer.home">ホーム</a>
         <span class="divider">|</span>
-        <a href="https://akatuka.ac.jp/request/" target="_blank" rel="noopener noreferrer">資料請求</a>
+        <a href="https://akatuka.ac.jp/request/" target="_blank" rel="noopener noreferrer" data-i18n="footer.requestDocs">資料請求</a>
         <span class="divider">|</span>
-        <a href="https://akatuka.ac.jp/contact/" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+        <a href="https://akatuka.ac.jp/contact/" target="_blank" rel="noopener noreferrer" data-i18n="footer.contact">お問い合わせ</a>
         <span class="divider">|</span>
-        <a href="https://akatuka.ac.jp/privacy-policy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+        <a href="https://akatuka.ac.jp/privacy-policy/" target="_blank" rel="noopener noreferrer" data-i18n="footer.privacy">プライバシーポリシー</a>
       </div>
-      <p class="footer-copyright">© 2026 学校法人赤塚学園 All Rights Reserved.</p>
+      <p class="footer-copyright" data-i18n="footer.copyright">© 2026 学校法人赤塚学園 All Rights Reserved.</p>
     </div>
   </footer>
 </body>

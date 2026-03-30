@@ -190,25 +190,39 @@
     </style>
 </head>
 <body>
+    <div style="position:fixed;top:12px;right:12px;z-index:100;display:flex;align-items:center;gap:6px;background:#fff;padding:6px 10px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1)">
+        <label for="langSelect" style="font-size:.85rem">🌐</label>
+        <select id="langSelect" name="langSelect" translate="no" class="notranslate" style="font-size:.85rem;padding:4px 8px;border:1px solid #ddd;border-radius:6px;background:#fff">
+            <option value="ja" translate="no" class="notranslate">🇯🇵 日本語</option>
+            <option value="en" translate="no" class="notranslate">🇬🇧 English</option>
+            <option value="ne" translate="no" class="notranslate">🇳🇵 नेपाली</option>
+            <option value="hi" translate="no" class="notranslate">🇮🇳 हिन्दी</option>
+            <option value="vi" translate="no" class="notranslate">🇻🇳 Tiếng Việt</option>
+        </select>
+    </div>
     <main>
         <p class="error-code">404</p>
-        <h1>ページが見つかりません</h1>
-        <p>お探しのページは移動、削除、または存在しない可能性があります。<br />URLをご確認の上、再度お試しください。</p>
+        <h1 data-i18n="notFound.title">ページが見つかりません</h1>
+        <p data-i18n-html="notFound.messageHtml">お探しのページは移動、削除、または存在しない可能性があります。<br />URLをご確認の上、再度お試しください。</p>
         
         <div class="actions">
-            <a class="btn primary" href="index.html">🏫 学校トップへ</a>
-            <a class="btn secondary" href="javascript:history.back()">← 前のページへ</a>
+            <a class="btn primary" href="index.html" data-i18n="notFound.backToSchool">🏫 学校トップへ</a>
+            <a class="btn secondary" href="javascript:history.back()" data-i18n="notFound.goBack">← 前のページへ</a>
         </div>
 
         <div class="suggestions">
-            <h2>📌 お探しのページはこちらですか？</h2>
+            <h2 data-i18n="notFound.suggestionsTitle">📌 お探しのページはこちらですか？</h2>
             <ul>
-                <li><a href="index.html">学校トップページ</a></li>
-                <li><a href="new.html">入学案内</a></li>
-                <li><a href="futurepath.html">進路情報</a></li>
-                <li><a href="index.html#contact">お問い合わせ</a></li>
+                <li><a href="index.html" data-i18n="notFound.suggestHome">学校トップページ</a></li>
+                <li><a href="new.html" data-i18n="notFound.suggestAdmission">入学案内</a></li>
+                <li><a href="futurepath.html" data-i18n="notFound.suggestCareer">進路情報</a></li>
+                <li><a href="schoollife.html" data-i18n="notFound.suggestSchoolLife">学校生活</a></li>
+
+                <li><a href="index.html#contact" data-i18n="notFound.suggestContact">お問い合わせ</a></li>
             </ul>
         </div>
     </main>
+<script defer src="data/translations.js"></script>
+<script defer src="copy.js"></script>
 </body>
 </html>

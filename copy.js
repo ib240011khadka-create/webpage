@@ -1,5 +1,18 @@
 (function () {
-  var translationsCache = null;
+  // Use pre-loaded translations (from data/translations.js <script> tag) when
+  // available.  This guarantees translations work on file:// protocol where
+  // fetch() is blocked by CORS.  Falls back to fetch for backwards compat.
+  var translationsCache = (typeof _TRANSLATIONS !== "undefined") ? _TRANSLATIONS : null;
+
+  var _prefetchPromise = translationsCache
+    ? Promise.resolve(translationsCache)
+    : fetch("data/translations.json")
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          translationsCache = data;
+          return data;
+        })
+        .catch(function () { return null; });
 
   function resolveKey(obj, key) {
     var parts = key.split(".");
@@ -13,79 +26,41 @@
 
   function fetchTranslations() {
     if (translationsCache) return Promise.resolve(translationsCache);
-    return fetch("data/translations.json")
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        translationsCache = data;
-        return data;
-      })
-      .catch(function () { return null; });
+    return _prefetchPromise;
   }
 
-  function applyTranslations(lang) {
-    if (!lang || lang === "ja") return; // Japanese is the page default
-    fetchTranslations().then(function (t) {
-      if (!t) return;
+  function applyTranslationsFromData(t, lang) {
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var entry = resolveKey(t, el.getAttribute("data-i18n"));
+      if (entry && entry[lang]) {
+        el.textContent = entry[lang];
+      }
+    });
 
-      document.querySelectorAll("[data-i18n]").forEach(function (el) {
-        var entry = resolveKey(t, el.getAttribute("data-i18n"));
-        if (entry && entry[lang]) {
-          el.textContent = entry[lang];
-        }
-      });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+      var entry = resolveKey(t, el.getAttribute("data-i18n-html"));
+      if (entry && entry[lang]) {
+        el.innerHTML = entry[lang];
+      }
+    });
 
-      document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
-        var entry = resolveKey(t, el.getAttribute("data-i18n-placeholder"));
-        if (entry && entry[lang]) {
-          el.setAttribute("placeholder", entry[lang]);
-        }
-      });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+      var entry = resolveKey(t, el.getAttribute("data-i18n-placeholder"));
+      if (entry && entry[lang]) {
+        el.setAttribute("placeholder", entry[lang]);
+      }
     });
   }
 
-  function loadGoogleTranslateScript() {
-    if (document.getElementById("google-translate-script")) return;
-
-    const script = document.createElement("script");
-    script.id = "google-translate-script";
-    script.src =
-      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-    document.head.appendChild(script);
-  }
-
-  window.googleTranslateElementInit = function () {
-    const host = document.getElementById("google_translate_element");
-    if (!host) return;
-
-    // eslint-disable-next-line no-undef
-    new google.translate.TranslateElement(
-      {
-        pageLanguage: "ja",
-        includedLanguages: "ja,en,ne,hi,vi",
-        autoDisplay: false,
-      },
-      "google_translate_element"
-    );
-  };
-
-  function applySavedLanguage() {
-    const saved = localStorage.getItem("site_lang");
-    if (!saved) return;
-
-    const tryApply = () => {
-      const combo = document.querySelector(".goog-te-combo");
-      if (!combo) return false;
-      combo.value = saved;
-      combo.dispatchEvent(new Event("change"));
-      return true;
-    };
-
-    let attempts = 0;
-    const timer = setInterval(() => {
-      attempts++;
-      if (tryApply() || attempts > 15) clearInterval(timer);
-    }, 300);
+  function applyTranslations(lang) {
+    if (!lang) return;
+    if (translationsCache) {
+      applyTranslationsFromData(translationsCache, lang);
+      return;
+    }
+    fetchTranslations().then(function (t) {
+      if (t) applyTranslationsFromData(t, lang);
+    });
   }
 
   function initKagoshimaSlideshow() {
@@ -316,14 +291,20 @@
       }
     });
 
-    // Loop manually so text resets at the start of each loop
+    // Reset text when video loops (loop attr handles actual looping)
     video.addEventListener("ended", function () {
       overlay.classList.remove("text-hidden");
       if (scrollHint) scrollHint.classList.remove("text-hidden");
       isHidden = false;
-      video.currentTime = 0;
-      video.play();
     });
+
+    // Catch autoplay failures (iOS low-power mode, Firefox strict, etc.)
+    var playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(function () {
+        // Autoplay blocked — overlay stays visible, poster shown
+      });
+    }
   }
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -339,8 +320,6 @@
       setTimeout(dismiss, 3000);
     }
 
-    loadGoogleTranslateScript();
-
     const langSelect = document.getElementById("langSelect");
     if (langSelect) {
       langSelect.addEventListener("change", () => {
@@ -352,12 +331,6 @@
         }
 
         applyTranslations(lang);
-
-        const combo = document.querySelector(".goog-te-combo");
-        if (combo) {
-          combo.value = lang;
-          combo.dispatchEvent(new Event("change"));
-        }
       });
 
       let saved = null;
@@ -367,13 +340,7 @@
         saved = null;
       }
       if (saved) langSelect.value = saved;
-      applyTranslations(saved);
-    }
-
-    try {
-      applySavedLanguage();
-    } catch (_error) {
-      // Translation restore is optional.
+      applyTranslations(saved || "ja");
     }
     initContactForm();
     initTableSwipeHints();

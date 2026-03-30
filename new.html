@@ -4,23 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>入学案内 | 赤塚学園 日本語学校</title>
-    <meta name="description" content="赤塚学園 日本語学校の学費、奨学金、入学条件、出願から入学までの流れ、出席・成績証明書請求フォームを掲載しています。" />
+    <meta name="description" content="赤塚学園 日本語学校の学費、奨学金、入学条件、出願から入学までの流れを掲載しています。" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="入学案内 | 赤塚学園 日本語学校" />
-    <meta property="og:description" content="学費、奨学金、入学条件、出願の流れ、出席・成績証明書請求フォームを1ページで確認できます。" />
+    <meta property="og:description" content="学費、奨学金、入学条件、出願の流れを1ページで確認できます。" />
     <meta property="og:image" content="https://akatuka.ac.jp/wp-content/themes/akatuka/src/akatuka-map.webp" />
     <meta property="og:url" content="https://akatuka.ac.jp/japanese/new.html" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://akatuka.ac.jp/japanese/new.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preload" href="data/translations.json" as="fetch" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
     <link rel="shortcut icon" href="https://akatuka.ac.jp/wp-content/themes/akatuka/src/favicon.ico" type="image/x-icon" />
     <link rel="preload" as="image" href="./logo/akatuka-logo.svg" />
     <link rel="stylesheet" href="copy.css" />
     <link rel="stylesheet" href="new.css" />
+    <script defer src="data/translations.js"></script>
     <script defer src="copy.js"></script>
-    <script defer src="new.js"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,9 +74,9 @@
     <header class="hero">
         <div class="hero-inner">
             <img src="./logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="hero-logo" width="200" height="80" fetchpriority="high" decoding="async" />
-            <p class="eyebrow">AKATSUKA JAPANESE LANGUAGE SCHOOL</p>
-            <h1>💰 入学案内ガイド</h1>
-            <p>費用、入学条件、出願から入学までの流れを1ページで確認できます。</p>
+            <p class="eyebrow" data-i18n="new.eyebrow">AKATSUKA JAPANESE LANGUAGE SCHOOL</p>
+            <h1 data-i18n="new.title">💰 入学案内ガイド</h1>
+            <p data-i18n="new.subtitle">費用、入学条件、出願から入学までの流れを1ページで確認できます。</p>
             <div class="lang-toolbar">
                 <label for="langSelect">🌐 Language</label>
                 <select id="langSelect" name="langSelect">
@@ -83,13 +86,12 @@
                     <option value="hi">🇮🇳 हिन्दी</option>
                     <option value="vi">🇻🇳 Tiếng Việt</option>
                 </select>
-                <div id="google_translate_element"></div>
             </div>
             <div class="hero-actions">
-                <a class="btn primary" href="index.html">🏫 学校トップへ戻る</a>
-                <a class="btn ghost" href="schoollife.html">🕒 学校生活</a>
-                <a class="btn ghost" href="futurepath.html">🎯 進路情報</a>
-                <a class="btn ghost" href="#admission-flow">📋 入学までの流れ</a>
+                <a class="btn primary" href="index.html" data-i18n="common.backToTop">🏫 学校トップへ戻る</a>
+                <a class="btn ghost" href="schoollife.html" data-i18n="common.schoolLifeBtn">🕒 学校生活</a>
+                <a class="btn ghost" href="futurepath.html" data-i18n="common.careerBtn">🎯 進路情報</a>
+                <a class="btn ghost" href="index.html#contact" data-i18n="common.contactBtn">📧 お問い合わせ</a>
             </div>
         </div>
     </header>
@@ -97,20 +99,21 @@
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb" aria-label="パンくずリスト">
         <ol>
-            <li><a href="https://akatuka.ac.jp/">赤塚学園トップ</a></li>
-            <li><a href="index.html">日本語学校</a></li>
-            <li aria-current="page">入学案内</li>
+            <li><a href="https://akatuka.ac.jp/" data-i18n="common.akatsukiTop">赤塚学園トップ</a></li>
+            <li><a href="index.html" data-i18n="common.japaneseSchool">日本語学校</a></li>
+            <li aria-current="page" data-i18n="new.breadcrumbTitle">入学案内</li>
         </ol>
     </nav>
 
     <main>
         <section class="card" aria-labelledby="fee-title">
-            <h1 class="section-title">コース</h1>
-            <p>進学２年コース　入学店員20人、計40人</p>
+            <h1 class="section-title" data-i18n="new.courseTitle">コース</h1>
+            <p data-i18n="new.courseDesc">進学２年コース　入学定員20人、計40人</p>
 
-            <h2 id="fee-title">💴 学費（進学2年コース）</h2>
-            <p><strong>進学2年コースの学費一覧</strong></p>
-            <div class="table-wrap">
+            <h2 id="fee-title" data-i18n="new.tuition">💴 学費（進学2年コース）</h2>
+            <hr />
+            <p><strong data-i18n="new.feeCaption">進学2年コースの学費一覧</strong></p>
+            <div class="table-wrap" data-i18n-html="new.tuitionTableHtml">
                 <table>
                     <thead>
                         <tr>
@@ -142,7 +145,7 @@
                 </table>
             </div>
 
-            <ul class="note-list">
+            <ul class="note-list" data-i18n-html="new.noteListHtml">
                 <li>上記のほか、入国後に国民健康保険料、自転車保険、スマートフォン購入、アパート入居費等として約10万円-15万円が必要です。</li>
                 <li>2年次は授業料・教材費・教育充実費の支払いが必要です。</li>
                 <li>選考料は入学試験受験時に支払いとなります。COE不交付または査証が取得できなかった場合は全額返還します。</li>
@@ -151,7 +154,9 @@
         </section>
 
         <section class="card scroll-animate" aria-labelledby="conditions-title">
-            <h2 id="conditions-title">⛩️ 入学条件</h2>
+            <h2 id="conditions-title" data-i18n="new.requirements">⛩️ 入学条件</h2>
+            <hr />
+            <div data-i18n-html="new.requirementsStepsHtml">
             <div class="steps-grid">
                 <article class="step-box">
                     <h3>🔢 段階1: 申請条件</h3>
@@ -174,10 +179,13 @@
                     </ul>
                 </article>
             </div>
+            </div>
         </section>
 
         <section class="card scroll-animate" aria-labelledby="docs-title">
-            <h2 id="docs-title">📄 出願に必要な書類（段階3）</h2>
+            <h2 id="docs-title" data-i18n="new.documents">📄 出願に必要な書類（段階3）</h2>
+            <hr />
+            <div data-i18n-html="new.documentsListHtml">
             <div class="docs-grid">
                 <ul>
                     <li>入学願書（本校所定様式）</li>
@@ -202,10 +210,12 @@
                     <li>写真4枚（縦4cm x 横3cm、3か月以内）</li>
                 </ul>
             </div>
+            </div>
         </section>
         <section id="admission-flow" class="card scroll-animate" aria-labelledby="flow-title">
-            <h2 id="flow-title">🛫 段階4: 出願から入学までの流れ</h2>
-            <ol class="timeline">
+            <h2 id="flow-title" data-i18n="new.applicationFlow">🛠 段階4: 出願から入学までの流れ</h2>
+            <hr />
+            <ol class="timeline" data-i18n-html="new.applicationFlowHtml">
                 <li><strong>10月下旬:</strong> 現地募集、面接、試験</li>
                 <li><strong>11月下旬:</strong> 出入国在留管理庁へ申請</li>
                 <li><strong>翌年1月-2月:</strong> 在留資格認定証明書交付の可否発表</li>
@@ -215,84 +225,12 @@
             </ol>
         </section>
 
-        <section id="request-form" class="card scroll-animate" aria-labelledby="request-title">
-            <h2 id="request-title">📄 出席・成績証明書の請求</h2>
-            <div class="request-header">
-                <p class="request-lead">出席証明書や成績証明書が必要な学生は、以下のフォームからお申し込みください。</p>
-                <p class="request-lead">発行には通常3〜5営業日かかります。</p>
-                <p class="request-tel"><strong>電話番号:</strong> <a href="tel:0992501313">099-250-1313</a></p>
-                <p class="required-note">「必須」項目は入力が必要です。</p>
-            </div>
-
-            <form id="requestForm" class="request-grid" action="https://api.web3forms.com/submit" method="POST" aria-describedby="requestFormStatus">
-                <input type="hidden" name="access_key" value="663e2463-e67c-4d6a-975f-3784be3b8502" />
-                <input type="hidden" name="subject" value="出席・成績証明書請求フォームから新しい送信" />
-                <input type="checkbox" name="botcheck" class="hp-field" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true" />
-                <div class="field">
-                    <label for="req-name">氏名 <span>必須</span></label>
-                    <input type="text" id="req-name" name="student_name" autocomplete="name" required placeholder="例: 山田 太郎" aria-describedby="requestFormStatus" />
-                </div>
-
-                <div class="field">
-                    <label for="req-student-id">学生番号 <span>必須</span></label>
-                    <input type="text" id="req-student-id" name="student_id" required placeholder="例: 2024-001" aria-describedby="requestFormStatus" />
-                </div>
-
-                <div class="field">
-                    <label for="req-email">メールアドレス <span>必須</span></label>
-                    <input type="email" id="req-email" name="email" autocomplete="email" required placeholder="例: example@email.com" aria-describedby="requestFormStatus" />
-                </div>
-
-                <div class="field">
-                    <label for="req-phone">電話番号 <span>任意</span></label>
-                    <input type="tel" id="req-phone" name="phone" autocomplete="tel" placeholder="例: 090-1234-5678" />
-                </div>
-
-                <fieldset class="field full checkbox-group">
-                    <legend>請求する書類 <span>必須</span></legend>
-                    <div class="option-list course-options">
-                        <label class="option-item"><input type="checkbox" id="doc-attendance" name="documents[]" value="出席証明書" /> 出席証明書</label>
-                        <label class="option-item"><input type="checkbox" id="doc-grades" name="documents[]" value="成績証明書" /> 成績証明書</label>
-                        <label class="option-item"><input type="checkbox" id="doc-enrollment" name="documents[]" value="在籍証明書" /> 在籍証明書</label>
-                        <label class="option-item"><input type="checkbox" id="doc-completion" name="documents[]" value="修了見込証明書" /> 修了見込証明書</label>
-                    </div>
-                </fieldset>
-
-                <div class="field full">
-                    <label for="req-purpose">使用目的 <span>任意</span></label>
-                    <select id="req-purpose" name="purpose">
-                        <option value="">選択してください</option>
-                        <option value="進学">進学先への提出</option>
-                        <option value="就職">就職先への提出</option>
-                        <option value="ビザ">ビザ申請</option>
-                        <option value="その他">その他</option>
-                    </select>
-                </div>
-
-                <div class="field full">
-                    <label for="req-note">備考・その他ご要望 <span>任意</span></label>
-                    <textarea id="req-note" name="notes" rows="3" placeholder="例: 英語版が必要、急ぎで発行希望など"></textarea>
-                </div>
-
-                <label class="privacy-check full">
-                    <input type="checkbox" id="privacy-agree" name="privacy_agree" required />
-                    <span><a href="https://akatuka.ac.jp/privacy-policy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>を確認し、内容に同意します（必須）</span>
-                </label>
-
-                <input type="hidden" id="requestFormStartedAt" name="requestFormStartedAt" value="" />
-
-                <p id="requestFormStatus" class="form-status full" aria-live="polite"></p>
-
-                <button class="submit-btn full" type="submit">📨 請求を送信する</button>
-            </form>
-            <p class="field-note mt-sm">※ 発行には手数料がかかる場合があります。詳細は事務局にお問い合わせください。</p>
-        </section>
 
         <footer id="mega-footer" aria-labelledby="footer-title">
             <div class="footer-hero-split">
                 <div class="footer-info-side">
                     <img src="logo/akatuka-logo.svg" alt="赤塚学園ロゴ" class="footer-logo" width="150" height="50" loading="lazy" />
-                    <p class="footer-address">〒890-0055 鹿児島県鹿児島市上荒田町6-1</p>
+                    <p class="footer-address" data-i18n="footer.address">〒890-0055 鹿児島県鹿児島市上荒田町6-1</p>
                     <div class="footer-contact-badges">
                         <a href="tel:0992501313" class="contact-badge tel">
                             <span class="badge-icon">📞</span>
@@ -310,42 +248,43 @@
             </div>
 
             <div class="footer-nav-wrap">
-                <h2 id="footer-title" class="footer-nav-title">🗺️ サイトナビゲーション</h2>
+                <h2 id="footer-title" class="footer-nav-title" data-i18n="footer.siteNav">🗺️ サイトナビゲーション</h2>
                 <div class="footer-nav-grid">
                     <div class="footer-nav-group">
-                        <h3>📚 日本語科ページ</h3>
+                        <h3 data-i18n="footer.japanesePages">📚 日本語科ページ</h3>
                         <ul>
-                            <li><a href="index.html">学校トップ</a></li>
-                            <li><a href="index.html#about-language-course">日本語科について</a></li>
-                            <li><a href="index.html#teacher-introduction">教師紹介</a></li>
-                            <li><a href="index.html#student-support">学生サポート</a></li>
-                            <li><a href="index.html#contact">お問い合わせ</a></li>
+                            <li><a href="index.html" data-i18n="footer.schoolTop">学校トップ</a></li>
+                            <li><a href="index.html#about-language-course" data-i18n="footer.aboutCourse">日本語科について</a></li>
+                            <li><a href="index.html#teacher-introduction" data-i18n="footer.teacherIntro">教師紹介</a></li>
+                            <li><a href="index.html#student-support" data-i18n="footer.studentSupportLink">学生サポート</a></li>
+                            <li><a href="index.html#contact" data-i18n="footer.contactLink">お問い合わせ</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-nav-group">
-                        <h3>📄 関連ページ</h3>
+                        <h3 data-i18n="footer.relatedPages">📄 関連ページ</h3>
                         <ul>
-                            <li><a href="futurepath.html">🎯 進路情報</a></li>
-                            <li><a href="schoollife.html">🕒 学校生活</a></li>
+                            <li><a href="futurepath.html" data-i18n="footer.careerLink">🎯 進路情報</a></li>
+                            <li><a href="schoollife.html" data-i18n="footer.schoolLifeLink2">🕒 学校生活</a></li>
+
                         </ul>
                     </div>
 
                     <div class="footer-nav-group">
-                        <h3>🏫 専門学校サイト</h3>
+                        <h3 data-i18n="footer.collegeSite">🏫 専門学校サイト</h3>
                         <ul>
-                            <li><a href="https://akatuka.ac.jp/open-campus" target="_blank" rel="noopener noreferrer">オープンキャンパス</a></li>
-                            <li><a href="https://akatuka.ac.jp/online" target="_blank" rel="noopener noreferrer">オンライン相談会</a></li>
-                            <li><a href="https://akatuka.ac.jp/contact" target="_blank" rel="noopener noreferrer">公式お問い合わせ</a></li>
-                            <li><a href="https://akatuka.ac.jp/request" target="_blank" rel="noopener noreferrer">公式資料請求</a></li>
+                            <li><a href="https://akatuka.ac.jp/open-campus" target="_blank" rel="noopener noreferrer" data-i18n="footer.openCampus">オープンキャンパス</a></li>
+                            <li><a href="https://akatuka.ac.jp/online" target="_blank" rel="noopener noreferrer" data-i18n="footer.onlineConsult">オンライン相談会</a></li>
+                            <li><a href="https://akatuka.ac.jp/contact" target="_blank" rel="noopener noreferrer" data-i18n="footer.officialContact">公式お問い合わせ</a></li>
+                            <li><a href="https://akatuka.ac.jp/request" target="_blank" rel="noopener noreferrer" data-i18n="footer.officialRequest">公式資料請求</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-nav-group">
-                        <h3>💬 SNS・相談</h3>
+                        <h3 data-i18n="footer.sns">💬 SNS・相談</h3>
                         <ul>
-                            <li><a href="https://page.line.me/957oyipg?oat_content=url&openQrModal=true" target="_blank" rel="noopener noreferrer">LINE相談</a></li>
-                            <li><a href="https://www.instagram.com/akbd_b/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><a href="https://page.line.me/957oyipg?oat_content=url&openQrModal=true" target="_blank" rel="noopener noreferrer" data-i18n="footer.lineConsult">LINE相談</a></li>
+                            <li><a href="https://www.instagram.com/akbd_b/" target="_blank" rel="noopener noreferrer" data-i18n="footer.instagram">Instagram</a></li>
                         </ul>
                     </div>
                 </div>
@@ -353,15 +292,15 @@
 
             <div class="footer-bottom">
                 <div class="footer-bottom-links">
-                    <a href="https://akatuka.ac.jp/" target="_blank" rel="noopener noreferrer">ホーム</a>
+                    <a href="https://akatuka.ac.jp/" target="_blank" rel="noopener noreferrer" data-i18n="footer.home">ホーム</a>
                     <span class="divider">|</span>
-                    <a href="https://akatuka.ac.jp/request/" target="_blank" rel="noopener noreferrer">資料請求</a>
+                    <a href="https://akatuka.ac.jp/request/" target="_blank" rel="noopener noreferrer" data-i18n="footer.requestDocs">資料請求</a>
                     <span class="divider">|</span>
-                    <a href="https://akatuka.ac.jp/contact/" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+                    <a href="https://akatuka.ac.jp/contact/" target="_blank" rel="noopener noreferrer" data-i18n="footer.contact">お問い合わせ</a>
                     <span class="divider">|</span>
-                    <a href="https://akatuka.ac.jp/privacy-policy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+                    <a href="https://akatuka.ac.jp/privacy-policy/" target="_blank" rel="noopener noreferrer" data-i18n="footer.privacy">プライバシーポリシー</a>
                 </div>
-                <p class="footer-copyright">© 2026 学校法人赤塚学園 All Rights Reserved.</p>
+                <p class="footer-copyright" data-i18n="footer.copyright">© 2026 学校法人赤塚学園 All Rights Reserved.</p>
             </div>
         </footer>
     </main>
