@@ -420,6 +420,27 @@
         "ne": "<li>पार्ट-टाइम काम सिफारिस: बायोडाटा लेखनमा पनि सहयोग गर्छौं।</li><li>बसोबास: विद्यालयको छात्रावास परिचय गर्छौं।</li><li>आप्रवासन र सरकारी कार्यविधि: कार्यालय कर्मचारीले कागजात, बीमा र पेन्सन प्रक्रिया गर्छन्।</li>",
         "hi": "<li>पार्ट-टाइम नौकरी रेफरल: रिज्यूमे लिखने में भी सहायता करते हैं।</li><li>आवास: विद्यालय के छात्रावास की जानकारी देते हैं।</li><li>आप्रवासन और सरकारी प्रक्रियाएं: कार्यालय कर्मचारी दस्तावेज़, बीमा और पेंशन की प्रक्रिया करते हैं।</li>",
         "vi": "<li>Giới thiệu việc làm thêm: Chúng tôi cũng hỗ trợ viết CV.</li><li>Nhà ở: Giới thiệu ký túc xá liên kết với trường.</li><li>Thủ tục nhập cư và chính quyền: Nhân viên văn phòng xử lý giấy tờ nhập cư, bảo hiểm và lương hưu.</li>"
+      },
+      "hostel": {
+        "ja": "🏠 学生寮（ホステル）",
+        "en": "🏠 Student Dormitory",
+        "ne": "🏠 विद्यार्थी छात्रावास",
+        "hi": "🏠 छात्र छात्रावास",
+        "vi": "🏠 Ký túc xá sinh viên"
+      },
+      "hostelIntro": {
+        "ja": "赤塚学園日本語科では、安心・快適な学生生活をサポートするため、学生寮をご用意しています。日本での新生活をスムーズに始められるよう、生活に必要な設備が整っています。",
+        "en": "Akatsuka Gakuen Japanese Language Department provides student dormitories to support a safe and comfortable student life. The dormitories are equipped with the necessary facilities to help students smoothly begin their new life in Japan.",
+        "ne": "अकात्सुका गाकुएन जापानी भाषा विभागले सुरक्षित र आरामदायी विद्यार्थी जीवनको लागि छात्रावास उपलब्ध गराउँछ। जापानमा नयाँ जीवन सहज रूपमा सुरु गर्न आवश्यक सुविधाहरू सुसज्जित छन्।",
+        "hi": "अकात्सुका गाकुएन जापानी भाषा विभाग सुरक्षित और आरामदायक छात्र जीवन के लिए छात्रावास प्रदान करता है। जापान में नया जीवन सुचारू रूप से शुरू करने के लिए आवश्यक सुविधाओं से सुसज्जित है।",
+        "vi": "Khoa Tiếng Nhật Akatsuka Gakuen cung cấp ký túc xá để hỗ trợ sinh viên có cuộc sống an toàn và thoải mái. Ký túc xá được trang bị đầy đủ tiện nghi để giúp sinh viên bắt đầu cuộc sống mới tại Nhật Bản một cách thuận lợi."
+      },
+      "hostelNote": {
+        "ja": "※部屋の空き状況や料金の詳細については、お問い合わせフォームよりご連絡ください。入学前の早めの申し込みをおすすめします。",
+        "en": "※ For room availability and pricing details, please contact us via the inquiry form. We recommend applying early before enrollment.",
+        "ne": "※ कोठाको उपलब्धता र मूल्य विवरणका लागि सम्पर्क फारम मार्फत सम्पर्क गर्नुहोस्। भर्ना हुनुअघि चाँडो आवेदन गर्न सिफारिस गरिन्छ।",
+        "hi": "※ कमरे की उपलब्धता और मूल्य विवरण के लिए संपर्क फॉर्म से संपर्क करें। नामांकन से पहले जल्दी आवेदन करने की सलाह दी जाती है।",
+        "vi": "※ Để biết tình trạng phòng trống và chi tiết giá cả, vui lòng liên hệ qua biểu mẫu. Chúng tôi khuyến khích đăng ký sớm trước khi nhập học."
       }
     },
     "kagoshima": {
