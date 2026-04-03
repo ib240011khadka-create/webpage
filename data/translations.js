@@ -624,8 +624,8 @@
     "contactAddress": {
       "ja": "📍 〒890-0055 鹿児島県鹿児島市上荒田町6-1",
       "en": "📍 6-1 Kamiarata-cho, Kagoshima-shi, Kagoshima 890-0055",
-      "ne": "📍 6-1 कामिआराटा-चो, कागोशिमा-शि, कागोशिमा 890-0055",
-      "hi": "📍 6-1 कामिआराटा-चो, कागोशिमा-शि, कागोशिमा 890-0055",
+      "ne": "📍 6-1 कामिआराता-चो, कागोशिमा-शि, कागोशिमा 890-0055",
+      "hi": "📍 6-1 कामिआराता-चो, कागोशिमा-शि, कागोशिमा 890-0055",
       "vi": "📍 6-1 Kamiarata-cho, Kagoshima-shi, Kagoshima 890-0055"
     },
     "contactOfficialSite": {
@@ -846,10 +846,10 @@
     },
     "eventsExternalHtml": {
       "ja": "<li>7月: 日本語能力試験</li><li>9月: 地域交流会</li><li>11月: おはら祭り</li><li>12月: 日本語能力試験</li><li>1月: 県スピーチ大会</li>",
-      "en": "<li>July: JLPT (Japanese Language Proficiency Test)</li><li>September: Regional exchange event</li><li>October: Ohara Festival</li><li>December: JLPT</li><li>January: Prefectural speech contest</li>",
-      "ne": "<li>जुलाई: JLPT (जापानी भाषा दक्षता परीक्षा)</li><li>सेप्टेम्बर: क्षेत्रीय आदानप्रदान</li><li>अक्टोबर: ओहारा उत्सव</li><li>डिसेम्बर: JLPT</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
-      "hi": "<li>जुलाई: JLPT (जापानी भाषा दक्षता परीक्षा)</li><li>सितंबर: क्षेत्रीय आदान-प्रदान</li><li>अक्टूबर: ओहारा उत्सव</li><li>दिसंबर: JLPT</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
-      "vi": "<li>Tháng 7: JLPT (Kỳ thi Năng lực Nhật ngữ)</li><li>Tháng 9: Giao lưu cộng đồng</li><li>Tháng 10: Lễ hội Ohara</li><li>Tháng 12: JLPT</li><li>Tháng 1: Thi hùng biện cấp tỉnh</li>"
+      "en": "<li>July: JLPT (Japanese Language Proficiency Test)</li><li>September: Regional exchange event</li><li>November: Ohara Festival</li><li>December: JLPT</li><li>January: Prefectural speech contest</li>",
+      "ne": "<li>जुलाई: JLPT (जापानी भाषा दक्षता परीक्षा)</li><li>सेप्टेम्बर: क्षेत्रीय आदानप्रदान</li><li>नोभेम्बर: ओहारा उत्सव</li><li>डिसेम्बर: JLPT</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
+      "hi": "<li>जुलाई: JLPT (जापानी भाषा दक्षता परीक्षा)</li><li>सितंबर: क्षेत्रीय आदान-प्रदान</li><li>नवंबर: ओहारा उत्सव</li><li>दिसंबर: JLPT</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
+      "vi": "<li>Tháng 7: JLPT (Kỳ thi Năng lực Nhật ngữ)</li><li>Tháng 9: Giao lưu cộng đồng</li><li>Tháng 11: Lễ hội Ohara</li><li>Tháng 12: JLPT</li><li>Tháng 1: Thi hùng biện cấp tỉnh</li>"
     },
     "scheduleNote": {
       "ja": "※行事内容・日程は変更になる場合があります。最新情報はお問い合わせフォームよりご確認ください。",
@@ -959,11 +959,11 @@
       "vi": "Trường Nhật ngữ Akatsuka Gakuen"
     },
     "tuitionTableHtml": {
-      "ja": "<table><caption>2年コース 学費一覧（税込）</caption><thead><tr><th rowspan=\"2\">コース名</th><th rowspan=\"2\">選考料</th><th rowspan=\"2\">入学金</th><th colspan=\"2\">授業料</th><th rowspan=\"2\">教材費</th><th rowspan=\"2\">教育充実費</th><th rowspan=\"2\">初年度年間計</th></tr><tr><th>前期<br/>4月-9月</th><th>後期<br/>10月-3月</th></tr></thead><tbody><tr><td>進学2年コース</td><td>2万</td><td>5万</td><td>27.5万</td><td>27.5万</td><td>2.2万</td><td>2.2万</td><td>66.4万</td></tr></tbody></table>",
-      "en": "<table><caption>2-Year Course Tuition (tax included)</caption><thead><tr><th rowspan=\"2\">Course</th><th rowspan=\"2\">Selection Fee</th><th rowspan=\"2\">Enrollment Fee</th><th colspan=\"2\">Tuition</th><th rowspan=\"2\">Textbooks</th><th rowspan=\"2\">Education Fee</th><th rowspan=\"2\">1st Year Total</th></tr><tr><th>1st Half<br/>Apr–Sep</th><th>2nd Half<br/>Oct–Mar</th></tr></thead><tbody><tr><td>2-Year Advancement Course</td><td>¥20,000</td><td>¥50,000</td><td>¥275,000</td><td>¥275,000</td><td>¥22,000</td><td>¥22,000</td><td>¥664,000</td></tr></tbody></table>",
-      "ne": "<table><caption>२ वर्षे पाठ्यक्रम शुल्क (कर सहित)</caption><thead><tr><th rowspan=\"2\">पाठ्यक्रम</th><th rowspan=\"2\">छनौट शुल्क</th><th rowspan=\"2\">भर्ना शुल्क</th><th colspan=\"2\">शिक्षण शुल्क</th><th rowspan=\"2\">पाठ्यपुस्तक</th><th rowspan=\"2\">शिक्षा शुल्क</th><th rowspan=\"2\">पहिलो वर्ष जम्मा</th></tr><tr><th>पहिलो भाग<br/>अप्रिल–सेप्टेम्बर</th><th>दोस्रो भाग<br/>अक्टोबर–मार्च</th></tr></thead><tbody><tr><td>२ वर्षे प्रगति पाठ्यक्रम</td><td>¥20,000</td><td>¥50,000</td><td>¥275,000</td><td>¥275,000</td><td>¥22,000</td><td>¥22,000</td><td>¥664,000</td></tr></tbody></table>",
-      "hi": "<table><caption>2 वर्षीय पाठ्यक्रम शुल्क (कर सहित)</caption><thead><tr><th rowspan=\"2\">पाठ्यक्रम</th><th rowspan=\"2\">चयन शुल्क</th><th rowspan=\"2\">प्रवेश शुल्क</th><th colspan=\"2\">शिक्षण शुल्क</th><th rowspan=\"2\">पाठ्यपुस्तक</th><th rowspan=\"2\">शिक्षा शुल्क</th><th rowspan=\"2\">प्रथम वर्ष कुल</th></tr><tr><th>पूर्वार्ध<br/>अप्रैल–सितंबर</th><th>उत्तरार्ध<br/>अक्टूबर–मार्च</th></tr></thead><tbody><tr><td>2 वर्षीय प्रगति पाठ्यक्रम</td><td>¥20,000</td><td>¥50,000</td><td>¥275,000</td><td>¥275,000</td><td>¥22,000</td><td>¥22,000</td><td>¥664,000</td></tr></tbody></table>",
-      "vi": "<table><caption>Học phí khóa 2 năm (đã bao gồm thuế)</caption><thead><tr><th rowspan=\"2\">Khóa học</th><th rowspan=\"2\">Phí tuyển chọn</th><th rowspan=\"2\">Phí nhập học</th><th colspan=\"2\">Học phí</th><th rowspan=\"2\">Giáo trình</th><th rowspan=\"2\">Phí giáo dục</th><th rowspan=\"2\">Tổng năm 1</th></tr><tr><th>Nửa đầu<br/>T4–T9</th><th>Nửa cuối<br/>T10–T3</th></tr></thead><tbody><tr><td>Khóa tiến học 2 năm</td><td>¥20.000</td><td>¥50.000</td><td>¥275.000</td><td>¥275.000</td><td>¥22.000</td><td>¥22.000</td><td>¥664.000</td></tr></tbody></table>"
+      "ja": "<table><caption>2年コース 学費一覧（税込）</caption><thead><tr><th rowspan=\"2\">コース名</th><th rowspan=\"2\">選考料</th><th rowspan=\"2\">入学金</th><th colspan=\"2\">授業料</th><th rowspan=\"2\">教材費</th><th rowspan=\"2\">教育充実費</th><th rowspan=\"2\">初年度年間計</th></tr><tr><th>前期<br/>4月-9月</th><th>後期<br/>10月-3月</th></tr></thead><tbody><tr><td>進学2年コース</td><td>2万</td><td>5万</td><td>27.5万</td><td>27.5万</td><td>5万</td><td>7万</td><td>74万</td></tr></tbody></table>",
+      "en": "<table><caption>2-Year Course Tuition (tax included)</caption><thead><tr><th rowspan=\"2\">Course</th><th rowspan=\"2\">Selection Fee</th><th rowspan=\"2\">Enrollment Fee</th><th colspan=\"2\">Tuition</th><th rowspan=\"2\">Textbooks</th><th rowspan=\"2\">Education Fee</th><th rowspan=\"2\">1st Year Total</th></tr><tr><th>1st Half<br/>Apr–Sep</th><th>2nd Half<br/>Oct–Mar</th></tr></thead><tbody><tr><td>2-Year Advancement Course</td><td>¥20,000</td><td>¥50,000</td><td>¥275,000</td><td>¥275,000</td><td>¥50,000</td><td>¥70,000</td><td>¥740,000</td></tr></tbody></table>",
+      "ne": "<table><caption>२ वर्षे पाठ्यक्रम शुल्क (कर सहित)</caption><thead><tr><th rowspan=\"2\">पाठ्यक्रम</th><th rowspan=\"2\">छनौट शुल्क</th><th rowspan=\"2\">भर्ना शुल्क</th><th colspan=\"2\">शिक्षण शुल्क</th><th rowspan=\"2\">पाठ्यपुस्तक</th><th rowspan=\"2\">शिक्षा शुल्क</th><th rowspan=\"2\">पहिलो वर्ष जम्मा</th></tr><tr><th>पहिलो भाग<br/>अप्रिल–सेप्टेम्बर</th><th>दोस्रो भाग<br/>अक्टोबर–मार्च</th></tr></thead><tbody><tr><td>२ वर्षे प्रगति पाठ्यक्रम</td><td>¥20,000</td><td>¥50,000</td><td>¥275,000</td><td>¥275,000</td><td>¥50,000</td><td>¥70,000</td><td>¥740,000</td></tr></tbody></table>",
+      "hi": "<table><caption>2 वर्षीय पाठ्यक्रम शुल्क (कर सहित)</caption><thead><tr><th rowspan=\"2\">पाठ्यक्रम</th><th rowspan=\"2\">चयन शुल्क</th><th rowspan=\"2\">प्रवेश शुल्क</th><th colspan=\"2\">शिक्षण शुल्क</th><th rowspan=\"2\">पाठ्यपुस्तक</th><th rowspan=\"2\">शिक्षा शुल्क</th><th rowspan=\"2\">प्रथम वर्ष कुल</th></tr><tr><th>पूर्वार्ध<br/>अप्रैल–सितंबर</th><th>उत्तरार्ध<br/>अक्टूबर–मार्च</th></tr></thead><tbody><tr><td>2 वर्षीय प्रगति पाठ्यक्रम</td><td>¥20,000</td><td>¥50,000</td><td>¥275,000</td><td>¥275,000</td><td>¥50,000</td><td>¥70,000</td><td>¥740,000</td></tr></tbody></table>",
+      "vi": "<table><caption>Học phí khóa 2 năm (đã bao gồm thuế)</caption><thead><tr><th rowspan=\"2\">Khóa học</th><th rowspan=\"2\">Phí tuyển chọn</th><th rowspan=\"2\">Phí nhập học</th><th colspan=\"2\">Học phí</th><th rowspan=\"2\">Giáo trình</th><th rowspan=\"2\">Phí giáo dục</th><th rowspan=\"2\">Tổng năm 1</th></tr><tr><th>Nửa đầu<br/>T4–T9</th><th>Nửa cuối<br/>T10–T3</th></tr></thead><tbody><tr><td>Khóa tiến học 2 năm</td><td>¥20.000</td><td>¥50.000</td><td>¥275.000</td><td>¥275.000</td><td>¥50.000</td><td>¥70.000</td><td>¥740.000</td></tr></tbody></table>"
     },
     "requirementsStepsHtml": {
       "ja": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>🔢 段階1: 申請条件</h3><ul><li>母国で12年以上の学校教育を修了していること</li><li>日本語学習歴が150時間以上、またはJLPT N5以上</li><li>経費支弁能力があること（本人または経費支弁者）</li><li>心身ともに健康であること</li></ul></div><div class=\"step-box\"><h3>🔢 段階2: 選考方法</h3><ul><li>面接試験: 日本語運用力、学習意欲、志望動機を確認</li><li>書類審査: 提出書類全体の整合性を確認</li><li>現地テスト: 基本的な語彙・文法・聴解テスト</li><li>オンライン面接も可（遠方の方）</li><li>結果は2週間以内に通知</li></ul></div></div>",
@@ -1372,11 +1372,11 @@
         "vi": "Học phí là bao nhiêu?"
       },
       "a1Html": {
-        "ja": "<p>2年コースの学費は以下の通りです：</p><ul><li>選抜料：20,000円</li><li>入学金：50,000円</li><li>授業料：600,000円/年</li><li>施設費：40,000円/年</li><li>教材費：約30,000円/年</li></ul><p>詳細は<a href=\"new.html\">入学案内ページ</a>をご確認ください。</p>",
-        "en": "<p>Tuition for the 2-year course is as follows:</p><ul><li>Selection fee: ¥20,000</li><li>Enrollment fee: ¥50,000</li><li>Tuition: ¥600,000/year</li><li>Facility fee: ¥40,000/year</li><li>Textbook fee: approx. ¥30,000/year</li></ul><p>See the <a href=\"new.html\">Admission Guide</a> for details.</p>",
-        "ne": "<p>२ वर्षे पाठ्यक्रमको शुल्क यस प्रकार छ：</p><ul><li>छनौट शुल्क：¥20,000</li><li>भर्ना शुल्क：¥50,000</li><li>पढाइ शुल्क：¥600,000/वर्ष</li><li>सुविधा शुल्क：¥40,000/वर्ष</li><li>पाठ्यपुस्तक शुल्क：लगभग ¥30,000/वर्ष</li></ul><p>विवरणका लागि <a href=\"new.html\">भर्ना गाइड</a> हेर्नुहोस्।</p>",
-        "hi": "<p>2 वर्षीय पाठ्यक्रम का शुल्क इस प्रकार है：</p><ul><li>चयन शुल्क：¥20,000</li><li>प्रवेश शुल्क：¥50,000</li><li>शिक्षण शुल्क：¥600,000/वर्ष</li><li>सुविधा शुल्क：¥40,000/वर्ष</li><li>पाठ्यपुस्तक शुल्क：लगभग ¥30,000/वर्ष</li></ul><p>विवरण के लिए <a href=\"new.html\">प्रवेश गाइड</a> देखें।</p>",
-        "vi": "<p>Học phí khóa 2 năm như sau:</p><ul><li>Phí tuyển chọn: ¥20.000</li><li>Phí nhập học: ¥50.000</li><li>Học phí: ¥600.000/năm</li><li>Phí cơ sở vật chất: ¥40.000/năm</li><li>Phí giáo trình: khoảng ¥30.000/năm</li></ul><p>Xem <a href=\"new.html\">Hướng dẫn nhập học</a> để biết chi tiết.</p>"
+        "ja": "<p>2年コースの学費は以下の通りです：</p><ul><li>選考料：20,000円</li><li>入学金：50,000円</li><li>授業料：550,000円/年</li><li>教材費：50,000円/年</li><li>教育充実費：70,000円/年</li></ul><p>詳細は<a href=\"new.html\">入学案内ページ</a>をご確認ください。</p>",
+        "en": "<p>Tuition for the 2-year course is as follows:</p><ul><li>Selection fee: ¥20,000</li><li>Enrollment fee: ¥50,000</li><li>Tuition: ¥550,000/year</li><li>Textbook fee: ¥50,000/year</li><li>Education enhancement fee: ¥70,000/year</li></ul><p>See the <a href=\"new.html\">Admission Guide</a> for details.</p>",
+        "ne": "<p>२ वर्षे पाठ्यक्रमको शुल्क यस प्रकार छ：</p><ul><li>छनौट शुल्क：¥20,000</li><li>भर्ना शुल्क：¥50,000</li><li>पढाइ शुल्क：¥550,000/वर्ष</li><li>पाठ्यपुस्तक शुल्क：¥50,000/वर्ष</li><li>शिक्षा सुधार शुल्क：¥70,000/वर्ष</li></ul><p>विवरणका लागि <a href=\"new.html\">भर्ना गाइड</a> हेर्नुहोस्।</p>",
+        "hi": "<p>2 वर्षीय पाठ्यक्रम का शुल्क इस प्रकार है：</p><ul><li>चयन शुल्क：¥20,000</li><li>प्रवेश शुल्क：¥50,000</li><li>शिक्षण शुल्क：¥550,000/वर्ष</li><li>पाठ्यपुस्तक शुल्क：¥50,000/वर्ष</li><li>शिक्षा सुधार शुल्क：¥70,000/वर्ष</li></ul><p>विवरण के लिए <a href=\"new.html\">प्रवेश गाइड</a> देखें।</p>",
+        "vi": "<p>Học phí khóa 2 năm như sau:</p><ul><li>Phí tuyển chọn: ¥20.000</li><li>Phí nhập học: ¥50.000</li><li>Học phí: ¥550.000/năm</li><li>Phí giáo trình: ¥50.000/năm</li><li>Phí nâng cao giáo dục: ¥70.000/năm</li></ul><p>Xem <a href=\"new.html\">Hướng dẫn nhập học</a> để biết chi tiết.</p>"
       },
       "q2": {
         "ja": "分割払いはできますか？",
@@ -1718,8 +1718,8 @@
     "messageHtml": {
       "ja": "お探しのページは移動、削除、または存在しない可能性があります。<br />URLをご確認の上、再度お試しください。",
       "en": "The page you are looking for may have been moved, deleted, or does not exist.<br />Please check the URL and try again.",
-      "ne": "तपईल खजनभएक पषठ सरएक, मटएक व अवसथत नहन सकछ<br />कपय URL जच गरर पन: परयस गरनहस",
-      "hi": "आप ज पषठ खज रह ह वह सथनतरत, हटय गय य मजद नह ह सकत<br />कपय URL जच और पन: परयस कर",
+      "ne": "तपाईंले खोज्नुभएको पृष्ठ सारिएको, मेटिएको वा अवस्थित नहुन सक्छ।<br />कृपया URL जाँच गरेर पुन: प्रयास गर्नुहोस्।",
+      "hi": "आप जो पृष्ठ खोज रहे हैं वह स्थानांतरित, हटाया गया या मौजूद नहीं हो सकता है।<br />कृपया URL जाँचें और पुन: प्रयास करें।",
       "vi": "Trang bạn tìm kiếm có thể đã được di chuyển, xóa hoặc không tồn tại.<br />Vui lòng kiểm tra URL và thử lại."
     }
   },
@@ -1930,8 +1930,8 @@
     "address": {
       "ja": "〒890-0055 鹿児島県鹿児島市上荒田町6-1",
       "en": "6-1 Kamiarata-cho, Kagoshima-shi, Kagoshima 890-0055",
-      "ne": "6-1 कामिआराटा-चो, कागोशिमा-शि, कागोशिमा 890-0055",
-      "hi": "6-1 कामिआराटा-चो, कागोशिमा-शि, कागोशिमा 890-0055",
+      "ne": "6-1 कामिआराता-चो, कागोशिमा-शि, कागोशिमा 890-0055",
+      "hi": "6-1 कामिआराता-चो, कागोशिमा-शि, कागोशिमा 890-0055",
       "vi": "6-1 Kamiarata-cho, Kagoshima-shi, Kagoshima 890-0055"
     }
   }
