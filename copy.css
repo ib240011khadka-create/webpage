@@ -2963,3 +2963,23 @@ button[disabled] {
     margin-top: 20pt;
   }
 }
+
+/* ===== HOSTEL PHOTOS ===== */
+.hostel-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 18px 0;
+}
+.hostel-photo {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 600px) {
+  .hostel-photos {
+    grid-template-columns: 1fr;
+  }
+}
