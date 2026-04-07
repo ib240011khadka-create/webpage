@@ -108,10 +108,21 @@
     const status = document.getElementById("contactFormStatus");
     const nextInput = document.getElementById("contactNext");
     const startedAt = document.getElementById("contactFormStartedAt");
-    const honeyInput = form.querySelector('input[name="_honey"]');
+    const honeyInput = form.querySelector('input[name="botcheck"]');
 
     if (!nameInput || !emailInput || !messageInput || !submitButton || !status) {
       return;
+    }
+
+    var originalButtonText = submitButton.textContent;
+
+    function formText(key, fallback) {
+      var lang = (document.getElementById("langSelect") || {}).value || "ja";
+      if (translationsCache) {
+        var entry = resolveKey(translationsCache, "contact." + key);
+        if (entry && entry[lang]) return entry[lang];
+      }
+      return fallback;
     }
 
     const draftKey = "contact_form_draft_v1";
@@ -137,9 +148,9 @@
       const message = messageInput.value.trim();
       const simpleEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-      if (name.length < 2) return "Please enter a name with at least 2 characters.";
-      if (!simpleEmail.test(email)) return "Please enter a valid email address.";
-      if (message.length < 10) return "Please write at least 10 characters in your inquiry.";
+      if (name.length < 2) return formText("errorName", "Please enter a name with at least 2 characters.");
+      if (!simpleEmail.test(email)) return formText("errorEmail", "Please enter a valid email address.");
+      if (message.length < 10) return formText("errorMessage", "Please write at least 10 characters in your inquiry.");
       return "";
     };
 
@@ -154,7 +165,7 @@
     const params = new URLSearchParams(window.location.search);
     if (params.get("sent") === "1") {
       localStorage.removeItem(draftKey);
-      setStatus("Inquiry sent successfully. Thank you.", "is-success");
+      setStatus(formText("successMsg", "Inquiry sent successfully. Thank you."), "is-success");
       const cleanUrl = `${window.location.pathname}${window.location.hash || ""}`;
       window.history.replaceState({}, "", cleanUrl);
     } else {
@@ -177,7 +188,7 @@
     form.addEventListener("submit", async (event) => {
       if (honeyInput && honeyInput.value.trim() !== "") {
         event.preventDefault();
-        setStatus("Submission blocked. Please try again.", "is-error");
+        setStatus(formText("errorBot", "Submission blocked. Please try again."), "is-error");
         return;
       }
 
@@ -185,7 +196,7 @@
         const elapsed = Date.now() - Number(startedAt.value || 0);
         if (!Number.isFinite(elapsed) || elapsed < 3000) {
           event.preventDefault();
-          setStatus("Please wait a moment, then submit again.", "is-error");
+          setStatus(formText("errorWait", "Please wait a moment, then submit again."), "is-error");
           return;
         }
       }
@@ -200,8 +211,8 @@
       saveDraft();
       event.preventDefault();
       submitButton.disabled = true;
-      submitButton.textContent = "Sending...";
-      setStatus("Submitting your inquiry...", "");
+      submitButton.textContent = formText("sending", "Sending...");
+      setStatus(formText("submitting", "Submitting your inquiry..."), "");
 
       try {
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -215,18 +226,18 @@
           localStorage.removeItem(draftKey);
           form.reset();
           if (startedAt) startedAt.value = String(Date.now());
-          setStatus("Inquiry sent successfully. Thank you.", "is-success");
+          setStatus(formText("successMsg", "Inquiry sent successfully. Thank you."), "is-success");
           window.setTimeout(() => {
             window.location.href = "thank-you.html?from=contact";
           }, 900);
         } else {
-          setStatus(data.message || "Could not send inquiry. Please try again.", "is-error");
+          setStatus(data.message || formText("errorSend", "Could not send inquiry. Please try again."), "is-error");
         }
       } catch (_error) {
-        setStatus("Could not send inquiry. Please try again.", "is-error");
+        setStatus(formText("errorSend", "Could not send inquiry. Please try again."), "is-error");
       } finally {
         submitButton.disabled = false;
-        submitButton.textContent = "Send Inquiry";
+        submitButton.textContent = formText("submit", originalButtonText);
       }
     });
   }

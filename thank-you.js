@@ -27,7 +27,10 @@ if (canvas) {
     });
   }
 
+  var confettiRunning = true;
+
   function animateConfetti() {
+    if (!confettiRunning) return;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     confettiPieces.forEach((p) => {
@@ -55,7 +58,9 @@ if (canvas) {
 
   // Stop confetti after 5 seconds
   setTimeout(() => {
+    confettiRunning = false;
     confettiPieces.length = 0;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
   }, 5000);
 
   window.addEventListener("resize", () => {

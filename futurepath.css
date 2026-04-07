@@ -1,128 +1,9 @@
 /* ===== FUTUREPATH PAGE STANDALONE STYLES ===== */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* ===== MOBILE-FIRST GLOBAL STYLES ===== */
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-/* Touch handling and safe areas */
-body {
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-}
-
-/* Prevent horizontal overflow */
-html,
-body {
-  overflow-x: hidden;
-  width: 100%;
-  position: relative;
-}
-
-/* Smooth scrolling with reduced motion preference */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-/* Respect reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Better image handling */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Focus visible for accessibility */
-:focus-visible {
-  outline: 3px solid var(--brand, #d44a99);
-  outline-offset: 2px;
-}
-
-/* Remove focus outline for mouse users */
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
-:root {
-  --bg: #fff9fc;
-  --paper: #ffffff;
-  --text: #333333;
-  --muted: #666666;
-  --line: #eee4ea;
-  --brand: #d44a99;
-  --brand-strong: #e80071;
-  --accent: #007fbe;
-  --shadow-soft: 0 8px 22px rgba(212, 74, 153, 0.1);
-}
-
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  max-width: 100%;
-  overscroll-behavior-x: none;
-  zoom: 1.35;
-}
-
-/* Responsive scaling for different display settings */
-@media screen and (max-width: 1600px) {
-  html {
-    zoom: 1.15;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  html {
-    zoom: 0.9;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  html {
-    zoom: 0.75;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  html {
-    zoom: 0.6;
-  }
-}
+/* Base resets, variables, zoom, and shared styles are in copy.css */
 
 body {
-  font-family: "Zen Kaku Gothic New", "M PLUS Rounded 1c", sans-serif;
-  color: var(--text);
-  line-height: 1.7;
   background: var(--bg);
-  overflow-x: hidden;
-  max-width: 100%;
-  overscroll-behavior-x: none;
   top: 0 !important;
-}
-
-img,
-iframe {
-  max-width: 100%;
 }
 
 /* ===== HERO SECTION ===== */
@@ -1095,10 +976,6 @@ a:focus-visible {
 }
 
 @media (max-width: 380px) {
-  html {
-    zoom: 0.55;
-  }
-
   .hero h1 {
     font-size: 1.3rem;
   }

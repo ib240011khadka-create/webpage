@@ -190,6 +190,7 @@
     </style>
 </head>
 <body>
+    <a class="skip-link" href="#main-content" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;padding:8px 16px;background:#cb3e7f;color:#fff;text-decoration:none;font-weight:700;border-radius:0 0 8px 0" onfocus="this.style.cssText='position:fixed;left:0;top:0;width:auto;height:auto;z-index:9999;padding:8px 16px;background:#cb3e7f;color:#fff;text-decoration:none;font-weight:700;border-radius:0 0 8px 0'" onblur="this.style.cssText='position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999'">メインコンテンツへ</a>
     <div style="position:fixed;top:12px;right:12px;z-index:100;display:flex;align-items:center;gap:6px;background:#fff;padding:6px 10px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1)">
         <label for="langSelect" style="font-size:.85rem">🌐</label>
         <select id="langSelect" name="langSelect" translate="no" class="notranslate" style="font-size:.85rem;padding:4px 8px;border:1px solid #ddd;border-radius:6px;background:#fff">
@@ -200,14 +201,14 @@
             <option value="vi" translate="no" class="notranslate">🇻🇳 Tiếng Việt</option>
         </select>
     </div>
-    <main>
+    <main id="main-content">
         <p class="error-code">404</p>
         <h1 data-i18n="notFound.title">ページが見つかりません</h1>
         <p data-i18n-html="notFound.messageHtml">お探しのページは移動、削除、または存在しない可能性があります。<br />URLをご確認の上、再度お試しください。</p>
         
         <div class="actions">
             <a class="btn primary" href="index.html" data-i18n="notFound.backToSchool">🏫 学校トップへ</a>
-            <a class="btn secondary" href="javascript:history.back()" data-i18n="notFound.goBack">← 前のページへ</a>
+            <button class="btn secondary" onclick="history.back()" data-i18n="notFound.goBack">← 前のページへ</button>
         </div>
 
         <div class="suggestions">

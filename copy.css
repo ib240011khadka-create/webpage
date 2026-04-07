@@ -172,6 +172,8 @@ img {
   --text: #333333;
   --muted: #666666;
   --line: #eee4ea;
+  --brand: #d44a99;
+  --brand-strong: #e80071;
   --nav-start: #e80071;
   --nav-end:#e80071;
   --accent: #007fbe;
@@ -770,8 +772,11 @@ ul {
     object-position: center 25%;
   }
   .fact-photo-label {
-    font-size: 0.75rem;
-    padding: 6px 8px;
+    font-size: 0.70rem;
+    padding: 4px 6px;
+    background: linear-gradient(to top, rgba(110, 72, 85, 0.55), rgba(241, 5, 115, 0.35));
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
   }
   .about-facts-inline {
     grid-template-columns: 1fr;
@@ -1676,27 +1681,27 @@ button[disabled] {
   }
 
   .framework-table {
-    width: 100%;
-    table-layout: fixed;
+    min-width: 620px;
+    table-layout: auto;
     margin: 0;
   }
 
   .framework-table .side-head {
-    width: 45px;
-    font-size: 0.5rem;
-    padding: 3px 2px;
+    width: 90px;
+    font-size: 0.78rem;
+    padding: 6px 4px;
   }
 
   .framework-table th,
   .framework-table td {
-    border: none;
-    padding: 4px 2px;
-    font-size: 0.55rem;
+    border: 1px solid #1f1f1f;
+    padding: 6px 4px;
+    font-size: 0.78rem;
     word-wrap: break-word;
   }
 
   .framework-table img.framework-book {
-    width: 30px;
+    width: 50px;
     height: auto;
   }
 
@@ -2240,6 +2245,7 @@ button[disabled] {
   min-height: 450px;
   max-height: 700px;
   overflow: hidden;
+  background: linear-gradient(135deg, #1a3a5c 0%, #2d6a9f 50%, #1a3a5c 100%);
 }
 
 .hero-video-bg {

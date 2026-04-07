@@ -266,7 +266,7 @@
   <main id="main-content">
     <section id="about-our-college">
       <div class="container">
-        <h1 data-i18n="index.aboutCollege.title">🏫専門学校情報</h1>
+        <h2 data-i18n="index.aboutCollege.title">🏫専門学校情報</h2>
         <hr />
         <p class="section-lead mission-lead"><em data-i18n="index.aboutCollege.mission">理念：ひとりひとりの色もかたちも異なる尊い“個性”を育む。</em></p>
 
@@ -324,12 +324,12 @@
     <!-- Hero Video Section -->
     <section id="hero-video">
       <video autoplay muted loop playsinline preload="metadata"
-             poster="logo/hero-poster.jpg"
-             class="hero-video-bg" id="heroVideo">
+            poster="logo/hero-poster.jpg"
+              class="hero-video-bg" id="heroVideo">
         <source src="intro-video.mp4" type="video/mp4">
       </video>
       <div class="hero-video-overlay" id="heroOverlay">
-        <h1 data-i18n="index.heroVideo.title">日本語科紹介</h1>
+        <h2 data-i18n="index.heroVideo.title">日本語科紹介</h2>
         <p class="hero-tagline" data-i18n="index.heroVideo.tagline">認定日本語教育機関</p>
         <p class="hero-info" data-i18n="index.heroVideo.info">📍 鹿児島市上荒田町 | 🏫 創立1976年 | 👨‍🎓 少人数制クラス</p>
       </div>
@@ -391,8 +391,7 @@
             <div class="teacher-grid">
               <article class="teacher-card">
                 <img src="teachers/principle.jpg" alt="校長先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
-              
-          </article>
+              </article>
             </div>
           </div>
           <hr>
@@ -405,15 +404,12 @@
 
               <article class="teacher-card">
                 <img src="teachers/hayasi.jpg" alt="林先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
-                
               </article>
               <article class="teacher-card">
                 <img src="teachers/sensei.jpg" alt="西村先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
-                
               </article>
               <article class="teacher-card">
                 <img src="teachers/female-icon.svg" alt="女性教師" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
-                
               </article>
             </div>
             <hr>
@@ -422,26 +418,22 @@
                 <div class="teacher-grid">
                 <article class="teacher-card">
                 <img src="teachers/fujino.jpg" alt="藤野先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
-                
               </article>
                 <article class="teacher-card">
                 <img src="teachers/nipur.jpg" alt="ヌプール先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
-                
               </article>
               <article class="teacher-card">
                 <img src="teachers/enn.jpg" alt="イエン先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
-              
               </article>
               <article class="teacher-card">
                 <img src="teachers/maissam.jpg" alt="マイサム先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
-                
               </article>
 
               <article class="teacher-card">
                 <img src="teachers/aashish.jpg" alt="アシス先生" class="teacher-photo" width="200" height="250" loading="lazy" decoding="async" />
-                
               </article>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -516,6 +508,8 @@
           width="100%"
           height="400"
           class="map-frame"
+          title="赤塚学園の地図"
+          style="border:0"
           allowfullscreen
           loading="lazy"></iframe>
         <br /><br />
@@ -725,10 +719,10 @@
         
         <div class="accordion" data-single-open="true">
           <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-panel-1">
               <span data-i18n="faq.q1">入学に必要な書類は何ですか？</span>
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq-panel-1" role="region">
               <div class="accordion-body" data-i18n="faq.a1">
                 入学願書、最終学歴の卒業証明書、日本語学習歴証明書（ある場合）、パスポートのコピー、証明写真が必要です。詳細は入学案内ページをご確認ください。
               </div>
@@ -736,10 +730,10 @@
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-panel-2">
               <span data-i18n="faq.q2">学費の支払い方法は？</span>
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq-panel-2" role="region">
               <div class="accordion-body" data-i18n="faq.a2">
                 銀行振込でのお支払いとなります。分割払いにも対応しておりますので、ご相談ください。
               </div>
@@ -747,10 +741,10 @@
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-panel-3">
               <span data-i18n="faq.q3">アルバイトはできますか？</span>
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq-panel-3" role="region">
               <div class="accordion-body" data-i18n="faq.a3">
                 留学ビザをお持ちの方は、資格外活動許可を取得すれば週28時間までアルバイトが可能です。学校でサポートいたします。
               </div>
@@ -758,10 +752,10 @@
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-panel-4">
               <span data-i18n="faq.q4">寮はありますか？</span>
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq-panel-4" role="region">
               <div class="accordion-body" data-i18n="faq.a4">
                 学校提携の寮やアパートをご紹介しています。入学前からお部屋探しをサポートいたします。
               </div>
@@ -769,10 +763,10 @@
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-panel-5">
               <span data-i18n="faq.q5">日本語が全くわからなくても大丈夫ですか？</span>
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq-panel-5" role="region">
               <div class="accordion-body" data-i18n="faq.a5">
                 はい、初心者クラスがありますので、ゼロから学べます。ひらがな・カタカナから丁寧に指導します。
               </div>
@@ -780,10 +774,10 @@
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-panel-6">
               <span data-i18n="faq.q6">卒業後の進路サポートはありますか？</span>
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq-panel-6" role="region">
               <div class="accordion-body" data-i18n="faq.a6">
                 はい、専門学校・大学への進学指導、就職サポートを行っています。個別相談も随時受け付けています。
               </div>
@@ -834,6 +828,8 @@
 
       </div>
     </section>
+
+  </main>
 
     <footer id="mega-footer" aria-labelledby="footer-title">
       <div class="footer-hero-split">
@@ -915,6 +911,7 @@
         <p class="footer-copyright" data-i18n="footer.copyright">© 2026 学校法人赤塚学園 All Rights Reserved.</p>
       </div>
     </footer>
-  </main>
+</body>
 </body>
 </html>
+

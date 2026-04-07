@@ -1027,7 +1027,7 @@
       "ne": "📋 भर्ना प्रक्रिया",
       "hi": "📋 प्रवेश प्रक्रिया",
       "vi": "📋 Quy trình nhập học"
-    },
+    }
   },
   "futurepath": {
     "title": {
@@ -1654,6 +1654,69 @@
       "ne": "कृपया आफ्नो प्रश्न वा सोधपुछ लेख्नुहोस्",
       "hi": "कृपया अपना प्रश्न या पूछताछ दर्ज करें",
       "vi": "Vui lòng nhập câu hỏi hoặc yêu cầu của bạn"
+    },
+    "errorName": {
+      "ja": "2文字以上のお名前を入力してください。",
+      "en": "Please enter a name with at least 2 characters.",
+      "ne": "कम्तिमा २ अक्षरको नाम प्रविष्ट गर्नुहोस्।",
+      "hi": "कृपया कम से कम 2 अक्षरों का नाम दर्ज करें।",
+      "vi": "Vui lòng nhập tên có ít nhất 2 ký tự."
+    },
+    "errorEmail": {
+      "ja": "有効なメールアドレスを入力してください。",
+      "en": "Please enter a valid email address.",
+      "ne": "कृपया मान्य इमेल ठेगाना प्रविष्ट गर्नुहोस्।",
+      "hi": "कृपया एक वैध ईमेल पता दर्ज करें।",
+      "vi": "Vui lòng nhập địa chỉ email hợp lệ."
+    },
+    "errorMessage": {
+      "ja": "10文字以上でお問い合わせ内容を入力してください。",
+      "en": "Please write at least 10 characters in your inquiry.",
+      "ne": "कम्तिमा १० अक्षरमा आफ्नो सोधपुछ लेख्नुहोस्।",
+      "hi": "कृपया अपनी पूछताछ में कम से कम 10 अक्षर लिखें।",
+      "vi": "Vui lòng viết ít nhất 10 ký tự."
+    },
+    "sending": {
+      "ja": "送信中...",
+      "en": "Sending...",
+      "ne": "पठाउँदै...",
+      "hi": "भेज रहे हैं...",
+      "vi": "Đang gửi..."
+    },
+    "submitting": {
+      "ja": "お問い合わせを送信しています...",
+      "en": "Submitting your inquiry...",
+      "ne": "तपाईंको सोधपुछ पठाउँदै...",
+      "hi": "आपकी पूछताछ भेज रहे हैं...",
+      "vi": "Đang gửi yêu cầu của bạn..."
+    },
+    "successMsg": {
+      "ja": "お問い合わせを送信しました。ありがとうございます。",
+      "en": "Inquiry sent successfully. Thank you.",
+      "ne": "सोधपुछ सफलतापूर्वक पठाइयो। धन्यवाद।",
+      "hi": "पूछताछ सफलतापूर्वक भेजी गई। धन्यवाद।",
+      "vi": "Gửi thành công. Cảm ơn bạn."
+    },
+    "errorSend": {
+      "ja": "送信できませんでした。もう一度お試しください。",
+      "en": "Could not send inquiry. Please try again.",
+      "ne": "पठाउन सकिएन। कृपया फेरि प्रयास गर्नुहोस्।",
+      "hi": "भेज नहीं सका। कृपया पुनः प्रयास करें।",
+      "vi": "Không thể gửi. Vui lòng thử lại."
+    },
+    "errorBot": {
+      "ja": "送信がブロックされました。もう一度お試しください。",
+      "en": "Submission blocked. Please try again.",
+      "ne": "पठाउन रोकियो। कृपया फेरि प्रयास गर्नुहोस्।",
+      "hi": "सबमिशन अवरुद्ध। कृपया पुनः प्रयास करें।",
+      "vi": "Gửi bị chặn. Vui lòng thử lại."
+    },
+    "errorWait": {
+      "ja": "少々お待ちいただき、再度送信してください。",
+      "en": "Please wait a moment, then submit again.",
+      "ne": "कृपया केही समय पर्खनुहोस्, त्यसपछि फेरि पठाउनुहोस्।",
+      "hi": "कृपया एक क्षण प्रतीक्षा करें, फिर पुनः भेजें।",
+      "vi": "Vui lòng đợi một chút rồi gửi lại."
     }
   },
   "thankYou": {

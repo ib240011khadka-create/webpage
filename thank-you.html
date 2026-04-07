@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="thank-you.css" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link" data-i18n="common.skipToMain">メインコンテンツへスキップ</a>
   <!-- Confetti Canvas -->
   <canvas id="confetti" aria-hidden="true"></canvas>
   <div style="position:fixed;top:12px;right:12px;z-index:100;display:flex;align-items:center;gap:6px;background:#fff;padding:6px 10px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1)">
@@ -31,7 +32,7 @@
     </select>
   </div>
   
-  <main class="card">
+  <main id="main-content" class="card">
     <div class="success-icon">
       <svg viewBox="0 0 52 52">
         <circle cx="26" cy="26" r="25" fill="none" stroke="#4ade80" stroke-width="2"/>
