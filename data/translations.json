@@ -886,6 +886,146 @@
       "hi": "* पाठ्यक्रम और पाठ्यपुस्तक बदल सकते हैं। नवीनतम जानकारी के लिए संपर्क करें।",
       "vi": "* Nội dung và giáo trình có thể thay đổi. Vui lòng liên hệ để biết thông tin mới nhất."
     },
+    "fwSemesterLabel": {
+      "ja": "学期<br />（クラス名）",
+      "en": "Semester<br />(Class)",
+      "ne": "सेमेस्टर<br />(कक्षा)",
+      "hi": "सेमेस्टर<br />(कक्षा)",
+      "vi": "Học kỳ<br />(Lớp)"
+    },
+    "fwLevelLabel": {
+      "ja": "学習段階",
+      "en": "Level",
+      "ne": "स्तर",
+      "hi": "स्तर",
+      "vi": "Trình độ"
+    },
+    "fwTextbookLabel": {
+      "ja": "主教材",
+      "en": "Textbook",
+      "ne": "पाठ्यपुस्तक",
+      "hi": "पाठ्यपुस्तक",
+      "vi": "Giáo trình"
+    },
+    "fwSubjectsLabel": {
+      "ja": "科目",
+      "en": "Subjects",
+      "ne": "विषय",
+      "hi": "विषय",
+      "vi": "Môn học"
+    },
+    "fw1SemA": {
+      "ja": "前期（初級クラス）",
+      "en": "1st Semester (Beginner)",
+      "ne": "पहिलो सेमेस्टर (शुरुवात)",
+      "hi": "पहला सेमेस्टर (शुरुआती)",
+      "vi": "Học kỳ 1 (Sơ cấp)"
+    },
+    "fw1SemB": {
+      "ja": "後期（初中級クラス）",
+      "en": "2nd Semester (Pre-Intermediate)",
+      "ne": "दोस्रो सेमेस्टर (पूर्व-मध्यवर्ती)",
+      "hi": "दूसरा सेमेस्टर (पूर्व-मध्यवर्ती)",
+      "vi": "Học kỳ 2 (Tiền trung cấp)"
+    },
+    "fw1Period1": {
+      "ja": "4月 - 5月（2か月）",
+      "en": "Apr–May (2 months)",
+      "ne": "अप्रिल–मे (२ महिना)",
+      "hi": "अप्रैल–मई (2 महीने)",
+      "vi": "T4–T5 (2 tháng)"
+    },
+    "fw1Period2": {
+      "ja": "6月 - 9月（4か月）",
+      "en": "Jun–Sep (4 months)",
+      "ne": "जुन–सेप्ट (४ महिना)",
+      "hi": "जून–सित (4 महीने)",
+      "vi": "T6–T9 (4 tháng)"
+    },
+    "fw1Period3": {
+      "ja": "10月 - 12月（3か月）",
+      "en": "Oct–Dec (3 months)",
+      "ne": "अक्ट–डिसे (३ महिना)",
+      "hi": "अक्टू–दिस (3 महीने)",
+      "vi": "T10–T12 (3 tháng)"
+    },
+    "fw1Period4": {
+      "ja": "1月 - 3月（2か月）",
+      "en": "Jan–Mar (2 months)",
+      "ne": "जन–मार्च (२ महिना)",
+      "hi": "जन–मार्च (2 महीने)",
+      "vi": "T1–T3 (2 tháng)"
+    },
+    "fw1SubjectsHtml": {
+      "ja": "1) 総合日本語<br />2) 漢字<br />3) 日本事情・異文化理解<br />4) 振り返り・学習計画",
+      "en": "1) Comprehensive Japanese<br />2) Kanji<br />3) Japanese Culture &amp; Cross-cultural Understanding<br />4) Reflection &amp; Study Planning",
+      "ne": "1) व्यापक जापानी<br />2) कान्जी<br />3) जापानी संस्कृति<br />4) प्रतिबिम्ब र अध्ययन योजना",
+      "hi": "1) व्यापक जापानी<br />2) कांजी<br />3) जापानी संस्कृति<br />4) प्रतिबिंब और अध्ययन योजना",
+      "vi": "1) Tiếng Nhật tổng hợp<br />2) Kanji<br />3) Văn hóa Nhật<br />4) Ôn tập &amp; Kế hoạch học tập"
+    },
+    "fw2SemA": {
+      "ja": "前期（準中級クラス）",
+      "en": "1st Semester (Pre-Intermediate)",
+      "ne": "पहिलो सेमेस्टर (पूर्व-मध्य)",
+      "hi": "पहला सेमेस्टर (पूर्व-मध्य)",
+      "vi": "Học kỳ 1 (Tiền trung cấp)"
+    },
+    "fw2SemB": {
+      "ja": "後期（中級クラス）",
+      "en": "2nd Semester (Intermediate)",
+      "ne": "दोस्रो सेमेस्टर (मध्यवर्ती)",
+      "hi": "दूसरा सेमेस्टर (मध्यवर्ती)",
+      "vi": "Học kỳ 2 (Trung cấp)"
+    },
+    "fw2Period1": {
+      "ja": "4月 - 6月（3か月）",
+      "en": "Apr–Jun (3 months)",
+      "ne": "अप्रि–जुन (३ महिना)",
+      "hi": "अप्रैल–जून (3 महीने)",
+      "vi": "T4–T6 (3 tháng)"
+    },
+    "fw2Period2": {
+      "ja": "7月 - 9月（3か月）",
+      "en": "Jul–Sep (3 months)",
+      "ne": "जुलाई–सेप्ट (३ महिना)",
+      "hi": "जुलाई–सित (3 महीने)",
+      "vi": "T7–T9 (3 tháng)"
+    },
+    "fw2Period3": {
+      "ja": "10月 - 12月（3か月）",
+      "en": "Oct–Dec (3 months)",
+      "ne": "अक्ट–डिसे (३ महिना)",
+      "hi": "अक्टू–दिस (3 महीने)",
+      "vi": "T10–T12 (3 tháng)"
+    },
+    "fw2Period4": {
+      "ja": "1月 - 3月（3か月）",
+      "en": "Jan–Mar (3 months)",
+      "ne": "जन–मार्च (३ महिना)",
+      "hi": "जन–मार्च (3 महीने)",
+      "vi": "T1–T3 (3 tháng)"
+    },
+    "fw2SubjectsHtml12": {
+      "ja": "1) 総合日本語<br />2) 日本事情・異文化理解<br />3) 振り返り・学習計画",
+      "en": "1) Comprehensive Japanese<br />2) Japanese Culture &amp; Cross-cultural Understanding<br />3) Reflection &amp; Study Planning",
+      "ne": "1) व्यापक जापानी<br />2) जापानी संस्कृति<br />3) प्रतिबिम्ब र योजना",
+      "hi": "1) व्यापक जापानी<br />2) जापानी संस्कृति<br />3) प्रतिबिंब और योजना",
+      "vi": "1) Tiếng Nhật tổng hợp<br />2) Văn hóa Nhật<br />3) Ôn tập &amp; Kế hoạch"
+    },
+    "fw2SubjectsHtml3": {
+      "ja": "1) 総合日本語<br />2) 地域と言語と社会<br />3) 振り返り・学習計画",
+      "en": "1) Comprehensive Japanese<br />2) Regional Language &amp; Society<br />3) Reflection &amp; Study Planning",
+      "ne": "1) व्यापक जापानी<br />2) क्षेत्रीय भाषा र समाज<br />3) प्रतिबिम्ब र योजना",
+      "hi": "1) व्यापक जापानी<br />2) क्षेत्रीय भाषा और समाज<br />3) प्रतिबिंब और योजना",
+      "vi": "1) Tiếng Nhật tổng hợp<br />2) Ngôn ngữ &amp; Xã hội khu vực<br />3) Ôn tập &amp; Kế hoạch"
+    },
+    "fw2SubjectsHtml4": {
+      "ja": "1) 総合日本語<br />2) 地域と言語と社会<br />3) 振り返り・学習計画<br />4) 卒業プロジェクト",
+      "en": "1) Comprehensive Japanese<br />2) Regional Language &amp; Society<br />3) Reflection &amp; Study Planning<br />4) Graduation Project",
+      "ne": "1) व्यापक जापानी<br />2) क्षेत्रीय भाषा र समाज<br />3) प्रतिबिम्ब र योजना<br />4) स्नातक परियोजना",
+      "hi": "1) व्यापक जापानी<br />2) क्षेत्रीय भाषा और समाज<br />3) प्रतिबिंब और योजना<br />4) स्नातक परियोजना",
+      "vi": "1) Tiếng Nhật tổng hợp<br />2) Ngôn ngữ &amp; Xã hội khu vực<br />3) Ôn tập &amp; Kế hoạch<br />4) Dự án tốt nghiệp"
+    },
     "breadcrumbTitle": {
       "ja": "学校生活",
       "en": "School Life",
