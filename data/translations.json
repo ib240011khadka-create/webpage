@@ -867,10 +867,10 @@
     },
     "eventsExternalHtml": {
       "ja": "<li>7月: 日本語能力試験</li><li>9月: 地域交流会</li><li>11月: おはら祭り</li><li>12月: 日本語能力試験</li><li>1月: 県スピーチ大会</li>",
-      "en": "<li>July: JLPT (Japanese Language Proficiency Test)</li><li>September: Regional exchange event</li><li>November: Ohara Festival</li><li>December: JLPT</li><li>January: Prefectural speech contest</li>",
-      "ne": "<li>जुलाई: JLPT (जापानी भाषा दक्षता परीक्षा)</li><li>सेप्टेम्बर: क्षेत्रीय आदानप्रदान</li><li>नोभेम्बर: ओहारा उत्सव</li><li>डिसेम्बर: JLPT</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
-      "hi": "<li>जुलाई: JLPT (जापानी भाषा दक्षता परीक्षा)</li><li>सितंबर: क्षेत्रीय आदान-प्रदान</li><li>नवंबर: ओहारा उत्सव</li><li>दिसंबर: JLPT</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
-      "vi": "<li>Tháng 7: JLPT (Kỳ thi Năng lực Nhật ngữ)</li><li>Tháng 9: Giao lưu cộng đồng</li><li>Tháng 11: Lễ hội Ohara</li><li>Tháng 12: JLPT</li><li>Tháng 1: Thi hùng biện cấp tỉnh</li>"
+      "en": "<li>July: JLPT/CEFR exam</li><li>September: Regional exchange event</li><li>November: Ohara Festival</li><li>December: JLPT/CEFR exam</li><li>January: Prefectural speech contest</li>",
+      "ne": "<li>जुलाई: JLPT/CEFR परीक्षा</li><li>सेप्टेम्बर: क्षेत्रीय आदानप्रदान</li><li>नोभेम्बर: ओहारा उत्सव</li><li>डिसेम्बर: JLPT/CEFR परीक्षा</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
+      "hi": "<li>जुलाई: JLPT/CEFR परीक्षा</li><li>सितंबर: क्षेत्रीय आदान-प्रदान</li><li>नवंबर: ओहारा उत्सव</li><li>दिसंबर: JLPT/CEFR परीक्षा</li><li>जनवरी: प्रान्तीय भाषण प्रतियोगिता</li>",
+      "vi": "<li>Tháng 7: Kỳ thi JLPT/CEFR</li><li>Tháng 9: Giao lưu cộng đồng</li><li>Tháng 11: Lễ hội Ohara</li><li>Tháng 12: Kỳ thi JLPT/CEFR</li><li>Tháng 1: Thi hùng biện cấp tỉnh</li>"
     },
     "scheduleNote": {
       "ja": "※行事内容・日程は変更になる場合があります。最新情報はお問い合わせフォームよりご確認ください。",
@@ -1673,17 +1673,17 @@
       },
       "q2": {
         "ja": "JLPTの対策授業はありますか？",
-        "en": "Are there JLPT preparation classes?",
-        "ne": "JLPT तयारी कक्षा छ？",
-        "hi": "क्या JLPT तैयारी कक्षा है？",
-        "vi": "Có lớp luyện thi JLPT không?"
+        "en": "Are there JLPT/CEFR exam preparation classes?",
+        "ne": "JLPT/CEFR परीक्षा तयारी कक्षा छ？",
+        "hi": "क्या JLPT/CEFR परीक्षा तैयारी कक्षा है？",
+        "vi": "Có lớp luyện thi JLPT/CEFR không?"
       },
       "a2Html": {
         "ja": "<p>はい、JLPT（日本語能力試験）の対策授業があります。</p><p>通常授業に加えて、試験前には特別対策講座も実施します。</p><p>目標レベル：</p><ul><li>1年目終了時：N3合格</li><li>2年目終了時：N2合格</li></ul>",
-        "en": "<p>Yes, we offer JLPT preparation classes.</p><p>In addition to regular classes, special intensive courses are held before exams.</p><p>Target levels:</p><ul><li>End of 1st year: Pass N3</li><li>End of 2nd year: Pass N2</li></ul>",
-        "ne": "<p>हो, JLPT तयारी कक्षा छ।</p><p>नियमित कक्षाको अतिरिक्त, परीक्षा अघि विशेष गहन पाठ्यक्रम हुन्छ।</p><p>लक्ष्य स्तर：</p><ul><li>पहिलो वर्ष अन्त्यमा：N3 पास</li><li>दोस्रो वर्ष अन्त्यमा：N2 पास</li></ul>",
-        "hi": "<p>हाँ, JLPT तैयारी कक्षा है।</p><p>नियमित कक्षाओं के अलावा, परीक्षा से पहले विशेष गहन पाठ्यक्रम होते हैं।</p><p>लक्ष्य स्तर：</p><ul><li>पहले वर्ष के अंत में：N3 पास</li><li>दूसरे वर्ष के अंत में：N2 पास</li></ul>",
-        "vi": "<p>Có, chúng tôi có lớp luyện thi JLPT.</p><p>Ngoài lớp học thường, có khóa ôn tập đặc biệt trước kỳ thi.</p><p>Mục tiêu:</p><ul><li>Cuối năm 1: Đạt N3</li><li>Cuối năm 2: Đạt N2</li></ul>"
+        "en": "<p>Yes, we offer JLPT/CEFR exam preparation classes.</p><p>In addition to regular classes, special intensive courses are held before exams.</p><p>Target levels:</p><ul><li>End of 1st year: Pass N3</li><li>End of 2nd year: Pass N2</li></ul>",
+        "ne": "<p>हो, JLPT/CEFR परीक्षा तयारी कक्षा छ।</p><p>नियमित कक्षाको अतिरिक्त, परीक्षा अघि विशेष गहन पाठ्यक्रम हुन्छ।</p><p>लक्ष्य स्तर：</p><ul><li>पहिलो वर्ष अन्त्यमा：N3 पास</li><li>दोस्रो वर्ष अन्त्यमा：N2 पास</li></ul>",
+        "hi": "<p>हाँ, JLPT/CEFR परीक्षा तैयारी कक्षा है।</p><p>नियमित कक्षाओं के अलावा, परीक्षा से पहले विशेष गहन पाठ्यक्रम होते हैं।</p><p>लक्ष्य स्तर：</p><ul><li>पहले वर्ष के अंत में：N3 पास</li><li>दूसरे वर्ष के अंत में：N2 पास</li></ul>",
+        "vi": "<p>Có, chúng tôi có lớp luyện thi JLPT/CEFR.</p><p>Ngoài lớp học thường, có khóa ôn tập đặc biệt trước kỳ thi.</p><p>Mục tiêu:</p><ul><li>Cuối năm 1: Đạt N3</li><li>Cuối năm 2: Đạt N2</li></ul>"
       },
       "q3": {
         "ja": "クラスの人数は何人ですか？",
