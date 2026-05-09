@@ -566,46 +566,46 @@
       }
     },
     "socialInstagramDesc": {
-      "ja": "美容科・デザイン科の公式Instagram。授業風景や制作活動、イベント情報を発信しています。",
-      "en": "Official Instagram of the Beauty & Design department. Follow us for class activities, events, and more.",
-      "ne": "सौन्दर्य र डिजाइन विभागको आधिकारिक Instagram। कक्षा गतिविधि र कार्यक्रम जानकारी।",
-      "hi": "सौंदर्य और डिज़ाइन विभाग का आधिकारिक Instagram। कक्षा गतिविधियाँ और कार्यक्रम।",
-      "vi": "Instagram chính thức của khoa Thẩm mỹ & Thiết kế. Cập nhật hoạt động lớp học và sự kiện."
+      "ja": "日本語科の公式Instagram。学生の学習風景、イベント、進学情報を発信しています。",
+      "en": "Official Instagram of the Japanese Language Department. Follow for student activities, events, and admissions information.",
+      "ne": "जापानी भाषा विभागको आधिकारिक Instagram। विद्यार्थी गतिविधि, कार्यक्रम र भर्ना जानकारी पोस्ट गरिन्छ।",
+      "hi": "जापानी भाषा विभाग का आधिकारिक Instagram। छात्र गतिविधियाँ, कार्यक्रम और प्रवेश जानकारी देखें।",
+      "vi": "Instagram chính thức của Khoa tiếng Nhật. Cập nhật hoạt động học, sự kiện và thông tin tuyển sinh."
     },
     "socialInstagramBtn": {
-      "ja": "@akbd_b を見る",
-      "en": "View @akbd_b",
-      "ne": "@akbd_b हेर्नुहोस्",
-      "hi": "@akbd_b देखें",
-      "vi": "Xem @akbd_b"
+      "ja": "公式Instagramを見る",
+      "en": "View Official Instagram",
+      "ne": "आधिकारिक Instagram हेर्नुहोस्",
+      "hi": "आधिकारिक Instagram देखें",
+      "vi": "Xem Instagram chính thức"
     },
     "socialFacebookTitle": {
-      "ja": "オンライン相談会",
-      "en": "Online Consultation",
-      "ne": "अनलाइन परामर्श",
-      "hi": "ऑनलाइन परामर्श",
-      "vi": "Tư vấn trực tuyến"
+      "ja": "Facebook",
+      "en": "Facebook",
+      "ne": "Facebook",
+      "hi": "Facebook",
+      "vi": "Facebook"
     },
     "socialFacebookDesc": {
-      "ja": "遠方の方でも参加しやすいオンライン個別相談会。ZOOMで進学相談ができます。",
-      "en": "Convenient online individual consultation via ZOOM. Get advice on your next step.",
-      "ne": "ZOOM मार्फत अनलाइन व्यक्तिगत परामर्श। प्रगतिको बारेमा सल्लाह लिनुहोस्।",
-      "hi": "ZOOM के माध्यम से ऑनलाइन व्यक्तिगत परामर्श। प्रगति के बारे में सलाह लें।",
-      "vi": "Tư vấn cá nhân trực tuyến qua ZOOM. Nhận tư vấn về bước tiếp theo."
+      "ja": "公式Facebookページで学校のニュース、イベント、ライブ配信を確認できます。",
+      "en": "Check school news, events and live streams on our official Facebook page.",
+      "ne": "आधिकारिक Facebook पृष्ठमा विद्यालयका समाचार, कार्यक्रम र लाइभ हेर्नुहोस्।",
+      "hi": "हमारे आधिकारिक Facebook पेज पर विद्यालय की खबरें, कार्यक्रम और लाइव प्रसारण देखें।",
+      "vi": "Xem tin tức, sự kiện và phát trực tiếp của trường trên trang Facebook chính thức."
     },
     "socialFacebookBtn": {
-      "ja": "自宅から相談する",
-      "en": "Consult from Home",
-      "ne": "घरबाट परामर्श",
-      "hi": "घर से परामर्श",
-      "vi": "Tư vấn từ nhà"
+      "ja": "公式Facebookを見る",
+      "en": "View Official Facebook",
+      "ne": "आधिकारिक Facebook हेर्नुहोस्",
+      "hi": "आधिकारिक Facebook देखें",
+      "vi": "Xem Facebook chính thức"
     },
     "socialLineDesc": {
-      "ja": "看護学科・医療事務科のLINE公式アカウント。1:1トークで相談・予約が可能です。",
-      "en": "Official LINE account for Nursing & Medical Office. 1:1 chat for consultation & booking.",
-      "ne": "नर्सिङ र मेडिकल अफिसको LINE आधिकारिक खाता। 1:1 च्याटमा परामर्श।",
-      "hi": "नर्सिंग और मेडिकल ऑफिस का LINE आधिकारिक खाता। 1:1 चैट में परामर्श।",
-      "vi": "Tài khoản LINE chính thức khoa Điều dưỡng & Văn phòng y tế. Tư vấn 1:1."
+      "ja": "日本語科の公式LINEアカウント。入学相談や個別質問を1:1で受け付けています。",
+      "en": "Official LINE account for the Japanese Language Department. 1:1 chat available for admissions inquiries and individual questions.",
+      "ne": "जापानी भाषा विभागको आधिकारिक LINE खाता। भर्ना र व्यक्तिगत प्रश्नको लागि 1:1 च्याट उपलब्ध।",
+      "hi": "जापानी भाषा विभाग का आधिकारिक LINE अकाउंट। प्रवेश और व्यक्तिगत प्रश्नों के लिए 1:1 चैट उपलब्ध है।",
+      "vi": "Tài khoản LINE chính thức của Khoa tiếng Nhật. Hỗ trợ chat 1:1 cho tư vấn nhập học và câu hỏi cá nhân."
     },
     "socialLineBtn": {
       "ja": "公式LINEで相談する",
@@ -622,11 +622,11 @@
       "vi": "Liên kết thêm:"
     },
     "socialBeautyLine": {
-      "ja": "美容科・デザイン科 LINE公式アカウント",
-      "en": "Beauty & Design LINE Official",
-      "ne": "सौन्दर्य र डिजाइन LINE आधिकारिक",
-      "hi": "सौंदर्य और डिज़ाइन LINE आधिकारिक",
-      "vi": "LINE chính thức Thẩm mỹ & Thiết kế"
+      "ja": "日本語科 LINE公式アカウント",
+      "en": "Japanese Dept. LINE Official",
+      "ne": "जापानी भाषा विभाग LINE आधिकारिक",
+      "hi": "जापानी भाषा विभाग LINE आधिकारिक",
+      "vi": "LINE chính thức Khoa tiếng Nhật"
     },
     "socialNews": {
       "ja": "新着情報",
@@ -1304,11 +1304,11 @@
       "vi": "<table><caption>JLPT / CEFR &amp; Hướng đi tương lai</caption><thead><tr><th>JLPT</th><th>CEFR</th><th>Hướng đi</th><th>Ghi chú</th></tr></thead><tbody><tr><td><strong>N5 / N4</strong></td><td><strong>A1 / A2</strong></td><td>Tiếp tục học tiếng Nhật / mức cơ bản khi nhập học</td><td>Yêu cầu tối thiểu</td></tr><tr><td><strong>N3</strong></td><td><strong>B1</strong></td><td>Vào trường nghề</td><td>Bắt đầu chuẩn bị nghiêm túc</td></tr><tr><td><strong>N2</strong></td><td><strong>B2</strong></td><td>Đại học / trường nghề</td><td>Chuẩn bị toàn diện</td></tr><tr><td><strong>N1</strong></td><td><strong>C1 (cao hơn = C2)</strong></td><td>Đại học hàng đầu / sau đại học</td><td>Năng lực tiếng Nhật được đánh giá cao</td></tr></tbody></table>"
     },
     "consultDetailsHtml": {
-      "ja": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 お電話でのご相談</h3><ul><li>電話番号: <a href=\"tel:0992501313\" class=\"color-inherit\">099-250-1313</a></li><li>受付時間: 平日 9:00〜17:00</li></ul></div><div class=\"step-box\"><h3>📧 オンラインでのご相談</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">お問い合わせフォームへ</a></li></ul></div></div>",
-      "en": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 Phone Consultation</h3><ul><li>Phone: <a href=\"tel:0992501313\" class=\"color-inherit\">099-250-1313</a></li><li>Hours: Weekdays 9:00–17:00</li></ul></div><div class=\"step-box\"><h3>📧 Online Consultation</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">Contact Form</a></li></ul></div></div>",
-      "ne": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 फोन परामर्श</h3><ul><li>फोन: <a href=\"tel:0992501313\" class=\"color-inherit\">099-250-1313</a></li><li>समय: हप्ताको दिन 9:00–17:00</li></ul></div><div class=\"step-box\"><h3>📧 अनलाइन परामर्श</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">सम्पर्क फारम</a></li></ul></div></div>",
-      "hi": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 फोन परामर्श</h3><ul><li>फोन: <a href=\"tel:0992501313\" class=\"color-inherit\">099-250-1313</a></li><li>समय: सप्ताह के दिन 9:00–17:00</li></ul></div><div class=\"step-box\"><h3>📧 ऑनलाइन परामर्श</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">संपर्क फॉर्म</a></li></ul></div></div>",
-      "vi": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 Tư vấn qua điện thoại</h3><ul><li>Điện thoại: <a href=\"tel:0992501313\" class=\"color-inherit\">099-250-1313</a></li><li>Giờ làm việc: Thứ 2–6, 9:00–17:00</li></ul></div><div class=\"step-box\"><h3>📧 Tư vấn trực tuyến</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">Form liên hệ</a></li></ul></div></div>"
+      "ja": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 お電話でのご相談</h3><ul><li>電話番号: <a href=\"tel:+81992501313\" class=\"color-inherit\">099-250-1313</a></li><li>受付時間: 平日 9:00〜17:00</li></ul></div><div class=\"step-box\"><h3>📧 オンラインでのご相談</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">お問い合わせフォームへ</a></li></ul></div></div>",
+      "en": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 Phone Consultation</h3><ul><li>Phone: <a href=\"tel:+81992501313\" class=\"color-inherit\">099-250-1313</a></li><li>Hours: Weekdays 9:00–17:00</li></ul></div><div class=\"step-box\"><h3>📧 Online Consultation</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">Contact Form</a></li></ul></div></div>",
+      "ne": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 फोन परामर्श</h3><ul><li>फोन: <a href=\"tel:+81992501313\" class=\"color-inherit\">099-250-1313</a></li><li>समय: हप्ताको दिन 9:00–17:00</li></ul></div><div class=\"step-box\"><h3>📧 अनलाइन परामर्श</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">सम्पर्क फारम</a></li></ul></div></div>",
+      "hi": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 फोन परामर्श</h3><ul><li>फोन: <a href=\"tel:+81992501313\" class=\"color-inherit\">099-250-1313</a></li><li>समय: सप्ताह के दिन 9:00–17:00</li></ul></div><div class=\"step-box\"><h3>📧 ऑनलाइन परामर्श</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">संपर्क फॉर्म</a></li></ul></div></div>",
+      "vi": "<div class=\"steps-grid\"><div class=\"step-box\"><h3>📞 Tư vấn qua điện thoại</h3><ul><li>Điện thoại: <a href=\"tel:+81992501313\" class=\"color-inherit\">099-250-1313</a></li><li>Giờ làm việc: Thứ 2–6, 9:00–17:00</li></ul></div><div class=\"step-box\"><h3>📧 Tư vấn trực tuyến</h3><ul><li><a href=\"index.html#contact\" class=\"color-inherit\">Form liên hệ</a></li></ul></div></div>"
     },
     "breadcrumbTitle": {
       "ja": "進路",
@@ -1782,11 +1782,11 @@
       "vi": "Nhập họ tên"
     },
     "emailPlaceholder": {
-      "ja": "example@email.com",
-      "en": "example@email.com",
-      "ne": "example@email.com",
-      "hi": "example@email.com",
-      "vi": "example@email.com"
+      "ja": "akatsuka.nihongo@gmail.com",
+      "en": "akatsuka.nihongo@gmail.com",
+      "ne": "akatsuka.nihongo@gmail.com",
+      "hi": "akatsuka.nihongo@gmail.com",
+      "vi": "akatsuka.nihongo@gmail.com"
     },
     "messagePlaceholder": {
       "ja": "ご質問やご相談内容をご記入ください",
@@ -1975,6 +1975,13 @@
       "ne": "🏫 विद्यालय वेबसाइट",
       "hi": "🏫 विद्यालय वेबसाइट",
       "vi": "🏫 Trang web trường"
+    },
+    "collegeSiteRelated": {
+      "ja": "専門学校公式サイトの関連",
+      "en": "Related Official College Site",
+      "ne": "विद्यालय आधिकारिक साइट सम्बन्धी",
+      "hi": "विद्यालय आधिकारिक साइट सम्बन्धी",
+      "vi": "Liên kết trang web chính thức của trường"
     },
     "sns": {
       "ja": "💬 SNS・相談",

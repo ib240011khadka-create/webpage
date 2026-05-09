@@ -215,29 +215,41 @@
       setStatus(formText("submitting", "Submitting your inquiry..."), "");
 
       try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          body: new FormData(form),
+        // Build a plain payload from the form so we can POST JSON to the serverless proxy
+        const payload = {};
+        new FormData(form).forEach((value, key) => {
+          if (payload[key] !== undefined) {
+            if (Array.isArray(payload[key])) payload[key].push(value);
+            else payload[key] = [payload[key], value];
+          } else {
+            payload[key] = value;
+          }
+        });
+
+        const response = await fetch('/.netlify/functions/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
         });
 
         const data = await response.json();
 
-        if (data.success) {
+        if (data && data.success) {
           localStorage.removeItem(draftKey);
           form.reset();
           if (startedAt) startedAt.value = String(Date.now());
-          setStatus(formText("successMsg", "Inquiry sent successfully. Thank you."), "is-success");
+          setStatus(formText('successMsg', 'Inquiry sent successfully. Thank you.'), 'is-success');
           window.setTimeout(() => {
-            window.location.href = "thank-you.html?from=contact";
+            window.location.href = 'thank-you.html?from=contact';
           }, 900);
         } else {
-          setStatus(data.message || formText("errorSend", "Could not send inquiry. Please try again."), "is-error");
+          setStatus((data && data.message) || formText('errorSend', 'Could not send inquiry. Please try again.'), 'is-error');
         }
       } catch (_error) {
-        setStatus(formText("errorSend", "Could not send inquiry. Please try again."), "is-error");
+        setStatus(formText('errorSend', 'Could not send inquiry. Please try again.'), 'is-error');
       } finally {
         submitButton.disabled = false;
-        submitButton.textContent = formText("submit", originalButtonText);
+        submitButton.textContent = formText('submit', originalButtonText);
       }
     });
   }
