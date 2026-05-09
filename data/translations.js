@@ -1,12 +1,5 @@
-﻿var _TRANSLATIONS = {
+var _TRANSLATIONS = {
   "nav": {
-    "language": {
-      "ja": "🌐 Language",
-      "en": "🌐 Language",
-      "ne": "🌐 भाषा",
-      "hi": "🌐 भाषा",
-      "vi": "🌐 Ngôn ngữ"
-    },
     "schoolInfo": {
       "ja": "🏫専門学校情報",
       "en": "🏫 School Information",
@@ -393,13 +386,6 @@
         "hi": "🏠 जीवन सहायता",
         "vi": "🏠 Hỗ trợ đời sống"
       },
-      "scholarship": {
-        "ja": "🎓奨学金制度",
-        "en": "🎓 Scholarship Program",
-        "ne": "🎓 छात्रवृत्ति कार्यक्रम",
-        "hi": "🎓 छात्रवृत्ति कार्यक्रम",
-        "vi": "🎓 Chương trình học bổng"
-      },
       "studySupportHtml": {
         "ja": "<li>日本語学習をスムーズに進めるための支援。</li><li>面談：クラス担任が定期的に面談を行い、学習や生活についての相談にのります。</li><li>補講・個別指導：理解に不安のある学生や意欲のある学生に対し、個別指導を行います。</li><li>JLPT/CEFR対策。</li><li>進路指導：進学に関する情報提供や相談、出願書類の準備、面接練習などを行います。</li>",
         "en": "<li>Support for smooth progress in Japanese language learning.</li><li>Counseling: Class teachers hold regular meetings to discuss academic and daily life concerns.</li><li>Extra lessons & tutoring: Individual guidance for students who need additional help or want to advance.</li><li>JLPT/CEFR exam preparation.</li><li>Career guidance: Information, consultation, application document preparation, and interview practice for further education.</li>",
@@ -467,13 +453,6 @@
         "hi": "📍 विद्यालय का स्थान",
         "vi": "📍 Vị trí trường"
       },
-      "address": {
-        "ja": "鹿児島県鹿児島市上荒田町6-1",
-        "en": "6-1 Kamiarata-cho, Kagoshima City, Kagoshima 890-0055",
-        "ne": "6-1 कामिआराता-चो, कागोशिमा शहर, कागोशिमा 890-0055",
-        "hi": "6-1 कामिआराता-चो, कागोशिमा शहर, कागोशिमा 890-0055",
-        "vi": "6-1 Kamiarata-cho, thành phố Kagoshima, Kagoshima 890-0055"
-      },
       "viewMap": {
         "ja": "Googleマップで見る",
         "en": "View on Google Maps",
@@ -503,43 +482,6 @@
         "ne": "आधिकारिक सामाजिक सञ्जाल र परामर्श च्यानलहरू। नवीनतम समाचार र कार्यक्रम जानकारी यहाँ हेर्नुहोस्।",
         "hi": "आधिकारिक सोशल मीडिया और परामर्श चैनल। नवीनतम समाचार और कार्यक्रम की जानकारी यहाँ देखें।",
         "vi": "Kênh mạng xã hội và tư vấn chính thức. Xem tin tức và sự kiện mới nhất tại đây."
-      }
-    },
-    "contact": {
-      "title": {
-        "ja": "📧お問い合わせ",
-        "en": "📧 Contact Us",
-        "ne": "📧 सम्पर्क गर्नुहोस्",
-        "hi": "📧 संपर्क करें",
-        "vi": "📧 Liên hệ với chúng tôi"
-      },
-      "name": {
-        "ja": "お名前",
-        "en": "Your Name",
-        "ne": "तपाईंको नाम",
-        "hi": "आपका नाम",
-        "vi": "Họ tên"
-      },
-      "email": {
-        "ja": "メールアドレス",
-        "en": "Email Address",
-        "ne": "इमेल ठेगाना",
-        "hi": "ईमेल पता",
-        "vi": "Địa chỉ email"
-      },
-      "message": {
-        "ja": "お問い合わせ内容",
-        "en": "Your Message",
-        "ne": "सन्देश",
-        "hi": "संदेश",
-        "vi": "Nội dung liên hệ"
-      },
-      "submit": {
-        "ja": "送信する",
-        "en": "Submit",
-        "ne": "पठाउनुहोस्",
-        "hi": "भेजें",
-        "vi": "Gửi"
       }
     },
     "heroVideo": {
@@ -844,20 +786,6 @@
       "hi": "जापानी विभाग समय सारणी",
       "vi": "Thời khóa biểu Khoa Nhật ngữ"
     },
-    "framework1ContentHtml": {
-      "ja": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">学期（クラス名）</th><th colspan=\"2\">前期（初級クラス）</th><th colspan=\"2\">後期（初中級クラス）</th></tr><tr><th>4月 - 5月（2か月）</th><th>6月 - 9月（4か月）</th><th>10月 - 12月（3か月）</th><th>1月 - 3月（2か月）</th></tr></thead><tbody><tr><th>学習段階</th><td>入門・初歩</td><td>初級前半</td><td>初級後半</td><td>初中級</td></tr><tr><th>CEFR</th><td>A1</td><td>A1 → A2</td><td>A2</td><td>A2 → B1</td></tr><tr><th>JLPT</th><td>–</td><td>N5相当</td><td>N4相当</td><td>N4 → N3</td></tr><tr><th>主教材</th><td colspan=\"2\">みんなの日本語 初級I</td><td colspan=\"2\">みんなの日本語 初級II</td></tr><tr><th>科目</th><td colspan=\"4\">1) 総合日本語　2) 漢字　3) 日本事情・異文化理解　4) 振り返り・学習計画</td></tr></tbody></table></div>",
-      "en": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">Semester (Class)</th><th colspan=\"2\">1st Semester (Beginner)</th><th colspan=\"2\">2nd Semester (Pre-Intermediate)</th></tr><tr><th>Apr–May (2 months)</th><th>Jun–Sep (4 months)</th><th>Oct–Dec (3 months)</th><th>Jan–Mar (2 months)</th></tr></thead><tbody><tr><th>Level</th><td>Introduction</td><td>Elementary 1st half</td><td>Elementary 2nd half</td><td>Pre-Intermediate</td></tr><tr><th>CEFR</th><td>A1</td><td>A1 → A2</td><td>A2</td><td>A2 → B1</td></tr><tr><th>JLPT</th><td>–</td><td>≈ N5</td><td>≈ N4</td><td>N4 → N3</td></tr><tr><th>Textbook</th><td colspan=\"2\">Minna no Nihongo Beginner I</td><td colspan=\"2\">Minna no Nihongo Beginner II</td></tr><tr><th>Subjects</th><td colspan=\"4\">1) Comprehensive Japanese　2) Kanji　3) Japanese Culture &amp; Cross-cultural Understanding　4) Reflection &amp; Study Planning</td></tr></tbody></table></div>",
-      "ne": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">सेमेस्टर (कक्षा)</th><th colspan=\"2\">पहिलो सेमेस्टर (शुरुवात)</th><th colspan=\"2\">दोस्रो सेमेस्टर (पूर्व-मध्यवर्ती)</th></tr><tr><th>अप्रिल–मे (२ महिना)</th><th>जुन–सेप्ट (४ महिना)</th><th>अक्ट–डिसे (३ महिना)</th><th>जन–मार्च (२ महिना)</th></tr></thead><tbody><tr><th>स्तर</th><td>परिचय</td><td>प्रारम्भिक पहिलो भाग</td><td>प्रारम्भिक दोस्रो भाग</td><td>पूर्व-मध्यवर्ती</td></tr><tr><th>CEFR</th><td>A1</td><td>A1 → A2</td><td>A2</td><td>A2 → B1</td></tr><tr><th>JLPT</th><td>–</td><td>≈ N5</td><td>≈ N4</td><td>N4 → N3</td></tr><tr><th>पाठ्यपुस्तक</th><td colspan=\"2\">Minna no Nihongo Beginner I</td><td colspan=\"2\">Minna no Nihongo Beginner II</td></tr><tr><th>विषय</th><td colspan=\"4\">1) व्यापक जापानी　2) कान्जी　3) जापानी संस्कृति　4) प्रतिबिम्ब र अध्ययन योजना</td></tr></tbody></table></div>",
-      "hi": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">सेमेस्टर (कक्षा)</th><th colspan=\"2\">पहला सेमेस्टर (शुरुआती)</th><th colspan=\"2\">दूसरा सेमेस्टर (पूर्व-मध्यवर्ती)</th></tr><tr><th>अप्रैल–मई (2 महीने)</th><th>जून–सित (4 महीने)</th><th>अक्टू–दिस (3 महीने)</th><th>जन–मार्च (2 महीने)</th></tr></thead><tbody><tr><th>स्तर</th><td>परिचय</td><td>प्रारंभिक पहला भाग</td><td>प्रारंभिक दूसरा भाग</td><td>पूर्व-मध्यवर्ती</td></tr><tr><th>CEFR</th><td>A1</td><td>A1 → A2</td><td>A2</td><td>A2 → B1</td></tr><tr><th>JLPT</th><td>–</td><td>≈ N5</td><td>≈ N4</td><td>N4 → N3</td></tr><tr><th>पाठ्यपुस्तक</th><td colspan=\"2\">Minna no Nihongo Beginner I</td><td colspan=\"2\">Minna no Nihongo Beginner II</td></tr><tr><th>विषय</th><td colspan=\"4\">1) व्यापक जापानी　2) कांजी　3) जापानी संस्कृति　4) प्रतिबिंब और अध्ययन योजना</td></tr></tbody></table></div>",
-      "vi": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">Học kỳ (Lớp)</th><th colspan=\"2\">Học kỳ 1 (Sơ cấp)</th><th colspan=\"2\">Học kỳ 2 (Tiền trung cấp)</th></tr><tr><th>T4–T5 (2 tháng)</th><th>T6–T9 (4 tháng)</th><th>T10–T12 (3 tháng)</th><th>T1–T3 (2 tháng)</th></tr></thead><tbody><tr><th>Trình độ</th><td>Nhập môn</td><td>Sơ cấp nửa đầu</td><td>Sơ cấp nửa sau</td><td>Tiền trung cấp</td></tr><tr><th>CEFR</th><td>A1</td><td>A1 → A2</td><td>A2</td><td>A2 → B1</td></tr><tr><th>JLPT</th><td>–</td><td>≈ N5</td><td>≈ N4</td><td>N4 → N3</td></tr><tr><th>Giáo trình</th><td colspan=\"2\">Minna no Nihongo Sơ cấp I</td><td colspan=\"2\">Minna no Nihongo Sơ cấp II</td></tr><tr><th>Môn học</th><td colspan=\"4\">1) Tiếng Nhật tổng hợp　2) Kanji　3) Văn hóa Nhật　4) Ôn tập &amp; Kế hoạch học tập</td></tr></tbody></table></div>"
-    },
-    "framework2ContentHtml": {
-      "ja": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">学期（クラス名）</th><th colspan=\"2\">前期（準中級クラス）</th><th colspan=\"2\">後期（中級クラス）</th></tr><tr><th>4月 - 6月（3か月）</th><th>7月 - 9月（3か月）</th><th>10月 - 12月（3か月）</th><th>1月 - 3月（3か月）</th></tr></thead><tbody><tr><th>学習段階</th><td>初中級〜中級入門</td><td>中級前半</td><td>中級後半</td><td>中上級</td></tr><tr><th>CEFR</th><td>B1</td><td>B1 → B2</td><td>B2</td><td>B2 → C1</td></tr><tr><th>JLPT</th><td>N3</td><td>N3 → N2</td><td>N2相当</td><td>N2 → N1</td></tr><tr><th>主教材</th><td colspan=\"2\">中級へ行こう / 中級を学ぼう 中級前期</td><td colspan=\"2\">中級を学ぼう 中級中期 / TRY! N2</td></tr><tr><th>科目</th><td colspan=\"4\">1) 総合日本語　2) 日本事情・異文化理解　3) 振り返り・学習計画　4) 進学対策（面接・小論文・EJU対策）　5) JLPT対策</td></tr></tbody></table></div><p class=\"form-note\">※コース内容・教材は変更になる場合があります。最新情報はお問い合わせフォームよりご確認ください。</p>",
-      "en": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">Semester (Class)</th><th colspan=\"2\">1st Semester (Pre-Intermediate)</th><th colspan=\"2\">2nd Semester (Intermediate)</th></tr><tr><th>Apr–Jun (3 months)</th><th>Jul–Sep (3 months)</th><th>Oct–Dec (3 months)</th><th>Jan–Mar (3 months)</th></tr></thead><tbody><tr><th>Level</th><td>Pre-Intermediate to Mid</td><td>Intermediate 1st half</td><td>Intermediate 2nd half</td><td>Upper-Intermediate</td></tr><tr><th>CEFR</th><td>B1</td><td>B1 → B2</td><td>B2</td><td>B2 → C1</td></tr><tr><th>JLPT</th><td>N3</td><td>N3 → N2</td><td>≈ N2</td><td>N2 → N1</td></tr><tr><th>Textbook</th><td colspan=\"2\">Chuukyuu e Ikou / Chuukyuu wo Manabou Early</td><td colspan=\"2\">Chuukyuu wo Manabou Mid / TRY! N2</td></tr><tr><th>Subjects</th><td colspan=\"4\">1) Comprehensive Japanese　2) Japanese Culture　3) Reflection &amp; Study Planning　4) Advancement Prep (interview, essay, EJU)　5) JLPT Prep</td></tr></tbody></table></div><p class=\"form-note\">* Course content and textbooks are subject to change. Please contact us for the latest information.</p>",
-      "ne": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">सेमेस्टर (कक्षा)</th><th colspan=\"2\">पहिलो सेमेस्टर (पूर्व-मध्य)</th><th colspan=\"2\">दोस्रो सेमेस्टर (मध्यवर्ती)</th></tr><tr><th>अप्रि–जुन (३ महिना)</th><th>जुलाई–सेप्ट (३ महिना)</th><th>अक्ट–डिसे (३ महिना)</th><th>जन–मार्च (३ महिना)</th></tr></thead><tbody><tr><th>स्तर</th><td>पूर्व-मध्यवर्ती</td><td>मध्यवर्ती पहिलो भाग</td><td>मध्यवर्ती दोस्रो भाग</td><td>उच्च-मध्यवर्ती</td></tr><tr><th>CEFR</th><td>B1</td><td>B1 → B2</td><td>B2</td><td>B2 → C1</td></tr><tr><th>JLPT</th><td>N3</td><td>N3 → N2</td><td>≈ N2</td><td>N2 → N1</td></tr><tr><th>पाठ्यपुस्तक</th><td colspan=\"2\">Chuukyuu e Ikou / Chuukyuu wo Manabou Early</td><td colspan=\"2\">Chuukyuu wo Manabou Mid / TRY! N2</td></tr><tr><th>विषय</th><td colspan=\"4\">1) व्यापक जापानी　2) जापानी संस्कृति　3) प्रतिबिम्ब र योजना　4) प्रगति तयारी (अन्तर्वार्ता, निबन्ध, EJU)　5) JLPT तयारी</td></tr></tbody></table></div><p class=\"form-note\">* पाठ्यक्रम र पाठ्यपुस्तक परिवर्तन हुन सक्छ। नवीनतम जानकारीका लागि सम्पर्क गर्नुहोस्।</p>",
-      "hi": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">सेमेस्टर (कक्षा)</th><th colspan=\"2\">पहला सेमेस्टर (पूर्व-मध्य)</th><th colspan=\"2\">दूसरा सेमेस्टर (मध्यवर्ती)</th></tr><tr><th>अप्रैल–जून (3 महीने)</th><th>जुलाई–सित (3 महीने)</th><th>अक्टू–दिस (3 महीने)</th><th>जन–मार्च (3 महीने)</th></tr></thead><tbody><tr><th>स्तर</th><td>पूर्व-मध्यवर्ती</td><td>मध्यवर्ती पहला भाग</td><td>मध्यवर्ती दूसरा भाग</td><td>उच्च-मध्यवर्ती</td></tr><tr><th>CEFR</th><td>B1</td><td>B1 → B2</td><td>B2</td><td>B2 → C1</td></tr><tr><th>JLPT</th><td>N3</td><td>N3 → N2</td><td>≈ N2</td><td>N2 → N1</td></tr><tr><th>पाठ्यपुस्तक</th><td colspan=\"2\">Chuukyuu e Ikou / Chuukyuu wo Manabou Early</td><td colspan=\"2\">Chuukyuu wo Manabou Mid / TRY! N2</td></tr><tr><th>विषय</th><td colspan=\"4\">1) व्यापक जापानी　2) जापानी संस्कृति　3) प्रतिबिंब और योजना　4) प्रगति तैयारी (साक्षात्कार, निबंध, EJU)　5) JLPT तैयारी</td></tr></tbody></table></div><p class=\"form-note\">* पाठ्यक्रम और पाठ्यपुस्तक बदल सकते हैं। नवीनतम जानकारी के लिए संपर्क करें।</p>",
-      "vi": "<div class=\"table-wrap\"><table><thead><tr><th rowspan=\"2\">Học kỳ (Lớp)</th><th colspan=\"2\">Học kỳ 1 (Tiền trung cấp)</th><th colspan=\"2\">Học kỳ 2 (Trung cấp)</th></tr><tr><th>T4–T6 (3 tháng)</th><th>T7–T9 (3 tháng)</th><th>T10–T12 (3 tháng)</th><th>T1–T3 (3 tháng)</th></tr></thead><tbody><tr><th>Trình độ</th><td>Tiền trung cấp</td><td>Trung cấp nửa đầu</td><td>Trung cấp nửa sau</td><td>Trung cấp cao</td></tr><tr><th>CEFR</th><td>B1</td><td>B1 → B2</td><td>B2</td><td>B2 → C1</td></tr><tr><th>JLPT</th><td>N3</td><td>N3 → N2</td><td>≈ N2</td><td>N2 → N1</td></tr><tr><th>Giáo trình</th><td colspan=\"2\">Chuukyuu e Ikou / Chuukyuu wo Manabou Early</td><td colspan=\"2\">Chuukyuu wo Manabou Mid / TRY! N2</td></tr><tr><th>Môn học</th><td colspan=\"4\">1) Tiếng Nhật tổng hợp　2) Văn hóa Nhật　3) Ôn tập &amp; Kế hoạch　4) Ôn thi lên (phỏng vấn, luận văn, EJU)　5) Ôn thi JLPT</td></tr></tbody></table></div><p class=\"form-note\">* Nội dung và giáo trình có thể thay đổi. Vui lòng liên hệ để biết thông tin mới nhất.</p>"
-    },
     "eventsInternalHtml": {
       "ja": "<li>4月: 入学式、オリエンテーション、避難訓練、健康診断、スポーツ大会</li><li>7月: 七夕、校外学習</li><li>10月: ハロウィン、校内スピーチ大会</li><li>11月: 学園祭</li><li>12月: 他学科との交流会</li><li>1月: 書き初め</li><li>2月: 節分、校外学習</li><li>3月: 修了試験</li>",
       "en": "<li>April: Entrance ceremony, orientation, evacuation drill, health checkup, sports day</li><li>July: Tanabata festival, school excursion</li><li>October: Halloween, in-school speech contest</li><li>November: School festival</li><li>December: Cross-department exchange event</li><li>January: Calligraphy writing (Kakizome)</li><li>February: Setsubun, school excursion</li><li>March: Final exam</li>",
@@ -1056,13 +984,6 @@
       "hi": "शुल्क, आवश्यकताएं और आवेदन प्रक्रिया एक पृष्ठ पर देखें।",
       "vi": "Xem học phí, điều kiện và quy trình nộp đơn trên một trang."
     },
-    "course": {
-      "ja": "コース",
-      "en": "Course",
-      "ne": "पाठ्यक्रम",
-      "hi": "पाठ्यक्रम",
-      "vi": "Khóa học"
-    },
     "tuition": {
       "ja": "💴 学費（進学2年コース）",
       "en": "💴 Tuition (2-Year College Prep Course)",
@@ -1160,13 +1081,6 @@
       "ne": "पाठ्यक्रम",
       "hi": "पाठ्यक्रम",
       "vi": "Khóa học"
-    },
-    "admissionFlowBtn": {
-      "ja": "📋 入学までの流れ",
-      "en": "📋 Admission Process",
-      "ne": "📋 भर्ना प्रक्रिया",
-      "hi": "📋 प्रवेश प्रक्रिया",
-      "vi": "📋 Quy trình nhập học"
     }
   },
   "futurepath": {
@@ -1326,62 +1240,6 @@
       "hi": "❓ अक्सर पूछे जाने वाले प्रश्न",
       "vi": "❓ Câu hỏi thường gặp"
     },
-    "subtitle": {
-      "ja": "入学や学校生活についてよくいただくご質問にお答えします。",
-      "en": "Answers to frequently asked questions about admission and school life.",
-      "ne": "भर्ना र विद्यालय जीवनका बारम्बार सोधिने प्रश्नहरूको जवाफ।",
-      "hi": "प्रवेश और विद्यालय जीवन के बारे में अक्सर पूछे जाने वाले प्रश्नों के उत्तर।",
-      "vi": "Giải đáp các câu hỏi thường gặp về nhập học và đời sống học đường."
-    },
-    "aboutAdmission": {
-      "ja": "📋 入学について",
-      "en": "📋 About Admission",
-      "ne": "📋 भर्नाको बारेमा",
-      "hi": "📋 प्रवेश के बारे में",
-      "vi": "📋 Về nhập học"
-    },
-    "aboutTuition": {
-      "ja": "💰 学費について",
-      "en": "💰 About Tuition",
-      "ne": "💰 शुल्कको बारेमा",
-      "hi": "💰 शुल्क के बारे में",
-      "vi": "💰 Về học phí"
-    },
-    "aboutVisa": {
-      "ja": "🛂 ビザについて",
-      "en": "🛂 About Visas",
-      "ne": "🛂 भिसाको बारेमा",
-      "hi": "🛂 वीज़ा के बारे में",
-      "vi": "🛂 Về thị thực"
-    },
-    "aboutLiving": {
-      "ja": "🏠 生活について",
-      "en": "🏠 About Living",
-      "ne": "🏠 जीवनको बारेमा",
-      "hi": "🏠 जीवन के बारे में",
-      "vi": "🏠 Về đời sống"
-    },
-    "aboutStudy": {
-      "ja": "📚 学習について",
-      "en": "📚 About Studying",
-      "ne": "📚 अध्ययनको बारेमा",
-      "hi": "📚 अध्ययन के बारे में",
-      "vi": "📚 Về việc học"
-    },
-    "aboutGraduation": {
-      "ja": "🎓 卒業後について",
-      "en": "🎓 After Graduation",
-      "ne": "🎓 स्नातक पछि",
-      "hi": "🎓 स्नातक के बाद",
-      "vi": "🎓 Sau tốt nghiệp"
-    },
-    "otherQuestions": {
-      "ja": "📧 その他のご質問",
-      "en": "📧 Other Questions",
-      "ne": "📧 अन्य प्रश्नहरू",
-      "hi": "📧 अन्य प्रश्न",
-      "vi": "📧 Câu hỏi khác"
-    },
     "q1": {
       "ja": "入学に必要な書類は何ですか？",
       "en": "What documents are required for admission?",
@@ -1465,277 +1323,6 @@
       "ne": "हो, हामी व्यावसायिक विद्यालय, विश्वविद्यालय र रोजगारीका लागि मार्गदर्शन प्रदान गर्दछौं। व्यक्तिगत परामर्श जुनसुकै बेला उपलब्ध छ।",
       "hi": "हाँ, हम व्यावसायिक विद्यालय, विश्वविद्यालय और रोजगार के लिए मार्गदर्शन प्रदान करते हैं। व्यक्तिगत परामर्श कभी भी उपलब्ध है।",
       "vi": "Có, chúng tôi hướng dẫn vào trường nghề, đại học và việc làm. Tư vấn cá nhân luôn sẵn sàng."
-    },
-    "admission": {
-      "q1": {
-        "ja": "入学に必要な書類は何ですか？",
-        "en": "What documents are required for admission?",
-        "ne": "भर्नाका लागि कुन कागजातहरू आवश्यक छन्？",
-        "hi": "प्रवेश के लिए कौन से दस्तावेज़ आवश्यक हैं？",
-        "vi": "Cần những giấy tờ gì để nhập học?"
-      },
-      "a1Html": {
-        "ja": "<p>以下の書類が必要です：</p><ul><li>入学願書（本校指定フォーム）</li><li>最終学歴の卒業証明書</li><li>成績証明書</li><li>日本語学習歴証明書（ある場合）</li><li>パスポートのコピー</li><li>証明写真（4cm×3cm）6枚</li><li>経費支弁書類（銀行残高証明書など）</li></ul><p>詳細は<a href=\"new.html\">入学案内ページ</a>をご確認ください。</p>",
-        "en": "<p>The following documents are required:</p><ul><li>Application form (school-designated form)</li><li>Graduation certificate from your last school</li><li>Academic transcript</li><li>Japanese study certificate (if available)</li><li>Copy of passport</li><li>ID photos (4cm×3cm) × 6</li><li>Financial support documents (bank balance certificate, etc.)</li></ul><p>See the <a href=\"new.html\">Admission Guide</a> for details.</p>",
-        "ne": "<p>निम्न कागजातहरू आवश्यक छन्：</p><ul><li>आवेदन फारम (विद्यालय निर्दिष्ट फारम)</li><li>अन्तिम विद्यालयको स्नातक प्रमाणपत्र</li><li>शैक्षिक ट्रान्सक्रिप्ट</li><li>जापानी अध्ययन प्रमाणपत्र (भएमा)</li><li>राहदानीको प्रतिलिपि</li><li>फोटो (4cm×3cm) ६ वटा</li><li>आर्थिक सहायता कागजात (बैंक ब्यालेन्स प्रमाणपत्र आदि)</li></ul><p>विवरणका लागि <a href=\"new.html\">भर्ना गाइड</a> हेर्नुहोस्।</p>",
-        "hi": "<p>निम्नलिखित दस्तावेज़ आवश्यक हैं：</p><ul><li>आवेदन पत्र (विद्यालय निर्दिष्ट फॉर्म)</li><li>अंतिम विद्यालय का स्नातक प्रमाणपत्र</li><li>शैक्षिक ट्रांसक्रिप्ट</li><li>जापानी अध्ययन प्रमाणपत्र (यदि उपलब्ध हो)</li><li>पासपोर्ट की प्रति</li><li>फोटो (4cm×3cm) × 6</li><li>आर्थिक सहायता दस्तावेज़ (बैंक बैलेंस प्रमाणपत्र आदि)</li></ul><p>विवरण के लिए <a href=\"new.html\">प्रवेश गाइड</a> देखें।</p>",
-        "vi": "<p>Các giấy tờ cần thiết:</p><ul><li>Đơn xin nhập học (theo mẫu của trường)</li><li>Bằng tốt nghiệp trường cuối cùng</li><li>Bảng điểm</li><li>Chứng chỉ học tiếng Nhật (nếu có)</li><li>Bản sao hộ chiếu</li><li>Ảnh (4cm×3cm) × 6</li><li>Giấy tờ chứng minh tài chính (sổ tiết kiệm ngân hàng, v.v.)</li></ul><p>Xem <a href=\"new.html\">Hướng dẫn nhập học</a> để biết chi tiết.</p>"
-      },
-      "q2": {
-        "ja": "入学時期はいつですか？",
-        "en": "When are the enrollment periods?",
-        "ne": "भर्ना समय कहिले हो？",
-        "hi": "प्रवेश का समय कब है？",
-        "vi": "Thời gian nhập học là khi nào?"
-      },
-      "a2Html": {
-        "ja": "<p>入学時期は年2回です：</p><ul><li><strong>4月入学</strong> - 2年コース</li><li><strong>10月入学</strong> - 1年6か月コース</li></ul><p>各入学時期の約6か月前から願書受付を開始します。</p>",
-        "en": "<p>There are two enrollment periods per year:</p><ul><li><strong>April enrollment</strong> – 2-year course</li><li><strong>October enrollment</strong> – 1.5-year course</li></ul><p>Applications open approximately 6 months before each enrollment period.</p>",
-        "ne": "<p>वर्षमा दुई पटक भर्ना हुन्छ：</p><ul><li><strong>अप्रिल भर्ना</strong> – २ वर्षे पाठ्यक्रम</li><li><strong>अक्टोबर भर्ना</strong> – १.५ वर्षे पाठ्यक्रम</li></ul><p>प्रत्येक भर्ना अवधिभन्दा लगभग ६ महिना अगाडि आवेदन खुल्छ।</p>",
-        "hi": "<p>वर्ष में दो प्रवेश अवधि हैं：</p><ul><li><strong>अप्रैल प्रवेश</strong> – 2 वर्षीय पाठ्यक्रम</li><li><strong>अक्टूबर प्रवेश</strong> – 1.5 वर्षीय पाठ्यक्रम</li></ul><p>प्रत्येक प्रवेश अवधि से लगभग 6 महीने पहले आवेदन खुलते हैं।</p>",
-        "vi": "<p>Có hai đợt nhập học mỗi năm:</p><ul><li><strong>Nhập học tháng 4</strong> – Khóa 2 năm</li><li><strong>Nhập học tháng 10</strong> – Khóa 1,5 năm</li></ul><p>Đơn nhập học mở trước mỗi đợt khoảng 6 tháng.</p>"
-      },
-      "q3": {
-        "ja": "日本語が全くわからなくても入学できますか？",
-        "en": "Can I enroll even if I don't know any Japanese?",
-        "ne": "जापानी भाषा नजानेको भए पनि भर्ना हुन सकिन्छ？",
-        "hi": "क्या जापानी भाषा न जानने पर भी प्रवेश ले सकते हैं？",
-        "vi": "Không biết tiếng Nhật có thể nhập học không?"
-      },
-      "a3Html": {
-        "ja": "<p>はい、初心者でも入学可能です。ひらがな・カタカナから丁寧に指導します。</p><p>ただし、ビザ申請のために母国で最低150時間程度の日本語学習歴があることが望ましいです。</p>",
-        "en": "<p>Yes, even beginners can enroll. We teach carefully from Hiragana and Katakana.</p><p>However, it is recommended to have at least 150 hours of Japanese study in your home country for visa application purposes.</p>",
-        "ne": "<p>हो, शुरुवातकर्ताहरू पनि भर्ना हुन सक्छन्। हामी हिरागाना र काताकानाबाट ध्यानपूर्वक सिकाउँछौं।</p><p>तर, भिसा आवेदनका लागि स्वदेशमा कम्तिमा १५० घण्टा जापानी अध्ययन भएको हुनु उचित छ।</p>",
-        "hi": "<p>हाँ, शुरुआती भी प्रवेश ले सकते हैं। हम हिरागाना और काताकाना से ध्यानपूर्वक सिखाते हैं।</p><p>हालांकि, वीज़ा आवेदन के लिए अपने देश में कम से कम 150 घंटे जापानी अध्ययन होना बेहतर है।</p>",
-        "vi": "<p>Có, người mới bắt đầu cũng có thể nhập học. Chúng tôi dạy cẩn thận từ Hiragana và Katakana.</p><p>Tuy nhiên, nên có ít nhất 150 giờ học tiếng Nhật tại nước bạn để xin thị thực.</p>"
-      },
-      "q4": {
-        "ja": "年齢制限はありますか？",
-        "en": "Is there an age limit?",
-        "ne": "उमेर सीमा छ？",
-        "hi": "क्या उम्र सीमा है？",
-        "vi": "Có giới hạn tuổi không?"
-      },
-      "a4Html": {
-        "ja": "<p>一般的に18歳以上で、高校卒業以上の学歴をお持ちの方が対象です。</p><p>上限年齢については、学習目的や経歴により個別に判断いたしますので、お気軽にご相談ください。</p>",
-        "en": "<p>Generally, applicants should be 18 or older with at least a high school diploma.</p><p>Upper age limits are assessed individually based on your study purpose and background. Please feel free to contact us.</p>",
-        "ne": "<p>सामान्यतया आवेदकहरू १८ वर्ष वा माथिका र कम्तिमा उच्च विद्यालय स्नातक हुनुपर्छ।</p><p>माथिल्लो उमेर सीमा अध्ययन उद्देश्य र पृष्ठभूमिको आधारमा व्यक्तिगत रूपमा मूल्याङ्कन गरिन्छ। कृपया सम्पर्क गर्नुहोस्।</p>",
-        "hi": "<p>सामान्यतः आवेदक 18 वर्ष या उससे अधिक आयु के और कम से कम उच्च विद्यालय स्नातक होने चाहिए।</p><p>ऊपरी आयु सीमा अध्ययन उद्देश्य और पृष्ठभूमि के आधार पर व्यक्तिगत रूप से मूल्यांकन किया जाता है। कृपया संपर्क करें।</p>",
-        "vi": "<p>Thông thường, ứng viên phải từ 18 tuổi trở lên và có ít nhất bằng tốt nghiệp trung học.</p><p>Giới hạn tuổi trên được đánh giá riêng từng trường hợp. Vui lòng liên hệ với chúng tôi.</p>"
-      }
-    },
-    "tuition": {
-      "q1": {
-        "ja": "学費はいくらですか？",
-        "en": "How much is the tuition?",
-        "ne": "शुल्क कति हो？",
-        "hi": "शुल्क कितना है？",
-        "vi": "Học phí là bao nhiêu?"
-      },
-      "a1Html": {
-        "ja": "<p>2年コースの学費は以下の通りです：</p><ul><li>選考料：20,000円</li><li>入学金：50,000円</li><li>授業料：550,000円/年</li><li>教材費：50,000円/年</li><li>教育充実費：70,000円/年</li></ul><p>詳細は<a href=\"new.html\">入学案内ページ</a>をご確認ください。</p>",
-        "en": "<p>Tuition for the 2-year course is as follows:</p><ul><li>Selection fee: ¥20,000</li><li>Enrollment fee: ¥50,000</li><li>Tuition: ¥550,000/year</li><li>Textbook fee: ¥50,000/year</li><li>Education enhancement fee: ¥70,000/year</li></ul><p>See the <a href=\"new.html\">Admission Guide</a> for details.</p>",
-        "ne": "<p>२ वर्षे पाठ्यक्रमको शुल्क यस प्रकार छ：</p><ul><li>छनौट शुल्क：¥20,000</li><li>भर्ना शुल्क：¥50,000</li><li>पढाइ शुल्क：¥550,000/वर्ष</li><li>पाठ्यपुस्तक शुल्क：¥50,000/वर्ष</li><li>शिक्षा सुधार शुल्क：¥70,000/वर्ष</li></ul><p>विवरणका लागि <a href=\"new.html\">भर्ना गाइड</a> हेर्नुहोस्।</p>",
-        "hi": "<p>2 वर्षीय पाठ्यक्रम का शुल्क इस प्रकार है：</p><ul><li>चयन शुल्क：¥20,000</li><li>प्रवेश शुल्क：¥50,000</li><li>शिक्षण शुल्क：¥550,000/वर्ष</li><li>पाठ्यपुस्तक शुल्क：¥50,000/वर्ष</li><li>शिक्षा सुधार शुल्क：¥70,000/वर्ष</li></ul><p>विवरण के लिए <a href=\"new.html\">प्रवेश गाइड</a> देखें।</p>",
-        "vi": "<p>Học phí khóa 2 năm như sau:</p><ul><li>Phí tuyển chọn: ¥20.000</li><li>Phí nhập học: ¥50.000</li><li>Học phí: ¥550.000/năm</li><li>Phí giáo trình: ¥50.000/năm</li><li>Phí nâng cao giáo dục: ¥70.000/năm</li></ul><p>Xem <a href=\"new.html\">Hướng dẫn nhập học</a> để biết chi tiết.</p>"
-      },
-      "q2": {
-        "ja": "分割払いはできますか？",
-        "en": "Can I pay in installments?",
-        "ne": "किस्तामा भुक्तान गर्न सकिन्छ？",
-        "hi": "क्या किस्तों में भुगतान कर सकते हैं？",
-        "vi": "Có thể trả góp không?"
-      },
-      "a2Html": {
-        "ja": "<p>はい、授業料は前期・後期の2回に分けてお支払いいただけます。</p><p>特別な事情がある場合は、さらに分割することも可能ですのでご相談ください。</p>",
-        "en": "<p>Yes, tuition can be paid in two installments — first half and second half of the year.</p><p>If there are special circumstances, further installments may be arranged. Please contact us.</p>",
-        "ne": "<p>हो, शिक्षण शुल्क दुई किस्तामा तिर्न सकिन्छ — वर्षको पहिलो र दोस्रो भाग।</p><p>विशेष परिस्थिति भएमा थप किस्ता मिलाउन सकिन्छ। कृपया सम्पर्क गर्नुहोस्।</p>",
-        "hi": "<p>हाँ, शिक्षण शुल्क दो किस्तों में भुगतान किया जा सकता है — वर्ष के पहले और दूसरे भाग में।</p><p>विशेष परिस्थितियों में और किस्तें भी संभव हैं। कृपया संपर्क करें।</p>",
-        "vi": "<p>Có, học phí có thể thanh toán thành hai đợt — nửa đầu và nửa cuối năm.</p><p>Trong trường hợp đặc biệt, có thể chia thêm đợt. Vui lòng liên hệ.</p>"
-      },
-      "q3": {
-        "ja": "奨学金制度はありますか？",
-        "en": "Are there any scholarships?",
-        "ne": "छात्रवृत्ति छ？",
-        "hi": "क्या छात्रवृत्ति है？",
-        "vi": "Có học bổng không?"
-      },
-      "a3Html": {
-        "ja": "<p>以下の奨学金制度があります：</p><ul><li><strong>JLPT N1保持者</strong> - 年間授業料の50%支給</li><li><strong>JLPT N2保持者</strong> - 年間授業料の35%支給</li><li><strong>JLPT N3保持者</strong> - 年間授業料の15%支給</li></ul><p>出席率95%以上の維持が条件となります。</p>",
-        "en": "<p>The following scholarships are available:</p><ul><li><strong>JLPT N1 holders</strong> – 50% of annual tuition</li><li><strong>JLPT N2 holders</strong> – 35% of annual tuition</li><li><strong>JLPT N3 holders</strong> – 15% of annual tuition</li></ul><p>Maintaining 95% or higher attendance is required.</p>",
-        "ne": "<p>निम्न छात्रवृत्ति उपलब्ध छन्：</p><ul><li><strong>JLPT N1 धारक</strong> – वार्षिक शुल्कको ५०%</li><li><strong>JLPT N2 धारक</strong> – वार्षिक शुल्कको ३५%</li><li><strong>JLPT N3 धारक</strong> – वार्षिक शुल्कको १५%</li></ul><p>९५% वा बढी उपस्थिति दर कायम राख्नु आवश्यक छ।</p>",
-        "hi": "<p>निम्नलिखित छात्रवृत्तियाँ उपलब्ध हैं：</p><ul><li><strong>JLPT N1 धारक</strong> – वार्षिक शुल्क का 50%</li><li><strong>JLPT N2 धारक</strong> – वार्षिक शुल्क का 35%</li><li><strong>JLPT N3 धारक</strong> – वार्षिक शुल्क का 15%</li></ul><p>95% या उससे अधिक उपस्थिति बनाए रखना आवश्यक है।</p>",
-        "vi": "<p>Các học bổng hiện có:</p><ul><li><strong>Người có JLPT N1</strong> – 50% học phí hàng năm</li><li><strong>Người có JLPT N2</strong> – 35% học phí hàng năm</li><li><strong>Người có JLPT N3</strong> – 15% học phí hàng năm</li></ul><p>Yêu cầu duy trì tỉ lệ chuyên cần 95% trở lên.</p>"
-      }
-    },
-    "visa": {
-      "q1": {
-        "ja": "ビザの申請はどうすればいいですか？",
-        "en": "How do I apply for a visa?",
-        "ne": "भिसाको लागि कसरी आवेदन गर्ने？",
-        "hi": "वीज़ा के लिए कैसे आवेदन करें？",
-        "vi": "Làm thế nào để xin thị thực?"
-      },
-      "a1Html": {
-        "ja": "<p>学校が代理で在留資格認定証明書（COE）を申請します。</p><p>COE取得後、お住まいの国の日本大使館・領事館でビザを申請してください。</p><p>手続きには3〜4か月かかりますので、早めにお申し込みください。</p>",
-        "en": "<p>The school applies for the Certificate of Eligibility (COE) on your behalf.</p><p>After receiving the COE, apply for a visa at the Japanese embassy or consulate in your country.</p><p>The process takes 3–4 months, so please apply early.</p>",
-        "ne": "<p>विद्यालयले तपाईंको तर्फबाट निवास योग्यता प्रमाणपत्र (COE) को लागि आवेदन गर्छ।</p><p>COE प्राप्त गरेपछि, तपाईंको देशको जापानी दूतावास वा वाणिज्य दूतावासमा भिसाको लागि आवेदन गर्नुहोस्।</p><p>प्रक्रियामा ३–४ महिना लाग्छ, त्यसैले चाँडै आवेदन गर्नुहोस्।</p>",
-        "hi": "<p>विद्यालय आपकी ओर से निवास योग्यता प्रमाणपत्र (COE) के लिए आवेदन करता है।</p><p>COE प्राप्त करने के बाद, अपने देश के जापानी दूतावास या वाणिज्य दूतावास में वीज़ा के लिए आवेदन करें।</p><p>प्रक्रिया में 3–4 महीने लगते हैं, इसलिए जल्दी आवेदन करें।</p>",
-        "vi": "<p>Trường sẽ nộp đơn xin Giấy chứng nhận đủ tư cách (COE) thay bạn.</p><p>Sau khi nhận COE, hãy xin thị thực tại Đại sứ quán hoặc Lãnh sự quán Nhật Bản tại nước bạn.</p><p>Quy trình mất 3–4 tháng, vui lòng nộp đơn sớm.</p>"
-      },
-      "q2": {
-        "ja": "ビザの更新はサポートしてもらえますか？",
-        "en": "Will you help with visa renewal?",
-        "ne": "भिसा नवीकरणमा सहयोग गरिन्छ？",
-        "hi": "क्या वीज़ा नवीनीकरण में सहायता मिलेगी？",
-        "vi": "Có hỗ trợ gia hạn thị thực không?"
-      },
-      "a2Html": {
-        "ja": "<p>はい、在学中のビザ更新は学校がサポートします。</p><p>更新に必要な書類の準備や手続きのアドバイスを行います。</p>",
-        "en": "<p>Yes, the school will support visa renewal while you are enrolled.</p><p>We help prepare the required documents and advise on the procedures.</p>",
-        "ne": "<p>हो, भर्ना भएको अवधिमा भिसा नवीकरणमा विद्यालयले सहयोग गर्छ।</p><p>हामी आवश्यक कागजात तयार गर्न र प्रक्रियामा सल्लाह दिन्छौं।</p>",
-        "hi": "<p>हाँ, नामांकन अवधि के दौरान वीज़ा नवीनीकरण में विद्यालय सहायता करता है।</p><p>हम आवश्यक दस्तावेज़ तैयार करने और प्रक्रिया में सलाह देते हैं।</p>",
-        "vi": "<p>Có, trường sẽ hỗ trợ gia hạn thị thực trong thời gian bạn theo học.</p><p>Chúng tôi giúp chuẩn bị giấy tờ cần thiết và tư vấn thủ tục.</p>"
-      }
-    },
-    "living": {
-      "q1": {
-        "ja": "寮はありますか？",
-        "en": "Is there a dormitory?",
-        "ne": "छात्रावास छ？",
-        "hi": "क्या छात्रावास है？",
-        "vi": "Có ký túc xá không?"
-      },
-      "a1Html": {
-        "ja": "<p>学校提携の寮やアパートをご紹介しています。</p><ul><li>家賃：25,000〜40,000円/月（場所や広さによる）</li><li>光熱費：約8,000〜12,000円/月</li><li>インターネット完備の物件もあり</li></ul><p>入学が決まり次第、お部屋探しをサポートします。</p>",
-        "en": "<p>We introduce affiliated dormitories and apartments.</p><ul><li>Rent: ¥25,000–40,000/month (depending on location and size)</li><li>Utilities: approx. ¥8,000–12,000/month</li><li>Some properties include internet</li></ul><p>We help you find a room once admission is confirmed.</p>",
-        "ne": "<p>हामी सम्बद्ध छात्रावास र अपार्टमेन्ट परिचय गराउँछौं।</p><ul><li>भाडा：¥25,000–40,000/महिना (स्थान र आकार अनुसार)</li><li>बिजुली-पानी：लगभग ¥8,000–12,000/महिना</li><li>केही घरमा इन्टरनेट उपलब्ध</li></ul><p>भर्ना पक्का भएपछि कोठा खोज्न सहयोग गर्छौं।</p>",
-        "hi": "<p>हम संबद्ध छात्रावास और अपार्टमेंट का परिचय कराते हैं।</p><ul><li>किराया：¥25,000–40,000/महीना (स्थान और आकार पर निर्भर)</li><li>उपयोगिताएँ：लगभग ¥8,000–12,000/महीना</li><li>कुछ संपत्तियों में इंटरनेट शामिल</li></ul><p>प्रवेश पक्का होने पर कमरा खोजने में सहायता करते हैं।</p>",
-        "vi": "<p>Chúng tôi giới thiệu ký túc xá và căn hộ liên kết.</p><ul><li>Tiền thuê: ¥25.000–40.000/tháng (tùy vị trí và diện tích)</li><li>Tiện ích: khoảng ¥8.000–12.000/tháng</li><li>Một số nơi có internet</li></ul><p>Chúng tôi hỗ trợ tìm phòng khi nhập học được xác nhận.</p>"
-      },
-      "q2": {
-        "ja": "アルバイトはできますか？",
-        "en": "Can I work part-time?",
-        "ne": "पार्ट-टाइम काम गर्न सकिन्छ？",
-        "hi": "क्या पार्ट-टाइम काम कर सकते हैं？",
-        "vi": "Có thể làm thêm không?"
-      },
-      "a2Html": {
-        "ja": "<p>留学ビザをお持ちの方は、<strong>資格外活動許可</strong>を取得すれば週28時間までアルバイトが可能です。（長期休暇中は1日8時間まで）</p><p>許可申請は学校がサポートします。</p><p>鹿児島では飲食店、コンビニ、工場などでのアルバイトが多く、時給は900〜1,100円程度です。</p>",
-        "en": "<p>With a student visa, you can work up to 28 hours/week after obtaining a <strong>Permission to Engage in Activities Other Than Those Permitted</strong>. (Up to 8 hours/day during long holidays.)</p><p>The school will help with the permit application.</p><p>In Kagoshima, common part-time jobs include restaurants, convenience stores, and factories, with hourly wages around ¥900–1,100.</p>",
-        "ne": "<p>विद्यार्थी भिसासहित, <strong>अनुमति पत्र</strong> प्राप्त गरेपछि हप्तामा २८ घण्टासम्म काम गर्न सकिन्छ। (लामो विदामा दिनमा ८ घण्टासम्म।)</p><p>अनुमतिका लागि विद्यालयले सहयोग गर्छ।</p><p>कागोशिमामा रेस्टुरेन्ट, सुविधा स्टोर, कारखानामा काम पाइन्छ, प्रति घण्टा ¥900–1,100।</p>",
-        "hi": "<p>छात्र वीज़ा के साथ, <strong>गतिविधि अनुमति</strong> प्राप्त करने के बाद सप्ताह में 28 घंटे तक काम कर सकते हैं। (लंबी छुट्टियों में प्रतिदिन 8 घंटे तक।)</p><p>अनुमति आवेदन में विद्यालय सहायता करता है।</p><p>कागोशिमा में रेस्तरां, सुविधा स्टोर, कारखानों में काम मिलता है, प्रति घंटा ¥900–1,100।</p>",
-        "vi": "<p>Với visa du học, bạn có thể làm tối đa 28 giờ/tuần sau khi có <strong>Giấy phép hoạt động ngoài tư cách lưu trú</strong>. (Tối đa 8 giờ/ngày trong kỳ nghỉ dài.)</p><p>Trường sẽ hỗ trợ xin giấy phép.</p><p>Tại Kagoshima, công việc làm thêm phổ biến tại nhà hàng, cửa hàng tiện lợi, nhà máy, lương khoảng ¥900–1.100/giờ.</p>"
-      },
-      "q3": {
-        "ja": "鹿児島の生活費はどれくらいですか？",
-        "en": "How much are living expenses in Kagoshima?",
-        "ne": "कागोशिमामा जीवनयापन खर्च कति हो？",
-        "hi": "कागोशिमा में जीवन यापन का खर्च कितना है？",
-        "vi": "Chi phí sinh hoạt ở Kagoshima là bao nhiêu?"
-      },
-      "a3Html": {
-        "ja": "<p>鹿児島は東京や大阪に比べて生活費が安いです。月々の目安：</p><ul><li>家賃：25,000〜40,000円</li><li>食費：25,000〜35,000円</li><li>光熱費・通信費：10,000〜15,000円</li><li>交通費：5,000〜10,000円</li><li>その他：10,000〜20,000円</li></ul><p><strong>合計：約75,000〜120,000円/月</strong></p>",
-        "en": "<p>Kagoshima has lower living costs compared to Tokyo or Osaka. Monthly estimates:</p><ul><li>Rent: ¥25,000–40,000</li><li>Food: ¥25,000–35,000</li><li>Utilities & communication: ¥10,000–15,000</li><li>Transportation: ¥5,000–10,000</li><li>Others: ¥10,000–20,000</li></ul><p><strong>Total: approx. ¥75,000–120,000/month</strong></p>",
-        "ne": "<p>कागोशिमामा टोकियो वा ओसाकाभन्दा जीवनयापन खर्च कम छ। मासिक अनुमान：</p><ul><li>भाडा：¥25,000–40,000</li><li>खाना：¥25,000–35,000</li><li>बिजुली-पानी र सञ्चार：¥10,000–15,000</li><li>यातायात：¥5,000–10,000</li><li>अन्य：¥10,000–20,000</li></ul><p><strong>जम्मा：लगभग ¥75,000–120,000/महिना</strong></p>",
-        "hi": "<p>कागोशिमा में टोक्यो या ओसाका की तुलना में जीवन यापन सस्ता है। मासिक अनुमान：</p><ul><li>किराया：¥25,000–40,000</li><li>खाना：¥25,000–35,000</li><li>उपयोगिताएँ और संचार：¥10,000–15,000</li><li>परिवहन：¥5,000–10,000</li><li>अन्य：¥10,000–20,000</li></ul><p><strong>कुल：लगभग ¥75,000–120,000/महीना</strong></p>",
-        "vi": "<p>Kagoshima có chi phí sinh hoạt thấp hơn Tokyo hoặc Osaka. Ước tính hàng tháng:</p><ul><li>Thuê nhà: ¥25.000–40.000</li><li>Ăn uống: ¥25.000–35.000</li><li>Tiện ích & liên lạc: ¥10.000–15.000</li><li>Giao thông: ¥5.000–10.000</li><li>Khác: ¥10.000–20.000</li></ul><p><strong>Tổng: khoảng ¥75.000–120.000/tháng</strong></p>"
-      },
-      "q4": {
-        "ja": "空港からの送迎はありますか？",
-        "en": "Is there airport pickup?",
-        "ne": "विमानस्थलबाट पिकअप छ？",
-        "hi": "क्या हवाई अड्डे से पिकअप है？",
-        "vi": "Có đưa đón sân bay không?"
-      },
-      "a4Html": {
-        "ja": "<p>はい、鹿児島空港からの送迎サービスがあります（有料）。</p><p>入学日に合わせてお迎えに行きますので、事前にフライト情報をお知らせください。</p>",
-        "en": "<p>Yes, we offer airport pickup from Kagoshima Airport (paid service).</p><p>We will pick you up on your enrollment date, so please share your flight details in advance.</p>",
-        "ne": "<p>हो, कागोशिमा विमानस्थलबाट पिकअप सेवा छ (शुल्क सहित)।</p><p>भर्ना मितिमा लिन आउँछौं, कृपया उडान विवरण पहिले नै दिनुहोस्।</p>",
-        "hi": "<p>हाँ, कागोशिमा हवाई अड्डे से पिकअप सेवा है (शुल्क सहित)।</p><p>प्रवेश तिथि पर लेने आएँगे, कृपया उड़ान विवरण पहले से दें।</p>",
-        "vi": "<p>Có, chúng tôi cung cấp dịch vụ đưa đón từ Sân bay Kagoshima (có phí).</p><p>Chúng tôi sẽ đón bạn vào ngày nhập học, vui lòng chia sẻ thông tin chuyến bay trước.</p>"
-      }
-    },
-    "study": {
-      "q1": {
-        "ja": "授業は何時から何時までですか？",
-        "en": "What are the class hours?",
-        "ne": "कक्षा कति बजेदेखि कति बजेसम्म हो？",
-        "hi": "कक्षा कितने बजे से कितने बजे तक है？",
-        "vi": "Giờ học từ mấy giờ đến mấy giờ?"
-      },
-      "a1Html": {
-        "ja": "<p>午前クラスと午後クラスがあります：</p><ul><li><strong>午前クラス</strong>：9:00〜12:10</li><li><strong>午後クラス</strong>：13:00〜16:10</li></ul><p>どちらのクラスになるかは、レベルや人数により学校が決定します。</p>",
-        "en": "<p>There are morning and afternoon classes:</p><ul><li><strong>Morning class</strong>: 9:00–12:10</li><li><strong>Afternoon class</strong>: 13:00–16:10</li></ul><p>Class assignment is determined by the school based on level and number of students.</p>",
-        "ne": "<p>बिहानी र दिउँसोको कक्षा छन्：</p><ul><li><strong>बिहानी कक्षा</strong>：9:00–12:10</li><li><strong>दिउँसो कक्षा</strong>：13:00–16:10</li></ul><p>कुन कक्षा हुने भन्ने स्तर र विद्यार्थी संख्याको आधारमा विद्यालयले निर्णय गर्छ।</p>",
-        "hi": "<p>सुबह और दोपहर की कक्षाएं हैं：</p><ul><li><strong>सुबह कक्षा</strong>：9:00–12:10</li><li><strong>दोपहर कक्षा</strong>：13:00–16:10</li></ul><p>कौन सी कक्षा होगी यह स्तर और छात्र संख्या के आधार पर विद्यालय तय करता है।</p>",
-        "vi": "<p>Có lớp sáng và lớp chiều:</p><ul><li><strong>Lớp sáng</strong>: 9:00–12:10</li><li><strong>Lớp chiều</strong>: 13:00–16:10</li></ul><p>Việc xếp lớp do trường quyết định dựa trên trình độ và số lượng học sinh.</p>"
-      },
-      "q2": {
-        "ja": "JLPTの対策授業はありますか？",
-        "en": "Are there JLPT/CEFR exam preparation classes?",
-        "ne": "JLPT/CEFR परीक्षा तयारी कक्षा छ？",
-        "hi": "क्या JLPT/CEFR परीक्षा तैयारी कक्षा है？",
-        "vi": "Có lớp luyện thi JLPT/CEFR không?"
-      },
-      "a2Html": {
-        "ja": "<p>はい、JLPT（日本語能力試験）の対策授業があります。</p><p>通常授業に加えて、試験前には特別対策講座も実施します。</p><p>目標レベル：</p><ul><li>1年目終了時：N3合格</li><li>2年目終了時：N2合格</li></ul>",
-        "en": "<p>Yes, we offer JLPT/CEFR exam preparation classes.</p><p>In addition to regular classes, special intensive courses are held before exams.</p><p>Target levels:</p><ul><li>End of 1st year: Pass N3</li><li>End of 2nd year: Pass N2</li></ul>",
-        "ne": "<p>हो, JLPT/CEFR परीक्षा तयारी कक्षा छ।</p><p>नियमित कक्षाको अतिरिक्त, परीक्षा अघि विशेष गहन पाठ्यक्रम हुन्छ।</p><p>लक्ष्य स्तर：</p><ul><li>पहिलो वर्ष अन्त्यमा：N3 पास</li><li>दोस्रो वर्ष अन्त्यमा：N2 पास</li></ul>",
-        "hi": "<p>हाँ, JLPT/CEFR परीक्षा तैयारी कक्षा है।</p><p>नियमित कक्षाओं के अलावा, परीक्षा से पहले विशेष गहन पाठ्यक्रम होते हैं।</p><p>लक्ष्य स्तर：</p><ul><li>पहले वर्ष के अंत में：N3 पास</li><li>दूसरे वर्ष के अंत में：N2 पास</li></ul>",
-        "vi": "<p>Có, chúng tôi có lớp luyện thi JLPT/CEFR.</p><p>Ngoài lớp học thường, có khóa ôn tập đặc biệt trước kỳ thi.</p><p>Mục tiêu:</p><ul><li>Cuối năm 1: Đạt N3</li><li>Cuối năm 2: Đạt N2</li></ul>"
-      },
-      "q3": {
-        "ja": "クラスの人数は何人ですか？",
-        "en": "How many students per class?",
-        "ne": "कक्षामा कति जना विद्यार्थी छन्？",
-        "hi": "कक्षा में कितने छात्र हैं？",
-        "vi": "Một lớp có bao nhiêu học sinh?"
-      },
-      "a3Html": {
-        "ja": "<p>1クラス15〜20人程度の少人数制です。</p><p>一人ひとりに目が行き届く環境で、丁寧な指導を行います。</p>",
-        "en": "<p>Classes have around 15–20 students in a small-group setting.</p><p>We provide attentive, individual guidance in a supportive environment.</p>",
-        "ne": "<p>कक्षामा लगभग १५–२० जना विद्यार्थी हुन्छन्।</p><p>हामी सहयोगी वातावरणमा ध्यानपूर्वक र व्यक्तिगत मार्गदर्शन प्रदान गर्छौं।</p>",
-        "hi": "<p>कक्षा में लगभग 15–20 छात्र होते हैं।</p><p>हम सहायक वातावरण में ध्यानपूर्वक और व्यक्तिगत मार्गदर्शन प्रदान करते हैं।</p>",
-        "vi": "<p>Mỗi lớp khoảng 15–20 học sinh.</p><p>Chúng tôi hướng dẫn chu đáo, cá nhân hóa trong môi trường hỗ trợ.</p>"
-      }
-    },
-    "graduation": {
-      "q1": {
-        "ja": "卒業後の進路サポートはありますか？",
-        "en": "Is there career support after graduation?",
-        "ne": "स्नातक पछि भविष्य सहयोग छ？",
-        "hi": "स्नातक के बाद भविष्य सहायता है？",
-        "vi": "Có hỗ trợ hướng nghiệp sau tốt nghiệp không?"
-      },
-      "a1Html": {
-        "ja": "<p>はい、以下のサポートを行っています：</p><ul><li>専門学校・大学への進学指導</li><li>学校見学の引率</li><li>願書作成・面接練習</li><li>就職希望者への求人情報提供</li></ul><p>詳細は<a href=\"futurepath.html\">進路情報ページ</a>をご覧ください。</p>",
-        "en": "<p>Yes, we provide the following support:</p><ul><li>Guidance for vocational schools and universities</li><li>School visit escorts</li><li>Application writing and interview practice</li><li>Job information for employment seekers</li></ul><p>See the <a href=\"futurepath.html\">Career Path page</a> for details.</p>",
-        "ne": "<p>हो, हामी निम्न सहयोग प्रदान गर्छौं：</p><ul><li>व्यावसायिक विद्यालय र विश्वविद्यालयका लागि मार्गदर्शन</li><li>विद्यालय भ्रमणमा साथ</li><li>आवेदन लेखन र अन्तर्वार्ता अभ्यास</li><li>रोजगार खोज्नेहरूका लागि जागिर जानकारी</li></ul><p>विवरणका लागि <a href=\"futurepath.html\">भविष्यको बाटो पृष्ठ</a> हेर्नुहोस्।</p>",
-        "hi": "<p>हाँ, हम निम्नलिखित सहायता प्रदान करते हैं：</p><ul><li>व्यावसायिक विद्यालय और विश्वविद्यालय के लिए मार्गदर्शन</li><li>विद्यालय भ्रमण में साथ</li><li>आवेदन लेखन और साक्षात्कार अभ्यास</li><li>रोजगार चाहने वालों के लिए नौकरी की जानकारी</li></ul><p>विवरण के लिए <a href=\"futurepath.html\">भविष्य का मार्ग पृष्ठ</a> देखें।</p>",
-        "vi": "<p>Có, chúng tôi hỗ trợ:</p><ul><li>Hướng dẫn vào trường nghề và đại học</li><li>Đưa đi tham quan trường</li><li>Viết đơn và luyện phỏng vấn</li><li>Cung cấp thông tin việc làm</li></ul><p>Xem <a href=\"futurepath.html\">Trang hướng nghiệp</a> để biết chi tiết.</p>"
-      },
-      "q2": {
-        "ja": "どのような進路がありますか？",
-        "en": "What career paths are available?",
-        "ne": "कस्ता भविष्यका बाटो छन्？",
-        "hi": "कौन से भविष्य के मार्ग उपलब्ध हैं？",
-        "vi": "Có những con đường nào sau tốt nghiệp?"
-      },
-      "a2Html": {
-        "ja": "<p>卒業生の主な進路：</p><ul><li><strong>専門学校</strong>：IT、看護、美容、デザイン、ビジネスなど</li><li><strong>大学</strong>：鹿児島県内外の大学</li><li><strong>就職</strong>：日本企業への就職</li></ul><p>赤塚学園グループの専門学校には推薦入学制度もあります。</p>",
-        "en": "<p>Main career paths of graduates:</p><ul><li><strong>Vocational schools</strong>: IT, nursing, beauty, design, business, etc.</li><li><strong>Universities</strong>: Universities in and outside Kagoshima</li><li><strong>Employment</strong>: Employment at Japanese companies</li></ul><p>Recommendation-based enrollment to Akatsuka Gakuen group vocational schools is also available.</p>",
-        "ne": "<p>स्नातकहरूको मुख्य भविष्यका बाटो：</p><ul><li><strong>व्यावसायिक विद्यालय</strong>：IT, नर्सिङ, सौन्दर्य, डिजाइन, व्यापार आदि</li><li><strong>विश्वविद्यालय</strong>：कागोशिमा भित्र र बाहिरका विश्वविद्यालय</li><li><strong>रोजगारी</strong>：जापानी कम्पनीमा रोजगारी</li></ul><p>अकात्सुका गाकुएन समूहको व्यावसायिक विद्यालयमा सिफारिस भर्ना पनि उपलब्ध छ।</p>",
-        "hi": "<p>स्नातकों के मुख्य भविष्य के मार्ग：</p><ul><li><strong>व्यावसायिक विद्यालय</strong>：IT, नर्सिंग, सौंदर्य, डिज़ाइन, व्यापार आदि</li><li><strong>विश्वविद्यालय</strong>：कागोशिमा के अंदर और बाहर के विश्वविद्यालय</li><li><strong>रोजगार</strong>：जापानी कंपनियों में रोजगार</li></ul><p>अकात्सुका गाकुएन समूह के व्यावसायिक विद्यालयों में अनुशंसा-आधारित प्रवेश भी उपलब्ध है।</p>",
-        "vi": "<p>Hướng đi chính của cựu sinh viên:</p><ul><li><strong>Trường nghề</strong>: CNTT, điều dưỡng, thẩm mỹ, thiết kế, kinh doanh, v.v.</li><li><strong>Đại học</strong>: Đại học trong và ngoài Kagoshima</li><li><strong>Việc làm</strong>: Làm việc tại công ty Nhật Bản</li></ul><p>Cũng có chế độ nhập học theo giới thiệu vào các trường nghề thuộc Akatsuka Gakuen.</p>"
-      }
-    },
-    "otherText": {
-      "ja": "上記以外のご質問がございましたら、お気軽にお問い合わせください。",
-      "en": "If you have any other questions, please feel free to contact us.",
-      "ne": "माथि बाहेक अन्य प्रश्न भएमा, कृपया सम्पर्क गर्नुहोस्।",
-      "hi": "ऊपर के अलावा अन्य प्रश्न हों तो कृपया संपर्क करें।",
-      "vi": "Nếu bạn có câu hỏi khác, vui lòng liên hệ với chúng tôi."
     }
   },
   "contact": {
@@ -1918,13 +1505,6 @@
       "hi": "पृष्ठ नहीं मिला",
       "vi": "Không tìm thấy trang"
     },
-    "message": {
-      "ja": "お探しのページは移動、削除、または存在しない可能性があります。",
-      "en": "The page you are looking for may have been moved, deleted, or does not exist.",
-      "ne": "तपाईंले खोज्नुभएको पृष्ठ सारिएको, मेटिएको वा अवस्थित नहुन सक्छ।",
-      "hi": "आप जो पृष्ठ खोज रहे हैं वह स्थानांतरित, हटाया गया या मौजूद नहीं हो सकता है।",
-      "vi": "Trang bạn tìm kiếm có thể đã bị di chuyển, xóa hoặc không tồn tại."
-    },
     "backToSchool": {
       "ja": "🏫 学校トップへ",
       "en": "🏫 School Top",
@@ -1945,6 +1525,48 @@
       "ne": "तपाईंले खोज्नुभएको पृष्ठ सारिएको, मेटिएको वा अवस्थित नहुन सक्छ।<br />कृपया URL जाँच गरेर पुन: प्रयास गर्नुहोस्।",
       "hi": "आप जो पृष्ठ खोज रहे हैं वह स्थानांतरित, हटाया गया या मौजूद नहीं हो सकता है।<br />कृपया URL जाँचें और पुन: प्रयास करें।",
       "vi": "Trang bạn tìm kiếm có thể đã được di chuyển, xóa hoặc không tồn tại.<br />Vui lòng kiểm tra URL và thử lại."
+    },
+    "suggestionsTitle": {
+      "ja": "📌 お探しのページはこちらですか？",
+      "en": "📌 Did you mean one of these pages?",
+      "ne": "📌 तपाईंले खोज्नुभएको पृष्ठ यी मध्ये कुनै हो?",
+      "hi": "📌 क्या आप इन पृष्ठों में से कोई खोज रहे थे?",
+      "vi": "📌 Bạn có đang tìm một trong các trang này không?"
+    },
+    "suggestHome": {
+      "ja": "学校トップページ",
+      "en": "School Home Page",
+      "ne": "विद्यालय मुख्य पृष्ठ",
+      "hi": "विद्यालय मुख्य पृष्ठ",
+      "vi": "Trang chủ trường"
+    },
+    "suggestAdmission": {
+      "ja": "入学案内",
+      "en": "Admission Guide",
+      "ne": "भर्ना गाइड",
+      "hi": "प्रवेश गाइड",
+      "vi": "Hướng dẫn nhập học"
+    },
+    "suggestCareer": {
+      "ja": "進路情報",
+      "en": "Career Information",
+      "ne": "भविष्य जानकारी",
+      "hi": "करियर जानकारी",
+      "vi": "Thông tin hướng nghiệp"
+    },
+    "suggestSchoolLife": {
+      "ja": "学校生活",
+      "en": "School Life",
+      "ne": "विद्यालय जीवन",
+      "hi": "विद्यालय जीवन",
+      "vi": "Đời sống học đường"
+    },
+    "suggestContact": {
+      "ja": "お問い合わせ",
+      "en": "Contact",
+      "ne": "सम्पर्क",
+      "hi": "संपर्क",
+      "vi": "Liên hệ"
     }
   },
   "footer": {
@@ -1982,13 +1604,6 @@
       "ne": "विद्यालय आधिकारिक साइट सम्बन्धी",
       "hi": "विद्यालय आधिकारिक साइट सम्बन्धी",
       "vi": "Liên kết trang web chính thức của trường"
-    },
-    "sns": {
-      "ja": "💬 SNS・相談",
-      "en": "💬 SNS & Consultation",
-      "ne": "💬 सामाजिक सञ्जाल र परामर्श",
-      "hi": "💬 सोशल मीडिया और परामर्श",
-      "vi": "💬 MXH & Tư vấn"
     },
     "home": {
       "ja": "ホーム",
@@ -2109,13 +1724,6 @@
       "hi": "🕒 स्कूल जीवन",
       "vi": "🕒 Đời sống học đường"
     },
-    "faqLink2": {
-      "ja": "❓ よくある質問",
-      "en": "❓ FAQ",
-      "ne": "❓ बारम्बार सोधिने प्रश्न",
-      "hi": "❓ अक्सर पूछे जाने वाले प्रश्न",
-      "vi": "❓ Câu hỏi thường gặp"
-    },
     "openCampus": {
       "ja": "オープンキャンパス",
       "en": "Open Campus",
@@ -2144,20 +1752,6 @@
       "hi": "आधिकारिक ब्रोशर अनुरोध",
       "vi": "Yêu cầu tài liệu"
     },
-    "lineConsult": {
-      "ja": "LINE相談",
-      "en": "LINE Chat",
-      "ne": "LINE परामर्श",
-      "hi": "LINE परामर्श",
-      "vi": "Tư vấn LINE"
-    },
-    "instagram": {
-      "ja": "Instagram",
-      "en": "Instagram",
-      "ne": "Instagram",
-      "hi": "Instagram",
-      "vi": "Instagram"
-    },
     "address": {
       "ja": "〒890-0055 鹿児島県鹿児島市上荒田町6-1",
       "en": "6-1 Kamiarata-cho, Kagoshima-shi, Kagoshima 890-0055",
@@ -2166,4 +1760,4 @@
       "vi": "6-1 Kamiarata-cho, Kagoshima-shi, Kagoshima 890-0055"
     }
   }
-};
+}

@@ -597,9 +597,10 @@ th {
 
 .footer-nav-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  max-width: 1200px;
+  width: min(1400px, calc(100% - 48px));
+  max-width: 100%;
   margin: 0 auto;
 }
 
